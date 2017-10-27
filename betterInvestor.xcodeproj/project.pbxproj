@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0203FC051F99741B007FE62A /* betterInvestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterInvestor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0203FC051F99741B007FE62A /* betterInvestorDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterInvestorDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0203FC081F99741B007FE62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0203FC0A1F99741B007FE62A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0203FC0D1F99741B007FE62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		0203FC061F99741B007FE62A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0203FC051F99741B007FE62A /* betterInvestor.app */,
+				0203FC051F99741B007FE62A /* betterInvestorDev.app */,
 				0203FC191F99741B007FE62A /* betterInvestorTests.xctest */,
 				0203FC241F99741C007FE62A /* betterInvestorUITests.xctest */,
 			);
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0203FC041F99741B007FE62A /* betterInvestor */ = {
+		0203FC041F99741B007FE62A /* betterInvestorDev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0203FC2D1F99741C007FE62A /* Build configuration list for PBXNativeTarget "betterInvestor" */;
+			buildConfigurationList = 0203FC2D1F99741C007FE62A /* Build configuration list for PBXNativeTarget "betterInvestorDev" */;
 			buildPhases = (
 				0203FC011F99741B007FE62A /* Sources */,
 				0203FC021F99741B007FE62A /* Frameworks */,
@@ -140,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = betterInvestor;
+			name = betterInvestorDev;
 			productName = betterInvestor;
-			productReference = 0203FC051F99741B007FE62A /* betterInvestor.app */;
+			productReference = 0203FC051F99741B007FE62A /* betterInvestorDev.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0203FC181F99741B007FE62A /* betterInvestorTests */ = {
@@ -220,7 +220,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0203FC041F99741B007FE62A /* betterInvestor */,
+				0203FC041F99741B007FE62A /* betterInvestorDev */,
 				0203FC181F99741B007FE62A /* betterInvestorTests */,
 				0203FC231F99741C007FE62A /* betterInvestorUITests */,
 			);
@@ -285,12 +285,12 @@
 /* Begin PBXTargetDependency section */
 		0203FC1B1F99741B007FE62A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0203FC041F99741B007FE62A /* betterInvestor */;
+			target = 0203FC041F99741B007FE62A /* betterInvestorDev */;
 			targetProxy = 0203FC1A1F99741B007FE62A /* PBXContainerItemProxy */;
 		};
 		0203FC261F99741C007FE62A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0203FC041F99741B007FE62A /* betterInvestor */;
+			target = 0203FC041F99741B007FE62A /* betterInvestorDev */;
 			targetProxy = 0203FC251F99741C007FE62A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -542,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0203FC2D1F99741C007FE62A /* Build configuration list for PBXNativeTarget "betterInvestor" */ = {
+		0203FC2D1F99741C007FE62A /* Build configuration list for PBXNativeTarget "betterInvestorDev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0203FC2E1F99741C007FE62A /* Debug */,
