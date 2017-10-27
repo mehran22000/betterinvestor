@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import betterInvestor
 
 class betterInvestorTests: XCTestCase {
     
@@ -22,8 +21,15 @@ class betterInvestorTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // 1. given
+        let guess = 10;
+        
+        // 2. when
+        let guess_check = 10;
+        
+        // 3. then
+        XCTAssertEqual(guess, guess_check, "Guess repeat is wrong")
+
     }
     
     func testPerformanceExample() {
