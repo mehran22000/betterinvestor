@@ -49,23 +49,23 @@
 			<integer>16384</integer>
 		</dict>
 		<key>Name</key>
-		<string>iPhone 7</string>
+		<string>iPhone 8</string>
 		<key>TargetArchitecture</key>
 		<string>x86_64</string>
 		<key>TargetDevice</key>
 		<dict>
 			<key>Identifier</key>
-			<string>8AE47527-D8A9-455A-87CF-653A7D0D1AFD</string>
+			<string>8C49629A-6623-4C39-A1BA-BD06145FC0B8</string>
 			<key>IsConcreteDevice</key>
 			<true/>
 			<key>ModelCode</key>
-			<string>iPhone9,1</string>
+			<string>iPhone10,4</string>
 			<key>ModelName</key>
-			<string>iPhone 7</string>
+			<string>iPhone 8</string>
 			<key>ModelUTI</key>
-			<string>com.apple.iphone-7-1</string>
+			<string>com.apple.iphone-8-2</string>
 			<key>Name</key>
-			<string>iPhone 7</string>
+			<string>iPhone 8</string>
 			<key>NativeArchitecture</key>
 			<string>x86_64</string>
 			<key>OperatingSystemVersion</key>
@@ -107,22 +107,22 @@
 			<array>
 				<dict>
 					<key>Duration</key>
-					<real>0.0038700103759765625</real>
+					<real>0.31113600730895996</real>
 					<key>Subtests</key>
 					<array>
 						<dict>
 							<key>Duration</key>
-							<real>0.0023780465126037598</real>
+							<real>0.31006604433059692</real>
 							<key>Subtests</key>
 							<array>
 								<dict>
 									<key>Duration</key>
-									<real>0.0016099810600280762</real>
+									<real>0.30936002731323242</real>
 									<key>Subtests</key>
 									<array>
 										<dict>
 											<key>Duration</key>
-											<real>0.00086599588394165039</real>
+											<real>0.0058409571647644043</real>
 											<key>TestIdentifier</key>
 											<string>betterInvestorTests/testExample()</string>
 											<key>TestName</key>
@@ -132,7 +132,53 @@
 											<key>TestStatus</key>
 											<string>Success</string>
 											<key>TestSummaryGUID</key>
-											<string>F4876686-8F9C-4AA9-8FA7-E2DD041475B7</string>
+											<string>15724BF9-41E8-40CE-86F1-E18A0509D500</string>
+										</dict>
+										<dict>
+											<key>Duration</key>
+											<real>0.3027300238609314</real>
+											<key>PerformanceMetrics</key>
+											<array>
+												<dict>
+													<key>Identifier</key>
+													<string>com.apple.XCTPerformanceMetric_WallClockTime</string>
+													<key>MaxPercentRegression</key>
+													<integer>10</integer>
+													<key>MaxPercentRelativeStandardDeviation</key>
+													<integer>10</integer>
+													<key>MaxRegression</key>
+													<real>0.10000000000000001</real>
+													<key>MaxStandardDeviation</key>
+													<real>0.10000000000000001</real>
+													<key>Measurements</key>
+													<array>
+														<real>2.8200000000000001e-06</real>
+														<real>3.9799999999999999e-07</real>
+														<real>1.86e-07</real>
+														<real>1.9500000000000001e-07</real>
+														<real>2.3699999999999999e-07</real>
+														<real>1.73e-07</real>
+														<real>1.66e-07</real>
+														<real>1.73e-07</real>
+														<real>1.73e-07</real>
+														<real>1.66e-07</real>
+													</array>
+													<key>Name</key>
+													<string>Time</string>
+													<key>UnitOfMeasurement</key>
+													<string>seconds</string>
+												</dict>
+											</array>
+											<key>TestIdentifier</key>
+											<string>betterInvestorTests/testPerformanceExample()</string>
+											<key>TestName</key>
+											<string>testPerformanceExample()</string>
+											<key>TestObjectClass</key>
+											<string>IDESchemeActionTestSummary</string>
+											<key>TestStatus</key>
+											<string>Success</string>
+											<key>TestSummaryGUID</key>
+											<string>4D53E2B2-1F85-4215-8C61-FD4130329F94</string>
 										</dict>
 									</array>
 									<key>TestIdentifier</key>
@@ -152,9 +198,9 @@
 						</dict>
 					</array>
 					<key>TestIdentifier</key>
-					<string>Selected tests</string>
+					<string>All tests</string>
 					<key>TestName</key>
-					<string>Selected tests</string>
+					<string>All tests</string>
 					<key>TestObjectClass</key>
 					<string>IDESchemeActionTestSummaryGroup</string>
 				</dict>
