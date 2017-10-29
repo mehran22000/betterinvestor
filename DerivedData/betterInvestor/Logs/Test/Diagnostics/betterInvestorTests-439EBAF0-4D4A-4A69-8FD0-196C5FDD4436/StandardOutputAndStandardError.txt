@@ -1,0 +1,11 @@
+Test Suite 'Selected tests' started at 2017-10-26 20:12:44.926
+Test Suite 'betterInvestorTests.xctest' started at 2017-10-26 20:12:44.926
+Test Suite 'betterInvestorTests' started at 2017-10-26 20:12:44.927
+Test Case '-[betterInvestorTests.betterInvestorTests testExample]' started.
+Test Case '-[betterInvestorTests.betterInvestorTests testExample]' passed (0.006 seconds).
+Test Suite 'betterInvestorTests' passed at 2017-10-26 20:12:44.933.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.006 (0.006) seconds
+Test Suite 'betterInvestorTests.xctest' passed at 2017-10-26 20:12:44.933.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+Test Suite 'Selected tests' passed at 2017-10-26 20:12:44.934.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
