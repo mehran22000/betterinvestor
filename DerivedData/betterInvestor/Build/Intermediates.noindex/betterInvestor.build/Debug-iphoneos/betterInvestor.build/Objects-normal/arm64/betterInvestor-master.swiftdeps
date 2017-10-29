@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
-options: "c08e3ede9e2160f93014d73210366b25"
-build_time: [1509059768, 637572000]
-inputs:
-  "/Users/mehran/Developer/Swift Projcts/betterInvestor/betterInvestor/ViewController.swift": [1508457627, 0]
-  "/Users/mehran/Developer/Swift Projcts/betterInvestor/betterInvestor/AppDelegate.swift": [1508457627, 0]

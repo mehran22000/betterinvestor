@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
-options: "3241a451542040c8357d0576b50e210b"
-build_time: [1509066839, 906574000]
-inputs:
-  "/Users/mehran/Developer/Swift Projcts/betterInvestor/betterInvestorTests/betterInvestorTests.swift": [1509063148, 0]
