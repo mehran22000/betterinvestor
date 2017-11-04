@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import GoogleMobileAds
+
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var viewBanner:GADBannerView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewBanner?.adUnitID = "ca-app-pub-5267718216518748/5568296429";
+        // self.viewBanner?.rootViewController?.delete(self);
+        let gadRequest = GADRequest();
+        gadRequest.testDevices = [kGADSimulatorID];
+        self.viewBanner?.load(gadRequest);
         // Do any additional setup after loading the view, typically from a nib.
     }
 
