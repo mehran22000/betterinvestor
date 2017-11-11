@@ -16,9 +16,39 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet var viewBanner:GADBannerView?
     @IBOutlet var portfolioTableView: UITableView!
     @IBOutlet var pageViewHolder: UIView!
+    @IBOutlet var pageControl: UIPageControl!
     
-    let stocks = ["AMZN","MSFT","INTC","APPLE","BP","VRX"];
+    let symbols = ["TOTAL",
+                   "MSFT",
+                   "INTC",
+                   "APPLE",
+                   "BP",
+                   "VRX"];
+    
+    let sym_desc = ["CASH: $12,012 STOCKS: $6,432",
+                    "50 x $70.21 (\u{2191} $0.12)",
+                    "100 x $41.00 (\u{2193} $1.12)",
+                    "10 x $172.76 (\u{2193} $3.12)",
+                    "200 x $40.41 (\u{2191} $0.50)",
+                    "500 x $15.78 (\u{2193} $0.25)"];
+    
+    let sym_performance_dollars = ["+ 1200",
+                                   "- 432",
+                                   "- 1234",
+                                   "+ 600",
+                                   "+ 10",
+                                   "+ 144"];
+    
+    let sym_performance_precentage = ["+ 10%",
+                                   "- 5%",
+                                   "- 16%",
+                                   "+ 8%",
+                                   "+ 4%",
+                                   "+ 22%"];
     var rankingViewIndex = 0;
+    var freindsRankingVC : FriendsRankingTableVC?
+    var globalRankingVC : GlobalRankingTableVC?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,9 +60,18 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         gadRequest.testDevices = [kGADSimulatorID];
         self.viewBanner?.load(gadRequest);
         
+        // Initiate Ranking View Controllers
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.freindsRankingVC = storyboard.instantiateViewController(withIdentifier: "FriendsRankingVC") as? FriendsRankingTableVC
+        self.freindsRankingVC?.view.frame = CGRect(x:0,y:0,width:400,height:200);
+        self.addChildViewController(self.freindsRankingVC!);
         
-        // Page View
-        self.pageViewHolder.addSubview(instanceFromNib(pageNo:rankingViewIndex));
+        
+        self.globalRankingVC = storyboard.instantiateViewController(withIdentifier: "GlobalRankingVC") as? GlobalRankingTableVC
+        self.globalRankingVC?.view.frame = CGRect(x:0,y:0,width:400,height:200);
+        self.addChildViewController(self.globalRankingVC!);
+    
+        self.pageViewHolder.addSubview((self.freindsRankingVC?.view)!);
         
         
         // Swipe Guesture Recognition
@@ -43,8 +82,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
-
         
+        portfolioTableView?.tableFooterView = UIView()
     }
     
     
@@ -52,27 +91,40 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if gesture.direction == UISwipeGestureRecognizerDirection.right {
             print("Swipe Right")
             rankingViewIndex = rankingViewIndex + 1;
-            if (rankingViewIndex == 4) {
-                rankingViewIndex = 0;
+            if (rankingViewIndex == 1) {
+                self.pageViewHolder.addSubview((self.globalRankingVC?.view)!);
+                self.pageControl.currentPage = 1;
             }
-            
-            self.pageViewHolder.addSubview(instanceFromNib(pageNo:rankingViewIndex));
+            else if (rankingViewIndex == 2) {
+                rankingViewIndex = 0;
+                self.pageViewHolder.addSubview((self.freindsRankingVC?.view)!);
+               self.pageControl.currentPage = 0;
+            }
             self.pageViewHolder.pageAnimation(leftToRight:true);
         }
         else if gesture.direction == UISwipeGestureRecognizerDirection.left {
             print("Swipe Left")
             rankingViewIndex = rankingViewIndex - 1;
-            if (rankingViewIndex == -1) {
-                rankingViewIndex = 3;
-            }
             
-            self.pageViewHolder.addSubview(instanceFromNib(pageNo:rankingViewIndex));
+            if (rankingViewIndex == -1) {
+                rankingViewIndex = 1;
+                self.pageViewHolder.addSubview((self.globalRankingVC?.view)!);
+                self.pageControl.currentPage = 1;
+            }
+            else if (rankingViewIndex == 0) {
+                self.pageViewHolder.addSubview((self.freindsRankingVC?.view)!);
+                self.pageControl.currentPage = 0;
+            }
             self.pageViewHolder.pageAnimation(leftToRight:false);
+            
+            
+            // self.pageViewHolder.addSubview(instanceFromNib(pageNo:rankingViewIndex));
+            // self.pageViewHolder.pageAnimation(leftToRight:false);
         }
     }
     
     
-    
+    /*
     func instanceFromNib(pageNo:Int) -> UIView {
         let rankingTableVC = RankingTableVC();
         
@@ -88,7 +140,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
            return UINib(nibName: "RankingViews", bundle: nil).instantiate(withOwner: rankingTableVC, options: nil)[pageNo] as! UIView
         }
     }
-    
+    */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -105,20 +157,36 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stocks.count;
+        return symbols.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
-        cell.symbolLbl?.text = stocks[indexPath.row];
-        cell.performanceBtn?.titleLabel?.text = "%10";
+        let sym = symbols[indexPath.row];
+        let price = sym_desc[indexPath.row];
+        let performance = sym_performance_precentage[indexPath.row];
+        
+        cell.symbolLbl?.text = sym;
+        cell.performanceBtn?.setTitle(performance, for: UIControlState.normal)
+        cell.priceLbl?.text = price;
+        
+        let ch_plus = CharacterSet(charactersIn: "+")
+        if performance.rangeOfCharacter(from: ch_plus) != nil {
+            cell.performanceBtn.backgroundColor = UIColor.init(red: 7/255.0, green: 84/255.0, blue: 56/255.0, alpha: 1);
+        }
+        else {
+            cell.performanceBtn.backgroundColor = UIColor.init(red: 214/255.0, green: 36/255.0, blue: 39/255.0, alpha: 1);
+        }
+        
+        if (sym == "TOTAL"){
+            cell.backgroundColor = UIColor.init(red: 235/255.0, green: 246/255.0, blue: 255/255.0, alpha: 1);
+        }
+        
+        
         return cell;
         
     }
     
-    @IBAction func sayHelloClicked(){
-        print("sayHelloClicked");
-    }
 }
 
 extension UIView {

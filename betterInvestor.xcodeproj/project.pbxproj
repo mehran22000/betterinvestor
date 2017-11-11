@@ -15,9 +15,10 @@
 		0203FC1E1F99741B007FE62A /* betterInvestorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FC1D1F99741B007FE62A /* betterInvestorTests.swift */; };
 		0203FC291F99741C007FE62A /* betterInvestorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FC281F99741C007FE62A /* betterInvestorUITests.swift */; };
 		028ED07E1FAE4E6500ABE2CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */; };
-		02A717661FB1645000289BCD /* RankingViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A717651FB1645000289BCD /* RankingViews.xib */; };
-		02A7176B1FB3E13400289BCD /* RankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176A1FB3E13400289BCD /* RankingTableVC.swift */; };
-		02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* RankingCell.swift */; };
+		02A7176B1FB3E13400289BCD /* FriendsRankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176A1FB3E13400289BCD /* FriendsRankingTableVC.swift */; };
+		02A7176D1FB4187300289BCD /* FriendRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* FriendRankingCell.swift */; };
+		02A7176F1FB565D400289BCD /* GlobalRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176E1FB565D400289BCD /* GlobalRankingCell.swift */; };
+		02A717711FB5678000289BCD /* GlobalRankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A717701FB5678000289BCD /* GlobalRankingTableVC.swift */; };
 		02A844371FAFD4FA00D4935D /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A844361FAFD4FA00D4935D /* PortfolioCell.swift */; };
 		02A844391FB01C5A00D4935D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A844381FB01C5A00D4935D /* Icons.xcassets */; };
 		10B84770B7B6A5A16846F609 /* Pods_betterInvestorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; };
@@ -57,9 +58,10 @@
 		0203FC281F99741C007FE62A /* betterInvestorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betterInvestorUITests.swift; sourceTree = "<group>"; };
 		0203FC2A1F99741C007FE62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		02A717651FB1645000289BCD /* RankingViews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingViews.xib; sourceTree = "<group>"; };
-		02A7176A1FB3E13400289BCD /* RankingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableVC.swift; sourceTree = "<group>"; };
-		02A7176C1FB4187300289BCD /* RankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
+		02A7176A1FB3E13400289BCD /* FriendsRankingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRankingTableVC.swift; sourceTree = "<group>"; };
+		02A7176C1FB4187300289BCD /* FriendRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRankingCell.swift; sourceTree = "<group>"; };
+		02A7176E1FB565D400289BCD /* GlobalRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRankingCell.swift; sourceTree = "<group>"; };
+		02A717701FB5678000289BCD /* GlobalRankingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRankingTableVC.swift; sourceTree = "<group>"; };
 		02A844361FAFD4FA00D4935D /* PortfolioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCell.swift; sourceTree = "<group>"; };
 		02A844381FB01C5A00D4935D /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterInvestorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,12 +129,11 @@
 		0203FC071F99741B007FE62A /* betterInvestor */ = {
 			isa = PBXGroup;
 			children = (
-				02A717671FB1654B00289BCD /* Views */,
-				02A844351FAFD4D100D4935D /* Cells */,
-				02A844341FAFD47E00D4935D /* ViewControllers */,
 				028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */,
 				0203FC081F99741B007FE62A /* AppDelegate.swift */,
 				0203FC0C1F99741B007FE62A /* Main.storyboard */,
+				02A844351FAFD4D100D4935D /* Cells */,
+				02A844341FAFD47E00D4935D /* ViewControllers */,
 				0203FC0F1F99741B007FE62A /* Assets.xcassets */,
 				0203FC111F99741B007FE62A /* LaunchScreen.storyboard */,
 				0203FC141F99741B007FE62A /* Info.plist */,
@@ -158,19 +159,12 @@
 			path = betterInvestorUITests;
 			sourceTree = "<group>";
 		};
-		02A717671FB1654B00289BCD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				02A717651FB1645000289BCD /* RankingViews.xib */,
-				02A7176A1FB3E13400289BCD /* RankingTableVC.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		02A844341FAFD47E00D4935D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				0203FC0A1F99741B007FE62A /* MasterVC.swift */,
+				02A7176A1FB3E13400289BCD /* FriendsRankingTableVC.swift */,
+				02A717701FB5678000289BCD /* GlobalRankingTableVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -179,7 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				02A844361FAFD4FA00D4935D /* PortfolioCell.swift */,
-				02A7176C1FB4187300289BCD /* RankingCell.swift */,
+				02A7176C1FB4187300289BCD /* FriendRankingCell.swift */,
+				02A7176E1FB565D400289BCD /* GlobalRankingCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -323,7 +318,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A717661FB1645000289BCD /* RankingViews.xib in Resources */,
 				0203FC131F99741B007FE62A /* LaunchScreen.storyboard in Resources */,
 				028ED07E1FAE4E6500ABE2CD /* GoogleService-Info.plist in Resources */,
 				0203FC101F99741B007FE62A /* Assets.xcassets in Resources */,
@@ -493,9 +487,11 @@
 			files = (
 				0203FC0B1F99741B007FE62A /* MasterVC.swift in Sources */,
 				02A844371FAFD4FA00D4935D /* PortfolioCell.swift in Sources */,
-				02A7176B1FB3E13400289BCD /* RankingTableVC.swift in Sources */,
-				02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */,
+				02A7176B1FB3E13400289BCD /* FriendsRankingTableVC.swift in Sources */,
+				02A7176D1FB4187300289BCD /* FriendRankingCell.swift in Sources */,
 				0203FC091F99741B007FE62A /* AppDelegate.swift in Sources */,
+				02A7176F1FB565D400289BCD /* GlobalRankingCell.swift in Sources */,
+				02A717711FB5678000289BCD /* GlobalRankingTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

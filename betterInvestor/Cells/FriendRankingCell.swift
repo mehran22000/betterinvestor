@@ -1,16 +1,17 @@
 //
-//  PortfolioTableVC.swift
+//  RankingCell.swift
 //  betterInvestor
 //
-//  Created by mehran najafi on 2017-11-05.
+//  Created by mehran najafi on 2017-11-09.
 //  Copyright © 2017 Ron. All rights reserved.
 //
 
 import UIKit
 
-class PortfolioCell: UITableViewCell {
-    @IBOutlet weak var symbolLbl: UILabel!
-    @IBOutlet weak var priceLbl: UILabel!
+class FriendRankingCell: UITableViewCell {
+    @IBOutlet weak var rank: UILabel!
+    @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var username: UILabel!
     @IBOutlet weak var performanceBtn: UIButton!
     
     init(style: UITableViewCellStyle, reuseIdentifier: String) {
@@ -24,7 +25,7 @@ class PortfolioCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         performanceBtn.layer.cornerRadius = 0.05 * performanceBtn.bounds.size.width
-        performanceBtn.clipsToBounds = true    }
-
+        performanceBtn.clipsToBounds = true
+        
+    }
 }
-
