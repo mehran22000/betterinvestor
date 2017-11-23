@@ -14,13 +14,21 @@
 		0203FC131F99741B007FE62A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0203FC111F99741B007FE62A /* LaunchScreen.storyboard */; };
 		0203FC1E1F99741B007FE62A /* betterInvestorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FC1D1F99741B007FE62A /* betterInvestorTests.swift */; };
 		0203FC291F99741C007FE62A /* betterInvestorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FC281F99741C007FE62A /* betterInvestorUITests.swift */; };
+		0258C2D91FB90B52003FC621 /* HalfPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0A97B1FB7CA8700039603 /* HalfPieChartViewController.m */; };
+		0258C2E41FBC01E1003FC621 /* LineChart1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2DF1FBC01E1003FC621 /* LineChart1ViewController.m */; };
+		0258C2E51FBC01E1003FC621 /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0258C2E31FBC01E1003FC621 /* LineChart1ViewController.xib */; };
+		0258C2EA1FBD4E0E003FC621 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2E91FBD4E0E003FC621 /* Stub.swift */; };
+		0258C2EC1FBD51B5003FC621 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2EB1FBD51B5003FC621 /* Constants.swift */; };
+		0258C2F11FC25580003FC621 /* DemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0A9801FB7CB3300039603 /* DemoBaseViewController.m */; };
+		0258C2F41FC3E8F8003FC621 /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2F31FC3E8F8003FC621 /* StockVC.swift */; };
+		0258C2F81FC3F141003FC621 /* StockHoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2F71FC3F141003FC621 /* StockHoldersVC.swift */; };
 		028ED07E1FAE4E6500ABE2CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */; };
-		02A7176B1FB3E13400289BCD /* FriendsRankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176A1FB3E13400289BCD /* FriendsRankingTableVC.swift */; };
-		02A7176D1FB4187300289BCD /* FriendRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* FriendRankingCell.swift */; };
-		02A7176F1FB565D400289BCD /* GlobalRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176E1FB565D400289BCD /* GlobalRankingCell.swift */; };
-		02A717711FB5678000289BCD /* GlobalRankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A717701FB5678000289BCD /* GlobalRankingTableVC.swift */; };
+		02A7176B1FB3E13400289BCD /* RankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176A1FB3E13400289BCD /* RankingTableVC.swift */; };
+		02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* RankingCell.swift */; };
 		02A844371FAFD4FA00D4935D /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A844361FAFD4FA00D4935D /* PortfolioCell.swift */; };
 		02A844391FB01C5A00D4935D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A844381FB01C5A00D4935D /* Icons.xcassets */; };
+		02C0A9721FB7BF0A00039603 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C0A96F1FB7BE7600039603 /* Charts.framework */; };
+		02C0A97E1FB7CA8700039603 /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C0A97C1FB7CA8700039603 /* HalfPieChartViewController.xib */; };
 		10B84770B7B6A5A16846F609 /* Pods_betterInvestorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; };
 		A3D2E471C36F83007EB07CAF /* Pods_betterInvestorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; };
 		DDD36C023DCA4D54653F569E /* Pods_betterInvestor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */; };
@@ -41,6 +49,20 @@
 			remoteGlobalIDString = 0203FC041F99741B007FE62A;
 			remoteInfo = betterInvestor;
 		};
+		02C0A96E1FB7BE7600039603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C0A9691FB7BE7500039603 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		02C0A9701FB7BE7600039603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C0A9691FB7BE7500039603 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -57,13 +79,25 @@
 		0203FC241F99741C007FE62A /* betterInvestorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = betterInvestorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0203FC281F99741C007FE62A /* betterInvestorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betterInvestorUITests.swift; sourceTree = "<group>"; };
 		0203FC2A1F99741C007FE62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0258C2DF1FBC01E1003FC621 /* LineChart1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChart1ViewController.m; sourceTree = "<group>"; };
+		0258C2E21FBC01E1003FC621 /* LineChart1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChart1ViewController.h; sourceTree = "<group>"; };
+		0258C2E31FBC01E1003FC621 /* LineChart1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChart1ViewController.xib; sourceTree = "<group>"; };
+		0258C2E91FBD4E0E003FC621 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		0258C2EB1FBD51B5003FC621 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0258C2F31FC3E8F8003FC621 /* StockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVC.swift; sourceTree = "<group>"; };
+		0258C2F71FC3F141003FC621 /* StockHoldersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockHoldersVC.swift; sourceTree = "<group>"; };
 		028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		02A7176A1FB3E13400289BCD /* FriendsRankingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRankingTableVC.swift; sourceTree = "<group>"; };
-		02A7176C1FB4187300289BCD /* FriendRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRankingCell.swift; sourceTree = "<group>"; };
-		02A7176E1FB565D400289BCD /* GlobalRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRankingCell.swift; sourceTree = "<group>"; };
-		02A717701FB5678000289BCD /* GlobalRankingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRankingTableVC.swift; sourceTree = "<group>"; };
+		02A7176A1FB3E13400289BCD /* RankingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableVC.swift; sourceTree = "<group>"; };
+		02A7176C1FB4187300289BCD /* RankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
 		02A844361FAFD4FA00D4935D /* PortfolioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCell.swift; sourceTree = "<group>"; };
 		02A844381FB01C5A00D4935D /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		02C0A9691FB7BE7500039603 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master 2/Charts.xcodeproj"; sourceTree = "<group>"; };
+		02C0A9791FB7CA8700039603 /* betterInvestor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "betterInvestor-Bridging-Header.h"; sourceTree = "<group>"; };
+		02C0A97A1FB7CA8700039603 /* HalfPieChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HalfPieChartViewController.h; path = betterInvestor/ChartsExtension/HalfPieChartViewController.h; sourceTree = SOURCE_ROOT; };
+		02C0A97B1FB7CA8700039603 /* HalfPieChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HalfPieChartViewController.m; path = betterInvestor/ChartsExtension/HalfPieChartViewController.m; sourceTree = SOURCE_ROOT; };
+		02C0A97C1FB7CA8700039603 /* HalfPieChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HalfPieChartViewController.xib; path = betterInvestor/ChartsExtension/HalfPieChartViewController.xib; sourceTree = SOURCE_ROOT; };
+		02C0A97F1FB7CB3300039603 /* DemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoBaseViewController.h; path = betterInvestor/ChartsExtension/DemoBaseViewController.h; sourceTree = SOURCE_ROOT; };
+		02C0A9801FB7CB3300039603 /* DemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoBaseViewController.m; path = betterInvestor/ChartsExtension/DemoBaseViewController.m; sourceTree = SOURCE_ROOT; };
 		0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterInvestorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3038C3B7D4343F74E045D1B2 /* Pods-betterInvestor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor.debug.xcconfig"; sourceTree = "<group>"; };
 		53F211311A37CB2E6A0580AD /* Pods-betterInvestorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestorTests/Pods-betterInvestorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C0A9721FB7BF0A00039603 /* Charts.framework in Frameworks */,
 				DDD36C023DCA4D54653F569E /* Pods_betterInvestor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +141,7 @@
 		0203FBFC1F99741B007FE62A = {
 			isa = PBXGroup;
 			children = (
+				02C0A9691FB7BE7500039603 /* Charts.xcodeproj */,
 				02A844381FB01C5A00D4935D /* Icons.xcassets */,
 				0203FC071F99741B007FE62A /* betterInvestor */,
 				0203FC1C1F99741B007FE62A /* betterInvestorTests */,
@@ -129,14 +165,18 @@
 		0203FC071F99741B007FE62A /* betterInvestor */ = {
 			isa = PBXGroup;
 			children = (
+				02C0A9791FB7CA8700039603 /* betterInvestor-Bridging-Header.h */,
 				028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */,
 				0203FC081F99741B007FE62A /* AppDelegate.swift */,
 				0203FC0C1F99741B007FE62A /* Main.storyboard */,
-				02A844351FAFD4D100D4935D /* Cells */,
 				02A844341FAFD47E00D4935D /* ViewControllers */,
+				02A844351FAFD4D100D4935D /* Cells */,
+				0245A7051FB8FE6000BB185D /* ChartsExtension */,
 				0203FC0F1F99741B007FE62A /* Assets.xcassets */,
 				0203FC111F99741B007FE62A /* LaunchScreen.storyboard */,
 				0203FC141F99741B007FE62A /* Info.plist */,
+				0258C2E91FBD4E0E003FC621 /* Stub.swift */,
+				0258C2EB1FBD51B5003FC621 /* Constants.swift */,
 			);
 			path = betterInvestor;
 			sourceTree = "<group>";
@@ -159,12 +199,28 @@
 			path = betterInvestorUITests;
 			sourceTree = "<group>";
 		};
+		0245A7051FB8FE6000BB185D /* ChartsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0258C2E21FBC01E1003FC621 /* LineChart1ViewController.h */,
+				0258C2DF1FBC01E1003FC621 /* LineChart1ViewController.m */,
+				0258C2E31FBC01E1003FC621 /* LineChart1ViewController.xib */,
+				02C0A97F1FB7CB3300039603 /* DemoBaseViewController.h */,
+				02C0A9801FB7CB3300039603 /* DemoBaseViewController.m */,
+				02C0A97A1FB7CA8700039603 /* HalfPieChartViewController.h */,
+				02C0A97B1FB7CA8700039603 /* HalfPieChartViewController.m */,
+				02C0A97C1FB7CA8700039603 /* HalfPieChartViewController.xib */,
+			);
+			path = ChartsExtension;
+			sourceTree = "<group>";
+		};
 		02A844341FAFD47E00D4935D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				0203FC0A1F99741B007FE62A /* MasterVC.swift */,
-				02A7176A1FB3E13400289BCD /* FriendsRankingTableVC.swift */,
-				02A717701FB5678000289BCD /* GlobalRankingTableVC.swift */,
+				02A7176A1FB3E13400289BCD /* RankingTableVC.swift */,
+				0258C2F31FC3E8F8003FC621 /* StockVC.swift */,
+				0258C2F71FC3F141003FC621 /* StockHoldersVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,10 +229,18 @@
 			isa = PBXGroup;
 			children = (
 				02A844361FAFD4FA00D4935D /* PortfolioCell.swift */,
-				02A7176C1FB4187300289BCD /* FriendRankingCell.swift */,
-				02A7176E1FB565D400289BCD /* GlobalRankingCell.swift */,
+				02A7176C1FB4187300289BCD /* RankingCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		02C0A96A1FB7BE7500039603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02C0A96F1FB7BE7600039603 /* Charts.framework */,
+				02C0A9711FB7BE7600039603 /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		3566C679BF1E5C40EF164B28 /* Pods */ = {
@@ -279,6 +343,7 @@
 				TargetAttributes = {
 					0203FC041F99741B007FE62A = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Manual;
 					};
 					0203FC181F99741B007FE62A = {
@@ -304,6 +369,12 @@
 			mainGroup = 0203FBFC1F99741B007FE62A;
 			productRefGroup = 0203FC061F99741B007FE62A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 02C0A96A1FB7BE7500039603 /* Products */;
+					ProjectRef = 02C0A9691FB7BE7500039603 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0203FC041F99741B007FE62A /* betterInvestor */,
@@ -313,12 +384,31 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		02C0A96F1FB7BE7600039603 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 02C0A96E1FB7BE7600039603 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02C0A9711FB7BE7600039603 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 02C0A9701FB7BE7600039603 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		0203FC031F99741B007FE62A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0203FC131F99741B007FE62A /* LaunchScreen.storyboard in Resources */,
+				0258C2E51FBC01E1003FC621 /* LineChart1ViewController.xib in Resources */,
+				02C0A97E1FB7CA8700039603 /* HalfPieChartViewController.xib in Resources */,
 				028ED07E1FAE4E6500ABE2CD /* GoogleService-Info.plist in Resources */,
 				0203FC101F99741B007FE62A /* Assets.xcassets in Resources */,
 				0203FC0E1F99741B007FE62A /* Main.storyboard in Resources */,
@@ -486,12 +576,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0203FC0B1F99741B007FE62A /* MasterVC.swift in Sources */,
+				0258C2E41FBC01E1003FC621 /* LineChart1ViewController.m in Sources */,
+				0258C2F41FC3E8F8003FC621 /* StockVC.swift in Sources */,
+				0258C2D91FB90B52003FC621 /* HalfPieChartViewController.m in Sources */,
 				02A844371FAFD4FA00D4935D /* PortfolioCell.swift in Sources */,
-				02A7176B1FB3E13400289BCD /* FriendsRankingTableVC.swift in Sources */,
-				02A7176D1FB4187300289BCD /* FriendRankingCell.swift in Sources */,
+				02A7176B1FB3E13400289BCD /* RankingTableVC.swift in Sources */,
+				0258C2EC1FBD51B5003FC621 /* Constants.swift in Sources */,
+				02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */,
 				0203FC091F99741B007FE62A /* AppDelegate.swift in Sources */,
-				02A7176F1FB565D400289BCD /* GlobalRankingCell.swift in Sources */,
-				02A717711FB5678000289BCD /* GlobalRankingTableVC.swift in Sources */,
+				0258C2F81FC3F141003FC621 /* StockHoldersVC.swift in Sources */,
+				0258C2F11FC25580003FC621 /* DemoBaseViewController.m in Sources */,
+				0258C2EA1FBD4E0E003FC621 /* Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,7 +756,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3038C3B7D4343F74E045D1B2 /* Pods-betterInvestor.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mehran Najafi (5C9NDSKQG2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mehran Najafi (5C9NDSKQG2)";
 				CODE_SIGN_STYLE = Manual;
@@ -672,6 +769,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d8e57980-5d8a-4c1f-805d-6345f628bac5";
 				PROVISIONING_PROFILE_SPECIFIER = "BI Dev Prov";
+				SWIFT_OBJC_BRIDGING_HEADER = "betterInvestor/betterInvestor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -681,7 +780,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A99CFDC8D3985A391C82BF29 /* Pods-betterInvestor.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mehran Najafi (5C9NDSKQG2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mehran Najafi (5C9NDSKQG2)";
 				CODE_SIGN_STYLE = Manual;
@@ -692,6 +793,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d8e57980-5d8a-4c1f-805d-6345f628bac5";
 				PROVISIONING_PROFILE_SPECIFIER = "BI Dev Prov";
+				SWIFT_OBJC_BRIDGING_HEADER = "betterInvestor/betterInvestor-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

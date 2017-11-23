@@ -8,6 +8,7 @@ target 'betterInvestor' do
   # Pods for betterInvestor
   pod 'Firebase’, ‘~>4.5.0’
   pod 'Firebase/AdMob'
+  pod 'Charts'
   target 'betterInvestorTests' do
     inherit! :search_paths
     # Pods for testing

@@ -1,5 +1,5 @@
 //
-//  GlobalRankingCell.swift
+//  RankingCell.swift
 //  betterInvestor
 //
 //  Created by mehran najafi on 2017-11-09.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GlobalRankingCell: UITableViewCell {
+class RankingCell: UITableViewCell {
     @IBOutlet weak var rank: UILabel!
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var username: UILabel!
@@ -28,5 +28,4 @@ class GlobalRankingCell: UITableViewCell {
         performanceBtn.clipsToBounds = true
         
     }
-    
 }

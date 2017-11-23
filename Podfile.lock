@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.0.4):
+    - Charts/Core (= 3.0.4)
+  - Charts/Core (3.0.4)
   - Firebase (4.5.0):
     - Firebase/Core (= 4.5.0)
   - Firebase/AdMob (4.5.0):
@@ -27,10 +30,12 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
+  - Charts
   - Firebase (~> 4.5.0)
   - Firebase/AdMob
 
 SPEC CHECKSUMS:
+  Charts: 0705898046257443f0afbbc3179f4b67507b6e48
   Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseCore: da5e8e372cb6046212739a4d81e42d32c22907cc
@@ -39,6 +44,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 667efedf495fd17e802ed0a0b080acdaae4f11cf
+PODFILE CHECKSUM: 6610e589acf8f833506417e44d51870c9173c896
 
 COCOAPODS: 1.1.1
