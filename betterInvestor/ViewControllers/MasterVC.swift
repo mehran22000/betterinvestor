@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMobileAds
 import Charts
-
+import SideMenu
 
 class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -44,7 +44,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        SideMenuManager.menuFadeStatusBar = false;
         self.screenSize = UIScreen.main.bounds
         self.screenWidth = screenSize!.width
         self.screenHeight = screenSize!.height
@@ -60,11 +60,19 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
         
+        
+        
     }
     
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         
+        UIApplication.shared.statusBarStyle = .lightContent
         self.portfolioHeight = Int(screenHeight!) - Constants.pageViewHeight - Constants.pageControlHeight - Constants.adViewHeight - Constants.segmentViewHeight;
         
         self.yPortfolio = 0;
