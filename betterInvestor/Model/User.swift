@@ -44,4 +44,12 @@ class User {
         self.friends = dic["friends"] as? String;
     }
 
+    func setFriends(dic: [String: AnyObject]) {
+        /*
+        for (int i=0; i<dic.count; i++) {
+            
+        }
+         */
+    }
+    
 }
