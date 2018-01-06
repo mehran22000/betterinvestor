@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0910"
+   LastUpgradeVersion = "0920"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0203FC041F99741B007FE62A"
-               BuildableName = "smarterInvestor.app"
-               BlueprintName = "smarterInvestor"
+               BuildableName = "betterInvestor.app"
+               BlueprintName = "betterInvestor"
                ReferencedContainer = "container:betterInvestor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0203FC041F99741B007FE62A"
-            BuildableName = "smarterInvestor.app"
-            BlueprintName = "smarterInvestor"
+            BuildableName = "betterInvestor.app"
+            BlueprintName = "betterInvestor"
             ReferencedContainer = "container:betterInvestor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -68,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0203FC041F99741B007FE62A"
-            BuildableName = "smarterInvestor.app"
-            BlueprintName = "smarterInvestor"
+            BuildableName = "betterInvestor.app"
+            BlueprintName = "betterInvestor"
             ReferencedContainer = "container:betterInvestor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -87,8 +87,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0203FC041F99741B007FE62A"
-            BuildableName = "smarterInvestor.app"
-            BlueprintName = "smarterInvestor"
+            BuildableName = "betterInvestor.app"
+            BlueprintName = "betterInvestor"
             ReferencedContainer = "container:betterInvestor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -41,7 +41,8 @@ class LoginViewController: UIViewController {
                 if fbloginresult.grantedPermissions != nil {
                     if(fbloginresult.grantedPermissions.contains("email"))
                     {
-                        self.getFBUserData()
+                       // self.getFBUserData()
+                         self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
                     }
                 }
             }

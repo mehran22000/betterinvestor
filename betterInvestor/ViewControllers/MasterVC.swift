@@ -44,7 +44,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SideMenuManager.menuFadeStatusBar = false;
+        SideMenuManager.default.menuFadeStatusBar = false;
         self.screenSize = UIScreen.main.bounds
         self.screenWidth = screenSize!.width
         self.screenHeight = screenSize!.height
