@@ -10,7 +10,8 @@ import UIKit
 
 class MenuHeaderCell: UITableViewCell {
     @IBOutlet var photo: UIImageView?
-    @IBOutlet var name: UILabel?
+    @IBOutlet var fname: UILabel?
+    @IBOutlet var lname: UILabel?
     
     override func awakeFromNib() {
         super.awakeFromNib()

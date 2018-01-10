@@ -41,8 +41,7 @@ class LoginViewController: UIViewController {
                 if fbloginresult.grantedPermissions != nil {
                     if(fbloginresult.grantedPermissions.contains("email"))
                     {
-                       // self.getFBUserData()
-                         self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
+                        self.getFBUserData()
                     }
                 }
             }
@@ -77,12 +76,12 @@ class LoginViewController: UIViewController {
                 let param = RequestGenerator.requestUserProfile(user: self.appDelegate.user!);
                 let url = Constants.bsae_url + "user/profile";
                 Alamofire.request(url, method: HTTPMethod.post, parameters: param, encoding:JSONEncoding.default).responseJSON { response in
-                    if let result = response.result.value {
-                        let json = JSON(result)
-                        if (json["response"] == "success") {
+                   // if let result = response.result.value {
+                   //     let json = JSON(result)
+                   //     if (json["response"] == "success") {
                             self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
-                        }
-                    }
+                   //     }
+                   // }
                 }
             }
             }

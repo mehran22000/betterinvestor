@@ -12,6 +12,7 @@ import UIKit
 class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch (indexPath.row){
@@ -58,6 +59,16 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if (indexPath.row == 0){
             let headerCell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! MenuHeaderCell;
+            headerCell.fname?.text = appDelegate.user?.first_name;
+            headerCell.lname?.text = appDelegate.user?.last_name;
+        
+            if let url = URL(string: (appDelegate.user?.pictureUrl)!) {
+                headerCell.photo?.contentMode = .scaleAspectFit
+                headerCell.photo?.layer.cornerRadius = 10.0
+                headerCell.photo?.clipsToBounds = true
+                downloadImage(url: url,imageView: headerCell.photo!)
+            }
+        
             return headerCell;
         }
         else {
@@ -81,13 +92,29 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    
+    func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            completion(data, response, error)
+            }.resume()
+    }
+    
+    func downloadImage(url: URL, imageView:UIImageView) {
+        print("Download Started")
+        getDataFromUrl(url: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url.lastPathComponent)
+            print("Download Finished")
+            DispatchQueue.main.async() {
+                imageView.image = UIImage(data: data)
+            }
+        }
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         UIApplication.shared.statusBarStyle = .lightContent
         self.tableView!.tableFooterView = UIView()
-        
-        
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
