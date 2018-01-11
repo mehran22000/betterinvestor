@@ -10,6 +10,8 @@ import UIKit
 import GoogleMobileAds
 import Charts
 import SideMenu
+import Alamofire
+import SwiftyJSON
 
 class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -41,6 +43,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var yPageView: Int?
     var yPageControlView: Int?
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +64,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
         
-        
+        fetchPortfolio();
         
     }
     
@@ -219,19 +223,21 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Stub.symbols.count;
+        return (appDelegate.user?.portfolio?.positions?.count)!;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
-        let sym = Stub.symbols[indexPath.row];
-        let price = Stub.sym_desc[indexPath.row];
-        let performance = Stub.sym_performance_precentage[indexPath.row];
+        let position = appDelegate.user?.portfolio?.positions![indexPath.row];
+        // let sym = Stub.symbols[indexPath.row];
+        // let price = Stub.sym_desc[indexPath.row];
+        // let performance = Stub.sym_performance_precentage[indexPath.row];
         
-        cell.symbolLbl?.text = sym;
-        cell.performanceBtn?.setTitle(performance, for: UIControlState.normal)
-        cell.priceLbl?.text = price;
+        cell.symbolLbl?.text = position?.symbol.uppercased();
+        // cell.performanceBtn?.setTitle(performance, for: UIControlState.normal)
+        // cell.priceLbl?.text = price;
         
+        /*
         let ch_plus = CharacterSet(charactersIn: "+")
         if performance.rangeOfCharacter(from: ch_plus) != nil {
             cell.performanceBtn.backgroundColor = UIColor.init(red: 167/255.0, green: 225/255.0, blue: 113/255.0, alpha: 1);
@@ -243,9 +249,23 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if (sym == "TOTAL"){
             cell.backgroundColor = UIColor.init(red: 235/255.0, green: 246/255.0, blue: 255/255.0, alpha: 1);
         }
+        */
         return cell;
     }
     
+    
+    func fetchPortfolio() {
+        let url = Constants.bsae_url + "user/portfolio/"+(appDelegate.user?.id)!;
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == "200") {
+                    ResponseParser.parseUserPortfolio(json: jsonDic,user: self.appDelegate.user!);
+                    self.portfolioTableView.reloadData();
+                }
+            }
+        }
+    }
 }
 
 extension UIView {

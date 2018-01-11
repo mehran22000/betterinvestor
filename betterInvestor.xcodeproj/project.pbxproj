@@ -59,6 +59,8 @@
 		02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* RankingCell.swift */; };
 		02A844371FAFD4FA00D4935D /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A844361FAFD4FA00D4935D /* PortfolioCell.swift */; };
 		02A844391FB01C5A00D4935D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A844381FB01C5A00D4935D /* Icons.xcassets */; };
+		02AFC52A200713A900D93425 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC529200713A900D93425 /* Position.swift */; };
+		02AFC52C200713B800D93425 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC52B200713B800D93425 /* Portfolio.swift */; };
 		02BB1D121FC7A6BB001DEC45 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB1D111FC7A6BB001DEC45 /* SideBarVC.swift */; };
 		02C0A97E1FB7CA8700039603 /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C0A97C1FB7CA8700039603 /* HalfPieChartViewController.xib */; };
 		A3D2E471C36F83007EB07CAF /* Pods_betterInvestorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; };
@@ -155,6 +157,8 @@
 		02A844361FAFD4FA00D4935D /* PortfolioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCell.swift; sourceTree = "<group>"; };
 		02A844381FB01C5A00D4935D /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		02AFC5252001542E00D93425 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02AFC529200713A900D93425 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		02AFC52B200713B800D93425 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		02BB1D111FC7A6BB001DEC45 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
 		02C0A9791FB7CA8700039603 /* betterInvestor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "betterInvestor-Bridging-Header.h"; sourceTree = "<group>"; };
 		02C0A97A1FB7CA8700039603 /* HalfPieChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HalfPieChartViewController.h; path = betterInvestor/ChartsExtension/HalfPieChartViewController.h; sourceTree = SOURCE_ROOT; };
@@ -304,6 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				028C9C031FEA1D0E003966F8 /* User.swift */,
+				02AFC529200713A900D93425 /* Position.swift */,
+				02AFC52B200713B800D93425 /* Portfolio.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -713,6 +719,8 @@
 				022818F61FCB270B0098F619 /* ReferVC.swift in Sources */,
 				022818EE1FCA2E300098F619 /* MenuHeaderCell.swift in Sources */,
 				025DD9851FE8AC3900720099 /* RequestGenerator.swift in Sources */,
+				02AFC52C200713B800D93425 /* Portfolio.swift in Sources */,
+				02AFC52A200713A900D93425 /* Position.swift in Sources */,
 				02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */,
 				0203FC091F99741B007FE62A /* AppDelegate.swift in Sources */,
 				0258C2F81FC3F141003FC621 /* StockHoldersVC.swift in Sources */,

@@ -54,7 +54,8 @@ class LoginViewController: UIViewController {
                 if (error == nil){
                     self.dict = result as! [String : AnyObject]
                     self.appDelegate.user = User(dic: self.dict);
-                    self.getFBFriendsList();
+                    self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
+                    // self.getFBFriendsList();
                 }
             })
         }

@@ -17,6 +17,7 @@ class User {
     var email: String?;
     var pictureUrl: String?;
     var friends: String?;
+    var portfolio: Portfolio?;
 
     init(_id:String, _first_name: String, _last_name: String, _middle_name: String, _name: String, _email: String, _pictureUrl: String, _friends: String) {
         self.id = _id;
@@ -27,6 +28,7 @@ class User {
         self.email = _email;
         self.pictureUrl = _pictureUrl;
         self.friends = _friends;
+        self.portfolio = Portfolio();
     }
 
     init(dic: [String : AnyObject]) {
@@ -42,6 +44,7 @@ class User {
             }
         }
         self.friends = dic["friends"] as? String;
+        self.portfolio = Portfolio();
     }
 
     func setFriends(dic: [String: AnyObject]) {
@@ -51,5 +54,5 @@ class User {
         }
          */
     }
-    
+
 }
