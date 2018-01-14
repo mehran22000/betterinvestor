@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>base_url_local</key>
-	<string>http://localhost:5000/services/v1/</string>
+	<string>http://127.0.0.1:5000/services/v1/</string>
 </dict>
 </plist>

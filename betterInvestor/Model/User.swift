@@ -8,7 +8,8 @@
 
 import Foundation
 
-class User {
+class User: NSObject, NSCoding {
+    
     var id: String?;
     var first_name: String?;
     var last_name: String?;
@@ -45,8 +46,31 @@ class User {
         }
         self.friends = dic["friends"] as? String;
         self.portfolio = Portfolio();
+
     }
 
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(id, forKey: "id")
+        aCoder.encode(first_name, forKey:"first_name")
+        aCoder.encode(last_name, forKey:"last_name")
+        aCoder.encode(middle_name, forKey:"middle_name")
+        aCoder.encode(name, forKey:"name")
+        aCoder.encode(email, forKey:"email")
+        aCoder.encode(pictureUrl, forKey:"pictureUrl")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.id = aDecoder.decodeObject(forKey: "id") as? String ?? ""
+        self.first_name = aDecoder.decodeObject(forKey: "first_name") as? String ?? ""
+        self.last_name = aDecoder.decodeObject(forKey: "last_name") as? String ?? ""
+        self.middle_name = aDecoder.decodeObject(forKey: "middle_name") as? String ?? ""
+        self.name = aDecoder.decodeObject(forKey: "name") as? String ?? ""
+        self.email = aDecoder.decodeObject(forKey: "email") as? String ?? ""
+        self.pictureUrl = aDecoder.decodeObject(forKey: "pictureUrl") as? String ?? ""
+        self.portfolio = Portfolio();
+    }
+    
+    
     func setFriends(dic: [String: AnyObject]) {
         /*
         for (int i=0; i<dic.count; i++) {

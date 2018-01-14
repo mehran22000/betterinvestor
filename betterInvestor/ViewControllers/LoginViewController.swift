@@ -17,14 +17,15 @@ class LoginViewController: UIViewController {
     var dict : [String : AnyObject]!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let defaults = UserDefaults.standard
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
-
+    
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,6 +35,7 @@ class LoginViewController: UIViewController {
  
    
     @IBAction func btnFBLoginPressed(_ sender: AnyObject) {
+    
         let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
         fbLoginManager.logIn(withReadPermissions: facebookReadPermissions, from: self) { (result, error) in
             if (error == nil){
@@ -54,6 +56,9 @@ class LoginViewController: UIViewController {
                 if (error == nil){
                     self.dict = result as! [String : AnyObject]
                     self.appDelegate.user = User(dic: self.dict);
+                    self.defaults.set(NSKeyedArchiver.archivedData(withRootObject: self.appDelegate.user!), forKey: "user")
+                    
+                    
                     self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
                     // self.getFBFriendsList();
                 }

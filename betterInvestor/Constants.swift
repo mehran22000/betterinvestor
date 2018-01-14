@@ -14,5 +14,5 @@ class Constants {
     static let pageViewHeight = 190;
     static let pageControlHeight = 20;
     static let adViewHeight = 50;
-    static let bsae_url = "http://localhost:5000/services/v1/";
+    static let bsae_url = "http://127.0.0.1:5000/services/v1/";
 }

@@ -38,6 +38,8 @@
 		0258C2F81FC3F141003FC621 /* StockHoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2F71FC3F141003FC621 /* StockHoldersVC.swift */; };
 		025DD9851FE8AC3900720099 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD9841FE8AC3900720099 /* RequestGenerator.swift */; };
 		025DD9871FE8AC4900720099 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD9861FE8AC4900720099 /* ResponseParser.swift */; };
+		02879E6B20088688002E8AE1 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879E6A20088688002E8AE1 /* Market.swift */; };
+		02879E6D2008874A002E8AE1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879E6C2008874A002E8AE1 /* Quote.swift */; };
 		028C9BEC1FE8B88A003966F8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C9BE91FE8B88A003966F8 /* Alamofire.framework */; };
 		028C9BEE1FE8B8D2003966F8 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C9BED1FE8B8D2003966F8 /* SwiftyJSON.framework */; };
 		028C9BF31FE8BA0C003966F8 /* SwiftyJSON.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 028C9BED1FE8B8D2003966F8 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -147,6 +149,8 @@
 		0258C2F71FC3F141003FC621 /* StockHoldersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockHoldersVC.swift; sourceTree = "<group>"; };
 		025DD9841FE8AC3900720099 /* RequestGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
 		025DD9861FE8AC4900720099 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		02879E6A20088688002E8AE1 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		02879E6C2008874A002E8AE1 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		028C9BE91FE8B88A003966F8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		028C9BED1FE8B8D2003966F8 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		028C9C031FEA1D0E003966F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -310,6 +314,8 @@
 				028C9C031FEA1D0E003966F8 /* User.swift */,
 				02AFC529200713A900D93425 /* Position.swift */,
 				02AFC52B200713B800D93425 /* Portfolio.swift */,
+				02879E6A20088688002E8AE1 /* Market.swift */,
+				02879E6C2008874A002E8AE1 /* Quote.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -706,6 +712,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0203FC0B1F99741B007FE62A /* MasterVC.swift in Sources */,
+				02879E6B20088688002E8AE1 /* Market.swift in Sources */,
 				0258C2E41FBC01E1003FC621 /* LineChart1ViewController.m in Sources */,
 				0237B0381FC8F780008075D3 /* MenuTableViewCell.swift in Sources */,
 				0258C2F41FC3E8F8003FC621 /* StockVC.swift in Sources */,
@@ -726,6 +733,7 @@
 				0258C2F81FC3F141003FC621 /* StockHoldersVC.swift in Sources */,
 				022818F21FCA310D0098F619 /* ProductCell.swift in Sources */,
 				0258C2F11FC25580003FC621 /* DemoBaseViewController.m in Sources */,
+				02879E6D2008874A002E8AE1 /* Quote.swift in Sources */,
 				0258C2EA1FBD4E0E003FC621 /* Stub.swift in Sources */,
 				022818F41FCA31A80098F619 /* ProductVC.swift in Sources */,
 				022818F81FCB27D60098F619 /* ReferCell.swift in Sources */,

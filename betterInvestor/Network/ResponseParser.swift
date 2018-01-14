@@ -20,6 +20,17 @@ class ResponseParser {
             user.portfolio?.addPosition(position: pos);
         }
     }
+    
+    class func parseQuotes (json:NSDictionary, market: Market){
+        
+        let data = json["data"] as! NSDictionary;
+        let date = NSDate()
+        for (symbol, price) in data {
+            print(symbol,price);
+            let quote = Quote(symbol: symbol as! String,price: Double(price as! String)!, time:date);
+            market.updateQuote(quote: quote);
+        }
+    }
 
 
 }

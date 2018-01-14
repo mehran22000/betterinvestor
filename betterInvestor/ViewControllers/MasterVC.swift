@@ -64,6 +64,14 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
         
+        // Set Observers
+        let nc = NotificationCenter.default // Note that default is now a property, not a method call
+        nc.addObserver(forName:Notification.Name(rawValue:"quotes_updated"),
+                       object:nil, queue:nil) {
+                        notification in
+                        self.portfolioTableView.reloadData();
+        }
+        
         fetchPortfolio();
         
     }
@@ -223,7 +231,13 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (appDelegate.user?.portfolio?.positions?.count)!;
+        
+        if let portfolio = appDelegate.user?.portfolio {
+            return (portfolio.positions?.count)!;
+        }
+        else {
+            return 0;
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -233,8 +247,19 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // let price = Stub.sym_desc[indexPath.row];
         // let performance = Stub.sym_performance_precentage[indexPath.row];
         
+        var price_str = "-";
+        let quote = appDelegate.market?.quotes[(position?.symbol)!];
+        
+        if (quote != nil) {
+            price_str = String(format:"%.2f",quote!.price);
+        }
+       
         cell.symbolLbl?.text = position?.symbol.uppercased();
-        // cell.performanceBtn?.setTitle(performance, for: UIControlState.normal)
+        cell.performanceBtn?.setTitle(price_str, for: UIControlState.normal)
+       
+        // Temporary
+        cell.performanceBtn.backgroundColor = UIColor.init(red: 167/255.0, green: 225/255.0, blue: 113/255.0, alpha: 1);
+        
         // cell.priceLbl?.text = price;
         
         /*
@@ -261,11 +286,16 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 let jsonDic = result as! NSDictionary
                 if (jsonDic["status"] as! String == "200") {
                     ResponseParser.parseUserPortfolio(json: jsonDic,user: self.appDelegate.user!);
+                    self.appDelegate.market = Market.init();
                     self.portfolioTableView.reloadData();
                 }
             }
         }
     }
+    
+    
+    
+    
 }
 
 extension UIView {
