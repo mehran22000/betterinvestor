@@ -233,7 +233,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let portfolio = appDelegate.user?.portfolio {
-            return (portfolio.positions?.count)!;
+            return (portfolio.positions?.count)! + 1;
         }
         else {
             return 0;
@@ -242,39 +242,38 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
-        let position = appDelegate.user?.portfolio?.positions![indexPath.row];
-        // let sym = Stub.symbols[indexPath.row];
-        // let price = Stub.sym_desc[indexPath.row];
-        // let performance = Stub.sym_performance_precentage[indexPath.row];
+        let portfolio = appDelegate.user?.portfolio;
+        let market = appDelegate.market;
+        var gain: Double = 0;
+        var gain_str = "-";
         
-        var price_str = "-";
-        let quote = appDelegate.market?.quotes[(position?.symbol)!];
-        
-        if (quote != nil) {
-            price_str = String(format:"%.2f",quote!.price);
+        if (indexPath.row == 0){
+            cell.symbolLbl?.text = "TOTAL";
+            gain = portfolio!.total_gain;
         }
-       
-        cell.symbolLbl?.text = position?.symbol.uppercased();
-        cell.performanceBtn?.setTitle(price_str, for: UIControlState.normal)
-       
-        // Temporary
-        cell.performanceBtn.backgroundColor = UIColor.init(red: 167/255.0, green: 225/255.0, blue: 113/255.0, alpha: 1);
-        
-        // cell.priceLbl?.text = price;
-        
-        /*
-        let ch_plus = CharacterSet(charactersIn: "+")
-        if performance.rangeOfCharacter(from: ch_plus) != nil {
+        else {
+            var price_str = "-";
+            let position = portfolio!.positions![indexPath.row-1];
+            let quote = market?.quotes[(position.symbol)!];
+            cell.symbolLbl?.text = position.symbol.uppercased();
+    
+            if (quote != nil) {
+                price_str = String(format:"%.2f",quote!.price);
+                gain = (position.gain)!
+                cell.priceLbl?.text = price_str;
+            }
+        }
+
+        gain_str = String(format:"%.2f",gain);
+        if (gain >= 0) {
+            gain_str = "+" + gain_str;
             cell.performanceBtn.backgroundColor = UIColor.init(red: 167/255.0, green: 225/255.0, blue: 113/255.0, alpha: 1);
         }
         else {
-            cell.performanceBtn.backgroundColor = UIColor.init(red: 255/255.0, green: 163/255.0, blue: 164/255.0, alpha: 1);
+                cell.performanceBtn.backgroundColor = UIColor.init(red: 255/255.0, green: 163/255.0, blue: 164/255.0, alpha: 1);
         }
+        cell.performanceBtn?.setTitle(gain_str, for: UIControlState.normal)
         
-        if (sym == "TOTAL"){
-            cell.backgroundColor = UIColor.init(red: 235/255.0, green: 246/255.0, blue: 255/255.0, alpha: 1);
-        }
-        */
         return cell;
     }
     

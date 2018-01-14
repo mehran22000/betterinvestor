@@ -12,10 +12,15 @@ class Position {
     let symbol: String!;
     let qty: NSInteger!;
     let cost: Double!;
+    var gain: Double?;
     
     init (symbol:String,qty:NSInteger,cost:Double){
         self.symbol = symbol;
         self.qty = qty;
         self.cost = cost;
+    }
+    
+    func calculate_gain(quote: Quote){
+        self.gain = Double(qty) * quote.price - cost;
     }
 }

@@ -10,6 +10,8 @@ import Foundation
 
 class Portfolio {
     var positions : [Position]?
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var total_gain: Double = 0;
     
     init() {
         self.positions = [Position]();
@@ -35,4 +37,20 @@ class Portfolio {
             return str;
         }
     }
+    
+    func calculateGain() {
+        
+        let posNo = positions?.count;
+        var total : Double = 0;
+        
+        if (posNo! >= 0) {
+            for i in 0...posNo!-1 {
+                let quote = appDelegate.market?.quotes[self.positions![i].symbol];
+                self.positions![i].calculate_gain(quote:quote!)
+                total = total + self.positions![i].gain!;
+            }
+            self.total_gain = total;
+        }
+    }
+    
 }

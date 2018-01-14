@@ -19,13 +19,13 @@ class Market{
 
     init () {
         quotes = [String:Quote]();
-        
+        fetchStockPrice();
         self.timer = Timer.scheduledTimer(
-            timeInterval: 1.0,
+            timeInterval: 30.0,
             target: self,
             selector: #selector(Market.fetchStockPrice),
             userInfo: nil,
-            repeats: false)
+            repeats: true)
     }
     
     
@@ -39,6 +39,7 @@ class Market{
                     let jsonDic = result as! NSDictionary
                     if (jsonDic["status"] as! String == "200") {
                         ResponseParser.parseQuotes(json: jsonDic, market: self);
+                        portfolio.calculateGain();
                         self.nc.post(name:Notification.Name(rawValue:"quotes_updated"),object: nil,userInfo: nil)
                     }
                 }
