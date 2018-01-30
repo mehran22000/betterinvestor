@@ -48,6 +48,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         SideMenuManager.default.menuFadeStatusBar = false;
         self.screenSize = UIScreen.main.bounds
         self.screenWidth = screenSize!.width
@@ -72,6 +74,10 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         self.portfolioTableView.reloadData();
         }
         
+        // reset selectedStock
+        appDelegate.selectedStock = nil;
+        
+        
         fetchPortfolio();
         
     }
@@ -83,6 +89,14 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
+        
+        // jump to stock view controller if selctedStock != nil
+        
+        
+        if (appDelegate.selectedStock != nil) {
+            performSegue(withIdentifier: "segueStockTrx", sender: nil);
+        }
+        
         
         UIApplication.shared.statusBarStyle = .lightContent
         self.portfolioHeight = Int(screenHeight!) - Constants.pageViewHeight - Constants.pageControlHeight - Constants.adViewHeight - Constants.segmentViewHeight;
@@ -118,15 +132,15 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.pageViewIndex = 0;
         self.pageViewHolder.addSubview((self.rankingVC?.view)!);
         self.addSegmentControl();
-        self.addAdMob();
         self.addPageControl();
-        
+        self.addAdMob()
     }
     
     func addAdMob(){
         // Place AdMob at the bottom of the screen
         let adFrame = CGRect (x: 0, y: self.yAdView!, width: Int(screenWidth!), height: Constants.adViewHeight);
         let bannerView = GADBannerView.init(frame: adFrame);
+        bannerView.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
         bannerView.adUnitID = "ca-app-pub-5267718216518748/5568296429";
         let gadRequest = GADRequest();
         gadRequest.testDevices = [kGADSimulatorID];
@@ -202,7 +216,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     print ("Error: Page Index incorrect");
         }
         self.addSegmentControl();
-        self.addAdMob();
+        
         self.addPageControl();
         
         
@@ -212,6 +226,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         else {
             self.pageViewHolder.pageAnimation(leftToRight:false);
         }
+        
+        self.addAdMob();
     }
     
     
@@ -254,12 +270,12 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         else {
             var price_str = "-";
             let position = portfolio!.positions![indexPath.row-1];
-            let quote = market?.quotes[(position.symbol)!];
+            let quote = market?.quotes[(position.symbol)];
             cell.symbolLbl?.text = position.symbol.uppercased();
     
             if (quote != nil) {
                 price_str = String(format:"%.2f",quote!.price);
-                gain = (position.gain)!
+                gain = (position.gain)
                 cell.priceLbl?.text = price_str;
             }
         }
@@ -287,12 +303,26 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     ResponseParser.parseUserPortfolio(json: jsonDic,user: self.appDelegate.user!);
                     self.appDelegate.market = Market.init();
                     self.portfolioTableView.reloadData();
+                    self.fetchSymbols();
                 }
             }
         }
     }
     
-    
+    func fetchSymbols() {
+        
+        let symbol_version = UserDefaults.standard.value(forKey: "symbols_version") as! String;
+        
+        let url = Constants.bsae_url + "market/stock/symbols/version/"+symbol_version;
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == "200") {
+                    ResponseParser.parseSymbols(json: jsonDic);
+                }
+            }
+        }
+    }
     
     
 }

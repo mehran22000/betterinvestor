@@ -32,5 +32,22 @@ class ResponseParser {
         }
     }
 
+    class func parseSymbols (json:NSDictionary){
+        
+        let symbolsArray = json["symbols"] as! NSArray;
+        let symbols = NSMutableArray();
+        for sym in symbolsArray {
+            let dic = sym as! NSDictionary;
+            let symbol = Symbol(key: dic.object(forKey: "Symbol") as! String, name: dic.object(forKey: "Name") as! String)
+            symbols.add(symbol);
+        }
+        
+        UserDefaults.standard.set(symbolsArray, forKey: "symbols")
+        
+        let symbols_version = json["version"] as! String;
+        UserDefaults.standard.set(symbols_version, forKey: "symbols_version")
+        
+        
+    }
 
 }

@@ -9,15 +9,16 @@
 import Foundation
 
 class Position {
-    let symbol: String!;
-    let qty: NSInteger!;
-    let cost: Double!;
-    var gain: Double?;
+    let symbol: String;
+    let qty: NSInteger;
+    let cost: Double;
+    var gain: Double;
     
     init (symbol:String,qty:NSInteger,cost:Double){
         self.symbol = symbol;
         self.qty = qty;
         self.cost = cost;
+        self.gain = 0;
     }
     
     func calculate_gain(quote: Quote){

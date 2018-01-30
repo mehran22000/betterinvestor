@@ -16,22 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var user: User?
     var market: Market?
+    var rootNavigationController: UINavigationController?
+    var selectedStock: Symbol?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after ation launch.
         FirebaseApp.configure()
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        
-        // skip login if user previously logged in
-        if let userObject = UserDefaults.standard.value(forKey: "user") as? NSData {
-            self.user = NSKeyedUnarchiver.unarchiveObject(with: userObject as Data) as? User
-            let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "Master_View") as UIViewController
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = initialViewControlleripad
-            self.window?.makeKeyAndVisible()
-        }
-        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)        
+        initialization();
         
         return true
     }
@@ -62,6 +54,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         let isHandled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[.sourceApplication] as! String!, annotation: options[.annotation])
         return isHandled
+    }
+    
+    func initialization () {
+        if (UserDefaults.standard.value(forKey: "symbols_version") as? String == nil){
+             UserDefaults.standard.set("0", forKey: "symbol_version")
+        }
     }
 }
 

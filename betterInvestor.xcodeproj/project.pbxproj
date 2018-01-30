@@ -25,6 +25,8 @@
 		022819051FCD17E60098F619 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819041FCD17E60098F619 /* FBSDKCoreKit.framework */; };
 		022819071FCD185A0098F619 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819061FCD185A0098F619 /* FBSDKLoginKit.framework */; };
 		0228190B1FCD18C00098F619 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */; };
+		02327C5920201A7800F2B1B8 /* StockActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5820201A7800F2B1B8 /* StockActionCell.swift */; };
+		02327C5B20201AE000F2B1B8 /* StockInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */; };
 		0237B0381FC8F780008075D3 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237B0371FC8F780008075D3 /* MenuTableViewCell.swift */; };
 		0240361C1FCD1B2D00935411 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0240361B1FCD1B2D00935411 /* Bolts.framework */; };
 		0240361F1FCD237A00935411 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240361E1FCD237A00935411 /* LoginViewController.swift */; };
@@ -65,6 +67,9 @@
 		02AFC52C200713B800D93425 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC52B200713B800D93425 /* Portfolio.swift */; };
 		02BB1D121FC7A6BB001DEC45 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB1D111FC7A6BB001DEC45 /* SideBarVC.swift */; };
 		02C0A97E1FB7CA8700039603 /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C0A97C1FB7CA8700039603 /* HalfPieChartViewController.xib */; };
+		02F0AECA201C1D29003E4C93 /* SymbolSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */; };
+		02F0AECC201CEA93003E4C93 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECB201CEA93003E4C93 /* Symbol.swift */; };
+		02F0AECE201D1326003E4C93 /* RootNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECD201D1326003E4C93 /* RootNavigationControllerViewController.swift */; };
 		A3D2E471C36F83007EB07CAF /* Pods_betterInvestorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; };
 		BCB5193498B7ABB0AEC0BB1A /* Pods_betterInvestorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; };
 		DDD36C023DCA4D54653F569E /* Pods_betterInvestor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */; };
@@ -137,6 +142,8 @@
 		022819041FCD17E60098F619 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		022819061FCD185A0098F619 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		02327C5820201A7800F2B1B8 /* StockActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockActionCell.swift; sourceTree = "<group>"; };
+		02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoCell.swift; sourceTree = "<group>"; };
 		0237B0371FC8F780008075D3 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		0240361B1FCD1B2D00935411 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
 		0240361E1FCD237A00935411 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +177,9 @@
 		02C0A97C1FB7CA8700039603 /* HalfPieChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HalfPieChartViewController.xib; path = betterInvestor/ChartsExtension/HalfPieChartViewController.xib; sourceTree = SOURCE_ROOT; };
 		02C0A97F1FB7CB3300039603 /* DemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoBaseViewController.h; path = betterInvestor/ChartsExtension/DemoBaseViewController.h; sourceTree = SOURCE_ROOT; };
 		02C0A9801FB7CB3300039603 /* DemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoBaseViewController.m; path = betterInvestor/ChartsExtension/DemoBaseViewController.m; sourceTree = SOURCE_ROOT; };
+		02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolSearchVC.swift; sourceTree = "<group>"; };
+		02F0AECB201CEA93003E4C93 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		02F0AECD201D1326003E4C93 /* RootNavigationControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationControllerViewController.swift; sourceTree = "<group>"; };
 		0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterInvestorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		110476187F5C48E4B0BAEDC7 /* Pods-betterInvestorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestorTests/Pods-betterInvestorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3038C3B7D4343F74E045D1B2 /* Pods-betterInvestor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -316,6 +326,7 @@
 				02AFC52B200713B800D93425 /* Portfolio.swift */,
 				02879E6A20088688002E8AE1 /* Market.swift */,
 				02879E6C2008874A002E8AE1 /* Quote.swift */,
+				02F0AECB201CEA93003E4C93 /* Symbol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +342,8 @@
 				022818F31FCA31A80098F619 /* ProductVC.swift */,
 				022818F51FCB270B0098F619 /* ReferVC.swift */,
 				0240361E1FCD237A00935411 /* LoginViewController.swift */,
+				02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */,
+				02F0AECD201D1326003E4C93 /* RootNavigationControllerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -344,6 +357,8 @@
 				022818ED1FCA2E300098F619 /* MenuHeaderCell.swift */,
 				022818F11FCA310D0098F619 /* ProductCell.swift */,
 				022818F71FCB27D60098F619 /* ReferCell.swift */,
+				02327C5820201A7800F2B1B8 /* StockActionCell.swift */,
+				02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -713,6 +728,7 @@
 			files = (
 				0203FC0B1F99741B007FE62A /* MasterVC.swift in Sources */,
 				02879E6B20088688002E8AE1 /* Market.swift in Sources */,
+				02327C5920201A7800F2B1B8 /* StockActionCell.swift in Sources */,
 				0258C2E41FBC01E1003FC621 /* LineChart1ViewController.m in Sources */,
 				0237B0381FC8F780008075D3 /* MenuTableViewCell.swift in Sources */,
 				0258C2F41FC3E8F8003FC621 /* StockVC.swift in Sources */,
@@ -721,15 +737,18 @@
 				02A844371FAFD4FA00D4935D /* PortfolioCell.swift in Sources */,
 				02A7176B1FB3E13400289BCD /* RankingTableVC.swift in Sources */,
 				0240361F1FCD237A00935411 /* LoginViewController.swift in Sources */,
+				02F0AECE201D1326003E4C93 /* RootNavigationControllerViewController.swift in Sources */,
 				025DD9871FE8AC4900720099 /* ResponseParser.swift in Sources */,
 				0258C2EC1FBD51B5003FC621 /* Constants.swift in Sources */,
 				022818F61FCB270B0098F619 /* ReferVC.swift in Sources */,
 				022818EE1FCA2E300098F619 /* MenuHeaderCell.swift in Sources */,
 				025DD9851FE8AC3900720099 /* RequestGenerator.swift in Sources */,
 				02AFC52C200713B800D93425 /* Portfolio.swift in Sources */,
+				02F0AECA201C1D29003E4C93 /* SymbolSearchVC.swift in Sources */,
 				02AFC52A200713A900D93425 /* Position.swift in Sources */,
 				02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */,
 				0203FC091F99741B007FE62A /* AppDelegate.swift in Sources */,
+				02F0AECC201CEA93003E4C93 /* Symbol.swift in Sources */,
 				0258C2F81FC3F141003FC621 /* StockHoldersVC.swift in Sources */,
 				022818F21FCA310D0098F619 /* ProductCell.swift in Sources */,
 				0258C2F11FC25580003FC621 /* DemoBaseViewController.m in Sources */,
@@ -737,6 +756,7 @@
 				0258C2EA1FBD4E0E003FC621 /* Stub.swift in Sources */,
 				022818F41FCA31A80098F619 /* ProductVC.swift in Sources */,
 				022818F81FCB27D60098F619 /* ReferCell.swift in Sources */,
+				02327C5B20201AE000F2B1B8 /* StockInfoCell.swift in Sources */,
 				028C9C041FEA1D0E003966F8 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

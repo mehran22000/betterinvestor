@@ -47,10 +47,21 @@ class Portfolio {
             for i in 0...posNo!-1 {
                 let quote = appDelegate.market?.quotes[self.positions![i].symbol];
                 self.positions![i].calculate_gain(quote:quote!)
-                total = total + self.positions![i].gain!;
+                total = total + self.positions![i].gain;
             }
             self.total_gain = total;
         }
+    }
+    
+    func getPosition(_symbol: String) -> Position?{
+        let symbol = _symbol.lowercased();
+        let posNo = positions?.count;
+        for i in 0...posNo!-1 {
+            if (self.positions![i].symbol == symbol) {
+                return self.positions![i];
+            }
+        }
+        return nil;
     }
     
 }
