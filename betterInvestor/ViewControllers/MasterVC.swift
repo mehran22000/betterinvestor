@@ -49,6 +49,16 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Portfolio"
+        
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image:UIImage(named:"menu"), style: .plain, target: self, action: #selector(sideMenuClicked))
+        
+        
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonClicked))
+        
+        
         
         SideMenuManager.default.menuFadeStatusBar = false;
         self.screenSize = UIScreen.main.bounds
@@ -83,20 +93,22 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
+    @objc func sideMenuClicked(){
+        performSegue(withIdentifier: "segueSideMenu", sender: nil);
+    }
+    
+    
+    @objc func addButtonClicked(){
+        self.navigationController?.isNavigationBarHidden = true;
+        performSegue(withIdentifier: "segueSymbolSearch", sender: nil);
+    }
+    
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
-        
-        // jump to stock view controller if selctedStock != nil
-        
-        
-        if (appDelegate.selectedStock != nil) {
-            performSegue(withIdentifier: "segueStockTrx", sender: nil);
-        }
-        
         
         UIApplication.shared.statusBarStyle = .lightContent
         self.portfolioHeight = Int(screenHeight!) - Constants.pageViewHeight - Constants.pageControlHeight - Constants.adViewHeight - Constants.segmentViewHeight;

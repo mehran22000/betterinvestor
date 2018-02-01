@@ -34,7 +34,9 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         definesPresentationContext = true
         searchController.searchBar.showsCancelButton = true;
         searchController.searchBar.barStyle = .blackOpaque
-        searchController.searchBar.barTintColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
+        searchController.searchBar.barTintColor = UIColor.init(red: 111/255.0, green: 82/255.0, blue: 121/255.0, alpha: 1);
+        
+        
         UIBarButtonItem.appearance(whenContainedInInstancesOf:[UISearchBar.self]).tintColor = UIColor.white
         
         tableView.tableHeaderView = searchController.searchBar
@@ -47,12 +49,12 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+         // self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.isHidden = true;
+        // self.navigationController?.navigationBar.isHidden = false;
     }
     
     
@@ -103,6 +105,7 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
        self.navigationController?.popViewController(animated: true)
+       self.navigationController?.setNavigationBarHidden(false, animated: false)
         // self.dismiss(animated: true, completion: nil);
         
     }

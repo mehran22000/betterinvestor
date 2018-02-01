@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RootNavigationControllerViewController: UINavigationController {
+class RootNavigationVC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class RootNavigationControllerViewController: UINavigationController {
             let initialViewController : UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "Master_View") as UIViewController
             self.setViewControllers([initialViewController], animated: false)
         }
-        self.setNavigationBarHidden(true, animated: false)
+         self.setNavigationBarHidden(false, animated: false)
         
         // Do any additional setup after loading the view.
     }

@@ -60,6 +60,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (UserDefaults.standard.value(forKey: "symbols_version") as? String == nil){
              UserDefaults.standard.set("0", forKey: "symbol_version")
         }
+        
+        // Change Navigation Bar Color
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = UIColor.white;
+        navigationBarAppearace.barTintColor = UIColor.init(red: 133/255.0, green: 103/255.0, blue: 139/255.0, alpha: 1);
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.black]
     }
 }
 

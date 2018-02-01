@@ -1,17 +1,18 @@
 //
-//  StockInfoCell.swift
+//  TrxInfoCell.swift
 //  betterInvestor
 //
-//  Created by mehran  on 2018-01-29.
+//  Created by mehran  on 2018-01-31.
 //  Copyright © 2018 Ron. All rights reserved.
 //
 
 import UIKit
 
-class StockInfoCell: UITableViewCell {
-
+class TrxInfoCell: UITableViewCell {
+    
     @IBOutlet var titleLbl: UILabel?;
     @IBOutlet var subtitleLbl: UILabel?;
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
