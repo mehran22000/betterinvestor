@@ -22,11 +22,19 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         
+        let nc = NotificationCenter.default // Note that default is now a property, not a method call
+        nc.addObserver(forName:Notification.Name(rawValue:"portfolio_updated"),
+                       object:nil, queue:nil) {
+                        notification in
+                        self.tableView.reloadData();
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.position = appDelegate.user?.portfolio?.getPosition(_symbol: appDelegate.selectedStock!.key);
-        self.title = appDelegate.selectedStock?.key;
+        self.title = appDelegate.selectedStock?.key.uppercased();
+        self.tableView.reloadData()
     }
     
     
@@ -82,7 +90,8 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         default:
             cell = StockInfoCell();
         }
-    
+        
+        cell.selectionStyle = .none
         return cell
     }
     

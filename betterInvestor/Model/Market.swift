@@ -33,14 +33,16 @@ class Market{
         
         if let portfolio = appDelegate.user?.portfolio {
             let param = portfolio.getStockList();
-            let url = Constants.bsae_url + "market/stock/quote/array/"+param;
-            Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
-                if let result = response.result.value {
-                    let jsonDic = result as! NSDictionary
-                    if (jsonDic["status"] as! String == "200") {
-                        ResponseParser.parseQuotes(json: jsonDic, market: self);
-                        portfolio.calculateGain();
-                        self.nc.post(name:Notification.Name(rawValue:"quotes_updated"),object: nil,userInfo: nil)
+            if (param != ""){
+                let url = Constants.bsae_url + "market/stock/quote/array/"+param;
+                Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+                    if let result = response.result.value {
+                        let jsonDic = result as! NSDictionary
+                        if (jsonDic["status"] as! String == "200") {
+                            ResponseParser.parseQuotes(json: jsonDic, market: self);
+                            portfolio.calculateGain();
+                            self.nc.post(name:Notification.Name(rawValue:"quotes_updated"),object: nil,userInfo: nil)
+                        }
                     }
                 }
             }

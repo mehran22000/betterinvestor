@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import Alamofire
+import SwiftyJSON
 
-class User: NSObject, NSCoding {
+
+@objc class User: NSObject, NSCoding {
     
     var id: String?;
     var first_name: String?;
@@ -17,10 +20,18 @@ class User: NSObject, NSCoding {
     var name: String?;
     var email: String?;
     var pictureUrl: String?;
-    var friends: String?;
-    var portfolio: Portfolio?;
+    var friends: NSArray?;
+    @objc var portfolio: Portfolio?;
+    var global_ranking: NSMutableArray?;
+    var friend_ranking: NSMutableArray?;
+    @objc var gain_history:NSMutableArray?;
+    var global_rank: NSInteger?;
+    var friends_rank: NSInteger?;
+    
+    let nc = NotificationCenter.default
+    
 
-    init(_id:String, _first_name: String, _last_name: String, _middle_name: String, _name: String, _email: String, _pictureUrl: String, _friends: String) {
+    init(_id:String, _first_name: String, _last_name: String, _middle_name: String, _name: String, _email: String, _pictureUrl: String, _friends: NSArray, _cash: Double) {
         self.id = _id;
         self.first_name = _first_name;
         self.last_name = _last_name;
@@ -44,9 +55,8 @@ class User: NSObject, NSCoding {
                 self.pictureUrl = (dataObj as! [String: AnyObject])["url"] as? String;
             }
         }
-        self.friends = dic["friends"] as? String;
+        self.friends = dic["friends"] as? NSArray;
         self.portfolio = Portfolio();
-
     }
 
     func encode(with aCoder: NSCoder) {
@@ -70,13 +80,62 @@ class User: NSObject, NSCoding {
         self.portfolio = Portfolio();
     }
     
-    
-    func setFriends(dic: [String: AnyObject]) {
-        /*
-        for (int i=0; i<dic.count; i++) {
+    func fetchPortfolio() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let url = Constants.bsae_url + "user/portfolio/"+self.id!;
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == "200") {
+                    ResponseParser.parseUserPortfolio(json: jsonDic,user: self);
+                    appDelegate.market = Market.init();
+                    self.nc.post(name:Notification.Name(rawValue:"portfolio_updated"),object: nil,userInfo: nil)
+                    
+                    //
+                    self.fetchGainHistory {
             
+                    }
+                }
+            }
         }
-         */
     }
-
+    
+    func fetchRanking(global: Bool, count: Int, completion:@escaping () -> Void) {
+        var url: String;
+        if (global == true) {
+            url = Constants.bsae_url + "user/portfolio/rankings/global/"+self.id! + "/count/" + String(count) ;
+        }
+        else {
+            url = Constants.bsae_url + "user/portfolio/rankings/friends/"+self.id!;
+        }
+        
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == "200") {
+                    ResponseParser.parseUserRanking(json: jsonDic,user: self, isGlobalRanking:global );
+                    completion();
+                }
+            }
+        }
+    }
+    
+    
+    func fetchGainHistory(completion:@escaping () -> Void) {
+        var url: String;
+        url = Constants.bsae_url + "user/portfolio/gains/"+self.id! ;
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == "200") {
+                    ResponseParser.parseUserGainHistory(json: jsonDic,user: self);
+                    completion();
+                }
+            }
+        }
+    }
+    
+    
+    
+    
 }

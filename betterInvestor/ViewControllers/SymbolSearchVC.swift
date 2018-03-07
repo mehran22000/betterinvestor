@@ -12,7 +12,7 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     // Portfolio
     @IBOutlet var tableView: UITableView!
-    var symbols = NSMutableArray();
+    var symbols = NSArray();
     var filteredSymbols = NSMutableArray();
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -24,7 +24,11 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.tableFooterView = UIView()
         definesPresentationContext = true
         
-        symbols = UserDefaults.standard.value(forKey: "symbols") as! NSMutableArray;
+        self.symbols = UserDefaults.standard.value(forKey: "symbols") as! NSArray;
+        
+        
+
+        
         
        // filteredSymbols = symbols
         
@@ -115,7 +119,7 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func updateSearchResults(for searchController: UISearchController) {
         // If we haven't typed anything into the search bar then do not filter the results
         if searchController.searchBar.text! == "" {
-            filteredSymbols = symbols
+            filteredSymbols = NSMutableArray.init(array: self.symbols)
         } else {
             filteredSymbols = NSMutableArray();
             for symbol in self.symbols {

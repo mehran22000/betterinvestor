@@ -24,7 +24,8 @@ class PortfolioCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         performanceBtn.layer.cornerRadius = 0.05 * performanceBtn.bounds.size.width
-        performanceBtn.clipsToBounds = true    }
+        performanceBtn.clipsToBounds = true
+    }
 
 }
 

@@ -12,9 +12,9 @@ import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-    var user: User?
+    @objc var user: User?
     var market: Market?
     var rootNavigationController: UINavigationController?
     var selectedStock: Symbol?
@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)        
         initialization();
+        
+        
         
         return true
     }
@@ -57,15 +59,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func initialization () {
-        if (UserDefaults.standard.value(forKey: "symbols_version") as? String == nil){
-             UserDefaults.standard.set("0", forKey: "symbol_version")
+        let ver = UserDefaults.standard.value(forKey: "symbols_version") as? String
+        if ( ver == nil){
+             UserDefaults.standard.set("1", forKey: "symbols_version")
+            
+            if let path = Bundle.main.path(forResource: "symbols", ofType: "plist") {
+                if let symbolsArray = NSArray(contentsOfFile: path) {
+                    UserDefaults.standard.set(symbolsArray, forKey: "symbols")
+                }
+            }
+            
+            
         }
         
         // Change Navigation Bar Color
         let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.tintColor = UIColor.white;
         navigationBarAppearace.barTintColor = UIColor.init(red: 133/255.0, green: 103/255.0, blue: 139/255.0, alpha: 1);
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.black]
+        UIApplication.shared.statusBarStyle = .lightContent
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
     }
 }
 

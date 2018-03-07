@@ -28,7 +28,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var rankingVC : RankingTableVC?
     var pichartView: UIView?
     var linechartView: UIView?
-    var pageViewIndex: Int?
+    var pageViewIndex: Int = 0;
     
     // Admob
     @IBOutlet var viewBanner:GADBannerView?
@@ -45,12 +45,19 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    enum Gain_Mode: String {
+        case gain = "Gain"
+        case gain_precentage = "Gain_Precentage"
+    }
+    
+    
+    var performance_btn_mode = Gain_Mode.gain;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Portfolio"
-        
+    
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image:UIImage(named:"menu"), style: .plain, target: self, action: #selector(sideMenuClicked))
         
@@ -84,12 +91,30 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         self.portfolioTableView.reloadData();
         }
         
+        nc.addObserver(forName:Notification.Name(rawValue:"portfolio_updated"),
+                       object:nil, queue:nil) {
+                        notification in
+                        self.portfolioTableView.reloadData();
+        }
+        
+        nc.addObserver(forName:Notification.Name(rawValue:"signout_request"),
+                       object:nil, queue:nil) {
+                        notification in
+                        self.signOut()
+        }
+        
         // reset selectedStock
         appDelegate.selectedStock = nil;
         
         
-        fetchPortfolio();
+        // fetchPortfolio();
+        fetchSymbols();
         
+        //fetchGainHistory
+        appDelegate.user?.fetchGainHistory {
+            
+        }
+    
     }
     
     
@@ -103,12 +128,19 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         performSegue(withIdentifier: "segueSymbolSearch", sender: nil);
     }
     
+    func signOut (){
+        UserDefaults.standard.removeObject(forKey: "user");
+        self.navigationController?.popViewController(animated: true);
+    }
+    
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
+        
+        
         
         UIApplication.shared.statusBarStyle = .lightContent
         self.portfolioHeight = Int(screenHeight!) - Constants.pageViewHeight - Constants.pageControlHeight - Constants.adViewHeight - Constants.segmentViewHeight;
@@ -134,6 +166,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // PiChart Demo
         self.pichartView = HalfPieChartViewController.init().view;
         self.pichartView?.frame = CGRect(x:0,y:0,width:width,height:Int(screenHeight!));
+
         
         // LineChart Demo
         self.linechartView = LineChart1ViewController.init().view;
@@ -167,10 +200,155 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.view.addSubview(self.pageControlView);
     }
     
+    
+    @IBAction func performanceBtnClicked () {
+        if (self.performance_btn_mode == Gain_Mode.gain) {
+            self.performance_btn_mode = Gain_Mode.gain_precentage;
+        }
+        else {
+            self.performance_btn_mode = Gain_Mode.gain;
+        }
+        self.portfolioTableView.reloadData()
+    }
+    
+    
+    // Page View Methods
+   
+    @IBAction func segmentControlChanged(_ sender: AnyObject) {
+        
+        switch self.pageViewIndex
+        {
+            case 0:
+                
+                switch segmentControlView.selectedSegmentIndex
+                {
+                case 0:
+                    self.rankingVC?.screenMode = RankingTableVC.ScreenMode.Friends;
+                    self.rankingVC?.fetchFriendsRanking()
+                case 1:
+                    self.rankingVC?.screenMode = RankingTableVC.ScreenMode.All;
+                    self.rankingVC?.fetchGlobalRanking()
+                default:
+                    break
+                }
+        
+            case 1:
+        
+                switch segmentControlView.selectedSegmentIndex
+                {
+                    case 0:
+                        switchPageView(viewIndex: self.pageViewIndex, mode: 0)
+                    case 1:
+                        switchPageView(viewIndex: self.pageViewIndex, mode: 1)
+                    default:
+                        break
+                }
+        
+            case 2:
+                
+                switch segmentControlView.selectedSegmentIndex
+                {
+                    case 0:
+                        switchPageView(viewIndex: self.pageViewIndex, mode: 0)
+                    case 1:
+                        switchPageView(viewIndex: self.pageViewIndex, mode: 1)
+                    default:
+                        break
+                }
+            
+            
+            default:
+                break;
+            
+        }
+    }
+        
+        
+        
+        
+    
+
+    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
+    
+        // find pageViewIndex
+        if gesture.direction == UISwipeGestureRecognizerDirection.left {
+            self.pageViewIndex = self.pageViewIndex + 1;
+        }
+        else if gesture.direction == UISwipeGestureRecognizerDirection.right {
+            self.pageViewIndex = self.pageViewIndex - 1;
+        }
+        
+        
+        if (self.pageViewIndex == -1){
+            self.pageViewIndex = 2;
+        }
+        
+        if (self.pageViewIndex == 3){
+            self.pageViewIndex = 0;
+        }
+        
+        
+        self.switchPageView(viewIndex: self.pageViewIndex, mode:0)
+        
+        self.addSegmentControl();
+        
+        self.addPageControl();
+        
+        
+        if gesture.direction == UISwipeGestureRecognizerDirection.right {
+            self.pageViewHolder.pageAnimation(leftToRight:true);
+        }
+        else {
+            self.pageViewHolder.pageAnimation(leftToRight:false);
+        }
+        
+    }
+    
+    
+    func switchPageView(viewIndex:Int, mode:Int){
+        let width = Int(screenWidth!);
+        
+        switch viewIndex {
+        case 0:
+            self.pageControl.currentPage = 0;
+            self.pageViewHolder.addSubview((self.rankingVC?.view)!);
+      
+        case 1:
+            self.pageControl.currentPage = 1;
+            let pichartVC = HalfPieChartViewController.init();
+            if (mode == 0){
+                pichartVC.isGainMode = true;
+            }
+            else {
+                pichartVC.isGainMode = false;
+            }
+            self.pichartView = pichartVC.view;
+            self.pichartView?.frame = CGRect(x:0,y:0,width:width,height:Int(screenHeight!));
+            self.pageViewHolder.addSubview(self.pichartView!);
+            
+        case 2:
+            // self.rankingVC?.view.removeFromSuperview();
+            self.pageControl.currentPage = 2;
+            let linechartVC = LineChart1ViewController.init();
+            if (mode == 0){
+                linechartVC.isMonthMode = true;
+            }
+            else {
+                linechartVC.isMonthMode = false;
+            }
+            self.linechartView = linechartVC.view;
+            self.pageViewHolder.addSubview(self.linechartView!);
+            
+        default:
+            print ("Error: Page Index incorrect");
+        }
+    }
+    
+    
     func addSegmentControl () {
         let width = Int(screenWidth!);
         
-        switch self.pageViewIndex! {
+        switch self.pageViewIndex {
             
         case 0:
             self.segmentControlView.setTitle("Friends", forSegmentAt: 0);
@@ -191,57 +369,27 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
-
-    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
-        if gesture.direction == UISwipeGestureRecognizerDirection.left {
-            print("Swipe Left")
-            self.pageViewIndex = self.pageViewIndex! + 1;
-        }
-        else if gesture.direction == UISwipeGestureRecognizerDirection.right {
-            print("Swipe Right")
-            self.pageViewIndex = self.pageViewIndex! - 1;
-        }
-        else {
-            print("Neighter Swipe Left nor Right")
-        }
+    
+    // Page View Methods - End
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if (self.pageViewIndex == -1){
-            self.pageViewIndex = 2;
+        if (indexPath.row > 0){
+            let portfolio = appDelegate.user?.portfolio;
+            let position = portfolio!.positions![indexPath.row-1];
+            self.appDelegate.selectedStock = Symbol(key: position.symbol, name: position.name);
+            performSegue(withIdentifier: "segueStockVC", sender: nil)
         }
-        
-        if (self.pageViewIndex == 3){
-            self.pageViewIndex = 0;
-        }
-        
-        switch pageViewIndex! {
-                case 0:
-                    self.pageControl.currentPage = 0;
-                    self.pageViewHolder.addSubview((self.rankingVC?.view)!);
-                case 1:
-                    self.pageControl.currentPage = 1;
-                    self.pageViewHolder.addSubview(self.pichartView!);
-                case 2:
-                    self.rankingVC?.view.removeFromSuperview();
-                    self.pageControl.currentPage = 2;
-                    self.pageViewHolder.addSubview(self.linechartView!);
-                default:
-                    print ("Error: Page Index incorrect");
-        }
-        self.addSegmentControl();
-        
-        self.addPageControl();
-        
-        
-        if gesture.direction == UISwipeGestureRecognizerDirection.right {
-            self.pageViewHolder.pageAnimation(leftToRight:true);
-        }
-        else {
-            self.pageViewHolder.pageAnimation(leftToRight:false);
-        }
-        
-        self.addAdMob();
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+    }
     
     
     override func didReceiveMemoryWarning() {
@@ -249,13 +397,19 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Dispose of any resources that can be recreated.
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        return;
-    }
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (indexPath.row == 0){
+            return 150;
+        }
+        else {
+            return 50;
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -269,17 +423,36 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
+       
         let portfolio = appDelegate.user?.portfolio;
         let market = appDelegate.market;
         var gain: Double = 0;
+        var gain_precentage: Double = 0;
         var gain_str = "-";
         
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = NumberFormatter.Style.currency
+        let formattedCash = numberFormatter.string(from: NSNumber(value:(self.appDelegate.user?.portfolio?.cash)!))
+        let formattedStockValue = numberFormatter.string(from: NSNumber(value:(portfolio!.total_stock_value)))
+        let formattedGain = numberFormatter.string(from: NSNumber(value:(portfolio!.total_gain)))
+        
+        
         if (indexPath.row == 0){
-            cell.symbolLbl?.text = "TOTAL";
-            gain = portfolio!.total_gain;
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SummaryCell", for: indexPath) as! PortfolioSummaryCell;
+            cell.cashLbl?.text = formattedCash!;
+            cell.stockLbl?.text = formattedStockValue;
+            cell.totalGainLbl?.text = formattedGain! + "(" + String(format:"%.2f",portfolio!.total_gain_precentage) + "%)" ;
+            cell.rankFrinedsLbl?.text = "--"
+            cell.rankGlobalLbl?.text = "--"
+            
+            
+            return cell;
+            // cell.symbolLbl?.text = "TOTAL";
+            // gain = portfolio!.total_gain;
+            // cell.priceLbl?.text = "";
         }
         else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
             var price_str = "-";
             let position = portfolio!.positions![indexPath.row-1];
             let quote = market?.quotes[(position.symbol)];
@@ -287,25 +460,33 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
             if (quote != nil) {
                 price_str = String(format:"%.2f",quote!.price);
-                gain = (position.gain)
+                gain = position.gain
+                gain_precentage = position.gain_precentage
                 cell.priceLbl?.text = price_str;
             }
-        }
-
-        gain_str = String(format:"%.2f",gain);
-        if (gain >= 0) {
-            gain_str = "+" + gain_str;
-            cell.performanceBtn.backgroundColor = UIColor.init(red: 167/255.0, green: 225/255.0, blue: 113/255.0, alpha: 1);
-        }
-        else {
-                cell.performanceBtn.backgroundColor = UIColor.init(red: 255/255.0, green: 163/255.0, blue: 164/255.0, alpha: 1);
-        }
-        cell.performanceBtn?.setTitle(gain_str, for: UIControlState.normal)
+            
+            if (performance_btn_mode == Gain_Mode.gain_precentage){
+                gain_str = String(format:"%.0f",gain_precentage) + "%";
+            }
+            else {
+                gain_str = String(format:"%.2f",gain);
+            }
         
-        return cell;
+        
+            if (gain >= 0) {
+                gain_str = "+" + gain_str;
+                cell.performanceBtn.backgroundColor = UIColor.init(red: 167/255.0, green: 225/255.0, blue: 113/255.0, alpha: 1);
+            }
+            else {
+                cell.performanceBtn.backgroundColor = UIColor.init(red: 255/255.0, green: 163/255.0, blue: 164/255.0, alpha: 1);
+            }
+            cell.performanceBtn?.setTitle(gain_str, for: UIControlState.normal)
+        
+            return cell;
+        }
     }
     
-    
+    /*
     func fetchPortfolio() {
         let url = Constants.bsae_url + "user/portfolio/"+(appDelegate.user?.id)!;
         Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
@@ -320,7 +501,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
-    
+    */
     func fetchSymbols() {
         
         let symbol_version = UserDefaults.standard.value(forKey: "symbols_version") as! String;
@@ -332,11 +513,10 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 if (jsonDic["status"] as! String == "200") {
                     ResponseParser.parseSymbols(json: jsonDic);
                 }
+                 self.appDelegate.user?.fetchPortfolio();
             }
         }
-    }
-    
-    
+    }    
 }
 
 extension UIView {

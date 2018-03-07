@@ -10,9 +10,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DemoBaseViewController.h"
-// #import <Charts/Charts.h>
+#import "ChartBaseViewController.h"
 
-@interface HalfPieChartViewController : DemoBaseViewController
+@interface HalfPieChartViewController : ChartBaseViewController
+
+@property (nonatomic, assign) BOOL isGainMode;
 
 @end

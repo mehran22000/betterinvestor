@@ -11,6 +11,7 @@ import UIKit
 
 class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
+    let nc = NotificationCenter.default
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -31,7 +32,7 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let alertController = UIAlertController(title: "Sign Out", message: "Do you want to sign out?", preferredStyle: .alert)
         
         
-        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: signOutNotification)
         alertController.addAction(defaultAction)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
@@ -40,6 +41,12 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         present(alertController, animated: true, completion: nil)
     }
     
+    
+    func signOutNotification(alert: UIAlertAction!) {
+        self.dismiss(animated: false) {
+           self.nc.post(name:Notification.Name(rawValue:"signout_request"),object: nil,userInfo: nil)
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4;

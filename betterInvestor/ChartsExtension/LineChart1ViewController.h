@@ -10,10 +10,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DemoBaseViewController.h"
-// #import <Charts/Charts.h>
+#import "ChartBaseViewController.h"
 
+@interface LineChart1ViewController : ChartBaseViewController
 
-@interface LineChart1ViewController : DemoBaseViewController
+@property (nonatomic, assign) BOOL isMonthMode;
 
 @end

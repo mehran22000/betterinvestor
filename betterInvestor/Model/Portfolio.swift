@@ -8,12 +8,20 @@
 
 import Foundation
 
-class Portfolio {
-    var positions : [Position]?
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    var total_gain: Double = 0;
+@objc class Portfolio:NSObject {
     
-    init() {
+    @objc var positions : [Position]?
+    var cash: Double? = 0;
+
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var total_cost: Double = 0;
+    var total_stock_value: Double = 0;
+    
+    var total_gain: Double = 0;
+    var total_gain_precentage: Double = 0;
+    
+    
+    override init() {
         self.positions = [Position]();
     }
     
@@ -42,16 +50,22 @@ class Portfolio {
         
         let posNo = positions?.count;
         var total : Double = 0;
+        var total_value: Double = 0;
         
         if (posNo! >= 0) {
             for i in 0...posNo!-1 {
                 let quote = appDelegate.market?.quotes[self.positions![i].symbol];
                 self.positions![i].calculate_gain(quote:quote!)
+                self.total_cost = self.total_cost + self.positions![i].cost;
+                total_value = total_value + self.positions![i].value;
                 total = total + self.positions![i].gain;
             }
             self.total_gain = total;
+            self.total_gain_precentage = (total_gain/total_cost) * 100;
+            self.total_stock_value = total_value;
         }
     }
+    
     
     func getPosition(_symbol: String) -> Position?{
         let symbol = _symbol.lowercased();

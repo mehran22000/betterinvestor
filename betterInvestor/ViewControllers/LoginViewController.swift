@@ -18,11 +18,24 @@ class LoginViewController: UIViewController {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let defaults = UserDefaults.standard
+    @IBOutlet var activitySpinner: UIActivityIndicatorView?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.activitySpinner?.isHidden = true;
+        
+        if let userObject = UserDefaults.standard.value(forKey: "user") as? NSData {
+            self.fbLoginBtn?.isHidden = true;
+            self.activitySpinner?.isHidden = false;
+            self.activitySpinner?.startAnimating();
+            appDelegate.user = NSKeyedUnarchiver.unarchiveObject(with: userObject as Data) as? User
+            let fbDataManager = FbDataManager();
+            fbDataManager.getFBUserData(completion: {
+                self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
+            })
+        }
     }
     
  
@@ -43,64 +56,14 @@ class LoginViewController: UIViewController {
                 if fbloginresult.grantedPermissions != nil {
                     if(fbloginresult.grantedPermissions.contains("email"))
                     {
-                        self.getFBUserData()
+                        let fbDataManager = FbDataManager();
+                        fbDataManager.getFBUserData(completion: {
+                            self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
+                        })
                     }
                 }
             }
         }
     }
-    
-    func getFBUserData(){
-        if((FBSDKAccessToken.current()) != nil){
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
-                if (error == nil){
-                    self.dict = result as! [String : AnyObject]
-                    self.appDelegate.user = User(dic: self.dict);
-                    self.defaults.set(NSKeyedArchiver.archivedData(withRootObject: self.appDelegate.user!), forKey: "user")
-                    
-                    
-                    self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
-                    // self.getFBFriendsList();
-                }
-            })
-        }
-    }
-    
-    
-    func getFBFriendsList(){
-        let params = ["fields": "id, first_name, last_name, middle_name, name, email, picture"]
-        FBSDKGraphRequest(graphPath: "me/friends", parameters: params).start { (connection, result , error) -> Void in
-            
-            if error != nil {
-                print(error!)
-            }
-            else {
-                print(result!)
-                self.dict = result as! [String : AnyObject]
-                // parse multiple friends to service request
-                self.appDelegate.user?.friends = self.dict["friends"] as? String;
-                let param = RequestGenerator.requestUserProfile(user: self.appDelegate.user!);
-                let url = Constants.bsae_url + "user/profile";
-                Alamofire.request(url, method: HTTPMethod.post, parameters: param, encoding:JSONEncoding.default).responseJSON { response in
-                   // if let result = response.result.value {
-                   //     let json = JSON(result)
-                   //     if (json["response"] == "success") {
-                            self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
-                   //     }
-                   // }
-                }
-            }
-            }
-        }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
