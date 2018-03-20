@@ -136,6 +136,12 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
         
+        if(segue.identifier == "segueHolders") {
+            
+            let holdersVC = (segue.destination as! HoldersVC);
+            holdersVC.symbol = self.title?.lowercased();
+        }
+        
     }
     
     

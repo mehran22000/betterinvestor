@@ -23,16 +23,18 @@ class ResponseParser {
             }
         }
         user.portfolio?.cash = data["cash"] as? Double;
+        user.global_rank = data["rank_global"] as? NSInteger;
     }
     
-    class func parseQuotes (json:NSDictionary, market: Market){
+    class func parseQuotes (json:NSDictionary){
         
         let data = json["data"] as! NSDictionary;
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let date = NSDate()
         for (symbol, price) in data {
             print(symbol,price);
             let quote = Quote(symbol: symbol as! String,price: Double(price as! String)!, time:date);
-            market.updateQuote(quote: quote);
+            appDelegate.market?.updateQuote(quote: quote);
         }
     }
 
@@ -68,9 +70,35 @@ class ResponseParser {
     }
     
     
+    class func parseStockHolders(json: NSDictionary,holders: NSMutableArray) {
+        
+        let data = json["data"] as! NSDictionary;
+        let array = data["holders"] as! [NSDictionary];
+        
+        for index in 0...array.count-1  {
+            
+            let pos = Position(symbol:array[index].value(forKey: "symbol") as! String,
+                               qty:array[index].value(forKey: "qty") as! NSInteger,
+                               cost:array[index].value(forKey: "cost") as! Double,
+                               name:array[index].value(forKey: "name") as! String);
+            
+            pos.calculate_gain();
+            let h = Holder.init(_user_id: array[index].value(forKey: "user_id") as! String,
+                                _first_name: array[index].value(forKey: "first_name") as! String,
+                                _last_name: array[index].value(forKey: "last_name") as! String,
+                                _picUrl: array[index].value(forKey: "photo_url") as! String,
+                                _pos: pos);
+            
+            
+            holders.add(h);
+        }
+    }
+    
+    
     class func parseUserRanking (json:NSDictionary, user: User, isGlobalRanking:Bool){
         let data = json["data"] as! NSDictionary;
         let ranking = data["ranking"] as! [NSDictionary];
+        let nc = NotificationCenter.default
         
         if (isGlobalRanking == true){
             user.global_ranking = NSMutableArray()
@@ -79,6 +107,7 @@ class ResponseParser {
             user.friend_ranking = NSMutableArray()
         }
         
+        user.friends_rank = 1;
         
         if (ranking.count > 0) {
             for index in 0...ranking.count-1  {
@@ -98,12 +127,14 @@ class ResponseParser {
                 }
                 else {
                     user.friend_ranking?.add(ranking)
-                    if (ranking.user_id == user.id) {
-                        user.friends_rank = index;
+                    let gain_double = NumberFormatter().number(from: ranking.gain_pct!)?.doubleValue
+                    if (gain_double! > (user.portfolio?.total_gain_precentage)!) {
+                        user.friends_rank = user.friends_rank! + 1;
                     }
                 }
             }
         }
+        nc.post(name:Notification.Name(rawValue:"portfolio_updated"),object: nil,userInfo: nil)
     }
-
+    
 }

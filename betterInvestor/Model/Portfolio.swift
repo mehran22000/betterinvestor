@@ -54,8 +54,7 @@ import Foundation
         
         if (posNo! >= 0) {
             for i in 0...posNo!-1 {
-                let quote = appDelegate.market?.quotes[self.positions![i].symbol];
-                self.positions![i].calculate_gain(quote:quote!)
+                self.positions![i].calculate_gain()
                 self.total_cost = self.total_cost + self.positions![i].cost;
                 total_value = total_value + self.positions![i].value;
                 total = total + self.positions![i].gain;

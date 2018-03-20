@@ -20,6 +20,7 @@ import SwiftyJSON
     var name: String?;
     var email: String?;
     var pictureUrl: String?;
+    var pic: UIImage?;
     var friends: NSArray?;
     @objc var portfolio: Portfolio?;
     var global_ranking: NSMutableArray?;
@@ -31,7 +32,7 @@ import SwiftyJSON
     let nc = NotificationCenter.default
     
 
-    init(_id:String, _first_name: String, _last_name: String, _middle_name: String, _name: String, _email: String, _pictureUrl: String, _friends: NSArray, _cash: Double) {
+    init(_id:String, _first_name: String, _last_name: String, _middle_name: String, _name: String, _email: String, _pictureUrl: String, _friends: NSArray?, _cash: Double, _pic: UIImage?) {
         self.id = _id;
         self.first_name = _first_name;
         self.last_name = _last_name;
@@ -41,6 +42,7 @@ import SwiftyJSON
         self.pictureUrl = _pictureUrl;
         self.friends = _friends;
         self.portfolio = Portfolio();
+        self.pic = _pic;
     }
 
     init(dic: [String : AnyObject]) {
@@ -80,7 +82,7 @@ import SwiftyJSON
         self.portfolio = Portfolio();
     }
     
-    func fetchPortfolio() {
+    func fetchPortfolio(completion:@escaping () -> Void) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let url = Constants.bsae_url + "user/portfolio/"+self.id!;
         Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
@@ -89,12 +91,9 @@ import SwiftyJSON
                 if (jsonDic["status"] as! String == "200") {
                     ResponseParser.parseUserPortfolio(json: jsonDic,user: self);
                     appDelegate.market = Market.init();
-                    self.nc.post(name:Notification.Name(rawValue:"portfolio_updated"),object: nil,userInfo: nil)
-                    
-                    //
-                    self.fetchGainHistory {
-            
-                    }
+                    let _userInfo:[String: String] = ["user_id": self.id!]
+                   // self.nc.post(name:Notification.Name(rawValue:"portfolio_updated"),object: nil,userInfo: _userInfo)
+                    completion();
                 }
             }
         }

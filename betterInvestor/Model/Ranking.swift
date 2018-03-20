@@ -17,6 +17,7 @@ import Foundation
     var gain_pct: String?
     var photo_url: String?
     var rank: Int?
+    var photo: UIImage?
     
     
     init(_user_id:String, _first_name: String, _last_name: String, _gain: String, _gain_pct: String, _photo_url: String, _rank: Int) {
@@ -28,6 +29,7 @@ import Foundation
         self.gain_pct = _gain_pct;
         self.photo_url = _photo_url;
         self.rank = _rank;
+        self.photo = nil;
     }
 
     

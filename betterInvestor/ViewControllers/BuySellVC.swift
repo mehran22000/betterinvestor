@@ -184,7 +184,8 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                 if let result = response.result.value {
                    let json = JSON(result)
                    if (json["status"] == "200") {
-                        self.appDelegate.user?.fetchPortfolio()
+                    self.appDelegate.user?.fetchPortfolio(completion: {
+                    })
                         let msg = "Buy order confirmed";
                         let alert = UIAlertController(title: "Successful Buy", message: msg, preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
@@ -209,7 +210,9 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             if let result = response.result.value {
                 let json = JSON(result)
                 if (json["status"] == "200") {
-                    self.appDelegate.user?.fetchPortfolio()
+                    self.appDelegate.user?.fetchPortfolio(completion: {
+                
+                    })
                     let msg = "Sell order confirmed";
                     let alert = UIAlertController(title: "Successful Sell", message: msg, preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in

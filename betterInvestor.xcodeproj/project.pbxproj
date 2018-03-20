@@ -72,6 +72,10 @@
 		02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* RankingCell.swift */; };
 		02A844371FAFD4FA00D4935D /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A844361FAFD4FA00D4935D /* PortfolioCell.swift */; };
 		02A844391FB01C5A00D4935D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A844381FB01C5A00D4935D /* Icons.xcassets */; };
+		02AC3A37205A04B90010CCCF /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A36205A04B90010CCCF /* Holder.swift */; };
+		02AC3A3B205A07F20010CCCF /* HoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A3A205A07F20010CCCF /* HoldersVC.swift */; };
+		02AC3A3D205B5C450010CCCF /* HolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A3C205B5C450010CCCF /* HolderCell.swift */; };
+		02ADE02D2050BB9300A89C15 /* FriendPortfolioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ADE02C2050BB9300A89C15 /* FriendPortfolioVC.swift */; };
 		02AFC52A200713A900D93425 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC529200713A900D93425 /* Position.swift */; };
 		02AFC52C200713B800D93425 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC52B200713B800D93425 /* Portfolio.swift */; };
 		02BB1D121FC7A6BB001DEC45 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB1D111FC7A6BB001DEC45 /* SideBarVC.swift */; };
@@ -186,6 +190,10 @@
 		02A7176C1FB4187300289BCD /* RankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
 		02A844361FAFD4FA00D4935D /* PortfolioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCell.swift; sourceTree = "<group>"; };
 		02A844381FB01C5A00D4935D /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		02AC3A36205A04B90010CCCF /* Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holder.swift; sourceTree = "<group>"; };
+		02AC3A3A205A07F20010CCCF /* HoldersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldersVC.swift; sourceTree = "<group>"; };
+		02AC3A3C205B5C450010CCCF /* HolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolderCell.swift; sourceTree = "<group>"; };
+		02ADE02C2050BB9300A89C15 /* FriendPortfolioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPortfolioVC.swift; sourceTree = "<group>"; };
 		02AFC5252001542E00D93425 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02AFC529200713A900D93425 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		02AFC52B200713B800D93425 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
@@ -360,6 +368,7 @@
 				02EC9DBA20462FB000FB2686 /* Ranking.swift */,
 				024B302B204AF32B004FD23D /* GainHistoryItem.swift */,
 				024B302D204C47DE004FD23D /* GainHistoryFilter.swift */,
+				02AC3A36205A04B90010CCCF /* Holder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,6 +387,8 @@
 				0258C2F31FC3E8F8003FC621 /* StockVC.swift */,
 				02F0AECD201D1326003E4C93 /* RootNavigationVC.swift */,
 				02327C5C2022B40700F2B1B8 /* BuySellVC.swift */,
+				02ADE02C2050BB9300A89C15 /* FriendPortfolioVC.swift */,
+				02AC3A3A205A07F20010CCCF /* HoldersVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -393,10 +404,11 @@
 				022818F71FCB27D60098F619 /* ReferCell.swift */,
 				02327C5820201A7800F2B1B8 /* StockActionCell.swift */,
 				02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */,
-				02327C5E2022B5B000F2B1B8 /* TrxInfoCell.swift */,
 				02327C602022B5C800F2B1B8 /* TrxActionCell.swift */,
 				02327C622022B6F300F2B1B8 /* TrxInputCell.swift */,
 				0222D8172026563700A80C53 /* PortfolioSummaryCell.swift */,
+				02327C5E2022B5B000F2B1B8 /* TrxInfoCell.swift */,
+				02AC3A3C205B5C450010CCCF /* HolderCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -767,9 +779,11 @@
 			files = (
 				0203FC0B1F99741B007FE62A /* MasterVC.swift in Sources */,
 				02879E6B20088688002E8AE1 /* Market.swift in Sources */,
+				02AC3A3B205A07F20010CCCF /* HoldersVC.swift in Sources */,
 				02327C5920201A7800F2B1B8 /* StockActionCell.swift in Sources */,
 				0258C2E41FBC01E1003FC621 /* LineChart1ViewController.m in Sources */,
 				0237B0381FC8F780008075D3 /* MenuTableViewCell.swift in Sources */,
+				02ADE02D2050BB9300A89C15 /* FriendPortfolioVC.swift in Sources */,
 				0258C2F41FC3E8F8003FC621 /* StockVC.swift in Sources */,
 				0258C2D91FB90B52003FC621 /* HalfPieChartViewController.m in Sources */,
 				02BB1D121FC7A6BB001DEC45 /* SideBarVC.swift in Sources */,
@@ -788,8 +802,10 @@
 				02AFC52C200713B800D93425 /* Portfolio.swift in Sources */,
 				024B302C204AF32B004FD23D /* GainHistoryItem.swift in Sources */,
 				02F0AECA201C1D29003E4C93 /* SymbolSearchVC.swift in Sources */,
+				02AC3A3D205B5C450010CCCF /* HolderCell.swift in Sources */,
 				02AFC52A200713A900D93425 /* Position.swift in Sources */,
 				02657D31204237FE008A8159 /* FbDataManager.swift in Sources */,
+				02AC3A37205A04B90010CCCF /* Holder.swift in Sources */,
 				02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */,
 				0203FC091F99741B007FE62A /* AppDelegate.swift in Sources */,
 				02F0AECC201CEA93003E4C93 /* Symbol.swift in Sources */,

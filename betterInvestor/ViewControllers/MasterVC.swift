@@ -85,17 +85,22 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // Set Observers
         let nc = NotificationCenter.default // Note that default is now a property, not a method call
+       
+        /*
         nc.addObserver(forName:Notification.Name(rawValue:"quotes_updated"),
                        object:nil, queue:nil) {
                         notification in
+                        self.appDelegate.user?.portfolio?.calculateGain();
                         self.portfolioTableView.reloadData();
         }
+        */
         
         nc.addObserver(forName:Notification.Name(rawValue:"portfolio_updated"),
                        object:nil, queue:nil) {
                         notification in
                         self.portfolioTableView.reloadData();
         }
+        
         
         nc.addObserver(forName:Notification.Name(rawValue:"signout_request"),
                        object:nil, queue:nil) {
@@ -107,14 +112,19 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         appDelegate.selectedStock = nil;
         
         
-        // fetchPortfolio();
-        fetchSymbols();
+        let user = self.appDelegate.user;
         
-        //fetchGainHistory
-        appDelegate.user?.fetchGainHistory {
-            
-        }
-    
+        fetchSymbols (completion: {
+                user?.fetchPortfolio(completion: {
+                    self.appDelegate.market = Market.init();
+                    self.appDelegate.market?.fetchStockPrice (completion: {
+                        user?.portfolio?.calculateGain()
+                        self.portfolioTableView.reloadData();
+                        user?.fetchGainHistory (completion:{
+                    })
+                })
+            })
+        })
     }
     
     
@@ -137,6 +147,13 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return .lightContent
     }
 
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         
@@ -405,7 +422,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.row == 0){
-            return 150;
+            return 160;
         }
         else {
             return 50;
@@ -443,8 +460,13 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.stockLbl?.text = formattedStockValue;
             cell.totalGainLbl?.text = formattedGain! + "(" + String(format:"%.2f",portfolio!.total_gain_precentage) + "%)" ;
             cell.rankFrinedsLbl?.text = "--"
-            cell.rankGlobalLbl?.text = "--"
+            if (appDelegate.user?.global_rank != nil) {
+                cell.rankGlobalLbl?.text = String(describing: appDelegate.user!.global_rank!);
+            }
             
+            if (appDelegate.user?.friends_rank != nil) {
+                cell.rankFrinedsLbl?.text = String(describing: appDelegate.user!.friends_rank!);
+            }
             
             return cell;
             // cell.symbolLbl?.text = "TOTAL";
@@ -502,7 +524,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     */
-    func fetchSymbols() {
+    func fetchSymbols(completion:@escaping () -> Void) {
         
         let symbol_version = UserDefaults.standard.value(forKey: "symbols_version") as! String;
         
@@ -513,7 +535,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 if (jsonDic["status"] as! String == "200") {
                     ResponseParser.parseSymbols(json: jsonDic);
                 }
-                 self.appDelegate.user?.fetchPortfolio();
+                completion();
             }
         }
     }    

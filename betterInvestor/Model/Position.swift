@@ -16,7 +16,7 @@ import Foundation
     var gain: Double;
     @objc var gain_precentage: Double;
     var value: Double;
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     init (symbol:String,qty:NSInteger,cost:Double,name: String){
         self.symbol = symbol;
@@ -28,8 +28,11 @@ import Foundation
         self.value = 0;
     }
     
-    func calculate_gain(quote: Quote){
-        self.value = Double(qty) * quote.price;
+    func calculate_gain(){
+        
+        let quote = appDelegate.market?.quotes[self.symbol];
+        
+        self.value = Double(qty) * (quote?.price)!;
         self.gain = self.value - cost;
         self.gain_precentage = (self.gain / self.cost) * 100;
     }
