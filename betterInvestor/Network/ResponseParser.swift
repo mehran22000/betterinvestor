@@ -87,7 +87,8 @@ class ResponseParser {
                                 _first_name: array[index].value(forKey: "first_name") as! String,
                                 _last_name: array[index].value(forKey: "last_name") as! String,
                                 _picUrl: array[index].value(forKey: "photo_url") as! String,
-                                _pos: pos);
+                                _pos: pos,
+                                _global_rank: array[index].value(forKey: "global_ranking") as! Int );
             
             
             holders.add(h);

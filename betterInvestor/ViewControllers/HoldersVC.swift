@@ -139,7 +139,21 @@ class HoldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     }
     
     
+    @IBAction func switchMode(_ sender: AnyObject) {
+        if (self.segmentControl?.selectedSegmentIndex == 0) {
+            self.screenMode = ScreenMode.All
+        }
+        else {
+            self.screenMode = ScreenMode.Friends
+        }
+        self.fetchHolders {
+            self.table?.reloadData();
+        }
+    }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60;
+    }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -178,7 +192,8 @@ class HoldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
             cell.performanceBtn.backgroundColor = UIColor.init(red: 255/255.0, green: 163/255.0, blue: 164/255.0, alpha: 1);
         }
         cell.performanceBtn?.setTitle(gain_str, for: UIControlState.normal)
-        cell.number.text = String(describing: h.pos!.qty);
+        cell.position.text = "Positions:" + String(describing: h.pos!.qty);
+        cell.globalRank.text = "Global Rank:" + String(describing: h.global_ranking!);
         
         
         if let url = URL(string: h.picUrl!) {
@@ -203,20 +218,22 @@ class HoldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     }
     */
     
+
     func fetchHolders(completion:@escaping () -> Void) {
         
         var url: String;
         if (self.screenMode == ScreenMode.All) {
-            url = Constants.bsae_url + "holders/stock/global/" + self.symbol!;
+            url = Constants.bsae_url + "holders/stock/" + self.symbol! + "/global/true/userid/" + (self.appDelegate.user?.id)!;
         }
         else {
-            url = Constants.bsae_url + "holders/stock/friend/" + self.symbol!;
+            url = Constants.bsae_url + "holders/stock/" + self.symbol! + "/global/false/userid/" + (self.appDelegate.user?.id)!;
         }
         
         Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
             if let result = response.result.value {
                 let jsonDic = result as! NSDictionary
                 if (jsonDic["status"] as! String == "200") {
+                    self.holders = NSMutableArray();
                     ResponseParser.parseStockHolders(json: jsonDic, holders: self.holders);
                     completion();
                 }

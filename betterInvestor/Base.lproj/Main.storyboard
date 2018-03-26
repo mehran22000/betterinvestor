@@ -267,7 +267,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" --" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb5-4l-Evs">
-                                                    <rect key="frame" x="252" y="98" width="108" height="21"/>
+                                                    <rect key="frame" x="252" y="97" width="108" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -962,10 +962,13 @@
                                         <rect key="frame" x="126" y="7" width="122" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segments>
-                                            <segment title="Friends"/>
                                             <segment title="Global"/>
+                                            <segment title="Friends"/>
                                         </segments>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="switchMode:" destination="YaR-2g-IDt" eventType="valueChanged" id="grm-9e-psW"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.52156862749999999" green="0.4039215686" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
@@ -1018,10 +1021,10 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzE-pl-sof">
-                                                    <rect key="frame" x="57" y="30" width="100" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Global Rank:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehk-Tl-rn3">
+                                                    <rect key="frame" x="164" y="29" width="104" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1033,14 +1036,22 @@
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Position:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBT-gj-02t">
+                                                    <rect key="frame" x="58" y="30" width="99" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.52156862749999999" green="0.4039215686" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.52156862749999999" green="0.4039215686" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="number" destination="lzE-pl-sof" id="M8s-c1-WKB"/>
+                                            <outlet property="globalRank" destination="Ehk-Tl-rn3" id="Cpj-cJ-4mF"/>
                                             <outlet property="performanceBtn" destination="PiN-xL-rIY" id="nI1-ER-EWv"/>
                                             <outlet property="photo" destination="jL8-13-Kut" id="aiY-CN-PlV"/>
+                                            <outlet property="position" destination="ZBT-gj-02t" id="TVw-mR-pjP"/>
                                             <outlet property="username" destination="LT0-x1-ZDS" id="OCz-eF-w57"/>
                                         </connections>
                                     </tableViewCell>

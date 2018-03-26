@@ -12,7 +12,8 @@ class HolderCell: UITableViewCell {
 
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var username: UILabel!
-    @IBOutlet weak var number: UILabel!
+    @IBOutlet weak var position: UILabel!
+    @IBOutlet weak var globalRank: UILabel!
     @IBOutlet weak var performanceBtn: UIButton!
     
     init(style: UITableViewCellStyle, reuseIdentifier: String) {

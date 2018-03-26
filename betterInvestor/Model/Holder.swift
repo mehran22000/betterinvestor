@@ -17,14 +17,15 @@ import Foundation
     var picUrl: String?;
     var photo: UIImage?;
     var pos: Position?;
+    var global_ranking: Int?;
     
-    
-    init (_user_id:String,_first_name:String,_last_name:String,_picUrl: String, _pos: Position){
+    init (_user_id:String,_first_name:String,_last_name:String,_picUrl: String, _pos: Position, _global_rank: Int){
         self.user_id = _user_id;
         self.first_name = _first_name;
         self.last_name = _last_name;
         self.picUrl = _picUrl;
         self.pos = _pos;
+        self.global_ranking = _global_rank;
     }
     
 }
