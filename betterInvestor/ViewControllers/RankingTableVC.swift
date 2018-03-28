@@ -19,6 +19,15 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         case All
     }
 
+    enum Gain_Mode: String {
+        case gain = "Gain"
+        case gain_precentage = "Gain_Precentage"
+    }
+    
+    
+    var performance_btn_mode = Gain_Mode.gain;
+    
+    
     
     @IBOutlet var table: UITableView?
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -152,7 +161,21 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         // cell.rank.text = String(indexPath.row);
         cell.username.text = String(describing: indexPath.row+1) + ". " + user.first_name! + " " + user.last_name!;
-        cell.performanceBtn.setTitle(user.gain_pct! + "%", for: UIControlState.normal)
+        
+        var title: String;
+        if (performance_btn_mode == Gain_Mode.gain_precentage){
+            title = user.gain_pct! + "%";
+        }
+        else {
+            title = "$" + user.gain!;
+        }
+        
+        
+        
+        
+        // cell.performanceBtn.setTitle(user.gain_pct! + "%", for: UIControlState.normal)
+        
+        cell.performanceBtn.setTitle(title, for: UIControlState.normal)
         
         
         if let url = URL(string: user.photo_url!) {
@@ -173,6 +196,7 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             })
         }
     }
+    
     
     func fetchGlobalRanking() {
         
@@ -203,4 +227,16 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
     }
+    
+    @IBAction func performanceBtnClicked () {
+        if (self.performance_btn_mode == Gain_Mode.gain) {
+            self.performance_btn_mode = Gain_Mode.gain_precentage;
+        }
+        else {
+            self.performance_btn_mode = Gain_Mode.gain;
+        }
+        self.table?.reloadData()
+    }
+    
+    
 }

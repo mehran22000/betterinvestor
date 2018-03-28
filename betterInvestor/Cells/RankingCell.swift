@@ -14,6 +14,11 @@ class RankingCell: UITableViewCell {
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var performanceBtn: UIButton!
     
+    enum Gain_Mode: String {
+        case gain = "Gain"
+        case gain_precentage = "Gain_Precentage"
+    }
+    
     init(style: UITableViewCellStyle, reuseIdentifier: String) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }

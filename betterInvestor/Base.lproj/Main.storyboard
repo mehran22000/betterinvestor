@@ -1112,6 +1112,9 @@
                                                     <state key="normal" title="+ $4,500">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="performanceBtnClicked" destination="8k6-4o-Wf2" eventType="touchUpInside" id="Wg7-tq-YNF"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.43529411759999997" green="0.32101611019999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
