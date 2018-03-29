@@ -48,7 +48,6 @@
 		025DD9851FE8AC3900720099 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD9841FE8AC3900720099 /* RequestGenerator.swift */; };
 		025DD9871FE8AC4900720099 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD9861FE8AC4900720099 /* ResponseParser.swift */; };
 		02657D31204237FE008A8159 /* FbDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02657D30204237FE008A8159 /* FbDataManager.swift */; };
-		027BC8C0202BEF340081ABA0 /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027BC8BF202BEF340081ABA0 /* symbols.plist */; };
 		02879E6B20088688002E8AE1 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879E6A20088688002E8AE1 /* Market.swift */; };
 		02879E6D2008874A002E8AE1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879E6C2008874A002E8AE1 /* Quote.swift */; };
 		028C9BEC1FE8B88A003966F8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C9BE91FE8B88A003966F8 /* Alamofire.framework */; };
@@ -84,6 +83,7 @@
 		02F0AECA201C1D29003E4C93 /* SymbolSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */; };
 		02F0AECC201CEA93003E4C93 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECB201CEA93003E4C93 /* Symbol.swift */; };
 		02F0AECE201D1326003E4C93 /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECD201D1326003E4C93 /* RootNavigationVC.swift */; };
+		02F4D4F3206C9DA80083996F /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F4D4F2206C9DA80083996F /* symbols.plist */; };
 		A3D2E471C36F83007EB07CAF /* Pods_betterInvestorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; };
 		BCB5193498B7ABB0AEC0BB1A /* Pods_betterInvestorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; };
 		DDD36C023DCA4D54653F569E /* Pods_betterInvestor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */; };
@@ -178,7 +178,6 @@
 		025DD9841FE8AC3900720099 /* RequestGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
 		025DD9861FE8AC4900720099 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
 		02657D30204237FE008A8159 /* FbDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbDataManager.swift; sourceTree = "<group>"; };
-		027BC8BF202BEF340081ABA0 /* symbols.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = symbols.plist; sourceTree = "<group>"; };
 		02879E6A20088688002E8AE1 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		02879E6C2008874A002E8AE1 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		028C9BE91FE8B88A003966F8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -208,6 +207,7 @@
 		02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolSearchVC.swift; sourceTree = "<group>"; };
 		02F0AECB201CEA93003E4C93 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		02F0AECD201D1326003E4C93 /* RootNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationVC.swift; sourceTree = "<group>"; };
+		02F4D4F2206C9DA80083996F /* symbols.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbols.plist; sourceTree = "<group>"; };
 		0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterInvestorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		110476187F5C48E4B0BAEDC7 /* Pods-betterInvestorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestorTests/Pods-betterInvestorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3038C3B7D4343F74E045D1B2 /* Pods-betterInvestor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 		0203FBFC1F99741B007FE62A = {
 			isa = PBXGroup;
 			children = (
-				027BC8BF202BEF340081ABA0 /* symbols.plist */,
+				02F4D4F2206C9DA80083996F /* symbols.plist */,
 				028C9C071FEA22E8003966F8 /* app_config.plist */,
 				028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */,
 				02A844381FB01C5A00D4935D /* Icons.xcassets */,
@@ -568,6 +568,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F4D4F3206C9DA80083996F /* symbols.plist in Resources */,
 				028C9C081FEA22E8003966F8 /* app_config.plist in Resources */,
 				0203FC131F99741B007FE62A /* LaunchScreen.storyboard in Resources */,
 				0258C2E51FBC01E1003FC621 /* LineChart1ViewController.xib in Resources */,
@@ -575,7 +576,6 @@
 				028ED07E1FAE4E6500ABE2CD /* GoogleService-Info.plist in Resources */,
 				0203FC101F99741B007FE62A /* Assets.xcassets in Resources */,
 				0203FC0E1F99741B007FE62A /* Main.storyboard in Resources */,
-				027BC8C0202BEF340081ABA0 /* symbols.plist in Resources */,
 				02A844391FB01C5A00D4935D /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
