@@ -33,7 +33,7 @@ class RequestGenerator {
     class func requestOrder(user: User, symbol: NSString, name: NSString, qty: NSInteger, price: Double, fee: Double) -> [String : AnyObject] {
         var dic = [String: AnyObject]();
         dic["user_id"] = user.id as AnyObject;
-        dic["symbol"] = symbol.lowercased as AnyObject;
+        dic["symbol"] = symbol as AnyObject;
         dic["name"] = name as AnyObject;
         dic["qty"] = qty as AnyObject;
         dic["price"] = price as AnyObject;

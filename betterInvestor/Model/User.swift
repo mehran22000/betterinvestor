@@ -26,8 +26,8 @@ import SwiftyJSON
     var global_ranking: NSMutableArray?;
     var friend_ranking: NSMutableArray?;
     @objc var gain_history:NSMutableArray?;
-    var global_rank: NSInteger?;
-    var friends_rank: NSInteger?;
+    var global_rank: Int?;
+    var friends_rank: Int?;
     
     let nc = NotificationCenter.default
     
@@ -42,6 +42,7 @@ import SwiftyJSON
         self.pictureUrl = _pictureUrl;
         self.friends = _friends;
         self.portfolio = Portfolio();
+        self.portfolio?.cash = _cash;
         self.pic = _pic;
     }
 
@@ -59,6 +60,7 @@ import SwiftyJSON
         }
         self.friends = dic["friends"] as? NSArray;
         self.portfolio = Portfolio();
+       // self.portfolio?.cash = dic["cash"] as? Double;
     }
 
     func encode(with aCoder: NSCoder) {
@@ -90,7 +92,7 @@ import SwiftyJSON
                 let jsonDic = result as! NSDictionary
                 if (jsonDic["status"] as! String == "200") {
                     ResponseParser.parseUserPortfolio(json: jsonDic,user: self);
-                    appDelegate.market = Market.init();
+                    // appDelegate.market = Market.init();
                     let _userInfo:[String: String] = ["user_id": self.id!]
                    // self.nc.post(name:Notification.Name(rawValue:"portfolio_updated"),object: nil,userInfo: _userInfo)
                     completion();

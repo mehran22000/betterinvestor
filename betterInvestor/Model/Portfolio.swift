@@ -12,6 +12,7 @@ import Foundation
     
     @objc var positions : [Position]?
     var cash: Double? = 0;
+    var credit: Double? = 0;
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var total_cost: Double = 0;
@@ -52,7 +53,7 @@ import Foundation
         var total : Double = 0;
         var total_value: Double = 0;
         
-        if (posNo! >= 0) {
+        if (posNo! > 0) {
             for i in 0...posNo!-1 {
                 self.positions![i].calculate_gain()
                 self.total_cost = self.total_cost + self.positions![i].cost;
@@ -60,18 +61,23 @@ import Foundation
                 total = total + self.positions![i].gain;
             }
             self.total_gain = total;
-            self.total_gain_precentage = (total_gain/total_cost) * 100;
+            self.total_gain_precentage = (total_gain/credit!) * 100;
             self.total_stock_value = total_value;
         }
     }
     
     
     func getPosition(_symbol: String) -> Position?{
-        let symbol = _symbol.lowercased();
+        let symbol = _symbol;
         let posNo = positions?.count;
-        for i in 0...posNo!-1 {
-            if (self.positions![i].symbol == symbol) {
-                return self.positions![i];
+        if (posNo == 0) {
+            return nil;
+        }
+        else {
+            for i in 0...posNo!-1 {
+                if (self.positions![i].symbol == symbol) {
+                    return self.positions![i];
+                }
             }
         }
         return nil;

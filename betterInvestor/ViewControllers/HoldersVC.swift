@@ -103,7 +103,7 @@ class HoldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
     
     
-    /*
+      /*
      func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
      
      let hView = UIView();
@@ -114,6 +114,15 @@ class HoldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
      }
      */
     
+    @IBAction func performanceBtnClicked () {
+        if (self.performance_btn_mode == Gain_Mode.gain) {
+            self.performance_btn_mode = Gain_Mode.gain_precentage;
+        }
+        else {
+            self.performance_btn_mode = Gain_Mode.gain;
+        }
+        self.table?.reloadData();
+    }
     
     func addSegmentControl(parentView: UIView) {
         
@@ -152,7 +161,7 @@ class HoldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60;
+        return 70;
     }
     
     
@@ -223,10 +232,10 @@ class HoldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
         
         var url: String;
         if (self.screenMode == ScreenMode.All) {
-            url = Constants.bsae_url + "holders/stock/" + self.symbol! + "/global/true/userid/" + (self.appDelegate.user?.id)!;
+            url = Constants.bsae_url + "users/holders/" + self.symbol! + "/global/true/userid/" + (self.appDelegate.user?.id)!;
         }
         else {
-            url = Constants.bsae_url + "holders/stock/" + self.symbol! + "/global/false/userid/" + (self.appDelegate.user?.id)!;
+            url = Constants.bsae_url + "users/holders/" + self.symbol! + "/global/false/userid/" + (self.appDelegate.user?.id)!;
         }
         
         Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in

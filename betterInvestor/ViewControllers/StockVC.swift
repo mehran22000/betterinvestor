@@ -18,6 +18,7 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var position: Position?
     var trxIsBuy: Bool?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -60,20 +61,26 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 1:
             cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath) as! StockInfoCell ;
             cell.titleLbl?.text = "Last Trade"
-            let quote = appDelegate.market?.quotes[(appDelegate.selectedStock?.key.lowercased())!];
+            let quote = appDelegate.market?.quotes[(appDelegate.selectedStock?.key)!];
             cell.subtitleLbl?.text = String(format:"$%.2f",(quote?.price)!);
         case 2:
             cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath) as! StockInfoCell ;
             cell.titleLbl?.text = "Own"
-            cell.subtitleLbl!.text = String(describing: self.position!.qty);
+            if ((self.position?.qty) != nil){
+                cell.subtitleLbl!.text = String(describing: self.position!.qty);
+            }
         case 3:
             cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath) as! StockInfoCell ;
             cell.titleLbl?.text = "Cost"
-            cell.subtitleLbl?.text = String(format:"$%.2f",self.position!.cost);
+            if ((self.position?.cost) != nil){
+                cell.subtitleLbl?.text = String(format:"$%.2f",self.position!.cost);
+            }
         case 4:
             cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath) as! StockInfoCell ;
             cell.titleLbl?.text = "Gain / Lost"
-            cell.subtitleLbl?.text = String(format:"$%.2f",self.position!.gain);
+            if ((self.position?.gain) != nil){
+                cell.subtitleLbl?.text = String(format:"$%.2f",self.position!.gain);
+            }
         case 5:
             actionCell = tableView.dequeueReusableCell(withIdentifier: "cellAction", for: indexPath) as! StockActionCell;
             actionCell.leftIcon?.image = UIImage(named: "buy_stock");
@@ -139,7 +146,7 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if(segue.identifier == "segueHolders") {
             
             let holdersVC = (segue.destination as! HoldersVC);
-            holdersVC.symbol = self.title?.lowercased();
+            holdersVC.symbol = self.title;
         }
         
     }

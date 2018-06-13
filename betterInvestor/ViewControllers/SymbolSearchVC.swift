@@ -15,7 +15,7 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     var symbols = NSArray();
     var filteredSymbols = NSMutableArray();
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
+    let myActivityIndicator = UIActivityIndicatorView();
     
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -25,10 +25,6 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         definesPresentationContext = true
         
         self.symbols = UserDefaults.standard.value(forKey: "symbols") as! NSArray;
-        
-        
-
-        
         
        // filteredSymbols = symbols
         
@@ -76,6 +72,7 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.detailTextLabel?.text = _symbol?.object(forKey: "Name") as? String;
         cell.detailTextLabel?.textColor = UIColor.white;
         cell.backgroundColor = UIColor.init(red: 111/255.0, green: 82/255.0, blue: 121/255.0, alpha: 1);
+        cell.selectionStyle = .none
         
         
         return cell
@@ -89,9 +86,23 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         appDelegate.selectedStock = Symbol(key: sym!, name: name!);
         //self.dismiss(animated: false, completion: nil);
-        performSegue(withIdentifier: "segueStockInfo", sender: nil)
-     
+        
+        self.displayActivityIndicator();
+        
+        self.appDelegate.market!.fetchStockPrice(symbol: sym!) { (success) in
+            self.hideActivityIndicator();
+            if (success == true){
+                self.performSegue(withIdentifier: "segueStockInfo", sender: nil)
+            }
+            else {
+                let alertController = UIAlertController(title: "Connection Error", message: "Please try again", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+                alertController.addAction(cancelAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
     }
+    
     
     // MARK: - Navigation
 
@@ -115,6 +126,17 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
+    func displayActivityIndicator(){
+        self.myActivityIndicator.center = view.center
+        self.myActivityIndicator.hidesWhenStopped = true;
+        self.myActivityIndicator.startAnimating()
+        self.myActivityIndicator.activityIndicatorViewStyle = .whiteLarge;
+        self.view.addSubview(myActivityIndicator)
+    }
+    
+    func hideActivityIndicator(){
+        self.myActivityIndicator.stopAnimating();
+    }
     
     func updateSearchResults(for searchController: UISearchController) {
         // If we haven't typed anything into the search bar then do not filter the results

@@ -37,11 +37,11 @@ NSArray* greenPlate, *redPlate;
     [super viewDidLoad];
     
     greenPlate = [NSArray arrayWithObjects:
-                           [UIColor colorWithRed:195.0/255 green:225.0/255 blue:175.0/255 alpha:1.0],
-                           [UIColor colorWithRed:135.0/255 green:197.0/255 blue:98.0/255 alpha:1.0],
-                           [UIColor colorWithRed:183/255 green:219.0/255 blue:158.0/255 alpha:1.0],
-                           [UIColor colorWithRed:154.0/255 green:206.0/255 blue:123.0/255 alpha:1.0],
-                           [UIColor colorWithRed:140.0/255 green:201.0/255 blue:108.0/255 alpha:1.0],
+                           [UIColor colorWithRed:3.0/255 green:35.0/255 blue:22.0/255 alpha:1.0],
+                           [UIColor colorWithRed:4.0/255 green:70.0/255 blue:56.0/255 alpha:1.0],
+                           [UIColor colorWithRed:28/255 green:99.0/255 blue:80.0/255 alpha:1.0],
+                           [UIColor colorWithRed:42.0/255 green:116.0/255 blue:93.0/255 alpha:1.0],
+                           [UIColor colorWithRed:49.0/255 green:112.0/255 blue:91.0/255 alpha:1.0],
                            nil];
     
     
@@ -154,7 +154,7 @@ NSArray* greenPlate, *redPlate;
     
     if (self.isGainMode){
         dataSet.colors = greenPlate;
-        [data setValueTextColor:UIColor.blackColor];
+        [data setValueTextColor:UIColor.whiteColor];
     }
     else {
         dataSet.colors = redPlate;

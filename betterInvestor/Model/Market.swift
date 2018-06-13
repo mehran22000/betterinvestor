@@ -14,15 +14,13 @@ import SwiftyJSON
 class Market{
     var quotes : [String:Quote];
     var timer = Timer()
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let nc = NotificationCenter.default
     var stockList: String?;
     
-    init () {
+    init (portfolio: Portfolio?) {
         quotes = [String:Quote]();
-        
-        if let portfolio = appDelegate.user?.portfolio {
-            stockList = portfolio.getStockList();
+        if (portfolio != nil) {
+            stockList = portfolio?.getStockList();
         }
         
         /*
@@ -41,12 +39,13 @@ class Market{
         if let portfolio = user.portfolio {
             
             let posNo = portfolio.positions?.count;
-            for i in 0...posNo!-1 {
-                let symbol = portfolio.positions![i].symbol;
-                let stockList = self.stockList?.lowercased();
-                if stockList?.range(of:symbol) == nil {
-                    if (self.stockList != "") {
-                        self.stockList = self.stockList! + "," + symbol;
+            if (posNo! > 0) {
+                for i in 0...posNo!-1 {
+                    let symbol = portfolio.positions![i].symbol;
+                    if stockList?.range(of:symbol) == nil {
+                        if (self.stockList != "") {
+                            self.stockList = self.stockList! + "," + symbol;
+                        }
                     }
                 }
             }
@@ -54,6 +53,18 @@ class Market{
         fetchStockPrice(completion: completion);
     }
      
+    
+    func addToStockList (symbol: String,completion:@escaping () -> Void){
+        
+        if (self.stockList != "") {
+            self.stockList = self.stockList! + "," + symbol.lowercased();
+        }
+        else {
+            self.stockList = symbol;
+        }
+        
+        fetchStockPrice(completion: completion);
+    }
     
     
     
@@ -72,11 +83,29 @@ class Market{
                 }
             }
         }
+        else {
+            completion();
+        }
     }
     
     func updateQuote(quote:Quote) {
         quotes[quote.symbol] = quote;
     }
     
-    
+    @objc func fetchStockPrice(symbol: String, completion:@escaping (_ success:Bool) -> Void) {
+        let url = Constants.bsae_url + "market/stock/quote/"+symbol;
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == "200") {
+                    ResponseParser.parseQuotes(json: jsonDic);
+                    completion(true);
+                }
+                else {
+                    completion(false);
+                }
+            }
+        }
+    }
+
 }

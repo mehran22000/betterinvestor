@@ -26,7 +26,6 @@ class RootNavigationVC: UINavigationController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.rootNavigationController = self;
         self.setNavigationBarHidden(false, animated: false)
-        
         // Do any additional setup after loading the view.
     }
 

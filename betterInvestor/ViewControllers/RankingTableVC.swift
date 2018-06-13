@@ -145,13 +145,9 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         parentView.addSubview(customSC)
     }
     
-   
-
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RankingCell", for: indexPath) as! RankingCell;
-        
+        cell.selectionStyle = UITableViewCellSelectionStyle.none;
         let user: Ranking;
         if (self.screenMode == ScreenMode.Friends){
             user = self.appDelegate.user?.friend_ranking![indexPath.row] as! Ranking;

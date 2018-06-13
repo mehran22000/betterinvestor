@@ -13,6 +13,7 @@ class ResponseParser {
     class func parseUserPortfolio (json:NSDictionary, user: User){
         let data = json["data"] as! NSDictionary;
         let portfolio = data["portfolio"] as! [NSDictionary];
+        user.portfolio = Portfolio();
         if (portfolio.count > 0) {
             for index in 0...portfolio.count-1  {
                 let pos = Position(symbol:portfolio[index].value(forKey: "symbol") as! String,
@@ -24,6 +25,7 @@ class ResponseParser {
         }
         user.portfolio?.cash = data["cash"] as? Double;
         user.global_rank = data["rank_global"] as? NSInteger;
+        user.portfolio?.credit = data["credit"] as? Double;
     }
     
     class func parseQuotes (json:NSDictionary){
@@ -33,14 +35,16 @@ class ResponseParser {
         let date = NSDate()
         for (symbol, price) in data {
             print(symbol,price);
-            let quote = Quote(symbol: symbol as! String,price: Double(price as! String)!, time:date);
+           // let quote = Quote(symbol: symbol as! String,price: Double(price as! String)!, time:date);
+            let quote = Quote(symbol: symbol as! String,price: price as! Double, time:date);
             appDelegate.market?.updateQuote(quote: quote);
         }
     }
 
     class func parseSymbols (json:NSDictionary){
         
-        let symbolsArray = json["symbols"] as! NSArray;
+        let data = json["data"] as! NSDictionary;
+        let symbolsArray = data["symbols"] as! NSArray;
         let symbols = NSMutableArray();
         for sym in symbolsArray {
             let dic = sym as! NSDictionary;
@@ -50,7 +54,7 @@ class ResponseParser {
         
         UserDefaults.standard.set(symbolsArray, forKey: "symbols")
         
-        let symbols_version = json["version"] as! String;
+        let symbols_version = data["version"] as! String;
         UserDefaults.standard.set(symbols_version, forKey: "symbols_version")
     }
     
@@ -58,14 +62,14 @@ class ResponseParser {
     class func parseUserGainHistory(json: NSDictionary,user: User) {
         
         let data = json["data"] as! NSDictionary;
-        let gain_history = data["gain"] as! NSString;
-        var arr = gain_history.components(separatedBy: ",")
-        
-        user.gain_history = NSMutableArray ()
-        
-        for index in 0...arr.count-1  {
-            let gain_history_item = GainHistoryItem(_keyValStr: arr[index]);
-            user.gain_history?.add(gain_history_item);
+        let gain_history = data["gain"] as? NSString;
+        if (gain_history != nil){
+            var arr = gain_history!.components(separatedBy: ",")
+            user.gain_history = NSMutableArray ()
+            for index in 0...arr.count-1  {
+                let gain_history_item = GainHistoryItem(_keyValStr: arr[index]);
+                user.gain_history?.add(gain_history_item);
+            }
         }
     }
     
@@ -75,23 +79,24 @@ class ResponseParser {
         let data = json["data"] as! NSDictionary;
         let array = data["holders"] as! [NSDictionary];
         
-        for index in 0...array.count-1  {
+        if (array.count > 0)
+        {
+            for index in 0...array.count-1  {
             
-            let pos = Position(symbol:array[index].value(forKey: "symbol") as! String,
-                               qty:array[index].value(forKey: "qty") as! NSInteger,
-                               cost:array[index].value(forKey: "cost") as! Double,
-                               name:array[index].value(forKey: "name") as! String);
+                let pos = Position(symbol:array[index].value(forKey: "symbol") as! String,
+                                   qty:array[index].value(forKey: "qty") as! NSInteger,
+                                   cost:array[index].value(forKey: "cost") as! Double,
+                                   name:array[index].value(forKey: "name") as! String);
             
-            pos.calculate_gain();
-            let h = Holder.init(_user_id: array[index].value(forKey: "user_id") as! String,
-                                _first_name: array[index].value(forKey: "first_name") as! String,
-                                _last_name: array[index].value(forKey: "last_name") as! String,
-                                _picUrl: array[index].value(forKey: "photo_url") as! String,
-                                _pos: pos,
-                                _global_rank: array[index].value(forKey: "global_ranking") as! Int );
-            
-            
-            holders.add(h);
+                pos.calculate_gain();
+                let h = Holder.init(_user_id: array[index].value(forKey: "user_id") as! String,
+                                    _first_name: array[index].value(forKey: "first_name") as! String,
+                                    _last_name: array[index].value(forKey: "last_name") as! String,
+                                    _picUrl: array[index].value(forKey: "photo_url") as! String,
+                                    _pos: pos,
+                                    _global_rank: array[index].value(forKey: "global_ranking") as! Int );
+                holders.add(h);
+            }
         }
     }
     

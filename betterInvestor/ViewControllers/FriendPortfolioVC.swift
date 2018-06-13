@@ -133,7 +133,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         bannerView.load(gadRequest);
         self.view.addSubview(bannerView);
     }
-    
+
     
     @IBAction func performanceBtnClicked () {
         if (self.performance_btn_mode == Gain_Mode.gain) {
@@ -173,7 +173,11 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         if (indexPath.row == 0){
+            return 120;
+        }
+        else if (indexPath.row == 1){
             return 150;
         }
         else {
@@ -184,7 +188,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let portfolio = self.user?.portfolio {
-            return (portfolio.positions?.count)! + 1;
+            return (portfolio.positions?.count)! + 2;
         }
         else {
             return 0;
@@ -206,6 +210,15 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         
         if (indexPath.row == 0){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell;
+            cell.photo.image = self.user?.pic;
+            cell.photo.contentMode = .scaleAspectFit
+            cell.photo.layer.cornerRadius = 10.0
+            cell.photo.clipsToBounds = true
+            return cell;
+        }
+        
+        else if (indexPath.row == 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "SummaryCell", for: indexPath) as! PortfolioSummaryCell;
             cell.cashLbl?.text = formattedCash!;
             cell.stockLbl?.text = formattedStockValue;
@@ -223,7 +236,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
             var price_str = "-";
-            let position = portfolio!.positions![indexPath.row-1];
+            let position = portfolio!.positions![indexPath.row-2];
             let quote = self.appDelegate.market?.quotes[(position.symbol)];
             cell.symbolLbl?.text = position.symbol.uppercased();
             

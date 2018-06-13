@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqd-Ej-1xl" customClass="PieChartView" customModule="Charts">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="367"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="297"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
@@ -29,7 +29,7 @@
             <constraints>
                 <constraint firstItem="Oqd-Ej-1xl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3NA-if-rAO"/>
                 <constraint firstItem="Oqd-Ej-1xl" firstAttribute="leading" secondItem="d1B-K3-luU" secondAttribute="leading" id="6Mc-iO-BuY"/>
-                <constraint firstItem="d1B-K3-luU" firstAttribute="bottom" secondItem="Oqd-Ej-1xl" secondAttribute="bottom" constant="300" id="bih-r3-91f"/>
+                <constraint firstItem="d1B-K3-luU" firstAttribute="bottom" secondItem="Oqd-Ej-1xl" secondAttribute="bottom" constant="370" id="bih-r3-91f"/>
                 <constraint firstItem="d1B-K3-luU" firstAttribute="trailing" secondItem="Oqd-Ej-1xl" secondAttribute="trailing" id="mC3-xy-2CS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="d1B-K3-luU"/>

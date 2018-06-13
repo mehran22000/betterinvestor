@@ -26,6 +26,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     var trxFee = 1.0;
     var isKeyboardShown: Bool?
     var tap: UITapGestureRecognizer?
+    var mainVC: UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +90,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         var cell: TrxInfoCell = TrxInfoCell();
         var actionCell: TrxActionCell = TrxActionCell();
         var inputCell: TrxInputCell = TrxInputCell();
-        
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         
         switch (indexPath.row) {
         case 0:
@@ -99,7 +100,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         case 1:
             cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath) as! TrxInfoCell ;
             cell.titleLbl?.text = "Unit Price"
-            let quoteStr = appDelegate.market?.quotes[(appDelegate.selectedStock?.key.lowercased())!];
+            let quoteStr = appDelegate.market?.quotes[(appDelegate.selectedStock?.key)!];
             self.quote = quoteStr!.price;
             cell.subtitleLbl?.text = String(format:"$%.2f",self.quote!);
         case 2:
@@ -183,16 +184,35 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         Alamofire.request(url, method: HTTPMethod.post, parameters: param, encoding:JSONEncoding.default).responseJSON { response in
                 if let result = response.result.value {
                    let json = JSON(result)
-                   if (json["status"] == "200") {
+                    if (json["status"] == "200") {
                     self.appDelegate.user?.fetchPortfolio(completion: {
-                    })
-                        let msg = "Buy order confirmed";
-                        let alert = UIAlertController(title: "Successful Buy", message: msg, preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
-                        self.navigationController?.popViewController(animated: true);
-                        }))
+                        self.appDelegate.user?.portfolio?.calculateGain()
+                        let title = "Order Executed!";
+                        let qtyStr:String = String(format:"%d", self.quantity!);
+                        let quoteStr:String = String(format:"%.2f", self.quote!);
+                        let msg = String(format: "Bought %@ %@ @ $%@", qtyStr, self.symbol!, quoteStr);
+                        self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false)
+                        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                         self.present(alert, animated: true,completion: nil)
-                 }
+                        })
+                    }
+                    else if (json["status"] == "501") {
+                        let title = "Insufficient Funds";
+                        let msg = "Please try again"
+                        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true,completion: nil)
+                    }
+                   else {
+                        let title = "Transaction Error";
+                        let msg = "Please try again later"
+                        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true,completion: nil)
+                    }
+                    
+                    
             }
         }
     }
@@ -211,18 +231,21 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                 let json = JSON(result)
                 if (json["status"] == "200") {
                     self.appDelegate.user?.fetchPortfolio(completion: {
-                
-                    })
-                    let msg = "Sell order confirmed";
-                    let alert = UIAlertController(title: "Successful Sell", message: msg, preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
-                        self.navigationController?.popViewController(animated: true);
-                    }))
-                    self.present(alert, animated: true, completion: nil);
+                        self.appDelegate.user?.portfolio?.calculateGain()
+                        self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false);
+                        
+                        let qtyStr:String = String(format:"%d", self.quantity!);
+                        let quoteStr:String = String(format:"%.2f", self.quote!);
+                        let msg = String(format: "Sold %@ %@ @ $%@", qtyStr, self.symbol!, quoteStr);
+                        let alert = UIAlertController(title: "Order Executed!", message: msg, preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
+                        self.present(alert, animated: true, completion: nil);
+                        })
+                    }
                 }
             }
         }
-    }
+    
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -248,7 +271,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     func textFieldDidBeginEditing(_ textField: UITextField) {
         return;
     }
-
+    
 }
 
 

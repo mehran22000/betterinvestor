@@ -45,6 +45,46 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    // Timer
+    var refreshTimer: Timer!
+    
+    
+    @objc func refreshQuote () {
+        print ("refreshQuote called");
+        self.appDelegate.market?.fetchStockPrice (completion: {
+            self.appDelegate.user?.portfolio?.calculateGain()
+            self.portfolioTableView.reloadData();
+            
+          //  if self.isVisible(view: self.view){
+          //       self.refreshTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.refreshQuote), userInfo: nil, repeats: false);
+          //  }
+        })
+    }
+    
+    
+    public func isVisible(view: UIView) -> Bool {
+        
+        if view.window == nil {
+            return false
+        }
+        
+        var currentView: UIView = view
+        while let superview = currentView.superview {
+            
+            if (superview.bounds).intersects(currentView.frame) == false {
+                return false;
+            }
+            
+            if currentView.isHidden {
+                return false
+            }
+            
+            currentView = superview
+        }
+        
+        return true
+    }
+    
     enum Gain_Mode: String {
         case gain = "Gain"
         case gain_precentage = "Gain_Precentage"
@@ -58,6 +98,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.title = "Portfolio"
     
+        
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image:UIImage(named:"menu"), style: .plain, target: self, action: #selector(sideMenuClicked))
         
@@ -111,20 +152,9 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // reset selectedStock
         appDelegate.selectedStock = nil;
         
+        appDelegate.masterVC = self;
         
-        let user = self.appDelegate.user;
         
-        fetchSymbols (completion: {
-                user?.fetchPortfolio(completion: {
-                    self.appDelegate.market = Market.init();
-                    self.appDelegate.market?.fetchStockPrice (completion: {
-                        user?.portfolio?.calculateGain()
-                        self.portfolioTableView.reloadData();
-                        user?.fetchGainHistory (completion:{
-                    })
-                })
-            })
-        })
     }
     
     
@@ -151,6 +181,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+      //  self.refreshTimer.invalidate();
+      //  self.refreshTimer = nil;
     }
     
     
@@ -196,6 +228,23 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.addSegmentControl();
         self.addPageControl();
         self.addAdMob()
+        
+        
+        // self.refreshTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.refreshQuote), userInfo: nil, repeats: true);
+        
+        let user = self.appDelegate.user;
+        fetchSymbols (completion: {
+            user?.fetchPortfolio(completion: {
+                self.appDelegate.market = Market.init(portfolio: (user?.portfolio)!)
+                self.appDelegate.market?.fetchStockPrice (completion: {
+                    user?.portfolio?.calculateGain()
+                    self.portfolioTableView.reloadData();
+                    user?.fetchGainHistory (completion:{})
+                })
+            })
+        })
+        
+
     }
     
     func addAdMob(){
@@ -432,7 +481,12 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let portfolio = appDelegate.user?.portfolio {
-            return (portfolio.positions?.count)! + 1;
+            if ((portfolio.positions?.count)! > 0) {
+                return (portfolio.positions?.count)! + 1;
+            }
+            else {
+                return 2;
+            }
         }
         else {
             return 0;
@@ -460,12 +514,18 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.stockLbl?.text = formattedStockValue;
             cell.totalGainLbl?.text = formattedGain! + "(" + String(format:"%.2f",portfolio!.total_gain_precentage) + "%)" ;
             cell.rankFrinedsLbl?.text = "--"
-            if (appDelegate.user?.global_rank != nil) {
-                cell.rankGlobalLbl?.text = String(describing: appDelegate.user!.global_rank!);
+            if (appDelegate.user?.global_rank != nil)
+            {
+                if (appDelegate.user!.global_rank! > 0) {
+                    cell.rankGlobalLbl?.text = String(describing: appDelegate.user!.global_rank!);
+                }
             }
             
-            if (appDelegate.user?.friends_rank != nil) {
-                cell.rankFrinedsLbl?.text = String(describing: appDelegate.user!.friends_rank!);
+            if (appDelegate.user?.friends_rank != nil)
+            {
+                if (appDelegate.user!.friends_rank! > 0) {
+                    cell.rankFrinedsLbl?.text = String(describing: appDelegate.user!.friends_rank!);
+                }
             }
             
             return cell;
@@ -474,37 +534,43 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             // cell.priceLbl?.text = "";
         }
         else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
-            var price_str = "-";
-            let position = portfolio!.positions![indexPath.row-1];
-            let quote = market?.quotes[(position.symbol)];
-            cell.symbolLbl?.text = position.symbol.uppercased();
-    
-            if (quote != nil) {
-                price_str = String(format:"%.2f",quote!.price);
-                gain = position.gain
-                gain_precentage = position.gain_precentage
-                cell.priceLbl?.text = price_str;
-            }
             
-            if (performance_btn_mode == Gain_Mode.gain_precentage){
-                gain_str = String(format:"%.0f",gain_precentage) + "%";
+            if (portfolio!.positions?.count == 0){
+                let cell = tableView.dequeueReusableCell(withIdentifier: "EmptyPortfolioCell", for: indexPath);
+                return cell;
             }
             else {
-                gain_str = String(format:"%.2f",gain);
-            }
+                let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
+                var price_str = "-";
+                let position = portfolio!.positions![indexPath.row-1];
+                let quote = market?.quotes[(position.symbol)];
+                cell.symbolLbl?.text = position.symbol.uppercased();
+    
+                if (quote != nil) {
+                    price_str = String(format:"%.2f",quote!.price);
+                    gain = position.gain
+                    gain_precentage = position.gain_precentage
+                    cell.priceLbl?.text = price_str;
+                }
+            
+                if (performance_btn_mode == Gain_Mode.gain_precentage){
+                    gain_str = String(format:"%.0f",gain_precentage) + "%";
+                }
+                else {
+                    gain_str = String(format:"%.2f",gain);
+                }
         
         
-            if (gain >= 0) {
-                gain_str = "+" + gain_str;
-                cell.performanceBtn.backgroundColor = UIColor.init(red: 167/255.0, green: 225/255.0, blue: 113/255.0, alpha: 1);
+                if (gain >= 0) {
+                    gain_str = "+" + gain_str;
+                    cell.performanceBtn.backgroundColor = UIColor.init(red: 167/255.0, green: 225/255.0, blue: 113/255.0, alpha: 1);
+                }
+                else {
+                    cell.performanceBtn.backgroundColor = UIColor.init(red: 255/255.0, green: 163/255.0, blue: 164/255.0, alpha: 1);
+                }
+                cell.performanceBtn?.setTitle(gain_str, for: UIControlState.normal)
+                return cell;
             }
-            else {
-                cell.performanceBtn.backgroundColor = UIColor.init(red: 255/255.0, green: 163/255.0, blue: 164/255.0, alpha: 1);
-            }
-            cell.performanceBtn?.setTitle(gain_str, for: UIControlState.normal)
-        
-            return cell;
         }
     }
     

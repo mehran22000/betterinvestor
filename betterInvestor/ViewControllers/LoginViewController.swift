@@ -36,9 +36,18 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
             })
         }
+        else {
+            self.performSegue(withIdentifier: "segueTutorial", sender: nil)
+        }
     }
     
- 
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.activitySpinner?.isHidden = true;
+        self.fbLoginBtn?.isHidden = false;
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,6 +58,9 @@ class LoginViewController: UIViewController {
    
     @IBAction func btnFBLoginPressed(_ sender: AnyObject) {
     
+        self.activitySpinner?.isHidden = false;
+        self.fbLoginBtn?.isHidden = true;
+        
         let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
         fbLoginManager.logIn(withReadPermissions: facebookReadPermissions, from: self) { (result, error) in
             if (error == nil){

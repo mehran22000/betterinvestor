@@ -136,7 +136,13 @@ NSString *fromMonth, *endMonth;
     }
     else
     {
-        NSString* lbl = [NSString stringWithFormat:@"Gain Precentage (%@-%@)",fromMonth,endMonth];
+        NSString* lbl;
+        if ([fromMonth isEqualToString:endMonth]) {
+            lbl = [NSString stringWithFormat:@"Gain Precentage (%@)",fromMonth];
+        }
+        else {
+             lbl = [NSString stringWithFormat:@"Gain Precentage (%@-%@)",fromMonth,endMonth];
+        }
         set1 = [[LineChartDataSet alloc] initWithValues:values label:lbl];
         set1.lineDashLengths = @[@1.f, @1.f];
         set1.drawIconsEnabled = NO;

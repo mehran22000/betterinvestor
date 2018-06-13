@@ -1,8 +1,11 @@
 # ▤ SideMenu
-[![Version](https://img.shields.io/cocoapods/v/SideMenu.svg?style=flat)](http://cocoapods.org/pods/SideMenu)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/SideMenu.svg?style=flat)](http://cocoapods.org/pods/SideMenu)
-[![Platform](https://img.shields.io/cocoapods/p/SideMenu.svg?style=flat)](http://cocoapods.org/pods/SideMenu)
+[![Version](https://img.shields.io/cocoapods/v/SideMenu.svg?style=flat-square)](http://cocoapods.org/pods/SideMenu)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
+[![License](https://img.shields.io/cocoapods/l/SideMenu.svg?style=flat-square)](http://cocoapods.org/pods/SideMenu)
+[![Platform](https://img.shields.io/cocoapods/p/SideMenu.svg?style=flat-square)](http://cocoapods.org/pods/SideMenu)
+[![Total Downloads](https://img.shields.io/cocoapods/dt/SideMenu.svg?style=social)](http://cocoapods.org/pods/SideMenu)
+[![Monthly Downloads](https://img.shields.io/cocoapods/dm/SideMenu.svg?style=social)](http://cocoapods.org/pods/SideMenu)
+[![Weekly Downloads](https://img.shields.io/cocoapods/dw/SideMenu.svg?style=social)](http://cocoapods.org/pods/SideMenu)
 
 ### If you like SideMenu, give it a ★ at the top right of this page.
 #### Using SideMenu in your app? [Send](mailto:yo@massappeal.co?subject=SideMenu%20in%20action!) me a link to your app in the app store!
@@ -10,7 +13,7 @@
 > Hi, I'm Jon Kent and I am an iOS designer, developer, and mobile strategist. I love coffee and play the drums.
 > * [**Hire me**](mailto:yo@massappeal.co?subject=Let's%20build%20something%20amazing) to help you make cool stuff. *Note: If you're having a problem with SideMenu, please open an [issue](https://github.com/jonkykong/SideMenu/issues/new) and do not email me.*
 > * Check out my [website](http://massappeal.co) to see some of my other projects.
-> * Building and maintaining this **free** library takes a lot of my time and **saves you time**. Please consider paying it forward by supporting me with a small amount to my [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=contact%40jonkent%2eme&lc=US&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted). ($0 in support since inception 😕)
+> * Building and maintaining this **free** library takes a lot of my time and **saves you time**. Please consider paying it forward by supporting me with a small amount to my [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=contact%40jonkent%2eme&lc=US&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted). (only **4** people have donated since inception 😕 but **thank you** to those who have!)
 
 * **[Overview](#overview)**
   * [Preview Samples](#preview-samples) 
@@ -33,24 +36,24 @@
 ## Overview
 
 SideMenu is a simple and versatile side menu control written in Swift.
- * **It can be implemented in storyboard without a single line of [code](#code-less-storyboard-implementation).**
- * Four standard animation styles to choose from (there's even a parallax effect if you want to get weird).
- * Highly customizable without needing to write tons of custom code.
- * Supports continuous swiping between side menus on boths sides in a single gesture.
- * Global menu configuration. Set-up once and be done for all screens.
- * Menus can be presented and dismissed the same as any other view controller since this control uses [custom transitions](https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/CustomizingtheTransitionAnimations.html).
- * Animations use your view controllers, not snapshots.
- * Properly handles screen rotation and in-call status bar height changes.
+- [x] **It can be implemented in storyboard without a single line of [code](#code-less-storyboard-implementation).**
+- [x] Four standard animation styles to choose from (there's even a parallax effect if you want to get weird).
+- [x] Highly customizable without needing to write tons of custom code.
+- [x] Supports continuous swiping between side menus on boths sides in a single gesture.
+- [x] Global menu configuration. Set-up once and be done for all screens.
+- [x] Menus can be presented and dismissed the same as any other view controller since this control uses [custom transitions](https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/CustomizingtheTransitionAnimations.html).
+- [x] Animations use your view controllers, not snapshots.
+- [x] Properly handles screen rotation and in-call status bar height changes.
 
 Check out the example project to see it in action!
 ### Preview Samples
 | Slide Out | Slide In | Dissolve | Slide In + Out |
 | --- | --- | --- | --- |
-| ![](etc/SlideOut.gif) | ![](etc/SlideIn.gif) | ![](etc/Dissolve.gif) | ![](etc/InOut.gif) |
+| ![](https://raw.githubusercontent.com/jonkykong/SideMenu/master/etc/SlideOut.gif) | ![](https://raw.githubusercontent.com/jonkykong/SideMenu/master/etc/SlideIn.gif) | ![](https://raw.githubusercontent.com/jonkykong/SideMenu/master/etc/Dissolve.gif) | ![](https://raw.githubusercontent.com/jonkykong/SideMenu/master/etc/InOut.gif) |
 
 ## Requirements
-* Xcode 9.
-* iOS 8 or higher.
+- [x] Xcode 9.
+- [x] iOS 9 or higher.
 
 ## Installation
 ### CocoaPods
@@ -100,13 +103,13 @@ github "jonkykong/SideMenu" "master"
 ## Usage
 ### Code-less Storyboard Implementation
 1. Create a Navigation Controller for a side menu. Set the `Custom Class` of the Navigation Controller to be `UISideMenuNavigationController` in the **Identity Inspector**. Set the `Module` to `SideMenu` (ignore this step if you've manually added SideMenu to your project). Create a Root View Controller for the Navigation Controller (shown as a UITableViewController below). Set up any Triggered Segues you want in that view controller.
-![](etc/Screenshot1.png)
+![](https://raw.githubusercontent.com/jonkykong/SideMenu/master/etc/Screenshot1.png)
 
 2. Set the `Left Side` property of the `UISideMenuNavigationController` to On if you want it to appear from the left side of the screen, or Off/Default if you want it to appear from the right side.
-![](etc/Screenshot2.png)
+![](https://raw.githubusercontent.com/jonkykong/SideMenu/master/etc/Screenshot2.png)
 
 3. Add a UIButton or UIBarButton to a view controller that you want to display the menu from. Set that button's Triggered Segues action to modally present the Navigation Controller from step 1.
-![](etc/Screenshot3.png)
+![](https://raw.githubusercontent.com/jonkykong/SideMenu/master/etc/Screenshot3.png)
 
 That's it. *Note: you can only enable gestures in code.*
 ### Code Implementation

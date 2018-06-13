@@ -17,12 +17,18 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch (indexPath.row){
+        /*
         case 1:
             performSegue(withIdentifier: "productVCSegue", sender: nil)
+        
         case 2:
             performSegue(withIdentifier: "referVCSegue", sender: nil)
-        case 3:
+        */
+        case 1:
             showAlert();
+        case 2:
+            performSegue(withIdentifier: "aboutAppSegue", sender: nil)
+            
         default:
             break
         }
@@ -49,7 +55,7 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4;
+        return 3;
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -63,12 +69,14 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
         
         if (indexPath.row == 0){
             let headerCell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! MenuHeaderCell;
             headerCell.fname?.text = appDelegate.user?.first_name;
             headerCell.lname?.text = appDelegate.user?.last_name;
-        
+            headerCell.selectionStyle = UITableViewCellSelectionStyle.none
+            
             if let url = URL(string: (appDelegate.user?.pictureUrl)!) {
                 headerCell.photo?.contentMode = .scaleAspectFit
                 headerCell.photo?.layer.cornerRadius = 10.0
@@ -80,20 +88,33 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         else {
             switch (indexPath.row){
+            
+            /*
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuCreditCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "Add Credit";
+                cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
+            
             case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuReferCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "Invite your friend";
+                cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
-            case 3:
+            */
+            case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuLogOutCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "Sign out";
+                cell.selectionStyle = UITableViewCellSelectionStyle.none
+                return cell;
+            case 2:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "menuAboutAppCell", for: indexPath) as! MenuTableViewCell
+                cell.titleLbl?.text = "About App";
+                cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
             default:
                 let cell = UITableViewCell();
+                cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
             }
         }
