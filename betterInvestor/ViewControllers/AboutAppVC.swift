@@ -41,6 +41,9 @@ class AboutAppVC: UITableViewController {
         if (indexPath.row == 0){
             return 140;
         }
+        if (indexPath.row == 1){
+            return 110;
+        }
         else {
             return 88;
         }

@@ -25,9 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)        
         initialization();
-        
-        
-        
         return true
     }
 
@@ -55,22 +52,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        let isHandled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[.sourceApplication] as! String!, annotation: options[.annotation])
+        let isHandled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[.sourceApplication] as? String, annotation: options[.annotation])
         return isHandled
     }
     
     func initialization () {
         let ver = UserDefaults.standard.value(forKey: "symbols_version") as? String
         if ( ver == nil){
-             UserDefaults.standard.set("1", forKey: "symbols_version")
-            
+            UserDefaults.standard.set("1", forKey: "symbols_version")
             if let path = Bundle.main.path(forResource: "symbols", ofType: "plist") {
                 if let symbolsArray = NSArray(contentsOfFile: path) {
                     UserDefaults.standard.set(symbolsArray, forKey: "symbols")
                 }
             }
-            
-            
         }
         
         // Change Navigation Bar Color

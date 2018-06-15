@@ -52,7 +52,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @objc func refreshQuote () {
         print ("refreshQuote called");
         self.appDelegate.market?.fetchStockPrice (completion: {
-            self.appDelegate.user?.portfolio?.calculateGain()
+            self.appDelegate.user?.portfolio.calculateGain()
             self.portfolioTableView.reloadData();
             
           //  if self.isVisible(view: self.view){
@@ -237,9 +237,11 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             user?.fetchPortfolio(completion: {
                 self.appDelegate.market = Market.init(portfolio: (user?.portfolio)!)
                 self.appDelegate.market?.fetchStockPrice (completion: {
-                    user?.portfolio?.calculateGain()
+                    user?.portfolio.calculateGain()
                     self.portfolioTableView.reloadData();
-                    user?.fetchGainHistory (completion:{})
+                    user?.fetchGainHistory (completion:{
+                        user?.fetchRanking(global: false, count: 10, completion: {self.rankingVC?.table?.reloadData()})
+                    })
                 })
             })
         })
@@ -439,12 +441,12 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // Page View Methods - End
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         if (indexPath.row > 0){
-            let portfolio = appDelegate.user?.portfolio;
-            let position = portfolio!.positions![indexPath.row-1];
-            self.appDelegate.selectedStock = Symbol(key: position.symbol, name: position.name);
-            performSegue(withIdentifier: "segueStockVC", sender: nil)
+            if let portfolio = appDelegate.user?.portfolio {
+                let position = portfolio.positions[indexPath.row-1]
+                self.appDelegate.selectedStock = Symbol(key: position.symbol, name: position.name);
+                performSegue(withIdentifier: "segueStockVC", sender: nil)
+            }
         }
     }
     
@@ -481,8 +483,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let portfolio = appDelegate.user?.portfolio {
-            if ((portfolio.positions?.count)! > 0) {
-                return (portfolio.positions?.count)! + 1;
+            if (portfolio.positions.count > 0) {
+                return portfolio.positions.count + 1;
             }
             else {
                 return 2;
@@ -503,16 +505,27 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = NumberFormatter.Style.currency
-        let formattedCash = numberFormatter.string(from: NSNumber(value:(self.appDelegate.user?.portfolio?.cash)!))
-        let formattedStockValue = numberFormatter.string(from: NSNumber(value:(portfolio!.total_stock_value)))
-        let formattedGain = numberFormatter.string(from: NSNumber(value:(portfolio!.total_gain)))
+        
+        var formattedCash = "", formattedStockValue = "", formattedGain = "";
+        if let cash = appDelegate.user?.portfolio.cash {
+            formattedCash = numberFormatter.string(from: NSNumber(value:cash))!
+        }
+        
+        if let stockValue = portfolio?.cash {
+            formattedStockValue = numberFormatter.string(from: NSNumber(value:(stockValue)))!
+        }
+        
+        if let totalGain = portfolio?.total_gain {
+            formattedGain = numberFormatter.string(from: NSNumber(value:(totalGain)))!
+        }
         
         
+    
         if (indexPath.row == 0){
             let cell = tableView.dequeueReusableCell(withIdentifier: "SummaryCell", for: indexPath) as! PortfolioSummaryCell;
-            cell.cashLbl?.text = formattedCash!;
+            cell.cashLbl?.text = formattedCash;
             cell.stockLbl?.text = formattedStockValue;
-            cell.totalGainLbl?.text = formattedGain! + "(" + String(format:"%.2f",portfolio!.total_gain_precentage) + "%)" ;
+            cell.totalGainLbl?.text = formattedGain + "(" + String(format:"%.2f",portfolio!.total_gain_precentage) + "%)" ;
             cell.rankFrinedsLbl?.text = "--"
             if (appDelegate.user?.global_rank != nil)
             {
@@ -535,21 +548,21 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         else {
             
-            if (portfolio!.positions?.count == 0){
+            if (portfolio?.positions.count == 0){
                 let cell = tableView.dequeueReusableCell(withIdentifier: "EmptyPortfolioCell", for: indexPath);
                 return cell;
             }
             else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
                 var price_str = "-";
-                let position = portfolio!.positions![indexPath.row-1];
-                let quote = market?.quotes[(position.symbol)];
-                cell.symbolLbl?.text = position.symbol.uppercased();
+                let position = portfolio?.positions[indexPath.row-1];
+                let quote = market?.quotes[(position?.symbol)!];
+                cell.symbolLbl?.text = position?.symbol.uppercased();
     
                 if (quote != nil) {
                     price_str = String(format:"%.2f",quote!.price);
-                    gain = position.gain
-                    gain_precentage = position.gain_precentage
+                    gain = (position?.gain)!
+                    gain_precentage = (position?.gain_precentage)!
                     cell.priceLbl?.text = price_str;
                 }
             

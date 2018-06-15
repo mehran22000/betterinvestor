@@ -13,19 +13,18 @@ class ResponseParser {
     class func parseUserPortfolio (json:NSDictionary, user: User){
         let data = json["data"] as! NSDictionary;
         let portfolio = data["portfolio"] as! [NSDictionary];
-        user.portfolio = Portfolio();
         if (portfolio.count > 0) {
             for index in 0...portfolio.count-1  {
                 let pos = Position(symbol:portfolio[index].value(forKey: "symbol") as! String,
                                qty:portfolio[index].value(forKey: "qty") as! NSInteger,
                                cost:portfolio[index].value(forKey: "cost") as! Double,
                                name:portfolio[index].value(forKey: "name") as! String);
-                user.portfolio?.addPosition(position: pos);
+                user.portfolio.addPosition(position: pos);
             }
         }
-        user.portfolio?.cash = data["cash"] as? Double;
-        user.global_rank = data["rank_global"] as? NSInteger;
-        user.portfolio?.credit = data["credit"] as? Double;
+        user.portfolio.cash = data["cash"] as! Double;
+        user.global_rank = data["rank_global"] as! NSInteger;
+        user.portfolio.credit = data["credit"] as! Double;
     }
     
     class func parseQuotes (json:NSDictionary){
@@ -68,7 +67,7 @@ class ResponseParser {
             user.gain_history = NSMutableArray ()
             for index in 0...arr.count-1  {
                 let gain_history_item = GainHistoryItem(_keyValStr: arr[index]);
-                user.gain_history?.add(gain_history_item);
+                user.gain_history.add(gain_history_item);
             }
         }
     }
@@ -126,15 +125,15 @@ class ResponseParser {
                                    _rank: ranking[index].value(forKey: "rank_global") as! Int)
                
                 if (isGlobalRanking == true){
-                    user.global_ranking?.add(ranking)
+                    user.global_ranking.add(ranking)
                     if (ranking.user_id == user.id) {
                         user.global_rank = ranking.rank;
                     }
                 }
                 else {
-                    user.friend_ranking?.add(ranking)
+                    user.friend_ranking.add(ranking)
                     let gain_double = NumberFormatter().number(from: ranking.gain_pct!)?.doubleValue
-                    if (gain_double! > (user.portfolio?.total_gain_precentage)!) {
+                    if (gain_double! > user.portfolio.total_gain_precentage) {
                         user.friends_rank = user.friends_rank! + 1;
                     }
                 }

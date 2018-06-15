@@ -62,7 +62,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.position = appDelegate.user?.portfolio?.getPosition(_symbol: appDelegate.selectedStock!.key);
+        self.position = appDelegate.user?.portfolio.getPosition(_symbol: appDelegate.selectedStock!.key);
         
         if (isBuy == true) {
             self.title = "Buy"
@@ -174,8 +174,8 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     func executeBuy(){
     
         let param = RequestGenerator.requestOrder(user: self.appDelegate.user!,
-                                                     symbol: appDelegate.selectedStock!.key as NSString!,
-                                                     name: appDelegate.selectedStock!.name as NSString!,
+                                                     symbol: appDelegate.selectedStock!.key as NSString,
+                                                     name: appDelegate.selectedStock!.name as NSString,
                                                      qty: self.quantity!,
                                                      price: self.quote!,
                                                      fee: self.trxFee);
@@ -186,7 +186,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                    let json = JSON(result)
                     if (json["status"] == "200") {
                     self.appDelegate.user?.fetchPortfolio(completion: {
-                        self.appDelegate.user?.portfolio?.calculateGain()
+                        self.appDelegate.user?.portfolio.calculateGain()
                         let title = "Order Executed!";
                         let qtyStr:String = String(format:"%d", self.quantity!);
                         let quoteStr:String = String(format:"%.2f", self.quote!);
@@ -219,8 +219,8 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     func executeSell() {
         let param = RequestGenerator.requestOrder(user: self.appDelegate.user!,
-                                                symbol: appDelegate.selectedStock!.key as NSString!,
-                                                name: appDelegate.selectedStock!.name as NSString!,
+                                                symbol: appDelegate.selectedStock!.key as NSString,
+                                                name: appDelegate.selectedStock!.name as NSString,
                                                    qty: self.quantity!,
                                                  price: self.quote!,
                                                    fee: self.trxFee);
@@ -231,7 +231,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                 let json = JSON(result)
                 if (json["status"] == "200") {
                     self.appDelegate.user?.fetchPortfolio(completion: {
-                        self.appDelegate.user?.portfolio?.calculateGain()
+                        self.appDelegate.user?.portfolio.calculateGain()
                         self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false);
                         
                         let qtyStr:String = String(format:"%d", self.quantity!);

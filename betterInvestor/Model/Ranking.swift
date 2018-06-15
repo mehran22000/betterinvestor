@@ -10,13 +10,13 @@ import Foundation
 
 @objc class Ranking: NSObject {
     
-    var user_id: String?
-    var first_name: String?
-    var last_name: String?
-    var gain: String?
-    var gain_pct: String?
+    let user_id: String!
+    let first_name: String!
+    let last_name: String!
+    let gain: String!
+    let gain_pct: String!
     var photo_url: String?
-    var rank: Int?
+    let rank: Int!
     var photo: UIImage?
     
     

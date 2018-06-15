@@ -80,15 +80,15 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
                         }
         }
         */
-        
-        self.user?.fetchPortfolio(completion: {
-            self.appDelegate.market!.addToStockList(user: self.user!, completion: {
-                self.marketUpdated = true;
-                self.user?.portfolio?.calculateGain();
-                self.portfolioTableView.reloadData();
+        if (self.user != nil) {
+            self.user?.fetchPortfolio(completion: {
+                self.appDelegate.market!.addToStockList(portfolio: self.user!.portfolio, completion: {
+                    self.marketUpdated = true;
+                    self.user?.portfolio.calculateGain();
+                    self.portfolioTableView.reloadData();
+                })
             })
-            
-        })
+        }
     }
     
     
@@ -114,7 +114,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
        // self.yPortfolio = 0;
        // self.yAdView = yPageControlView! + Constants.pageControlHeight;
-        let width = Int(screenWidth!);
+        // let width = Int(screenWidth!);
         
        // self.portfolioTableView.frame = CGRect(x: 0, y: self.yPortfolio!, width: width, height: self.portfolioHeight!);
     
@@ -188,7 +188,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let portfolio = self.user?.portfolio {
-            return (portfolio.positions?.count)! + 2;
+            return portfolio.positions.count + 2;
         }
         else {
             return 0;
@@ -204,7 +204,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = NumberFormatter.Style.currency
-        let formattedCash = numberFormatter.string(from: NSNumber(value:(self.user?.portfolio?.cash)!))
+        let formattedCash = numberFormatter.string(from: NSNumber(value:(self.user?.portfolio.cash)!))
         let formattedStockValue = numberFormatter.string(from: NSNumber(value:(portfolio!.total_stock_value)))
         let formattedGain = numberFormatter.string(from: NSNumber(value:(portfolio!.total_gain)))
         
@@ -236,24 +236,25 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PortfolioCell", for: indexPath) as! PortfolioCell;
             var price_str = "-";
-            let position = portfolio!.positions![indexPath.row-2];
-            let quote = self.appDelegate.market?.quotes[(position.symbol)];
-            cell.symbolLbl?.text = position.symbol.uppercased();
             
-            if (quote != nil) {
-                price_str = String(format:"%.2f",quote!.price);
-                gain = position.gain
-                gain_precentage = position.gain_precentage
-                cell.priceLbl?.text = price_str;
-            }
+            if let position = portfolio?.positions[indexPath.row-2] {
+                let quote = self.appDelegate.market?.quotes[(position.symbol)];
+                cell.symbolLbl?.text = position.symbol.uppercased();
             
-            if (performance_btn_mode == Gain_Mode.gain_precentage){
-                gain_str = String(format:"%.0f",gain_precentage) + "%";
-            }
-            else {
-                gain_str = String(format:"%.2f",gain);
-            }
+                if (quote != nil) {
+                    price_str = String(format:"%.2f",quote!.price);
+                    gain = position.gain
+                    gain_precentage = position.gain_precentage
+                    cell.priceLbl?.text = price_str;
+                }
             
+                if (performance_btn_mode == Gain_Mode.gain_precentage){
+                    gain_str = String(format:"%.0f",gain_precentage) + "%";
+                }
+                else {
+                    gain_str = String(format:"%.2f",gain);
+                }
+            }
             
             if (gain >= 0) {
                 gain_str = "+" + gain_str;

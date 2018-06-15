@@ -48,10 +48,10 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if (self.screenMode == ScreenMode.Friends){
-            selected_user_rank = self.appDelegate.user?.friend_ranking![indexPath.row] as? Ranking;
+            selected_user_rank = self.appDelegate.user?.friend_ranking[indexPath.row] as? Ranking;
         }
         else {
-            selected_user_rank = self.appDelegate.user?.global_ranking![indexPath.row] as? Ranking;
+            selected_user_rank = self.appDelegate.user?.global_ranking[indexPath.row] as? Ranking;
         }
         
         performSegue(withIdentifier: "segueFriendPortfolio", sender: nil);
@@ -99,10 +99,10 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if ((self.screenMode == ScreenMode.Friends) && (self.appDelegate.user?.friend_ranking != nil)) {
-            return (self.appDelegate.user?.friend_ranking?.count)!;
+            return (self.appDelegate.user?.friend_ranking.count)!;
         }
         else if ((self.screenMode == ScreenMode.All) && (self.appDelegate.user?.global_ranking != nil)) {
-            return (self.appDelegate.user?.global_ranking?.count)!;
+            return (self.appDelegate.user?.global_ranking.count)!;
         }
         else {
             return 0;
@@ -148,22 +148,22 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RankingCell", for: indexPath) as! RankingCell;
         cell.selectionStyle = UITableViewCellSelectionStyle.none;
-        let user: Ranking;
+        let rank: Ranking!;
         if (self.screenMode == ScreenMode.Friends){
-            user = self.appDelegate.user?.friend_ranking![indexPath.row] as! Ranking;
+            rank = self.appDelegate.user?.friend_ranking[indexPath.row] as! Ranking;
         }
         else {
-            user = self.appDelegate.user?.global_ranking![indexPath.row] as! Ranking;
+            rank = self.appDelegate.user?.global_ranking[indexPath.row] as! Ranking;
         }
         // cell.rank.text = String(indexPath.row);
-        cell.username.text = String(describing: indexPath.row+1) + ". " + user.first_name! + " " + user.last_name!;
+        cell.username.text = String(describing: indexPath.row+1) + ". " + rank.first_name! + " " + rank.last_name!;
         
         var title: String;
         if (performance_btn_mode == Gain_Mode.gain_precentage){
-            title = user.gain_pct! + "%";
+            title = rank.gain_pct! + "%";
         }
         else {
-            title = "$" + user.gain!;
+            title = "$" + rank.gain!;
         }
         
         
@@ -174,34 +174,28 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.performanceBtn.setTitle(title, for: UIControlState.normal)
         
         
-        if let url = URL(string: user.photo_url!) {
+        if let url = URL(string: rank.photo_url!) {
             cell.photo?.contentMode = .scaleAspectFit
             cell.photo?.layer.cornerRadius = 10.0
             cell.photo?.clipsToBounds = true
-            downloadImage(url: url,imageView: cell.photo!, user_rank: user)
+            downloadImage(url: url,imageView: cell.photo!, user_rank: rank)
         }
         return cell;
     }
 
     func fetchFriendsRanking() {
-        
-        self.table?.reloadData();
-        if (self.appDelegate.user?.friend_ranking == nil) {
-            self.appDelegate.user?.fetchRanking(global: false, count: 100, completion: {
-                self.table?.reloadData();
-            })
-        }
+      //  self.table?.reloadData();
+        self.appDelegate.user?.fetchRanking(global: false, count: 100, completion: {
+            self.table?.reloadData();
+        })
     }
     
     
     func fetchGlobalRanking() {
-        
-        self.table?.reloadData();
-        if (self.appDelegate.user?.global_ranking == nil) {
-            self.appDelegate.user?.fetchRanking(global: true, count: 100, completion: {
+      //  self.table?.reloadData();
+        self.appDelegate.user?.fetchRanking(global: true, count: 100, completion: {
                 self.table?.reloadData();
-            })
-        }
+        })
     }
     
     

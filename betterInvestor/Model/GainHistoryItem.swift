@@ -9,16 +9,15 @@
 import Foundation
 
 @objc class GainHistoryItem: NSObject {
-    @objc let dateStr: String
+    @objc let dateStr: String!
     @objc var date: Date?
-    @objc var gain: Double
+    @objc let gain: Double
     @objc var day: Int
     @objc var month: Int
     @objc var year: Int
-    @objc var monthStr: NSString
+    @objc var monthStr: NSString!
     
     var month_names = ["Jan","Feb","March","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
-    
     
     init (_dateStr:String, _gain: Double){
         self.dateStr = _dateStr;
@@ -33,19 +32,19 @@ import Foundation
         var str_no_brackets = _keyValStr.replacingOccurrences(of: "{", with: "");
         str_no_brackets = str_no_brackets.replacingOccurrences(of: "}", with: "");
         let key_val_array = str_no_brackets.split{$0 == ":"}.map(String.init)
-        self.dateStr = key_val_array[0];
+        
+        // Extract gain
         self.gain = Double(key_val_array[1])!;
         
+        // Extract date
+        self.dateStr = key_val_array[0];
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
         self.date = dateFormatter.date(from: self.dateStr)!
-        
         let calendar = Calendar.current
-        
         self.year = calendar.component(.year, from: self.date!)
         self.month = calendar.component(.month, from: self.date!)
         self.day = calendar.component(.day, from: self.date!)
-        
         self.monthStr = month_names[self.month-1] as NSString;
         
     }

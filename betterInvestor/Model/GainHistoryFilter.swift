@@ -11,12 +11,9 @@ import Foundation
 @objc class GainHistoryFilter: NSObject {
 
     @objc func getSamples(_gainHistory:NSArray, _isMonth: Bool) -> NSMutableArray {
-        
         var result = NSMutableArray();
-        
         let maxSample:NSInteger;
         _isMonth == true ? (maxSample = 30) : (maxSample = 365)
-        
         if (maxSample > _gainHistory.count) {
             result = _gainHistory as! NSMutableArray;
         }

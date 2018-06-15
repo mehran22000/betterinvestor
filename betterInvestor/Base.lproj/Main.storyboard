@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AbN-xy-qM0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AbN-xy-qM0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1251,7 +1251,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social_netowrk" translatesAutoresizingMaskIntoConstraints="NO" id="war-E7-cv1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tut_social" translatesAutoresizingMaskIntoConstraints="NO" id="war-E7-cv1">
                                 <rect key="frame" x="38" y="134" width="298" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1280,7 +1280,7 @@
                             <items>
                                 <navigationItem title="Refer your Friend  " id="Gmw-fp-549">
                                     <barButtonItem key="backBarButtonItem" title="Back" id="flv-Gk-I7p"/>
-                                    <barButtonItem key="leftBarButtonItem" style="plain" id="7IE-x0-R7r">
+                                    <barButtonItem key="leftBarButtonItem" style="done" id="7IE-x0-R7r">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O9N-rq-BIP">
                                             <rect key="frame" x="16" y="7" width="34" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1387,7 +1387,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone" translatesAutoresizingMaskIntoConstraints="NO" id="f68-Az-T4o">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tut_practice" translatesAutoresizingMaskIntoConstraints="NO" id="f68-Az-T4o">
                                 <rect key="frame" x="107" y="124" width="161" height="322"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1426,7 +1426,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="competition" translatesAutoresizingMaskIntoConstraints="NO" id="2vc-yx-FOb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tut_competition" translatesAutoresizingMaskIntoConstraints="NO" id="2vc-yx-FOb">
                                 <rect key="frame" x="63" y="143" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1598,11 +1598,11 @@ As a condition to using Services, you are required to open an account with by al
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94836487609999998" green="0.77751694739999999" blue="0.97881249999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreditCell" rowHeight="88" id="6aK-CN-hDJ">
-                                <rect key="frame" x="0.0" y="192" width="375" height="88"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreditCell" rowHeight="120" id="6aK-CN-hDJ">
+                                <rect key="frame" x="0.0" y="192" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6aK-CN-hDJ" id="Ebd-Tf-sE1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72Y-6o-gYT">
@@ -1612,8 +1612,8 @@ As a condition to using Services, you are required to open an account with by al
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Icon made by Chris Veigt from www.flaticon.com " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPd-t0-oB9">
-                                            <rect key="frame" x="15" y="40" width="333" height="25"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Icons made by SmashIcons, VectorsMarket, Freepik, ChrisVeigt, and Vaadin Veigt from www.flaticon.com " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPd-t0-oB9">
+                                            <rect key="frame" x="15" y="40" width="333" height="69"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1625,7 +1625,7 @@ As a condition to using Services, you are required to open an account with by al
                                 <color key="backgroundColor" red="0.94836487609999998" green="0.77751694739999999" blue="0.97881249999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactUsCell" rowHeight="88" id="mBz-4i-L30">
-                                <rect key="frame" x="0.0" y="280" width="375" height="88"/>
+                                <rect key="frame" x="0.0" y="312" width="375" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mBz-4i-L30" id="oYI-ku-YWM">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
@@ -1659,22 +1659,22 @@ As a condition to using Services, you are required to open an account with by al
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuv-4R-16j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2314" y="-2267"/>
+            <point key="canvasLocation" x="2312.8000000000002" y="-2267.3163418290856"/>
         </scene>
     </scenes>
     <resources>
         <image name="buy" width="32" height="32"/>
         <image name="buy_stock" width="64" height="64"/>
         <image name="cash" width="32" height="32"/>
-        <image name="competition" width="273" height="274"/>
         <image name="fb_login" width="400" height="150"/>
         <image name="info" width="32" height="32"/>
-        <image name="iphone" width="349" height="697"/>
         <image name="messages_icon" width="32" height="32"/>
         <image name="next" width="64" height="64"/>
         <image name="refer" width="32" height="32"/>
         <image name="sign_out" width="32" height="32"/>
-        <image name="social_netowrk" width="592" height="570"/>
+        <image name="tut_competition" width="273" height="274"/>
+        <image name="tut_practice" width="349" height="697"/>
+        <image name="tut_social" width="592" height="570"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sXN-dp-JJy"/>

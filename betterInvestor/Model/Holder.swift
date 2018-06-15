@@ -11,9 +11,9 @@ import Foundation
 
 @objc class Holder: NSObject {
     
-    var user_id: String?;
-    var first_name: String?;
-    var last_name: String?;
+    let user_id: String!;
+    let first_name: String!;
+    let last_name: String!;
     var picUrl: String?;
     var photo: UIImage?;
     var pos: Position?;
@@ -27,5 +27,4 @@ import Foundation
         self.pos = _pos;
         self.global_ranking = _global_rank;
     }
-    
 }

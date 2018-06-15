@@ -43,7 +43,6 @@
 		0258C2D91FB90B52003FC621 /* HalfPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0A97B1FB7CA8700039603 /* HalfPieChartViewController.m */; };
 		0258C2E41FBC01E1003FC621 /* LineChart1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2DF1FBC01E1003FC621 /* LineChart1ViewController.m */; };
 		0258C2E51FBC01E1003FC621 /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0258C2E31FBC01E1003FC621 /* LineChart1ViewController.xib */; };
-		0258C2EA1FBD4E0E003FC621 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2E91FBD4E0E003FC621 /* Stub.swift */; };
 		0258C2EC1FBD51B5003FC621 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2EB1FBD51B5003FC621 /* Constants.swift */; };
 		0258C2F11FC25580003FC621 /* ChartBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0A9801FB7CB3300039603 /* ChartBaseViewController.m */; };
 		0258C2F41FC3E8F8003FC621 /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2F31FC3E8F8003FC621 /* StockVC.swift */; };
@@ -69,7 +68,6 @@
 		028C9BFD1FE8BA0C003966F8 /* Pods_betterInvestorTests.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		028C9BFE1FE8BA0C003966F8 /* Pods_betterInvestorUITests.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		028C9C041FEA1D0E003966F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C9C031FEA1D0E003966F8 /* User.swift */; };
-		028C9C081FEA22E8003966F8 /* app_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 028C9C071FEA22E8003966F8 /* app_config.plist */; };
 		028ED07E1FAE4E6500ABE2CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */; };
 		02A7176B1FB3E13400289BCD /* RankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176A1FB3E13400289BCD /* RankingTableVC.swift */; };
 		02A7176D1FB4187300289BCD /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* RankingCell.swift */; };
@@ -178,7 +176,6 @@
 		0258C2DF1FBC01E1003FC621 /* LineChart1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChart1ViewController.m; sourceTree = "<group>"; };
 		0258C2E21FBC01E1003FC621 /* LineChart1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChart1ViewController.h; sourceTree = "<group>"; };
 		0258C2E31FBC01E1003FC621 /* LineChart1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChart1ViewController.xib; sourceTree = "<group>"; };
-		0258C2E91FBD4E0E003FC621 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 		0258C2EB1FBD51B5003FC621 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0258C2F31FC3E8F8003FC621 /* StockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVC.swift; sourceTree = "<group>"; };
 		0258C2F71FC3F141003FC621 /* StockHoldersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockHoldersVC.swift; sourceTree = "<group>"; };
@@ -191,7 +188,6 @@
 		028C9BE91FE8B88A003966F8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		028C9BED1FE8B8D2003966F8 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		028C9C031FEA1D0E003966F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		028C9C071FEA22E8003966F8 /* app_config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = app_config.plist; sourceTree = "<group>"; };
 		028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		02A7176A1FB3E13400289BCD /* RankingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableVC.swift; sourceTree = "<group>"; };
 		02A7176C1FB4187300289BCD /* RankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
@@ -271,8 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				023B703E20A944EE007AD21F /* symbols.plist */,
-				028C9C071FEA22E8003966F8 /* app_config.plist */,
 				028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */,
+				0203FC0F1F99741B007FE62A /* Assets.xcassets */,
 				02A844381FB01C5A00D4935D /* Icons.xcassets */,
 				0203FC071F99741B007FE62A /* betterInvestor */,
 				0203FC1C1F99741B007FE62A /* betterInvestorTests */,
@@ -297,7 +293,10 @@
 			isa = PBXGroup;
 			children = (
 				02C0A9791FB7CA8700039603 /* betterInvestor-Bridging-Header.h */,
+				0203FC141F99741B007FE62A /* Info.plist */,
 				0203FC0C1F99741B007FE62A /* Main.storyboard */,
+				0203FC111F99741B007FE62A /* LaunchScreen.storyboard */,
+				0258C2EB1FBD51B5003FC621 /* Constants.swift */,
 				0203FC081F99741B007FE62A /* AppDelegate.swift */,
 				02657D2F204237D2008A8159 /* facebook */,
 				028C9C001FEA1CFD003966F8 /* Model */,
@@ -305,11 +304,6 @@
 				02A844341FAFD47E00D4935D /* ViewControllers */,
 				02A844351FAFD4D100D4935D /* Cells */,
 				0245A7051FB8FE6000BB185D /* ChartsExtension */,
-				0203FC0F1F99741B007FE62A /* Assets.xcassets */,
-				0203FC111F99741B007FE62A /* LaunchScreen.storyboard */,
-				0203FC141F99741B007FE62A /* Info.plist */,
-				0258C2E91FBD4E0E003FC621 /* Stub.swift */,
-				0258C2EB1FBD51B5003FC621 /* Constants.swift */,
 			);
 			path = betterInvestor;
 			sourceTree = "<group>";
@@ -535,7 +529,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Ron;
 				TargetAttributes = {
 					0203FC041F99741B007FE62A = {
@@ -580,7 +574,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				028C9C081FEA22E8003966F8 /* app_config.plist in Resources */,
 				0203FC131F99741B007FE62A /* LaunchScreen.storyboard in Resources */,
 				0258C2E51FBC01E1003FC621 /* LineChart1ViewController.xib in Resources */,
 				02C0A97E1FB7CA8700039603 /* HalfPieChartViewController.xib in Resources */,
@@ -830,7 +823,6 @@
 				0258C2F11FC25580003FC621 /* ChartBaseViewController.m in Sources */,
 				02EC9DBB20462FB000FB2686 /* Ranking.swift in Sources */,
 				02879E6D2008874A002E8AE1 /* Quote.swift in Sources */,
-				0258C2EA1FBD4E0E003FC621 /* Stub.swift in Sources */,
 				022818F41FCA31A80098F619 /* ProductVC.swift in Sources */,
 				022818F81FCB27D60098F619 /* ReferCell.swift in Sources */,
 				02327C5B20201AE000F2B1B8 /* StockInfoCell.swift in Sources */,
@@ -906,6 +898,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -913,6 +906,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -965,6 +959,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -972,6 +967,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -33,7 +33,7 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.position = appDelegate.user?.portfolio?.getPosition(_symbol: appDelegate.selectedStock!.key);
+        self.position = appDelegate.user?.portfolio.getPosition(_symbol: appDelegate.selectedStock!.key);
         self.title = appDelegate.selectedStock?.key.uppercased();
         self.tableView.reloadData()
     }
