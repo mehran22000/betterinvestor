@@ -16,8 +16,8 @@ import Foundation
     let last_name: String!;
     var picUrl: String?;
     var photo: UIImage?;
-    var pos: Position?;
-    var global_ranking: Int?;
+    var pos: Position!;
+    var global_ranking: Int!;
     
     init (_user_id:String,_first_name:String,_last_name:String,_picUrl: String, _pos: Position, _global_rank: Int){
         self.user_id = _user_id;

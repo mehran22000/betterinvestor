@@ -9,9 +9,9 @@
 import UIKit
 
 class MenuHeaderCell: UITableViewCell {
-    @IBOutlet var photo: UIImageView?
-    @IBOutlet var fname: UILabel?
-    @IBOutlet var lname: UILabel?
+    @IBOutlet weak var photo: UIImageView?
+    @IBOutlet weak var fname: UILabel?
+    @IBOutlet weak var lname: UILabel?
     
     override func awakeFromNib() {
         super.awakeFromNib()

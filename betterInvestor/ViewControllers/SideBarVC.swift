@@ -15,28 +15,21 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch (indexPath.row){
-        /*
-        case 1:
-            performSegue(withIdentifier: "productVCSegue", sender: nil)
-        
-        case 2:
-            performSegue(withIdentifier: "referVCSegue", sender: nil)
-        */
-        case 1:
-            showAlert();
-        case 2:
-            performSegue(withIdentifier: "aboutAppSegue", sender: nil)
-            
-        default:
-            break
-        }
+    // View Delegates - Start
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        UIApplication.shared.statusBarStyle = .lightContent
+        self.tableView!.tableFooterView = UIView()
     }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
+    // View Delegates - End
+    
     
     func showAlert() {
         let alertController = UIAlertController(title: "Sign Out", message: "Do you want to sign out?", preferredStyle: .alert)
-        
         
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: signOutNotification)
         alertController.addAction(defaultAction)
@@ -54,6 +47,7 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    // TableView Delegates - Start
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3;
     }
@@ -67,10 +61,8 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-        
         if (indexPath.row == 0){
             let headerCell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! MenuHeaderCell;
             headerCell.fname?.text = appDelegate.user?.first_name;
@@ -120,7 +112,29 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch (indexPath.row){
+            /*
+             case 1:
+             performSegue(withIdentifier: "productVCSegue", sender: nil)
+             
+             case 2:
+             performSegue(withIdentifier: "referVCSegue", sender: nil)
+             */
+        case 1:
+            showAlert();
+        case 2:
+            performSegue(withIdentifier: "aboutAppSegue", sender: nil)
+            
+        default:
+            break
+        }
+    }
+    // Tableview Delegates - End
     
+
+    
+    // Axillary
     func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             completion(data, response, error)
@@ -138,15 +152,6 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated);
-        UIApplication.shared.statusBarStyle = .lightContent
-        self.tableView!.tableFooterView = UIView()
-    }
     
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return .lightContent
-    }
-
+    
 }

@@ -41,17 +41,11 @@ class FbDataManager: NSObject
                 print(error!)
             }
             else {
-                print(result!)
                 self.dict = result as! [String : AnyObject]
-                self.appDelegate.user?.friends = self.dict["data"] as? NSArray;
-                let param = RequestGenerator.requestUserProfile(user: self.appDelegate.user!);
-                let url = Constants.bsae_url + "user/profile";
-                Alamofire.request(url, method: HTTPMethod.post, parameters: param, encoding:JSONEncoding.default).responseJSON { response in
-                      if let result = response.result.value {
-                         let json = JSON(result)
-                         if (json["status"] == "200") {
-                            completion();
-                        }
+                if let user = self.appDelegate.user {
+                    user.friends = self.dict["data"] as? NSArray;
+                    user.requestUserProfile {
+                        completion();
                     }
                 }
             }

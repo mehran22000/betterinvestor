@@ -15,9 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     @objc var user: User?
-    var market: Market?
+    var market = Market();
     var rootNavigationController: UINavigationController?
-    var selectedStock: Symbol?
+    // var selectedStock: Symbol?
     var masterVC: UIViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

@@ -16,7 +16,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var position: Position?
-    var symbol: String?
+    var symbolKey: String?
     var isBuy: Bool?
     var total: Double?
     var quote: Double?
@@ -27,12 +27,14 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     var isKeyboardShown: Bool?
     var tap: UITapGestureRecognizer?
     var mainVC: UIViewController?
+    var symbol: Symbol?
     
+    // MARK: View Delegates
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         self.tap = UITapGestureRecognizer(target: self, action: #selector(BuySellVC.dismissKeyboard))
-        self.symbol = appDelegate.selectedStock?.key;
+        self.symbolKey = self.symbol!.key;
         self.isKeyboardShown = false;
         
     }
@@ -62,7 +64,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.position = appDelegate.user?.portfolio.getPosition(_symbol: appDelegate.selectedStock!.key);
+        self.position = appDelegate.user?.portfolio.getPosition(_symbol: self.symbol!.key);
         
         if (isBuy == true) {
             self.title = "Buy"
@@ -71,15 +73,14 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             self.title = "Sell"
         }
         
-        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: Notification.Name.UIKeyboardWillHide, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: Notification.Name.UIKeyboardWillShow, object: nil)
     }
     
+    // MARK: Tableview Delegates
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
     }
-    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60;
@@ -96,11 +97,11 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         case 0:
             cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath) as! TrxInfoCell ;
             cell.titleLbl?.text = "Symbol"
-            cell.subtitleLbl?.text = self.symbol;
+            cell.subtitleLbl?.text = self.symbolKey;
         case 1:
             cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath) as! TrxInfoCell ;
             cell.titleLbl?.text = "Unit Price"
-            let quoteStr = appDelegate.market?.quotes[(appDelegate.selectedStock?.key)!];
+            let quoteStr = appDelegate.market.quotes[self.symbol!.key];
             self.quote = quoteStr!.price;
             cell.subtitleLbl?.text = String(format:"$%.2f",self.quote!);
         case 2:
@@ -110,7 +111,6 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             
             self.textField?.addTarget(self, action: #selector(BuySellVC.textFieldDidChange(_:)),
                                 for: UIControlEvents.editingChanged)
-
         case 3:
             cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath) as! TrxInfoCell ;
             cell.titleLbl?.text = "Fee"
@@ -145,11 +145,6 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         return cell
     }
     
-    @IBAction func cancelButtonClicked(){
-        self.appDelegate.selectedStock = nil;
-        self.navigationController?.popViewController(animated: true);
-    }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch (indexPath.row) {
@@ -171,87 +166,68 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
     }
     
-    func executeBuy(){
+    // MARK: User Interaction
+    @IBAction func cancelButtonClicked(){
+        self.symbol = nil;
+        // self.appDelegate.selectedStock = nil;
+        self.navigationController?.popViewController(animated: true);
+    }
     
-        let param = RequestGenerator.requestOrder(user: self.appDelegate.user!,
-                                                     symbol: appDelegate.selectedStock!.key as NSString,
-                                                     name: appDelegate.selectedStock!.name as NSString,
-                                                     qty: self.quantity!,
-                                                     price: self.quote!,
-                                                     fee: self.trxFee);
+    func executeBuy(){
         
-        let url = Constants.bsae_url + "user/portfolio/";
-        Alamofire.request(url, method: HTTPMethod.post, parameters: param, encoding:JSONEncoding.default).responseJSON { response in
-                if let result = response.result.value {
-                   let json = JSON(result)
-                    if (json["status"] == "200") {
-                    self.appDelegate.user?.fetchPortfolio(completion: {
-                        self.appDelegate.user?.portfolio.calculateGain()
-                        let title = "Order Executed!";
-                        let qtyStr:String = String(format:"%d", self.quantity!);
-                        let quoteStr:String = String(format:"%.2f", self.quote!);
-                        let msg = String(format: "Bought %@ %@ @ $%@", qtyStr, self.symbol!, quoteStr);
-                        self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false)
-                        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                        self.present(alert, animated: true,completion: nil)
-                        })
-                    }
-                    else if (json["status"] == "501") {
-                        let title = "Insufficient Funds";
-                        let msg = "Please try again"
-                        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                        self.present(alert, animated: true,completion: nil)
-                    }
-                   else {
-                        let title = "Transaction Error";
-                        let msg = "Please try again later"
-                        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                        self.present(alert, animated: true,completion: nil)
-                    }
-                    
-                    
-            }
+        let trx = Transaction();
+        trx.requestOrder(user: self.appDelegate.user!,
+                         symbol: self.symbol!.key as NSString,
+                         name: self.symbol!.name as NSString,
+                         qty: self.quantity!,
+                         price: self.quote!,
+                         fee: self.trxFee);
+        
+        trx.requestBuy(successCompletion: { (title:String, msg: String) in
+            self.appDelegate.user?.requestPortfolio(completion: {
+                self.appDelegate.user?.portfolio.calculateGain()
+                self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false)
+                let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true,completion: nil)
+            })
+        }) { (title:String, msg: String) in
+            self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false)
+            let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true,completion: nil)
         }
     }
     
     func executeSell() {
-        let param = RequestGenerator.requestOrder(user: self.appDelegate.user!,
-                                                symbol: appDelegate.selectedStock!.key as NSString,
-                                                name: appDelegate.selectedStock!.name as NSString,
-                                                   qty: self.quantity!,
-                                                 price: self.quote!,
-                                                   fee: self.trxFee);
+        let trx = Transaction();
+        trx.requestOrder(user: self.appDelegate.user!,
+                         symbol: self.symbol!.key as NSString,
+                         name: self.symbol!.name as NSString,
+                         qty: self.quantity!,
+                         price: self.quote!,
+                         fee: self.trxFee);
         
-        let url = Constants.bsae_url + "user/portfolio/";
-        Alamofire.request(url, method: HTTPMethod.put, parameters: param, encoding:JSONEncoding.default).responseJSON { response in
-            if let result = response.result.value {
-                let json = JSON(result)
-                if (json["status"] == "200") {
-                    self.appDelegate.user?.fetchPortfolio(completion: {
-                        self.appDelegate.user?.portfolio.calculateGain()
-                        self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false);
-                        
-                        let qtyStr:String = String(format:"%d", self.quantity!);
-                        let quoteStr:String = String(format:"%.2f", self.quote!);
-                        let msg = String(format: "Sold %@ %@ @ $%@", qtyStr, self.symbol!, quoteStr);
-                        let alert = UIAlertController(title: "Order Executed!", message: msg, preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
-                        self.present(alert, animated: true, completion: nil);
-                        })
-                    }
-                }
-            }
+        trx.requestSell(successCompletion: { (title:String, msg: String) in
+            self.appDelegate.user?.requestPortfolio(completion: {
+                self.appDelegate.user?.portfolio.calculateGain()
+                self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false);
+                let alert = UIAlertController(title: "Order Executed!", message: msg, preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
+                self.present(alert, animated: true, completion: nil);
+            })
+        }) { (title:String, msg: String) in
+            let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true,completion: nil)
         }
+    }
     
     
-    
+    // MARK: TextField
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return true;
     }
-    
     
     @objc func textFieldDidChange(_ textField: UITextField) {
         let str = textField.text!

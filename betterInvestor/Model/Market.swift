@@ -16,9 +16,10 @@ class Market{
     let nc = NotificationCenter.default
     var stockList = "";
     
-    init (portfolio: Portfolio) {
+    func setPortfolio (portfolio: Portfolio) {
         stockList = portfolio.getStockList();
     }
+    
     
     func addToStockList (portfolio: Portfolio,completion:@escaping () -> Void){        
         let posNo = portfolio.positions.count;
@@ -49,10 +50,6 @@ class Market{
         fetchStockPrice(completion: completion);
     }
     
-    func updateQuote(quote:Quote) {
-        quotes[quote.symbol] = quote;
-    }
-    
     @objc func fetchStockPrice(symbol: String, completion:@escaping (_ success:Bool) -> Void) {
         var url = Constants.bsae_url + Constants.get_quote_url;
         url = url.replacingOccurrences(of: "{symbol}", with: symbol);
@@ -60,7 +57,7 @@ class Market{
             if let result = response.result.value {
                 let jsonDic = result as! NSDictionary
                 if (jsonDic["status"] as! String == Constants.status_success) {
-                    ResponseParser.parseQuotes(json: jsonDic);
+                    self.parseQuotes(json: jsonDic);
                     completion(true);
                 }
                 else {
@@ -79,7 +76,7 @@ class Market{
                 if let result = response.result.value {
                     let jsonDic = result as! NSDictionary
                     if (jsonDic["status"] as! String == Constants.status_success) {
-                        ResponseParser.parseQuotes(json: jsonDic);
+                        self.parseQuotes(json: jsonDic);
                         self.nc.post(name:Notification.Name(rawValue:Constants.notif_stocks_updated),object: nil,userInfo: nil)
                         completion();
                     }
@@ -90,5 +87,48 @@ class Market{
             completion();
         }
     }
-
+    
+    func parseQuotes (json:NSDictionary){
+        let data = json["data"] as! NSDictionary;
+        let date = NSDate()
+        for (symbol, price) in data {
+            let quote = Quote(symbol: symbol as! String,price: price as! Double, time:date);
+            self.quotes[quote.symbol] = quote;
+        }
+    }
+   
+    func requestSymbols(completion:@escaping () -> Void) {
+        
+        let symbol_version = UserDefaults.standard.value(forKey: "symbols_version") as! String;
+        
+        let url = Constants.bsae_url + "market/stock/symbols/version/"+symbol_version;
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == "200") {
+                    self.parseSymbols(json: jsonDic);
+                }
+                completion();
+            }
+        }
+    }
+    
+    
+    
+    func parseSymbols (json:NSDictionary){
+        
+        let data = json["data"] as! NSDictionary;
+        let symbolsArray = data["symbols"] as! NSArray;
+        let symbols = NSMutableArray();
+        for sym in symbolsArray {
+            let dic = sym as! NSDictionary;
+            let symbol = Symbol(key: dic.object(forKey: "Symbol") as! String, name: dic.object(forKey: "Name") as! String)
+            symbols.add(symbol);
+        }
+        
+        UserDefaults.standard.set(symbolsArray, forKey: "symbols")
+        let symbols_version = data["version"] as! String;
+        UserDefaults.standard.set(symbols_version, forKey: "symbols_version")
+    }
+    
 }

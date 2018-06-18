@@ -10,8 +10,8 @@ import UIKit
 
 class TrxInputCell: UITableViewCell {
 
-    @IBOutlet var titleLbl: UILabel?;
-    @IBOutlet var inputTxtField: UITextField?;
+    @IBOutlet weak var titleLbl: UILabel?;
+    @IBOutlet weak var inputTxtField: UITextField?;
     
     
     override func awakeFromNib() {

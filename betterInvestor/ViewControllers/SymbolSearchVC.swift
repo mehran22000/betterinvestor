@@ -10,24 +10,20 @@ import UIKit
 
 class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate  {
 
-    // Portfolio
     @IBOutlet var tableView: UITableView!
     var symbols = NSArray();
     var filteredSymbols = NSMutableArray();
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let myActivityIndicator = UIActivityIndicatorView();
-    
+    var selectedSymbol: Symbol?;
     let searchController = UISearchController(searchResultsController: nil)
     
+    // MARK: View Delegates
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         definesPresentationContext = true
-        
         self.symbols = UserDefaults.standard.value(forKey: "symbols") as! NSArray;
-        
-       // filteredSymbols = symbols
-        
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         searchController.dimsBackgroundDuringPresentation = false
@@ -36,27 +32,20 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchController.searchBar.barStyle = .blackOpaque
         searchController.searchBar.barTintColor = UIColor.init(red: 111/255.0, green: 82/255.0, blue: 121/255.0, alpha: 1);
         
-        
         UIBarButtonItem.appearance(whenContainedInInstancesOf:[UISearchBar.self]).tintColor = UIColor.white
-        
         tableView.tableHeaderView = searchController.searchBar
-        
-        
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        
-        // Do any additional setup after loading the view.
     }
 
     override func viewWillAppear(_ animated: Bool) {
-         // self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // self.navigationController?.navigationBar.isHidden = false;
     }
+
     
+    // MARK: Tableview Delegates
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.filteredSymbols.count
@@ -84,12 +73,9 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         let sym = _selectedSymbol.object(forKey: "Symbol") as? String;
         let name = _selectedSymbol.object(forKey: "Name") as? String;
         
-        appDelegate.selectedStock = Symbol(key: sym!, name: name!);
-        //self.dismiss(animated: false, completion: nil);
-        
+        self.selectedSymbol = Symbol(key: sym!, name: name!);
         self.displayActivityIndicator();
-        
-        self.appDelegate.market!.fetchStockPrice(symbol: sym!) { (success) in
+        self.appDelegate.market.fetchStockPrice(symbol: sym!) { (success) in
             self.hideActivityIndicator();
             if (success == true){
                 self.performSegue(withIdentifier: "segueStockInfo", sender: nil)
@@ -103,11 +89,7 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    
+    // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
@@ -115,27 +97,17 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
+        
+        if(segue.identifier == "segueStockInfo") {
+            let stockVC = (segue.destination as! StockVC);
+            stockVC.symbol = self.selectedSymbol;
+        }
     }
     
-    
+    // MARK: User Interaction
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
        self.navigationController?.popViewController(animated: true)
        self.navigationController?.setNavigationBarHidden(false, animated: false)
-        // self.dismiss(animated: true, completion: nil);
-        
-    }
-    
-    
-    func displayActivityIndicator(){
-        self.myActivityIndicator.center = view.center
-        self.myActivityIndicator.hidesWhenStopped = true;
-        self.myActivityIndicator.startAnimating()
-        self.myActivityIndicator.activityIndicatorViewStyle = .whiteLarge;
-        self.view.addSubview(myActivityIndicator)
-    }
-    
-    func hideActivityIndicator(){
-        self.myActivityIndicator.stopAnimating();
     }
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -156,6 +128,19 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         self.tableView.reloadData()
+    }
+    
+    // MARK: Axillary
+    func displayActivityIndicator(){
+        self.myActivityIndicator.center = view.center
+        self.myActivityIndicator.hidesWhenStopped = true;
+        self.myActivityIndicator.startAnimating()
+        self.myActivityIndicator.activityIndicatorViewStyle = .whiteLarge;
+        self.view.addSubview(myActivityIndicator)
+    }
+    
+    func hideActivityIndicator(){
+        self.myActivityIndicator.stopAnimating();
     }
     
     

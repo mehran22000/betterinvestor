@@ -10,8 +10,8 @@ import UIKit
 
 class ReferCell: UITableViewCell {
 
-    @IBOutlet var nameLbl: UILabel?
-    @IBOutlet var iconImageView: UIImageView?
+    @IBOutlet weak var nameLbl: UILabel?
+    @IBOutlet weak var iconImageView: UIImageView?
     
     override func awakeFromNib() {
         super.awakeFromNib()

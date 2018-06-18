@@ -10,9 +10,8 @@ import UIKit
 
 class TrxInfoCell: UITableViewCell {
     
-    @IBOutlet var titleLbl: UILabel?;
-    @IBOutlet var subtitleLbl: UILabel?;
-    
+    @IBOutlet weak var titleLbl: UILabel?;
+    @IBOutlet weak var subtitleLbl: UILabel?;
     
     override func awakeFromNib() {
         super.awakeFromNib()

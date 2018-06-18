@@ -22,5 +22,4 @@ class Quote {
         self.price = price;
         self.time = time;
     }
-    
 }

@@ -81,20 +81,105 @@ import SwiftyJSON
         self.pictureUrl = aDecoder.decodeObject(forKey: "pictureUrl") as? String ?? ""
     }
     
-    func fetchPortfolio(completion:@escaping () -> Void) {
-        let url = Constants.bsae_url + Constants.get_profile_url + self.id;
-        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+
+    
+    func requestUserProfile(completion:@escaping () -> Void) {
+        
+        var dic = [String: AnyObject]();
+        dic["user_id"] = self.id as AnyObject;
+        dic["first_name"] = self.first_name as AnyObject;
+        dic["last_name"] = self.last_name as AnyObject;
+        dic["photo_url"] = self.pictureUrl as AnyObject;
+        dic["email"] = self.email as AnyObject;
+        var friends_str = String("");
+        for friend in self.friends! {
+            if (friends_str != "") {
+                friends_str = friends_str + ",";
+            }
+            friends_str = friends_str + ((friend as! NSDictionary).value(forKey: "id") as! String);
+        }
+        dic["friends"] = friends_str as AnyObject;
+        
+        let url = Constants.bsae_url + Constants.get_profile_url;
+        Alamofire.request(url, method: HTTPMethod.post, parameters: dic, encoding:JSONEncoding.default).responseJSON { response in
             if let result = response.result.value {
                 let jsonDic = result as! NSDictionary
                 if (jsonDic["status"] as! String == Constants.status_success) {
-                    ResponseParser.parseUserPortfolio(json: jsonDic,user: self);
                     completion();
                 }
             }
         }
     }
     
-    func fetchRanking(global: Bool, count: Int, completion:@escaping () -> Void) {
+    /* Portfolio Request and Parser */
+    
+    func requestPortfolio(completion:@escaping () -> Void) {
+        let url = Constants.bsae_url + Constants.portfolio_url + self.id;
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == Constants.status_success) {
+                    self.parsePortfolio(json: jsonDic);
+                    completion();
+                }
+            }
+        }
+    }
+    
+    func parsePortfolio (json:NSDictionary){
+        let data = json["data"] as! NSDictionary;
+        let portfolio = data["portfolio"] as! [NSDictionary];
+        self.portfolio = Portfolio();
+        if (portfolio.count > 0) {
+            for index in 0...portfolio.count-1  {
+                let pos = Position(symbol:portfolio[index].value(forKey: "symbol") as! String,
+                                   qty:portfolio[index].value(forKey: "qty") as! NSInteger,
+                                   cost:portfolio[index].value(forKey: "cost") as! Double,
+                                   name:portfolio[index].value(forKey: "name") as! String);
+                self.portfolio.addPosition(position: pos);
+            }
+        }
+        self.portfolio.cash = data["cash"] as! Double;
+        self.global_rank = data["rank_global"] as? NSInteger;
+        self.portfolio.credit = data["credit"] as! Double;
+    }
+    
+    
+    /* GainHistory Request and Parser */
+    
+    func requestGainHistory(completion:@escaping () -> Void) {
+        var url: String;
+        url = Constants.bsae_url + Constants.get_gains_url;
+        url = url.replacingOccurrences(of: "{user_id}", with: self.id);
+        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
+            if let result = response.result.value {
+                let jsonDic = result as! NSDictionary
+                if (jsonDic["status"] as! String == Constants.status_success) {
+                    self.parseGainHistory(json: jsonDic);
+                    completion();
+                }
+            }
+        }
+    }
+    
+    func parseGainHistory(json: NSDictionary) {
+        
+        let data = json["data"] as! NSDictionary;
+        let gain_history = data["gain"] as? NSString;
+        if (gain_history != nil){
+            var arr = gain_history!.components(separatedBy: ",")
+            self.gain_history = NSMutableArray ()
+            for index in 0...arr.count-1  {
+                let gain_history_item = GainHistoryItem(_keyValStr: arr[index]);
+                self.gain_history.add(gain_history_item);
+            }
+        }
+    }
+    
+    
+    /* Ranking Request and Parser */
+    
+    func requestRanking(global: Bool, count: Int, completion:@escaping () -> Void) {
         var url: String;
         url = Constants.bsae_url + Constants.get_ranking_url;
         if (global == true) {
@@ -110,30 +195,54 @@ import SwiftyJSON
             if let result = response.result.value {
                 let jsonDic = result as! NSDictionary
                 if (jsonDic["status"] as! String == Constants.status_success) {
-                    ResponseParser.parseUserRanking(json: jsonDic,user: self, isGlobalRanking:global );
+                    self.parseRanking(json: jsonDic, isGlobalRanking:global );
                     completion();
                 }
             }
         }
     }
     
-    
-    func fetchGainHistory(completion:@escaping () -> Void) {
-        var url: String;
-        url = Constants.bsae_url + Constants.get_gains_url;
-        url = url.replacingOccurrences(of: "{user_id}", with: self.id);
-        Alamofire.request(url, method: HTTPMethod.get, encoding:JSONEncoding.default).responseJSON { response in
-            if let result = response.result.value {
-                let jsonDic = result as! NSDictionary
-                if (jsonDic["status"] as! String == Constants.status_success) {
-                    ResponseParser.parseUserGainHistory(json: jsonDic,user: self);
-                    completion();
+
+    func parseRanking (json:NSDictionary, isGlobalRanking:Bool){
+        let data = json["data"] as! NSDictionary;
+        let ranking = data["ranking"] as! [NSDictionary];
+        let nc = NotificationCenter.default
+        
+        if (isGlobalRanking == true){
+            self.global_ranking = NSMutableArray()
+        }
+        else {
+            self.friend_ranking = NSMutableArray()
+        }
+        
+        self.friends_rank = 1;
+        
+        if (ranking.count > 0) {
+            for index in 0...ranking.count-1  {
+                let ranking = Ranking(_user_id: ranking[index].value(forKey: "user_id") as! String,
+                                      _first_name: ranking[index].value(forKey: "first_name") as! String,
+                                      _last_name: ranking[index].value(forKey: "last_name") as! String,
+                                      _gain: ranking[index].value(forKey: "gain") as! String,
+                                      _gain_pct: ranking[index].value(forKey: "gain_pct") as! String,
+                                      _photo_url: ranking[index].value(forKey: "photo_url") as! String,
+                                      _rank: ranking[index].value(forKey: "rank_global") as! Int)
+                
+                if (isGlobalRanking == true){
+                    self.global_ranking.add(ranking)
+                    if (ranking.user_id == self.id) {
+                        self.global_rank = ranking.rank;
+                    }
+                }
+                else {
+                    self.friend_ranking.add(ranking)
+                    let gain_double = NumberFormatter().number(from: ranking.gain_pct!)?.doubleValue
+                    if (gain_double! > self.portfolio.total_gain_precentage) {
+                        self.friends_rank = self.friends_rank! + 1;
+                    }
                 }
             }
         }
+        nc.post(name:Notification.Name(rawValue:"portfolio_updated"),object: nil,userInfo: nil)
     }
-    
-    
-    
     
 }

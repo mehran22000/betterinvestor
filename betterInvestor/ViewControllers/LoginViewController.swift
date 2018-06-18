@@ -20,12 +20,10 @@ class LoginViewController: UIViewController {
     let defaults = UserDefaults.standard
     @IBOutlet var activitySpinner: UIActivityIndicatorView?
     
-    
+    // View Delegates - Start
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.activitySpinner?.isHidden = true;
-        
         if let userObject = UserDefaults.standard.value(forKey: "user") as? NSData {
             self.fbLoginBtn?.isHidden = true;
             self.activitySpinner?.isHidden = false;
@@ -47,15 +45,15 @@ class LoginViewController: UIViewController {
         self.fbLoginBtn?.isHidden = false;
     }
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    // View Delegates - End
+
+    // Facebook Delegates - Start
     let facebookReadPermissions = ["public_profile", "email", "user_friends"]
- 
-   
     @IBAction func btnFBLoginPressed(_ sender: AnyObject) {
     
         self.activitySpinner?.isHidden = false;
@@ -77,5 +75,6 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    // Facebook Delegates - End
 
 }

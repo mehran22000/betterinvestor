@@ -23,15 +23,12 @@ class StockHoldersVC: UIViewController {
         self.screenSize = UIScreen.main.bounds
         self.screenWidth = screenSize!.width
         self.screenHeight = screenSize!.height
-        // let width = Int(screenWidth!);
         
-        // Ranking View Controllers
+        // Ranking View Controller
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         self.rankingVC = storyboard.instantiateViewController(withIdentifier: "RankingVC") as? RankingTableVC
-        // self.rankingVC?.view.frame = CGRect(x:0,y:0,width:width,height:175);
         self.addChildViewController(self.rankingVC!);
         self.tableView.addSubview((self.rankingVC?.view)!);
         
-        //self.segmentControlView.frame = CGRect(x:self.segmentControlView.frame.origin.x, y:self.segmentControlView.frame.origin.y,width:self.segmentControlView.frame.size.width,height:20);
     }
 }

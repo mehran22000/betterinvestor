@@ -10,11 +10,9 @@ import UIKit
 
 class StockActionCell: UITableViewCell {
 
-    @IBOutlet var titleLbl: UILabel?;
-    @IBOutlet var leftIcon: UIImageView?;
-    @IBOutlet var rightIcon: UIImageView?;
-    
-    
+    @IBOutlet weak var titleLbl: UILabel?;
+    @IBOutlet weak var leftIcon: UIImageView?;
+    @IBOutlet weak var rightIcon: UIImageView?;
     
     override func awakeFromNib() {
         super.awakeFromNib()

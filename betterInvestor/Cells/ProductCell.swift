@@ -9,8 +9,8 @@
 import UIKit
 
 class ProductCell: UITableViewCell {
-    @IBOutlet var nameLbl: UILabel?
-    @IBOutlet var buyBtn: UIButton?
+    @IBOutlet weak var nameLbl: UILabel?
+    @IBOutlet weak var buyBtn: UIButton?
     
     override func awakeFromNib() {
         super.awakeFromNib()

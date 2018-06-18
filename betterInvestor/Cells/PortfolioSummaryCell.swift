@@ -10,11 +10,11 @@ import UIKit
 
 class PortfolioSummaryCell: UITableViewCell {
 
-    @IBOutlet var cashLbl: UILabel?;
-    @IBOutlet var stockLbl: UILabel?;
-    @IBOutlet var totalGainLbl: UILabel?;
-    @IBOutlet var rankGlobalLbl: UILabel?;
-    @IBOutlet var rankFrinedsLbl: UILabel?;
+    @IBOutlet weak var cashLbl: UILabel?;
+    @IBOutlet weak var stockLbl: UILabel?;
+    @IBOutlet weak var totalGainLbl: UILabel?;
+    @IBOutlet weak var rankGlobalLbl: UILabel?;
+    @IBOutlet weak var rankFrinedsLbl: UILabel?;
     
     override func awakeFromNib() {
         super.awakeFromNib()
