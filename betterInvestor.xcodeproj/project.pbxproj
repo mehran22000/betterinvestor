@@ -85,6 +85,7 @@
 		02F0AECA201C1D29003E4C93 /* SymbolSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */; };
 		02F0AECC201CEA93003E4C93 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECB201CEA93003E4C93 /* Symbol.swift */; };
 		02F0AECE201D1326003E4C93 /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECD201D1326003E4C93 /* RootNavigationVC.swift */; };
+		02FB7DB120D9EC1B00E91718 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02FB7DAF20D9EC1B00E91718 /* Localizable.strings */; };
 		A3D2E471C36F83007EB07CAF /* Pods_betterInvestorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; };
 		BCB5193498B7ABB0AEC0BB1A /* Pods_betterInvestorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; };
 		DDD36C023DCA4D54653F569E /* Pods_betterInvestor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */; };
@@ -210,6 +211,8 @@
 		02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolSearchVC.swift; sourceTree = "<group>"; };
 		02F0AECB201CEA93003E4C93 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		02F0AECD201D1326003E4C93 /* RootNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationVC.swift; sourceTree = "<group>"; };
+		02FB7DB020D9EC1B00E91718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = betterInvestor/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		02FB7DB220D9ED5A00E91718 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = betterInvestor/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterInvestorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		110476187F5C48E4B0BAEDC7 /* Pods-betterInvestorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestorTests/Pods-betterInvestorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3038C3B7D4343F74E045D1B2 /* Pods-betterInvestor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +267,7 @@
 		0203FBFC1F99741B007FE62A = {
 			isa = PBXGroup;
 			children = (
+				02FB7DAF20D9EC1B00E91718 /* Localizable.strings */,
 				023B703E20A944EE007AD21F /* symbols.plist */,
 				028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */,
 				0203FC0F1F99741B007FE62A /* Assets.xcassets */,
@@ -567,6 +571,7 @@
 				0258C2E51FBC01E1003FC621 /* LineChart1ViewController.xib in Resources */,
 				02C0A97E1FB7CA8700039603 /* HalfPieChartViewController.xib in Resources */,
 				028ED07E1FAE4E6500ABE2CD /* GoogleService-Info.plist in Resources */,
+				02FB7DB120D9EC1B00E91718 /* Localizable.strings in Resources */,
 				0203FC101F99741B007FE62A /* Assets.xcassets in Resources */,
 				0203FC0E1F99741B007FE62A /* Main.storyboard in Resources */,
 				023B703F20A944EE007AD21F /* symbols.plist in Resources */,
@@ -867,6 +872,15 @@
 				0203FC121F99741B007FE62A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		02FB7DAF20D9EC1B00E91718 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02FB7DB020D9EC1B00E91718 /* Base */,
+				02FB7DB220D9ED5A00E91718 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

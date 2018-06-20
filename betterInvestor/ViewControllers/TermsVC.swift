@@ -10,12 +10,11 @@ import UIKit
 
 class TermsVC: UIViewController {
 
-    @IBOutlet var scroller: UIScrollView?
+    @IBOutlet weak var textView: UITextView?
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        scroller!.contentSize = CGSize(width: 340, height: 1000)
-        scroller?.sizeToFit();
-        scroller!.isScrollEnabled = true
+       super.viewDidLoad()
+       textView?.text = NSLocalizedString("Terms", comment: "")
     }
 
     override func viewDidLayoutSubviews() {
