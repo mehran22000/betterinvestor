@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let defaults = UserDefaults.standard
     @IBOutlet var activitySpinner: UIActivityIndicatorView?
+    var fb_inprogress: Bool = false;
     
     // View Delegates - Start
     override func viewDidLoad() {
@@ -41,8 +42,10 @@ class LoginViewController: UIViewController {
     
     
     override func viewDidDisappear(_ animated: Bool) {
-        self.activitySpinner?.isHidden = true;
-        self.fbLoginBtn?.isHidden = false;
+        if (self.fb_inprogress == false) {
+            self.activitySpinner?.isHidden = true;
+            self.fbLoginBtn?.isHidden = false;
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,7 +61,7 @@ class LoginViewController: UIViewController {
     
         self.activitySpinner?.isHidden = false;
         self.fbLoginBtn?.isHidden = true;
-        
+        self.fb_inprogress = true;
         let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
         fbLoginManager.logIn(withReadPermissions: facebookReadPermissions, from: self) { (result, error) in
             if (error == nil){
@@ -68,10 +71,14 @@ class LoginViewController: UIViewController {
                     {
                         let fbDataManager = FbDataManager();
                         fbDataManager.getFBUserData(completion: {
+                            self.fb_inprogress = false;
                             self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
                         })
                     }
                 }
+            }
+            else {
+                self.fb_inprogress = false;
             }
         }
     }

@@ -24,11 +24,13 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var segmentView: UIView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var pageControlView: UIView!
+   //  @IBOutlet weak var activitySpinner: UIActivityIndicatorView?
     
     var rankingVC : RankingTableVC?
     var pichartView: UIView?
     var linechartView: UIView?
     var pageViewIndex: Int = 0;
+    var is_fetching_data: Bool = true;
     
     // Admob
     @IBOutlet var viewBanner:GADBannerView?
@@ -61,12 +63,10 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         super.viewDidLoad()
         self.title = "Portfolio"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image:UIImage(named:"menu"), style: .plain, target: self, action: #selector(sideMenuClicked))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonClicked))
+       
+        setNavItems();
+
         SideMenuManager.default.menuFadeStatusBar = false;
-        self.screenSize = UIScreen.main.bounds
-        self.screenWidth = screenSize!.width
-        self.screenHeight = screenSize!.height
         portfolioTableView?.tableFooterView = UIView()
         appDelegate.masterVC = self;
         
@@ -79,6 +79,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
+        
         
         // Set Observers
         let nc = NotificationCenter.default // Note that default is now a property, not a method call
@@ -98,6 +99,21 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    func setNavItems(){
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image:UIImage(named:"menu"), style: .plain, target: self, action: #selector(sideMenuClicked))
+        
+        let uiBusy = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        uiBusy.hidesWhenStopped = true
+        uiBusy.startAnimating()
+        if (self.is_fetching_data == false){
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonClicked))
+        }
+        else {
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: uiBusy)
+        }
+    }
+    
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
@@ -107,13 +123,19 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         
+        self.screenSize = UIScreen.main.bounds
+        self.screenWidth = screenSize!.width
+        self.screenHeight = screenSize!.height
+        
         UIApplication.shared.statusBarStyle = .lightContent
         self.portfolioHeight = Int(screenHeight!) - Constants.pageViewHeight - Constants.pageControlHeight - Constants.adViewHeight - Constants.segmentViewHeight;
         
         self.yPortfolio = 0;
         self.ySegmentView = portfolioHeight;
         self.yPageView = self.ySegmentView! + Constants.segmentViewHeight;
-        self.yPageControlView = self.yPageView! + Constants.pageViewHeight;
+        self.yPageControlView = self.yPageView! + Constants.pageViewHeight - self.pageControlAdhustment();
+        
+        
         self.yAdView = yPageControlView! + Constants.pageControlHeight;
         let width = Int(screenWidth!);
         self.portfolioTableView.frame = CGRect(x: 0, y: self.yPortfolio!, width: width, height: self.portfolioHeight!);
@@ -146,7 +168,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Core Data Load
         let user = self.appDelegate.user;
         let market = self.appDelegate.market
-        market.requestSymbols (completion: {
+       market.requestSymbols (completion: {
             user?.requestPortfolio(completion: {
                 market.setPortfolio(portfolio: (user?.portfolio)!)
                 market.fetchStockPrice (completion: {
@@ -154,6 +176,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     self.portfolioTableView.reloadData();
                     user?.requestGainHistory (completion:{
                         user?.requestRanking(global: false, count: 10, completion: {self.rankingVC?.table?.reloadData()})
+                        self.is_fetching_data = false;
+                        self.setNavItems();
                     })
                 })
             })
@@ -486,6 +510,27 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.view.addSubview(self.pageControlView);
     }
     // Page View Methods - End
+    
+    
+    func pageControlAdhustment() -> Int {
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+              case 1136: // iPhone 5 or 5S or 5C
+                return 10;
+              case 1334: // iPhone 6/6S/7/8
+                return 10;
+              case 1920, 2208: // iPhone 6+/6S+/7+/8+
+                return 20;
+            case 2436: // iPhone X
+                return 55;
+            default: // Unknown
+                print("unknown")
+                return 0;
+            }
+        }
+        return 0;
+    }
+    
     
 
     // AdMobile
