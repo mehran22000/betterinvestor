@@ -27,6 +27,161 @@
 		022819051FCD17E60098F619 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819041FCD17E60098F619 /* FBSDKCoreKit.framework */; };
 		022819071FCD185A0098F619 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819061FCD185A0098F619 /* FBSDKLoginKit.framework */; };
 		0228190B1FCD18C00098F619 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */; };
+		022FDE1D20E008B3000200EE /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FC0A1F99741B007FE62A /* MasterVC.swift */; };
+		022FDE1E20E008B3000200EE /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879E6A20088688002E8AE1 /* Market.swift */; };
+		022FDE1F20E008B3000200EE /* HoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A3A205A07F20010CCCF /* HoldersVC.swift */; };
+		022FDE2020E008B3000200EE /* StockActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5820201A7800F2B1B8 /* StockActionCell.swift */; };
+		022FDE2120E008B3000200EE /* LineChart1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2DF1FBC01E1003FC621 /* LineChart1ViewController.m */; };
+		022FDE2220E008B3000200EE /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237B0371FC8F780008075D3 /* MenuTableViewCell.swift */; };
+		022FDE2320E008B3000200EE /* FriendPortfolioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ADE02C2050BB9300A89C15 /* FriendPortfolioVC.swift */; };
+		022FDE2420E008B3000200EE /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2F31FC3E8F8003FC621 /* StockVC.swift */; };
+		022FDE2520E008B3000200EE /* HalfPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0A97B1FB7CA8700039603 /* HalfPieChartViewController.m */; };
+		022FDE2620E008B3000200EE /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB1D111FC7A6BB001DEC45 /* SideBarVC.swift */; };
+		022FDE2720E008B3000200EE /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A844361FAFD4FA00D4935D /* PortfolioCell.swift */; };
+		022FDE2820E008B3000200EE /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AA99D20C63E0900FDA511 /* TutorialVC.swift */; };
+		022FDE2920E008B3000200EE /* RankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176A1FB3E13400289BCD /* RankingTableVC.swift */; };
+		022FDE2A20E008B3000200EE /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021A978020ABE199008F20C6 /* PhotoCell.swift */; };
+		022FDE2B20E008B3000200EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240361E1FCD237A00935411 /* LoginViewController.swift */; };
+		022FDE2C20E008B3000200EE /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECD201D1326003E4C93 /* RootNavigationVC.swift */; };
+		022FDE2D20E008B3000200EE /* TrxActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C602022B5C800F2B1B8 /* TrxActionCell.swift */; };
+		022FDE2E20E008B3000200EE /* PortfolioSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222D8172026563700A80C53 /* PortfolioSummaryCell.swift */; };
+		022FDE2F20E008B3000200EE /* Holders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD9861FE8AC4900720099 /* Holders.swift */; };
+		022FDE3020E008B3000200EE /* BuySellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5C2022B40700F2B1B8 /* BuySellVC.swift */; };
+		022FDE3120E008B3000200EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2EB1FBD51B5003FC621 /* Constants.swift */; };
+		022FDE3220E008B3000200EE /* ReferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818F51FCB270B0098F619 /* ReferVC.swift */; };
+		022FDE3320E008B3000200EE /* MenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818ED1FCA2E300098F619 /* MenuHeaderCell.swift */; };
+		022FDE3420E008B3000200EE /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD9841FE8AC3900720099 /* Transaction.swift */; };
+		022FDE3520E008B3000200EE /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC52B200713B800D93425 /* Portfolio.swift */; };
+		022FDE3620E008B3000200EE /* GainHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B302B204AF32B004FD23D /* GainHistoryItem.swift */; };
+		022FDE3720E008B3000200EE /* SymbolSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */; };
+		022FDE3820E008B3000200EE /* HolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A3C205B5C450010CCCF /* HolderCell.swift */; };
+		022FDE3920E008B3000200EE /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC529200713A900D93425 /* Position.swift */; };
+		022FDE3A20E008B3000200EE /* AboutAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C86EE520C9E16000B27ED3 /* AboutAppVC.swift */; };
+		022FDE3B20E008B3000200EE /* FbDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02657D30204237FE008A8159 /* FbDataManager.swift */; };
+		022FDE3C20E008B3000200EE /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A36205A04B90010CCCF /* Holder.swift */; };
+		022FDE3D20E008B3000200EE /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* RankingCell.swift */; };
+		022FDE3E20E008B3000200EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FC081F99741B007FE62A /* AppDelegate.swift */; };
+		022FDE3F20E008B3000200EE /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECB201CEA93003E4C93 /* Symbol.swift */; };
+		022FDE4020E008B3000200EE /* TrxInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5E2022B5B000F2B1B8 /* TrxInfoCell.swift */; };
+		022FDE4120E008B3000200EE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818F11FCA310D0098F619 /* ProductCell.swift */; };
+		022FDE4220E008B3000200EE /* ChartBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0A9801FB7CB3300039603 /* ChartBaseViewController.m */; };
+		022FDE4320E008B3000200EE /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC9DBA20462FB000FB2686 /* Ranking.swift */; };
+		022FDE4420E008B3000200EE /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879E6C2008874A002E8AE1 /* Quote.swift */; };
+		022FDE4520E008B3000200EE /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818F31FCA31A80098F619 /* ProductVC.swift */; };
+		022FDE4620E008B3000200EE /* ReferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818F71FCB27D60098F619 /* ReferCell.swift */; };
+		022FDE4720E008B3000200EE /* StockInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */; };
+		022FDE4820E008B3000200EE /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A856420C785B800107649 /* TermsVC.swift */; };
+		022FDE4920E008B3000200EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C9C031FEA1D0E003966F8 /* User.swift */; };
+		022FDE4A20E008B3000200EE /* GainHistoryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B302D204C47DE004FD23D /* GainHistoryFilter.swift */; };
+		022FDE4B20E008B3000200EE /* TrxInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C622022B6F300F2B1B8 /* TrxInputCell.swift */; };
+		022FDE4D20E008B3000200EE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0240361B1FCD1B2D00935411 /* Bolts.framework */; };
+		022FDE4E20E008B3000200EE /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */; };
+		022FDE4F20E008B3000200EE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819061FCD185A0098F619 /* FBSDKLoginKit.framework */; };
+		022FDE5020E008B3000200EE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C9BE91FE8B88A003966F8 /* Alamofire.framework */; };
+		022FDE5120E008B3000200EE /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819001FCD17590098F619 /* FacebookLogin.framework */; };
+		022FDE5220E008B3000200EE /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022818FC1FCD17410098F619 /* FacebookCore.framework */; };
+		022FDE5320E008B3000200EE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C9BED1FE8B8D2003966F8 /* SwiftyJSON.framework */; };
+		022FDE5420E008B3000200EE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819041FCD17E60098F619 /* FBSDKCoreKit.framework */; };
+		022FDE5520E008B3000200EE /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819021FCD17850098F619 /* FacebookShare.framework */; };
+		022FDE5820E008B3000200EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0203FC111F99741B007FE62A /* LaunchScreen.storyboard */; };
+		022FDE5920E008B3000200EE /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0258C2E31FBC01E1003FC621 /* LineChart1ViewController.xib */; };
+		022FDE5A20E008B3000200EE /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C0A97C1FB7CA8700039603 /* HalfPieChartViewController.xib */; };
+		022FDE5B20E008B3000200EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */; };
+		022FDE5C20E008B3000200EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02FB7DAF20D9EC1B00E91718 /* Localizable.strings */; };
+		022FDE5D20E008B3000200EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0203FC0F1F99741B007FE62A /* Assets.xcassets */; };
+		022FDE5E20E008B3000200EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0203FC0C1F99741B007FE62A /* Main.storyboard */; };
+		022FDE5F20E008B3000200EE /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 023B703E20A944EE007AD21F /* symbols.plist */; };
+		022FDE6020E008B3000200EE /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A844381FB01C5A00D4935D /* Icons.xcassets */; };
+		022FDE6520E008B3000200EE /* SwiftyJSON.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 028C9BED1FE8B8D2003966F8 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6620E008B3000200EE /* Alamofire.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 028C9BE91FE8B88A003966F8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6720E008B3000200EE /* Bolts.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0240361B1FCD1B2D00935411 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6820E008B3000200EE /* FBSDKShareKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6920E008B3000200EE /* FBSDKLoginKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022819061FCD185A0098F619 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6A20E008B3000200EE /* FBSDKCoreKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022819041FCD17E60098F619 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6B20E008B3000200EE /* FacebookShare.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022819021FCD17850098F619 /* FacebookShare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6C20E008B3000200EE /* FacebookLogin.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022819001FCD17590098F619 /* FacebookLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6D20E008B3000200EE /* FacebookCore.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022818FC1FCD17410098F619 /* FacebookCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6E20E008B3000200EE /* Pods_betterInvestor.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE6F20E008B3000200EE /* Pods_betterInvestorTests.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE7020E008B3000200EE /* Pods_betterInvestorUITests.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDE7920E047DC000200EE /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FC0A1F99741B007FE62A /* MasterVC.swift */; };
+		022FDE7A20E047DC000200EE /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879E6A20088688002E8AE1 /* Market.swift */; };
+		022FDE7B20E047DC000200EE /* HoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A3A205A07F20010CCCF /* HoldersVC.swift */; };
+		022FDE7C20E047DC000200EE /* StockActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5820201A7800F2B1B8 /* StockActionCell.swift */; };
+		022FDE7D20E047DC000200EE /* LineChart1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2DF1FBC01E1003FC621 /* LineChart1ViewController.m */; };
+		022FDE7E20E047DC000200EE /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0237B0371FC8F780008075D3 /* MenuTableViewCell.swift */; };
+		022FDE7F20E047DC000200EE /* FriendPortfolioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ADE02C2050BB9300A89C15 /* FriendPortfolioVC.swift */; };
+		022FDE8020E047DC000200EE /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2F31FC3E8F8003FC621 /* StockVC.swift */; };
+		022FDE8120E047DC000200EE /* HalfPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0A97B1FB7CA8700039603 /* HalfPieChartViewController.m */; };
+		022FDE8220E047DC000200EE /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB1D111FC7A6BB001DEC45 /* SideBarVC.swift */; };
+		022FDE8320E047DC000200EE /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A844361FAFD4FA00D4935D /* PortfolioCell.swift */; };
+		022FDE8420E047DC000200EE /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AA99D20C63E0900FDA511 /* TutorialVC.swift */; };
+		022FDE8520E047DC000200EE /* RankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176A1FB3E13400289BCD /* RankingTableVC.swift */; };
+		022FDE8620E047DC000200EE /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021A978020ABE199008F20C6 /* PhotoCell.swift */; };
+		022FDE8720E047DC000200EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240361E1FCD237A00935411 /* LoginViewController.swift */; };
+		022FDE8820E047DC000200EE /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECD201D1326003E4C93 /* RootNavigationVC.swift */; };
+		022FDE8920E047DC000200EE /* TrxActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C602022B5C800F2B1B8 /* TrxActionCell.swift */; };
+		022FDE8A20E047DC000200EE /* PortfolioSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222D8172026563700A80C53 /* PortfolioSummaryCell.swift */; };
+		022FDE8B20E047DC000200EE /* Holders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD9861FE8AC4900720099 /* Holders.swift */; };
+		022FDE8C20E047DC000200EE /* BuySellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5C2022B40700F2B1B8 /* BuySellVC.swift */; };
+		022FDE8D20E047DC000200EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0258C2EB1FBD51B5003FC621 /* Constants.swift */; };
+		022FDE8E20E047DC000200EE /* ReferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818F51FCB270B0098F619 /* ReferVC.swift */; };
+		022FDE8F20E047DC000200EE /* MenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818ED1FCA2E300098F619 /* MenuHeaderCell.swift */; };
+		022FDE9020E047DC000200EE /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD9841FE8AC3900720099 /* Transaction.swift */; };
+		022FDE9120E047DC000200EE /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC52B200713B800D93425 /* Portfolio.swift */; };
+		022FDE9220E047DC000200EE /* GainHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B302B204AF32B004FD23D /* GainHistoryItem.swift */; };
+		022FDE9320E047DC000200EE /* SymbolSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AEC9201C1D29003E4C93 /* SymbolSearchVC.swift */; };
+		022FDE9420E047DC000200EE /* HolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A3C205B5C450010CCCF /* HolderCell.swift */; };
+		022FDE9520E047DC000200EE /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFC529200713A900D93425 /* Position.swift */; };
+		022FDE9620E047DC000200EE /* AboutAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C86EE520C9E16000B27ED3 /* AboutAppVC.swift */; };
+		022FDE9720E047DC000200EE /* FbDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02657D30204237FE008A8159 /* FbDataManager.swift */; };
+		022FDE9820E047DC000200EE /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC3A36205A04B90010CCCF /* Holder.swift */; };
+		022FDE9920E047DC000200EE /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7176C1FB4187300289BCD /* RankingCell.swift */; };
+		022FDE9A20E047DC000200EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FC081F99741B007FE62A /* AppDelegate.swift */; };
+		022FDE9B20E047DC000200EE /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0AECB201CEA93003E4C93 /* Symbol.swift */; };
+		022FDE9C20E047DC000200EE /* TrxInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5E2022B5B000F2B1B8 /* TrxInfoCell.swift */; };
+		022FDE9D20E047DC000200EE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818F11FCA310D0098F619 /* ProductCell.swift */; };
+		022FDE9E20E047DC000200EE /* ChartBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0A9801FB7CB3300039603 /* ChartBaseViewController.m */; };
+		022FDE9F20E047DC000200EE /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC9DBA20462FB000FB2686 /* Ranking.swift */; };
+		022FDEA020E047DC000200EE /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879E6C2008874A002E8AE1 /* Quote.swift */; };
+		022FDEA120E047DC000200EE /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818F31FCA31A80098F619 /* ProductVC.swift */; };
+		022FDEA220E047DC000200EE /* ReferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022818F71FCB27D60098F619 /* ReferCell.swift */; };
+		022FDEA320E047DC000200EE /* StockInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */; };
+		022FDEA420E047DC000200EE /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A856420C785B800107649 /* TermsVC.swift */; };
+		022FDEA520E047DC000200EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C9C031FEA1D0E003966F8 /* User.swift */; };
+		022FDEA620E047DC000200EE /* GainHistoryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B302D204C47DE004FD23D /* GainHistoryFilter.swift */; };
+		022FDEA720E047DC000200EE /* TrxInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C622022B6F300F2B1B8 /* TrxInputCell.swift */; };
+		022FDEA920E047DC000200EE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0240361B1FCD1B2D00935411 /* Bolts.framework */; };
+		022FDEAA20E047DC000200EE /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */; };
+		022FDEAB20E047DC000200EE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819061FCD185A0098F619 /* FBSDKLoginKit.framework */; };
+		022FDEAC20E047DC000200EE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C9BE91FE8B88A003966F8 /* Alamofire.framework */; };
+		022FDEAD20E047DC000200EE /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819001FCD17590098F619 /* FacebookLogin.framework */; };
+		022FDEAE20E047DC000200EE /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022818FC1FCD17410098F619 /* FacebookCore.framework */; };
+		022FDEAF20E047DC000200EE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C9BED1FE8B8D2003966F8 /* SwiftyJSON.framework */; };
+		022FDEB020E047DC000200EE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819041FCD17E60098F619 /* FBSDKCoreKit.framework */; };
+		022FDEB120E047DC000200EE /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022819021FCD17850098F619 /* FacebookShare.framework */; };
+		022FDEB220E047DC000200EE /* Pods_betterInvestor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */; };
+		022FDEB420E047DC000200EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0203FC111F99741B007FE62A /* LaunchScreen.storyboard */; };
+		022FDEB520E047DC000200EE /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0258C2E31FBC01E1003FC621 /* LineChart1ViewController.xib */; };
+		022FDEB620E047DC000200EE /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C0A97C1FB7CA8700039603 /* HalfPieChartViewController.xib */; };
+		022FDEB720E047DC000200EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 028ED07D1FAE4E6500ABE2CD /* GoogleService-Info.plist */; };
+		022FDEB820E047DC000200EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02FB7DAF20D9EC1B00E91718 /* Localizable.strings */; };
+		022FDEB920E047DC000200EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0203FC0F1F99741B007FE62A /* Assets.xcassets */; };
+		022FDEBA20E047DC000200EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0203FC0C1F99741B007FE62A /* Main.storyboard */; };
+		022FDEBB20E047DC000200EE /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 023B703E20A944EE007AD21F /* symbols.plist */; };
+		022FDEBC20E047DC000200EE /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A844381FB01C5A00D4935D /* Icons.xcassets */; };
+		022FDEC120E047DC000200EE /* SwiftyJSON.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 028C9BED1FE8B8D2003966F8 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDEC220E047DC000200EE /* Alamofire.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 028C9BE91FE8B88A003966F8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDEC320E047DC000200EE /* Bolts.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0240361B1FCD1B2D00935411 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDEC420E047DC000200EE /* FBSDKShareKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDEC520E047DC000200EE /* FBSDKLoginKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022819061FCD185A0098F619 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDEC620E047DC000200EE /* FBSDKCoreKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022819041FCD17E60098F619 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDEC720E047DC000200EE /* FacebookShare.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022819021FCD17850098F619 /* FacebookShare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDEC820E047DC000200EE /* FacebookLogin.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022819001FCD17590098F619 /* FacebookLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDEC920E047DC000200EE /* FacebookCore.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 022818FC1FCD17410098F619 /* FacebookCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDECA20E047DC000200EE /* Pods_betterInvestor.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDECB20E047DC000200EE /* Pods_betterInvestorTests.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		022FDECC20E047DC000200EE /* Pods_betterInvestorUITests.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02327C5920201A7800F2B1B8 /* StockActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5820201A7800F2B1B8 /* StockActionCell.swift */; };
 		02327C5B20201AE000F2B1B8 /* StockInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */; };
 		02327C5D2022B40700F2B1B8 /* BuySellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02327C5C2022B40700F2B1B8 /* BuySellVC.swift */; };
@@ -88,7 +243,6 @@
 		02FB7DB120D9EC1B00E91718 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02FB7DAF20D9EC1B00E91718 /* Localizable.strings */; };
 		A3D2E471C36F83007EB07CAF /* Pods_betterInvestorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */; };
 		BCB5193498B7ABB0AEC0BB1A /* Pods_betterInvestorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */; };
-		DDD36C023DCA4D54653F569E /* Pods_betterInvestor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +263,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		022FDE6420E008B3000200EE /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				022FDE6520E008B3000200EE /* SwiftyJSON.framework in Copy Files */,
+				022FDE6620E008B3000200EE /* Alamofire.framework in Copy Files */,
+				022FDE6720E008B3000200EE /* Bolts.framework in Copy Files */,
+				022FDE6820E008B3000200EE /* FBSDKShareKit.framework in Copy Files */,
+				022FDE6920E008B3000200EE /* FBSDKLoginKit.framework in Copy Files */,
+				022FDE6A20E008B3000200EE /* FBSDKCoreKit.framework in Copy Files */,
+				022FDE6B20E008B3000200EE /* FacebookShare.framework in Copy Files */,
+				022FDE6C20E008B3000200EE /* FacebookLogin.framework in Copy Files */,
+				022FDE6D20E008B3000200EE /* FacebookCore.framework in Copy Files */,
+				022FDE6E20E008B3000200EE /* Pods_betterInvestor.framework in Copy Files */,
+				022FDE6F20E008B3000200EE /* Pods_betterInvestorTests.framework in Copy Files */,
+				022FDE7020E008B3000200EE /* Pods_betterInvestorUITests.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022FDEC020E047DC000200EE /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				022FDEC120E047DC000200EE /* SwiftyJSON.framework in Copy Files */,
+				022FDEC220E047DC000200EE /* Alamofire.framework in Copy Files */,
+				022FDEC320E047DC000200EE /* Bolts.framework in Copy Files */,
+				022FDEC420E047DC000200EE /* FBSDKShareKit.framework in Copy Files */,
+				022FDEC520E047DC000200EE /* FBSDKLoginKit.framework in Copy Files */,
+				022FDEC620E047DC000200EE /* FBSDKCoreKit.framework in Copy Files */,
+				022FDEC720E047DC000200EE /* FacebookShare.framework in Copy Files */,
+				022FDEC820E047DC000200EE /* FacebookLogin.framework in Copy Files */,
+				022FDEC920E047DC000200EE /* FacebookCore.framework in Copy Files */,
+				022FDECA20E047DC000200EE /* Pods_betterInvestor.framework in Copy Files */,
+				022FDECB20E047DC000200EE /* Pods_betterInvestorTests.framework in Copy Files */,
+				022FDECC20E047DC000200EE /* Pods_betterInvestorUITests.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		028C9BF01FE8B9E2003966F8 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +358,10 @@
 		022819041FCD17E60098F619 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		022819061FCD185A0098F619 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		022FDE7420E008B3000200EE /* betterInvestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterInvestor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		022FDE7520E008B3000200EE /* betterInvestor-dev copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "betterInvestor-dev copy-Info.plist"; path = "/Users/mehran/betterinvestor/betterInvestor-dev copy-Info.plist"; sourceTree = "<absolute>"; };
+		022FDED020E047DC000200EE /* betterInvestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterInvestor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		022FDED120E047DC000200EE /* betterInvestor-adhoc copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "betterInvestor-adhoc copy-Info.plist"; path = "/Users/mehran/betterinvestor/betterInvestor-adhoc copy-Info.plist"; sourceTree = "<absolute>"; };
 		02327C5820201A7800F2B1B8 /* StockActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockActionCell.swift; sourceTree = "<group>"; };
 		02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoCell.swift; sourceTree = "<group>"; };
 		02327C5C2022B40700F2B1B8 /* BuySellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellVC.swift; sourceTree = "<group>"; };
@@ -215,15 +417,15 @@
 		02FB7DB220D9ED5A00E91718 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = betterInvestor/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0E4F5CA53F34458F1F8C2ACB /* Pods_betterInvestorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterInvestorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		110476187F5C48E4B0BAEDC7 /* Pods-betterInvestorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestorTests/Pods-betterInvestorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3038C3B7D4343F74E045D1B2 /* Pods-betterInvestor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor.debug.xcconfig"; sourceTree = "<group>"; };
 		5E3FFF2D1F174049891BCA0E /* Pods-betterInvestorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestorTests/Pods-betterInvestorTests.release.xcconfig"; sourceTree = "<group>"; };
 		7466AEA25E3962D03E0F240D /* Pods-betterInvestorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestorUITests/Pods-betterInvestorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		82FE64B03713B4A11E299B34 /* Pods_smarterInvestor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smarterInvestor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A192DEFB55C11C68A71F6DA /* Pods_betterInvestorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterInvestorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A023F436B257CFC3A57F1C79 /* Pods_betterInvestor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterInvestor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39D97580007D1AC757F1B96 /* Pods-betterInvestor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor.debug.xcconfig"; sourceTree = "<group>"; };
 		A963AC4258E3734E5078D311 /* Pods-smarterInvestor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smarterInvestor.release.xcconfig"; path = "Pods/Target Support Files/Pods-smarterInvestor/Pods-smarterInvestor.release.xcconfig"; sourceTree = "<group>"; };
-		A99CFDC8D3985A391C82BF29 /* Pods-betterInvestor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestor.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor.release.xcconfig"; sourceTree = "<group>"; };
 		AB73A7BEA659790FA1F2E46A /* Pods-smarterInvestor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smarterInvestor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smarterInvestor/Pods-smarterInvestor.debug.xcconfig"; sourceTree = "<group>"; };
+		B130058C41BB43D043693AB4 /* Pods-betterInvestor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestor.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor.release.xcconfig"; sourceTree = "<group>"; };
 		E1070D5772089A52466C4F96 /* Pods-betterInvestorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterInvestorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterInvestorUITests/Pods-betterInvestorUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,7 +443,6 @@
 				028C9BEE1FE8B8D2003966F8 /* SwiftyJSON.framework in Frameworks */,
 				022819051FCD17E60098F619 /* FBSDKCoreKit.framework in Frameworks */,
 				022819031FCD17850098F619 /* FacebookShare.framework in Frameworks */,
-				DDD36C023DCA4D54653F569E /* Pods_betterInvestor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +459,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3D2E471C36F83007EB07CAF /* Pods_betterInvestorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022FDE4C20E008B3000200EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022FDE4D20E008B3000200EE /* Bolts.framework in Frameworks */,
+				022FDE4E20E008B3000200EE /* FBSDKShareKit.framework in Frameworks */,
+				022FDE4F20E008B3000200EE /* FBSDKLoginKit.framework in Frameworks */,
+				022FDE5020E008B3000200EE /* Alamofire.framework in Frameworks */,
+				022FDE5120E008B3000200EE /* FacebookLogin.framework in Frameworks */,
+				022FDE5220E008B3000200EE /* FacebookCore.framework in Frameworks */,
+				022FDE5320E008B3000200EE /* SwiftyJSON.framework in Frameworks */,
+				022FDE5420E008B3000200EE /* FBSDKCoreKit.framework in Frameworks */,
+				022FDE5520E008B3000200EE /* FacebookShare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022FDEA820E047DC000200EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022FDEA920E047DC000200EE /* Bolts.framework in Frameworks */,
+				022FDEAA20E047DC000200EE /* FBSDKShareKit.framework in Frameworks */,
+				022FDEAB20E047DC000200EE /* FBSDKLoginKit.framework in Frameworks */,
+				022FDEAC20E047DC000200EE /* Alamofire.framework in Frameworks */,
+				022FDEAD20E047DC000200EE /* FacebookLogin.framework in Frameworks */,
+				022FDEAE20E047DC000200EE /* FacebookCore.framework in Frameworks */,
+				022FDEAF20E047DC000200EE /* SwiftyJSON.framework in Frameworks */,
+				022FDEB020E047DC000200EE /* FBSDKCoreKit.framework in Frameworks */,
+				022FDEB120E047DC000200EE /* FacebookShare.framework in Frameworks */,
+				022FDEB220E047DC000200EE /* Pods_betterInvestor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +512,8 @@
 				0203FC061F99741B007FE62A /* Products */,
 				AA582B415C5810D7C728D004 /* Frameworks */,
 				3566C679BF1E5C40EF164B28 /* Pods */,
+				022FDE7520E008B3000200EE /* betterInvestor-dev copy-Info.plist */,
+				022FDED120E047DC000200EE /* betterInvestor-adhoc copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,6 +523,8 @@
 				0203FC051F99741B007FE62A /* betterInvestor.app */,
 				0203FC191F99741B007FE62A /* betterInvestorTests.xctest */,
 				0203FC241F99741C007FE62A /* betterInvestorUITests.xctest */,
+				022FDE7420E008B3000200EE /* betterInvestor.app */,
+				022FDED020E047DC000200EE /* betterInvestor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -415,14 +653,14 @@
 		3566C679BF1E5C40EF164B28 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3038C3B7D4343F74E045D1B2 /* Pods-betterInvestor.debug.xcconfig */,
-				A99CFDC8D3985A391C82BF29 /* Pods-betterInvestor.release.xcconfig */,
 				7466AEA25E3962D03E0F240D /* Pods-betterInvestorUITests.debug.xcconfig */,
 				E1070D5772089A52466C4F96 /* Pods-betterInvestorUITests.release.xcconfig */,
 				AB73A7BEA659790FA1F2E46A /* Pods-smarterInvestor.debug.xcconfig */,
 				A963AC4258E3734E5078D311 /* Pods-smarterInvestor.release.xcconfig */,
 				110476187F5C48E4B0BAEDC7 /* Pods-betterInvestorTests.debug.xcconfig */,
 				5E3FFF2D1F174049891BCA0E /* Pods-betterInvestorTests.release.xcconfig */,
+				A39D97580007D1AC757F1B96 /* Pods-betterInvestor.debug.xcconfig */,
+				B130058C41BB43D043693AB4 /* Pods-betterInvestor.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -451,16 +689,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0203FC041F99741B007FE62A /* betterInvestor */ = {
+		0203FC041F99741B007FE62A /* betterInvestor-dev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0203FC2D1F99741C007FE62A /* Build configuration list for PBXNativeTarget "betterInvestor" */;
+			buildConfigurationList = 0203FC2D1F99741C007FE62A /* Build configuration list for PBXNativeTarget "betterInvestor-dev" */;
 			buildPhases = (
-				556DB43B698B6977CB2A2E89 /* [CP] Check Pods Manifest.lock */,
 				0203FC011F99741B007FE62A /* Sources */,
 				0203FC021F99741B007FE62A /* Frameworks */,
 				0203FC031F99741B007FE62A /* Resources */,
-				DF731376104DA535800D911E /* [CP] Embed Pods Frameworks */,
-				3516A2208DDC5C16248DD61A /* [CP] Copy Pods Resources */,
 				0240361D1FCD1CAC00935411 /* ShellScript */,
 				028C9BF01FE8B9E2003966F8 /* Copy Files */,
 			);
@@ -468,7 +703,7 @@
 			);
 			dependencies = (
 			);
-			name = betterInvestor;
+			name = "betterInvestor-dev";
 			productName = betterInvestor;
 			productReference = 0203FC051F99741B007FE62A /* betterInvestor.app */;
 			productType = "com.apple.product-type.application";
@@ -515,6 +750,48 @@
 			productReference = 0203FC241F99741C007FE62A /* betterInvestorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		022FDE1A20E008B3000200EE /* betterInvestor-adhoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022FDE7120E008B3000200EE /* Build configuration list for PBXNativeTarget "betterInvestor-adhoc" */;
+			buildPhases = (
+				022FDE1C20E008B3000200EE /* Sources */,
+				022FDE4C20E008B3000200EE /* Frameworks */,
+				022FDE5720E008B3000200EE /* Resources */,
+				022FDE6320E008B3000200EE /* ShellScript */,
+				022FDE6420E008B3000200EE /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "betterInvestor-adhoc";
+			productName = betterInvestor;
+			productReference = 022FDE7420E008B3000200EE /* betterInvestor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		022FDE7620E047DC000200EE /* betterInvestor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022FDECD20E047DC000200EE /* Build configuration list for PBXNativeTarget "betterInvestor" */;
+			buildPhases = (
+				022FDE7720E047DC000200EE /* [CP] Check Pods Manifest.lock */,
+				022FDE7820E047DC000200EE /* Sources */,
+				022FDEA820E047DC000200EE /* Frameworks */,
+				022FDEB320E047DC000200EE /* Resources */,
+				022FDEBD20E047DC000200EE /* [CP] Embed Pods Frameworks */,
+				022FDEBE20E047DC000200EE /* [CP] Copy Pods Resources */,
+				022FDEBF20E047DC000200EE /* ShellScript */,
+				022FDEC020E047DC000200EE /* Copy Files */,
+				02351D1420E14E88007276AC /* Remove Simulator Architecture Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = betterInvestor;
+			productName = betterInvestor;
+			productReference = 022FDED020E047DC000200EE /* betterInvestor.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -528,7 +805,7 @@
 					0203FC041F99741B007FE62A = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					0203FC181F99741B007FE62A = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -539,6 +816,12 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Manual;
 						TestTargetID = 0203FC041F99741B007FE62A;
+					};
+					022FDE1A20E008B3000200EE = {
+						ProvisioningStyle = Manual;
+					};
+					022FDE7620E047DC000200EE = {
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -555,7 +838,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0203FC041F99741B007FE62A /* betterInvestor */,
+				0203FC041F99741B007FE62A /* betterInvestor-dev */,
+				022FDE1A20E008B3000200EE /* betterInvestor-adhoc */,
+				022FDE7620E047DC000200EE /* betterInvestor */,
 				0203FC181F99741B007FE62A /* betterInvestorTests */,
 				0203FC231F99741C007FE62A /* betterInvestorUITests */,
 			);
@@ -593,9 +878,152 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		022FDE5720E008B3000200EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022FDE5820E008B3000200EE /* LaunchScreen.storyboard in Resources */,
+				022FDE5920E008B3000200EE /* LineChart1ViewController.xib in Resources */,
+				022FDE5A20E008B3000200EE /* HalfPieChartViewController.xib in Resources */,
+				022FDE5B20E008B3000200EE /* GoogleService-Info.plist in Resources */,
+				022FDE5C20E008B3000200EE /* Localizable.strings in Resources */,
+				022FDE5D20E008B3000200EE /* Assets.xcassets in Resources */,
+				022FDE5E20E008B3000200EE /* Main.storyboard in Resources */,
+				022FDE5F20E008B3000200EE /* symbols.plist in Resources */,
+				022FDE6020E008B3000200EE /* Icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022FDEB320E047DC000200EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022FDEB420E047DC000200EE /* LaunchScreen.storyboard in Resources */,
+				022FDEB520E047DC000200EE /* LineChart1ViewController.xib in Resources */,
+				022FDEB620E047DC000200EE /* HalfPieChartViewController.xib in Resources */,
+				022FDEB720E047DC000200EE /* GoogleService-Info.plist in Resources */,
+				022FDEB820E047DC000200EE /* Localizable.strings in Resources */,
+				022FDEB920E047DC000200EE /* Assets.xcassets in Resources */,
+				022FDEBA20E047DC000200EE /* Main.storyboard in Resources */,
+				022FDEBB20E047DC000200EE /* symbols.plist in Resources */,
+				022FDEBC20E047DC000200EE /* Icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		022FDE6320E008B3000200EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bolts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookLogin.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookShare.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKLoginKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKShareKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		022FDE7720E047DC000200EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-betterInvestor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		022FDEBD20E047DC000200EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		022FDEBE20E047DC000200EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		022FDEBF20E047DC000200EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bolts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookLogin.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookShare.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKLoginKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKShareKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		02351D1420E14E88007276AC /* Remove Simulator Architecture Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Remove Simulator Architecture Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Target architectures: $ARCHS\"\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\n# remove simulator's archs if location is not simulator's directory\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\necho \"No need to remove archs\"\n;;\n*)\nif $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\nlipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\necho \"i386 architecture removed\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\nif $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\nlipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\necho \"x86_64 architecture removed\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\n;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone";
+		};
 		0240361D1FCD1CAC00935411 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -630,39 +1058,6 @@
 				"$(DERIVED_FILE_DIR)/Pods-betterInvestorTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3516A2208DDC5C16248DD61A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		556DB43B698B6977CB2A2E89 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-betterInvestor-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
@@ -725,30 +1120,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-betterInvestorUITests/Pods-betterInvestorUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF731376104DA535800D911E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-betterInvestor/Pods-betterInvestor-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF3A95CAD5C7FD4557ECC7F3 /* [CP] Check Pods Manifest.lock */ = {
@@ -842,17 +1213,125 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		022FDE1C20E008B3000200EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022FDE1D20E008B3000200EE /* MasterVC.swift in Sources */,
+				022FDE1E20E008B3000200EE /* Market.swift in Sources */,
+				022FDE1F20E008B3000200EE /* HoldersVC.swift in Sources */,
+				022FDE2020E008B3000200EE /* StockActionCell.swift in Sources */,
+				022FDE2120E008B3000200EE /* LineChart1ViewController.m in Sources */,
+				022FDE2220E008B3000200EE /* MenuTableViewCell.swift in Sources */,
+				022FDE2320E008B3000200EE /* FriendPortfolioVC.swift in Sources */,
+				022FDE2420E008B3000200EE /* StockVC.swift in Sources */,
+				022FDE2520E008B3000200EE /* HalfPieChartViewController.m in Sources */,
+				022FDE2620E008B3000200EE /* SideBarVC.swift in Sources */,
+				022FDE2720E008B3000200EE /* PortfolioCell.swift in Sources */,
+				022FDE2820E008B3000200EE /* TutorialVC.swift in Sources */,
+				022FDE2920E008B3000200EE /* RankingTableVC.swift in Sources */,
+				022FDE2A20E008B3000200EE /* PhotoCell.swift in Sources */,
+				022FDE2B20E008B3000200EE /* LoginViewController.swift in Sources */,
+				022FDE2C20E008B3000200EE /* RootNavigationVC.swift in Sources */,
+				022FDE2D20E008B3000200EE /* TrxActionCell.swift in Sources */,
+				022FDE2E20E008B3000200EE /* PortfolioSummaryCell.swift in Sources */,
+				022FDE2F20E008B3000200EE /* Holders.swift in Sources */,
+				022FDE3020E008B3000200EE /* BuySellVC.swift in Sources */,
+				022FDE3120E008B3000200EE /* Constants.swift in Sources */,
+				022FDE3220E008B3000200EE /* ReferVC.swift in Sources */,
+				022FDE3320E008B3000200EE /* MenuHeaderCell.swift in Sources */,
+				022FDE3420E008B3000200EE /* Transaction.swift in Sources */,
+				022FDE3520E008B3000200EE /* Portfolio.swift in Sources */,
+				022FDE3620E008B3000200EE /* GainHistoryItem.swift in Sources */,
+				022FDE3720E008B3000200EE /* SymbolSearchVC.swift in Sources */,
+				022FDE3820E008B3000200EE /* HolderCell.swift in Sources */,
+				022FDE3920E008B3000200EE /* Position.swift in Sources */,
+				022FDE3A20E008B3000200EE /* AboutAppVC.swift in Sources */,
+				022FDE3B20E008B3000200EE /* FbDataManager.swift in Sources */,
+				022FDE3C20E008B3000200EE /* Holder.swift in Sources */,
+				022FDE3D20E008B3000200EE /* RankingCell.swift in Sources */,
+				022FDE3E20E008B3000200EE /* AppDelegate.swift in Sources */,
+				022FDE3F20E008B3000200EE /* Symbol.swift in Sources */,
+				022FDE4020E008B3000200EE /* TrxInfoCell.swift in Sources */,
+				022FDE4120E008B3000200EE /* ProductCell.swift in Sources */,
+				022FDE4220E008B3000200EE /* ChartBaseViewController.m in Sources */,
+				022FDE4320E008B3000200EE /* Ranking.swift in Sources */,
+				022FDE4420E008B3000200EE /* Quote.swift in Sources */,
+				022FDE4520E008B3000200EE /* ProductVC.swift in Sources */,
+				022FDE4620E008B3000200EE /* ReferCell.swift in Sources */,
+				022FDE4720E008B3000200EE /* StockInfoCell.swift in Sources */,
+				022FDE4820E008B3000200EE /* TermsVC.swift in Sources */,
+				022FDE4920E008B3000200EE /* User.swift in Sources */,
+				022FDE4A20E008B3000200EE /* GainHistoryFilter.swift in Sources */,
+				022FDE4B20E008B3000200EE /* TrxInputCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022FDE7820E047DC000200EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022FDE7920E047DC000200EE /* MasterVC.swift in Sources */,
+				022FDE7A20E047DC000200EE /* Market.swift in Sources */,
+				022FDE7B20E047DC000200EE /* HoldersVC.swift in Sources */,
+				022FDE7C20E047DC000200EE /* StockActionCell.swift in Sources */,
+				022FDE7D20E047DC000200EE /* LineChart1ViewController.m in Sources */,
+				022FDE7E20E047DC000200EE /* MenuTableViewCell.swift in Sources */,
+				022FDE7F20E047DC000200EE /* FriendPortfolioVC.swift in Sources */,
+				022FDE8020E047DC000200EE /* StockVC.swift in Sources */,
+				022FDE8120E047DC000200EE /* HalfPieChartViewController.m in Sources */,
+				022FDE8220E047DC000200EE /* SideBarVC.swift in Sources */,
+				022FDE8320E047DC000200EE /* PortfolioCell.swift in Sources */,
+				022FDE8420E047DC000200EE /* TutorialVC.swift in Sources */,
+				022FDE8520E047DC000200EE /* RankingTableVC.swift in Sources */,
+				022FDE8620E047DC000200EE /* PhotoCell.swift in Sources */,
+				022FDE8720E047DC000200EE /* LoginViewController.swift in Sources */,
+				022FDE8820E047DC000200EE /* RootNavigationVC.swift in Sources */,
+				022FDE8920E047DC000200EE /* TrxActionCell.swift in Sources */,
+				022FDE8A20E047DC000200EE /* PortfolioSummaryCell.swift in Sources */,
+				022FDE8B20E047DC000200EE /* Holders.swift in Sources */,
+				022FDE8C20E047DC000200EE /* BuySellVC.swift in Sources */,
+				022FDE8D20E047DC000200EE /* Constants.swift in Sources */,
+				022FDE8E20E047DC000200EE /* ReferVC.swift in Sources */,
+				022FDE8F20E047DC000200EE /* MenuHeaderCell.swift in Sources */,
+				022FDE9020E047DC000200EE /* Transaction.swift in Sources */,
+				022FDE9120E047DC000200EE /* Portfolio.swift in Sources */,
+				022FDE9220E047DC000200EE /* GainHistoryItem.swift in Sources */,
+				022FDE9320E047DC000200EE /* SymbolSearchVC.swift in Sources */,
+				022FDE9420E047DC000200EE /* HolderCell.swift in Sources */,
+				022FDE9520E047DC000200EE /* Position.swift in Sources */,
+				022FDE9620E047DC000200EE /* AboutAppVC.swift in Sources */,
+				022FDE9720E047DC000200EE /* FbDataManager.swift in Sources */,
+				022FDE9820E047DC000200EE /* Holder.swift in Sources */,
+				022FDE9920E047DC000200EE /* RankingCell.swift in Sources */,
+				022FDE9A20E047DC000200EE /* AppDelegate.swift in Sources */,
+				022FDE9B20E047DC000200EE /* Symbol.swift in Sources */,
+				022FDE9C20E047DC000200EE /* TrxInfoCell.swift in Sources */,
+				022FDE9D20E047DC000200EE /* ProductCell.swift in Sources */,
+				022FDE9E20E047DC000200EE /* ChartBaseViewController.m in Sources */,
+				022FDE9F20E047DC000200EE /* Ranking.swift in Sources */,
+				022FDEA020E047DC000200EE /* Quote.swift in Sources */,
+				022FDEA120E047DC000200EE /* ProductVC.swift in Sources */,
+				022FDEA220E047DC000200EE /* ReferCell.swift in Sources */,
+				022FDEA320E047DC000200EE /* StockInfoCell.swift in Sources */,
+				022FDEA420E047DC000200EE /* TermsVC.swift in Sources */,
+				022FDEA520E047DC000200EE /* User.swift in Sources */,
+				022FDEA620E047DC000200EE /* GainHistoryFilter.swift in Sources */,
+				022FDEA720E047DC000200EE /* TrxInputCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		0203FC1B1F99741B007FE62A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0203FC041F99741B007FE62A /* betterInvestor */;
+			target = 0203FC041F99741B007FE62A /* betterInvestor-dev */;
 			targetProxy = 0203FC1A1F99741B007FE62A /* PBXContainerItemProxy */;
 		};
 		0203FC261F99741C007FE62A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0203FC041F99741B007FE62A /* betterInvestor */;
+			target = 0203FC041F99741B007FE62A /* betterInvestor-dev */;
 			targetProxy = 0203FC251F99741C007FE62A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1003,14 +1482,13 @@
 		};
 		0203FC2E1F99741C007FE62A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3038C3B7D4343F74E045D1B2 /* Pods-betterInvestor.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mehran Najafi (5C9NDSKQG2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mehran Najafi (5C9NDSKQG2)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q79878SPU6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1019,9 +1497,10 @@
 				INFOPLIST_FILE = betterInvestor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ron.betterInvestor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = betterInvestor;
+				PROVISIONING_PROFILE = "d43a588c-5a35-471f-a2cb-07d67a9c0c54";
+				PROVISIONING_PROFILE_SPECIFIER = "BI Prov - Dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEV";
 				SWIFT_OBJC_BRIDGING_HEADER = "betterInvestor/betterInvestor-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -1031,14 +1510,13 @@
 		};
 		0203FC2F1F99741C007FE62A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A99CFDC8D3985A391C82BF29 /* Pods-betterInvestor.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mehran Najafi (5C9NDSKQG2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mehran Najafi (5C9NDSKQG2)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q79878SPU6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1047,9 +1525,10 @@
 				INFOPLIST_FILE = betterInvestor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ron.betterInvestor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = betterInvestor;
+				PROVISIONING_PROFILE = "d43a588c-5a35-471f-a2cb-07d67a9c0c54";
+				PROVISIONING_PROFILE_SPECIFIER = "BI Prov - Dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_OBJC_BRIDGING_HEADER = "betterInvestor/betterInvestor-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1126,6 +1605,118 @@
 			};
 			name = Release;
 		};
+		022FDE7220E008B3000200EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q79878SPU6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "betterInvestor-dev copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.betterInvestor;
+				PRODUCT_NAME = betterInvestor;
+				PROVISIONING_PROFILE = "d981874e-8c5d-4650-84d9-65eea25b32a2";
+				PROVISIONING_PROFILE_SPECIFIER = "BI Prov - AdHoc";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG ADHOC";
+				SWIFT_OBJC_BRIDGING_HEADER = "betterInvestor/betterInvestor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		022FDE7320E008B3000200EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q79878SPU6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "betterInvestor-dev copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.betterInvestor;
+				PRODUCT_NAME = betterInvestor;
+				PROVISIONING_PROFILE = "d981874e-8c5d-4650-84d9-65eea25b32a2";
+				PROVISIONING_PROFILE_SPECIFIER = "BI Prov - AdHoc";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ADHOC;
+				SWIFT_OBJC_BRIDGING_HEADER = "betterInvestor/betterInvestor-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		022FDECE20E047DC000200EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39D97580007D1AC757F1B96 /* Pods-betterInvestor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q79878SPU6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "betterInvestor-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.betterInvestor;
+				PRODUCT_NAME = betterInvestor;
+				PROVISIONING_PROFILE = "de746ab3-fbe5-444c-935e-a7172dfd9fb5";
+				PROVISIONING_PROFILE_SPECIFIER = "BI Prov - AppStore";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG PROD";
+				SWIFT_OBJC_BRIDGING_HEADER = "betterInvestor/betterInvestor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		022FDECF20E047DC000200EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B130058C41BB43D043693AB4 /* Pods-betterInvestor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q79878SPU6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "betterInvestor-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.betterInvestor;
+				PRODUCT_NAME = betterInvestor;
+				PROVISIONING_PROFILE = "de746ab3-fbe5-444c-935e-a7172dfd9fb5";
+				PROVISIONING_PROFILE_SPECIFIER = "BI Prov - AppStore";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "betterInvestor/betterInvestor-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1138,7 +1729,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0203FC2D1F99741C007FE62A /* Build configuration list for PBXNativeTarget "betterInvestor" */ = {
+		0203FC2D1F99741C007FE62A /* Build configuration list for PBXNativeTarget "betterInvestor-dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0203FC2E1F99741C007FE62A /* Debug */,
@@ -1161,6 +1752,24 @@
 			buildConfigurations = (
 				0203FC341F99741C007FE62A /* Debug */,
 				0203FC351F99741C007FE62A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		022FDE7120E008B3000200EE /* Build configuration list for PBXNativeTarget "betterInvestor-adhoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022FDE7220E008B3000200EE /* Debug */,
+				022FDE7320E008B3000200EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		022FDECD20E047DC000200EE /* Build configuration list for PBXNativeTarget "betterInvestor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022FDECE20E047DC000200EE /* Debug */,
+				022FDECF20E047DC000200EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

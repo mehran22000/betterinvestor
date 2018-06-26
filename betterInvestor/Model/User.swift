@@ -14,11 +14,11 @@ import SwiftyJSON
 @objc class User: NSObject, NSCoding {
     
     let id: String!;
-    let first_name: String!;
-    let last_name: String!;
+    let first_name: String?;
+    let last_name: String?;
     let middle_name: String?;
-    let name: String!;
-    let email: String!;
+    let name: String?;
+    let email: String?;
     var pictureUrl: String?;
     var pic: UIImage?;
     var friends: NSArray?;
@@ -46,11 +46,11 @@ import SwiftyJSON
 
     init(dic: [String : AnyObject]) {
         self.id = dic["id"] as! String;
-        self.first_name = dic["first_name"] as! String;
-        self.last_name = dic["last_name"] as! String;
+        self.first_name = dic["first_name"] as? String;
+        self.last_name = dic["last_name"] as? String;
         self.middle_name = dic["middle_name"] as? String;
-        self.name = dic["name"] as! String;
-        self.email = dic["email"] as! String;
+        self.name = dic["name"] as? String;
+        self.email = dic["email"] as? String;
         self.friends = dic["friends"] as? NSArray;
         // self.portfolio.cash = dic["cash"] as! Double;
         if let picObj = dic["picture"]  {

@@ -10,8 +10,19 @@ import Foundation
 
 class Constants {
     
+    #if DEV
+        static let bsae_url = "https://betterinvestor-dev.herokuapp.com/services/v1/"
+    #elseif ADHOC
+        static let bsae_url = "https://betterinvestor-staging.herokuapp.com/services/v1/"
+    #elseif PROD
+        static let bsae_url = "https://betterinvestor.herokuapp.com/services/v1/"
+    #else
+        static let bsae_url = "http://127.0.0.1:5000/services/v1/"
+    #endif
+    
+    
     // static let bsae_url = "https://betterinvestor-dev.herokuapp.com/services/v1/";
-    static let bsae_url = "http://127.0.0.1:5000/services/v1/";
+    // static let bsae_url = "http://127.0.0.1:5000/services/v1/";
 
     static let segmentControlHeight = 20;
     static let segmentViewHeight = 30;

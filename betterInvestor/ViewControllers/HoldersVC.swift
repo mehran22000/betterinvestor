@@ -46,10 +46,11 @@ class HoldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
         self.screenMode = ScreenMode.All;
     
         self.title = self.symbol.uppercased() + " Holders";
+        /*
         self.segmentControl?.frame =  CGRect(x: (self.segmentControl?.frame.origin.x)!,
                                              y: (self.segmentControl?.frame.origin.y)!,
                                              width: (self.segmentControl?.frame.size.width)!, height: 20);
-        
+        */
     
         let user_id = self.appDelegate.user?.id;
         self.h = Holders.init(symbol: self.symbol);

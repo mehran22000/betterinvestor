@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0203FC041F99741B007FE62A"
                BuildableName = "betterInvestor.app"
-               BlueprintName = "betterInvestor"
+               BlueprintName = "betterInvestor-dev"
                ReferencedContainer = "container:betterInvestor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0203FC181F99741B007FE62A"
-               BuildableName = "betterInvestorTests.xctest"
-               BlueprintName = "betterInvestorTests"
-               ReferencedContainer = "container:betterInvestor.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0203FC041F99741B007FE62A"
             BuildableName = "betterInvestor.app"
-            BlueprintName = "betterInvestor"
+            BlueprintName = "betterInvestor-dev"
             ReferencedContainer = "container:betterInvestor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0203FC041F99741B007FE62A"
             BuildableName = "betterInvestor.app"
-            BlueprintName = "betterInvestor"
+            BlueprintName = "betterInvestor-dev"
             ReferencedContainer = "container:betterInvestor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,7 +65,7 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -86,7 +76,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0203FC041F99741B007FE62A"
             BuildableName = "betterInvestor.app"
-            BlueprintName = "betterInvestor"
+            BlueprintName = "betterInvestor-dev"
             ReferencedContainer = "container:betterInvestor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,7 +85,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
