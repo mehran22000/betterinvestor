@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>SocialTrader.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>02732AC420E330CC004EA149</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02732B1720E330D9004EA149</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02A11B5720E2A242000CD92B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02A11B6B20E2A245000CD92B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02A11B7620E2A245000CD92B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02F7800D20E343FE00C2990E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02F7806020E3453A00C2990E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

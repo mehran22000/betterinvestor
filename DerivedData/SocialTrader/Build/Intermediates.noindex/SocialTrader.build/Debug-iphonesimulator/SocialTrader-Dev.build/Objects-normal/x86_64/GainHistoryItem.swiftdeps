@@ -1,0 +1,656 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GainHistoryItem"
+provides-nominal:
+- "15SocialTraderDev15GainHistoryItemC"
+provides-member:
+- ["15SocialTraderDev15GainHistoryItemC", ""]
+provides-dynamic-lookup:
+- "date"
+- "dateStr"
+- "day"
+- "gain"
+- "month"
+- "monthStr"
+- "year"
+depends-top-level:
+- !private "-"
+- !private "=="
+- "Array"
+- "AssignmentPrecedence"
+- !private "Calendar"
+- "CastingPrecedence"
+- "Date"
+- !private "DateFormatter"
+- "Double"
+- "ExtendedGraphemeClusterType"
+- "GainHistoryItem"
+- "Int"
+- "NSObject"
+- "NSString"
+- "String"
+- "StringLiteralType"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["Sa", "map"]
+- !private ["Sa", "subscript"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "map"]
+- !private ["s23BidirectionalCollectionP", "replacingOccurrences"]
+- !private ["s23BidirectionalCollectionP", "split"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s7CVarArgP", "Calendar"]
+- !private ["s7CVarArgP", "DateFormatter"]
+- !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "String"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "date"]
+- !private ["s7CVarArgP", "dateFormat"]
+- !private ["s7CVarArgP", "dateStr"]
+- !private ["s7CVarArgP", "day"]
+- !private ["s7CVarArgP", "gain"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "month"]
+- !private ["s7CVarArgP", "monthStr"]
+- !private ["s7CVarArgP", "month_names"]
+- !private ["s7CVarArgP", "replacingOccurrences"]
+- !private ["s7CVarArgP", "split"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "year"]
+- !private ["10Foundation8CalendarV", "component"]
+- !private ["10Foundation8CalendarV", "current"]
+- !private ["s9CharacterV", "init"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "map"]
+- !private ["s10CollectionP", "replacingOccurrences"]
+- !private ["s10CollectionP", "split"]
+- !private ["s10CollectionP", "subscript"]
+- ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "replacingOccurrences"]
+- !private ["s10ComparableP", "split"]
+- !private ["10Foundation8CalendarV9ComponentO", "day"]
+- !private ["10Foundation8CalendarV9ComponentO", "month"]
+- !private ["10Foundation8CalendarV9ComponentO", "year"]
+- !private ["s28CustomDebugStringConvertibleP", "Calendar"]
+- !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "component"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
+- !private ["s28CustomDebugStringConvertibleP", "dateStr"]
+- !private ["s28CustomDebugStringConvertibleP", "day"]
+- !private ["s28CustomDebugStringConvertibleP", "gain"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "month"]
+- !private ["s28CustomDebugStringConvertibleP", "monthStr"]
+- !private ["s28CustomDebugStringConvertibleP", "month_names"]
+- !private ["s28CustomDebugStringConvertibleP", "replacingOccurrences"]
+- !private ["s28CustomDebugStringConvertibleP", "split"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "year"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "replacingOccurrences"]
+- !private ["s29CustomPlaygroundQuickLookableP", "split"]
+- !private ["s17CustomReflectableP", "component"]
+- !private ["s17CustomReflectableP", "current"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "replacingOccurrences"]
+- !private ["s17CustomReflectableP", "split"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Calendar"]
+- !private ["s23CustomStringConvertibleP", "DateFormatter"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "component"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "dateFormat"]
+- !private ["s23CustomStringConvertibleP", "dateStr"]
+- !private ["s23CustomStringConvertibleP", "day"]
+- !private ["s23CustomStringConvertibleP", "gain"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "month"]
+- !private ["s23CustomStringConvertibleP", "monthStr"]
+- !private ["s23CustomStringConvertibleP", "month_names"]
+- !private ["s23CustomStringConvertibleP", "replacingOccurrences"]
+- !private ["s23CustomStringConvertibleP", "split"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "year"]
+- !private ["So13DateFormatterC", "date"]
+- !private ["So13DateFormatterC", "dateFormat"]
+- !private ["So13DateFormatterC", "init"]
+- !private ["s9DecodableP", "component"]
+- !private ["s9DecodableP", "current"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "map"]
+- !private ["s9DecodableP", "replacingOccurrences"]
+- !private ["s9DecodableP", "split"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["Sd", "init"]
+- !private ["s9EncodableP", "component"]
+- !private ["s9EncodableP", "current"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "map"]
+- !private ["s9EncodableP", "replacingOccurrences"]
+- !private ["s9EncodableP", "split"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "Calendar"]
+- !private ["s9EquatableP", "DateFormatter"]
+- !private ["s9EquatableP", "Double"]
+- !private ["s9EquatableP", "String"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "component"]
+- !private ["s9EquatableP", "current"]
+- !private ["s9EquatableP", "date"]
+- !private ["s9EquatableP", "dateFormat"]
+- !private ["s9EquatableP", "dateStr"]
+- !private ["s9EquatableP", "day"]
+- !private ["s9EquatableP", "gain"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "map"]
+- !private ["s9EquatableP", "month"]
+- !private ["s9EquatableP", "monthStr"]
+- !private ["s9EquatableP", "month_names"]
+- !private ["s9EquatableP", "replacingOccurrences"]
+- !private ["s9EquatableP", "split"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "year"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "split"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "replacingOccurrences"]
+- !private ["s26ExpressibleByStringLiteralP", "split"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "split"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["So9FormatterC", "date"]
+- !private ["So9FormatterC", "dateFormat"]
+- !private ["So9FormatterC", "init"]
+- !private ["15SocialTraderDev15GainHistoryItemC", "Calendar"]
+- ["15SocialTraderDev15GainHistoryItemC", "Date"]
+- !private ["15SocialTraderDev15GainHistoryItemC", "DateFormatter"]
+- ["15SocialTraderDev15GainHistoryItemC", "Double"]
+- ["15SocialTraderDev15GainHistoryItemC", "Int"]
+- ["15SocialTraderDev15GainHistoryItemC", "NSString"]
+- ["15SocialTraderDev15GainHistoryItemC", "String"]
+- ["15SocialTraderDev15GainHistoryItemC", "date"]
+- ["15SocialTraderDev15GainHistoryItemC", "dateStr"]
+- ["15SocialTraderDev15GainHistoryItemC", "day"]
+- ["15SocialTraderDev15GainHistoryItemC", "deinit"]
+- ["15SocialTraderDev15GainHistoryItemC", "gain"]
+- ["15SocialTraderDev15GainHistoryItemC", "init"]
+- ["15SocialTraderDev15GainHistoryItemC", "month"]
+- ["15SocialTraderDev15GainHistoryItemC", "monthStr"]
+- ["15SocialTraderDev15GainHistoryItemC", "month_names"]
+- ["15SocialTraderDev15GainHistoryItemC", "year"]
+- !private ["s8HashableP", "Calendar"]
+- !private ["s8HashableP", "DateFormatter"]
+- !private ["s8HashableP", "Double"]
+- !private ["s8HashableP", "String"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "component"]
+- !private ["s8HashableP", "current"]
+- !private ["s8HashableP", "date"]
+- !private ["s8HashableP", "dateFormat"]
+- !private ["s8HashableP", "dateStr"]
+- !private ["s8HashableP", "day"]
+- !private ["s8HashableP", "gain"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "month"]
+- !private ["s8HashableP", "monthStr"]
+- !private ["s8HashableP", "month_names"]
+- !private ["s8HashableP", "replacingOccurrences"]
+- !private ["s8HashableP", "split"]
+- !private ["s8HashableP", "year"]
+- ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- !private ["10SwiftyJSON17JSONSubscriptTypeP", "replacingOccurrences"]
+- !private ["10SwiftyJSON17JSONSubscriptTypeP", "split"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "replacingOccurrences"]
+- !private ["s25LosslessStringConvertibleP", "split"]
+- ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "replacingOccurrences"]
+- !private ["s10MirrorPathP", "split"]
+- !private ["s17MutableCollectionP", "map"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So8NSCodingP", "date"]
+- !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "replacingOccurrences"]
+- !private ["So8NSCodingP", "split"]
+- !private ["So9NSCopyingP", "date"]
+- !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "replacingOccurrences"]
+- !private ["So9NSCopyingP", "split"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "replacingOccurrences"]
+- !private ["So21NSItemProviderReadingP", "split"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "replacingOccurrences"]
+- !private ["So21NSItemProviderWritingP", "split"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "replacingOccurrences"]
+- !private ["So16NSMutableCopyingP", "split"]
+- !private ["So8NSObjectC", "Calendar"]
+- ["So8NSObjectC", "Date"]
+- !private ["So8NSObjectC", "DateFormatter"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NSString"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "date"]
+- !private ["So8NSObjectC", "dateFormat"]
+- ["So8NSObjectC", "dateStr"]
+- ["So8NSObjectC", "day"]
+- ["So8NSObjectC", "gain"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "month"]
+- ["So8NSObjectC", "monthStr"]
+- ["So8NSObjectC", "month_names"]
+- !private ["So8NSObjectC", "replacingOccurrences"]
+- !private ["So8NSObjectC", "split"]
+- ["So8NSObjectC", "year"]
+- !private ["So16NSObjectProtocolP", "Calendar"]
+- !private ["So16NSObjectProtocolP", "DateFormatter"]
+- !private ["So16NSObjectProtocolP", "Double"]
+- !private ["So16NSObjectProtocolP", "String"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "date"]
+- !private ["So16NSObjectProtocolP", "dateFormat"]
+- !private ["So16NSObjectProtocolP", "dateStr"]
+- !private ["So16NSObjectProtocolP", "day"]
+- !private ["So16NSObjectProtocolP", "gain"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "month"]
+- !private ["So16NSObjectProtocolP", "monthStr"]
+- !private ["So16NSObjectProtocolP", "month_names"]
+- !private ["So16NSObjectProtocolP", "replacingOccurrences"]
+- !private ["So16NSObjectProtocolP", "split"]
+- !private ["So16NSObjectProtocolP", "year"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "replacingOccurrences"]
+- !private ["So14NSSecureCodingP", "split"]
+- !private ["So8NSStringC", "init"]
+- !private ["So8NSStringC", "replacingOccurrences"]
+- !private ["So8NSStringC", "split"]
+- !private ["s7NumericP", "init"]
+- !private ["s22RandomAccessCollectionP", "map"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "map"]
+- !private ["s26RangeReplaceableCollectionP", "replacingOccurrences"]
+- !private ["s26RangeReplaceableCollectionP", "split"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["10Foundation20ReferenceConvertibleP", "component"]
+- !private ["10Foundation20ReferenceConvertibleP", "current"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "map"]
+- !private ["s8SequenceP", "replacingOccurrences"]
+- !private ["s8SequenceP", "split"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "init"]
+- ["SS", "init"]
+- !private ["SS", "replacingOccurrences"]
+- !private ["SS", "split"]
+- ["s14StringProtocolP", "init"]
+- !private ["s14StringProtocolP", "replacingOccurrences"]
+- !private ["s14StringProtocolP", "split"]
+- ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "replacingOccurrences"]
+- !private ["s16TextOutputStreamP", "split"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "replacingOccurrences"]
+- !private ["s20TextOutputStreamableP", "split"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "replacingOccurrences"]
+- !private ["9Alamofire14URLConvertibleP", "split"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "split"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "replacingOccurrences"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "split"]
+- !private ["s56_ExpressibleByBuiltinUTF16ExtendedGraphemeClusterLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "replacingOccurrences"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "split"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "split"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "replacingOccurrences"]
+- !private ["s33_ExpressibleByStringInterpolationP", "split"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "replacingOccurrences"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "split"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateStr"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "day"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "gain"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "month"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "monthStr"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "month_names"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "replacingOccurrences"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "split"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "year"]
+- !private ["10Foundation14_MutableBoxingP", "component"]
+- !private ["10Foundation14_MutableBoxingP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "component"]
+- !private ["s21_ObjectiveCBridgeableP", "current"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "replacingOccurrences"]
+- !private ["s21_ObjectiveCBridgeableP", "split"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "replacingOccurrences"]
+- !private ["s16_SwiftStringViewP", "split"]
+depends-nominal:
+- !private "Sa"
+- "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- "s7CVarArgP"
+- !private "10Foundation8CalendarV"
+- !private "s9CharacterV"
+- "s10CollectionP"
+- "s10ComparableP"
+- !private "10Foundation8CalendarV9ComponentO"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "So13DateFormatterC"
+- "s9DecodableP"
+- !private "Sd"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s13FloatingPointP"
+- !private "So9FormatterC"
+- "15SocialTraderDev15GainHistoryItemC"
+- "s8HashableP"
+- "10SwiftyJSON17JSONSubscriptTypeP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- !private "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- !private "10Foundation20ReferenceConvertibleP"
+- "s8SequenceP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "9Alamofire14URLConvertibleP"
+- !private "s14_ArrayProtocolP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s24_DestructorSafeContainerP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s56_ExpressibleByBuiltinUTF16ExtendedGraphemeClusterLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation14_MutableBoxingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/SocialTrader-Bridging-Header.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/LineChart1ViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/ChartBaseViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/HalfPieChartViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "185b03e9bb6ca426660ec73355e94bed"

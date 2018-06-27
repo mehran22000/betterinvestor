@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "6e9d09c4f322bd9e0e3bdf68ee98c9a3"
+build_time: [1530075285, 482977000]
+inputs:
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/SideMenu/Pod/Classes/SideMenuManager.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/SideMenu/Pod/Classes/SideMenuTransition.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/SideMenu/Pod/Classes/UISideMenuNavigationController.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/SideMenu/Pod/Classes/UITableViewVibrantCell.swift": [9223372036, 854775807]

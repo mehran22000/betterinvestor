@@ -1,0 +1,1032 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "12SocialTrader11AppDelegateC"
+provides-member:
+- ["12SocialTrader11AppDelegateC", ""]
+provides-dynamic-lookup:
+- "application"
+- "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "user"
+- "window"
+depends-top-level:
+- !private "/"
+- !private "=="
+- "AppDelegate"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Bundle"
+- "CastingPrecedence"
+- !private "Dictionary"
+- !private "FBSDKAppEvents"
+- !private "FBSDKApplicationDelegate"
+- !private "FirebaseApp"
+- "Market"
+- !private "NSArray"
+- !private "NSAttributedStringKey"
+- !private "String"
+- !private "StringLiteralType"
+- "UIApplication"
+- "UIApplicationDelegate"
+- "UIApplicationLaunchOptionsKey"
+- "UIApplicationOpenURLOptionsKey"
+- !private "UIColor"
+- !private "UINavigationBar"
+- "UINavigationController"
+- "UIResponder"
+- "UIViewController"
+- "UIWindow"
+- "URL"
+- !private "UnicodeScalarType"
+- "User"
+- !private "UserDefaults"
+depends-member:
+- ["12SocialTrader11AppDelegateC", "Bool"]
+- !private ["12SocialTrader11AppDelegateC", "Bundle"]
+- !private ["12SocialTrader11AppDelegateC", "FBSDKAppEvents"]
+- !private ["12SocialTrader11AppDelegateC", "FBSDKApplicationDelegate"]
+- !private ["12SocialTrader11AppDelegateC", "FirebaseApp"]
+- ["12SocialTrader11AppDelegateC", "Market"]
+- !private ["12SocialTrader11AppDelegateC", "NSArray"]
+- !private ["12SocialTrader11AppDelegateC", "NSAttributedStringKey"]
+- !private ["12SocialTrader11AppDelegateC", "String"]
+- ["12SocialTrader11AppDelegateC", "UIApplication"]
+- ["12SocialTrader11AppDelegateC", "UIApplicationLaunchOptionsKey"]
+- ["12SocialTrader11AppDelegateC", "UIApplicationOpenURLOptionsKey"]
+- !private ["12SocialTrader11AppDelegateC", "UIColor"]
+- !private ["12SocialTrader11AppDelegateC", "UINavigationBar"]
+- ["12SocialTrader11AppDelegateC", "UINavigationController"]
+- ["12SocialTrader11AppDelegateC", "UIViewController"]
+- ["12SocialTrader11AppDelegateC", "UIWindow"]
+- ["12SocialTrader11AppDelegateC", "URL"]
+- ["12SocialTrader11AppDelegateC", "User"]
+- !private ["12SocialTrader11AppDelegateC", "UserDefaults"]
+- ["12SocialTrader11AppDelegateC", "application"]
+- ["12SocialTrader11AppDelegateC", "applicationDidBecomeActive"]
+- ["12SocialTrader11AppDelegateC", "applicationDidEnterBackground"]
+- ["12SocialTrader11AppDelegateC", "applicationDidFinishLaunching"]
+- ["12SocialTrader11AppDelegateC", "applicationDidReceiveMemoryWarning"]
+- ["12SocialTrader11AppDelegateC", "applicationProtectedDataDidBecomeAvailable"]
+- ["12SocialTrader11AppDelegateC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["12SocialTrader11AppDelegateC", "applicationShouldRequestHealthAuthorization"]
+- ["12SocialTrader11AppDelegateC", "applicationSignificantTimeChange"]
+- ["12SocialTrader11AppDelegateC", "applicationWillEnterForeground"]
+- ["12SocialTrader11AppDelegateC", "applicationWillResignActive"]
+- ["12SocialTrader11AppDelegateC", "applicationWillTerminate"]
+- ["12SocialTrader11AppDelegateC", "deinit"]
+- ["12SocialTrader11AppDelegateC", "init"]
+- ["12SocialTrader11AppDelegateC", "initialization"]
+- ["12SocialTrader11AppDelegateC", "market"]
+- ["12SocialTrader11AppDelegateC", "masterVC"]
+- ["12SocialTrader11AppDelegateC", "rootNavigationController"]
+- ["12SocialTrader11AppDelegateC", "user"]
+- ["12SocialTrader11AppDelegateC", "window"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So6BundleC", "main"]
+- !private ["So6BundleC", "path"]
+- !private ["So15CALayerDelegateP", "appearance"]
+- !private ["So15CALayerDelegateP", "barTintColor"]
+- !private ["So15CALayerDelegateP", "tintColor"]
+- !private ["So15CALayerDelegateP", "titleTextAttributes"]
+- !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "FBSDKAppEvents"]
+- !private ["s7CVarArgP", "FBSDKApplicationDelegate"]
+- !private ["s7CVarArgP", "FirebaseApp"]
+- ["s7CVarArgP", "Market"]
+- !private ["s7CVarArgP", "NSArray"]
+- !private ["s7CVarArgP", "NSAttributedStringKey"]
+- !private ["s7CVarArgP", "UIApplication"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UINavigationBar"]
+- !private ["s7CVarArgP", "UserDefaults"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "activateApp"]
+- !private ["s7CVarArgP", "appearance"]
+- ["s7CVarArgP", "application"]
+- ["s7CVarArgP", "applicationDidBecomeActive"]
+- ["s7CVarArgP", "applicationDidEnterBackground"]
+- ["s7CVarArgP", "applicationDidFinishLaunching"]
+- ["s7CVarArgP", "applicationDidReceiveMemoryWarning"]
+- ["s7CVarArgP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s7CVarArgP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s7CVarArgP", "applicationShouldRequestHealthAuthorization"]
+- ["s7CVarArgP", "applicationSignificantTimeChange"]
+- ["s7CVarArgP", "applicationWillEnterForeground"]
+- ["s7CVarArgP", "applicationWillResignActive"]
+- ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "barTintColor"]
+- !private ["s7CVarArgP", "configure"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "initialization"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "path"]
+- !private ["s7CVarArgP", "set"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "statusBarStyle"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tintColor"]
+- !private ["s7CVarArgP", "titleTextAttributes"]
+- !private ["s7CVarArgP", "value"]
+- !private ["s7CVarArgP", "white"]
+- ["s7CVarArgP", "window"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "annotation"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "sourceApplication"]
+- !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "FBSDKAppEvents"]
+- !private ["s28CustomDebugStringConvertibleP", "FBSDKApplicationDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
+- ["s28CustomDebugStringConvertibleP", "Market"]
+- !private ["s28CustomDebugStringConvertibleP", "NSArray"]
+- !private ["s28CustomDebugStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UINavigationBar"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "activateApp"]
+- !private ["s28CustomDebugStringConvertibleP", "appearance"]
+- ["s28CustomDebugStringConvertibleP", "application"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s28CustomDebugStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "barTintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "configure"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initialization"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "sourceApplication"]
+- !private ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "statusBarStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "titleTextAttributes"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
+- ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "sourceApplication"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "FBSDKAppEvents"]
+- !private ["s23CustomStringConvertibleP", "FBSDKApplicationDelegate"]
+- !private ["s23CustomStringConvertibleP", "FirebaseApp"]
+- ["s23CustomStringConvertibleP", "Market"]
+- !private ["s23CustomStringConvertibleP", "NSArray"]
+- !private ["s23CustomStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UINavigationBar"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "activateApp"]
+- !private ["s23CustomStringConvertibleP", "appearance"]
+- ["s23CustomStringConvertibleP", "application"]
+- ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
+- ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
+- ["s23CustomStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s23CustomStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s23CustomStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s23CustomStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
+- ["s23CustomStringConvertibleP", "applicationWillResignActive"]
+- ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "barTintColor"]
+- !private ["s23CustomStringConvertibleP", "configure"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "initialization"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "path"]
+- !private ["s23CustomStringConvertibleP", "set"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "sourceApplication"]
+- !private ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "statusBarStyle"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tintColor"]
+- !private ["s23CustomStringConvertibleP", "titleTextAttributes"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- ["s23CustomStringConvertibleP", "window"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "Bundle"]
+- !private ["s9EquatableP", "FBSDKAppEvents"]
+- !private ["s9EquatableP", "FBSDKApplicationDelegate"]
+- !private ["s9EquatableP", "FirebaseApp"]
+- ["s9EquatableP", "Market"]
+- !private ["s9EquatableP", "NSArray"]
+- !private ["s9EquatableP", "NSAttributedStringKey"]
+- !private ["s9EquatableP", "UIApplication"]
+- !private ["s9EquatableP", "UIColor"]
+- !private ["s9EquatableP", "UINavigationBar"]
+- !private ["s9EquatableP", "UserDefaults"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "activateApp"]
+- !private ["s9EquatableP", "annotation"]
+- !private ["s9EquatableP", "appearance"]
+- ["s9EquatableP", "application"]
+- ["s9EquatableP", "applicationDidBecomeActive"]
+- ["s9EquatableP", "applicationDidEnterBackground"]
+- ["s9EquatableP", "applicationDidFinishLaunching"]
+- ["s9EquatableP", "applicationDidReceiveMemoryWarning"]
+- ["s9EquatableP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s9EquatableP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s9EquatableP", "applicationShouldRequestHealthAuthorization"]
+- ["s9EquatableP", "applicationSignificantTimeChange"]
+- ["s9EquatableP", "applicationWillEnterForeground"]
+- ["s9EquatableP", "applicationWillResignActive"]
+- ["s9EquatableP", "applicationWillTerminate"]
+- !private ["s9EquatableP", "barTintColor"]
+- !private ["s9EquatableP", "configure"]
+- !private ["s9EquatableP", "foregroundColor"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "initialization"]
+- !private ["s9EquatableP", "lightContent"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "path"]
+- !private ["s9EquatableP", "set"]
+- !private ["s9EquatableP", "shared"]
+- !private ["s9EquatableP", "sharedInstance"]
+- !private ["s9EquatableP", "sourceApplication"]
+- !private ["s9EquatableP", "standard"]
+- !private ["s9EquatableP", "statusBarStyle"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "tintColor"]
+- !private ["s9EquatableP", "titleTextAttributes"]
+- !private ["s9EquatableP", "value"]
+- !private ["s9EquatableP", "white"]
+- ["s9EquatableP", "window"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So14FBSDKAppEventsC", "activateApp"]
+- !private ["So24FBSDKApplicationDelegateC", "application"]
+- !private ["So24FBSDKApplicationDelegateC", "sharedInstance"]
+- !private ["So11FirebaseAppC", "configure"]
+- !private ["s8HashableP", "Bundle"]
+- !private ["s8HashableP", "FBSDKAppEvents"]
+- !private ["s8HashableP", "FBSDKApplicationDelegate"]
+- !private ["s8HashableP", "FirebaseApp"]
+- ["s8HashableP", "Market"]
+- !private ["s8HashableP", "NSArray"]
+- !private ["s8HashableP", "NSAttributedStringKey"]
+- !private ["s8HashableP", "UIApplication"]
+- !private ["s8HashableP", "UIColor"]
+- !private ["s8HashableP", "UINavigationBar"]
+- !private ["s8HashableP", "UserDefaults"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "activateApp"]
+- !private ["s8HashableP", "annotation"]
+- !private ["s8HashableP", "appearance"]
+- ["s8HashableP", "application"]
+- ["s8HashableP", "applicationDidBecomeActive"]
+- ["s8HashableP", "applicationDidEnterBackground"]
+- ["s8HashableP", "applicationDidFinishLaunching"]
+- ["s8HashableP", "applicationDidReceiveMemoryWarning"]
+- ["s8HashableP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s8HashableP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s8HashableP", "applicationShouldRequestHealthAuthorization"]
+- ["s8HashableP", "applicationSignificantTimeChange"]
+- ["s8HashableP", "applicationWillEnterForeground"]
+- ["s8HashableP", "applicationWillResignActive"]
+- ["s8HashableP", "applicationWillTerminate"]
+- !private ["s8HashableP", "barTintColor"]
+- !private ["s8HashableP", "configure"]
+- !private ["s8HashableP", "foregroundColor"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "initialization"]
+- !private ["s8HashableP", "lightContent"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "path"]
+- !private ["s8HashableP", "set"]
+- !private ["s8HashableP", "shared"]
+- !private ["s8HashableP", "sharedInstance"]
+- !private ["s8HashableP", "sourceApplication"]
+- !private ["s8HashableP", "standard"]
+- !private ["s8HashableP", "statusBarStyle"]
+- !private ["s8HashableP", "tintColor"]
+- !private ["s8HashableP", "titleTextAttributes"]
+- !private ["s8HashableP", "value"]
+- !private ["s8HashableP", "white"]
+- ["s8HashableP", "window"]
+- !private ["s10DictionaryV5IndexV", "annotation"]
+- !private ["s10DictionaryV5IndexV", "sourceApplication"]
+- !private ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["12SocialTrader6MarketC", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So7NSArrayC", "init"]
+- !private ["SC21NSAttributedStringKeyV", "foregroundColor"]
+- !private ["So8NSCodingP", "appearance"]
+- !private ["So8NSCodingP", "barTintColor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "tintColor"]
+- !private ["So8NSCodingP", "titleTextAttributes"]
+- !private ["So8NSCodingP", "white"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "white"]
+- !private ["So17NSFastEnumerationP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "white"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "white"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Bundle"]
+- !private ["So8NSObjectC", "FBSDKAppEvents"]
+- !private ["So8NSObjectC", "FBSDKApplicationDelegate"]
+- !private ["So8NSObjectC", "FirebaseApp"]
+- ["So8NSObjectC", "Market"]
+- !private ["So8NSObjectC", "NSArray"]
+- !private ["So8NSObjectC", "NSAttributedStringKey"]
+- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
+- ["So8NSObjectC", "UIApplicationOpenURLOptionsKey"]
+- !private ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UINavigationBar"]
+- ["So8NSObjectC", "UINavigationController"]
+- ["So8NSObjectC", "UIViewController"]
+- ["So8NSObjectC", "UIWindow"]
+- ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "User"]
+- !private ["So8NSObjectC", "UserDefaults"]
+- !private ["So8NSObjectC", "activateApp"]
+- !private ["So8NSObjectC", "appearance"]
+- ["So8NSObjectC", "application"]
+- ["So8NSObjectC", "applicationDidBecomeActive"]
+- ["So8NSObjectC", "applicationDidEnterBackground"]
+- ["So8NSObjectC", "applicationDidFinishLaunching"]
+- ["So8NSObjectC", "applicationDidReceiveMemoryWarning"]
+- ["So8NSObjectC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So8NSObjectC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So8NSObjectC", "applicationShouldRequestHealthAuthorization"]
+- ["So8NSObjectC", "applicationSignificantTimeChange"]
+- ["So8NSObjectC", "applicationWillEnterForeground"]
+- ["So8NSObjectC", "applicationWillResignActive"]
+- ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "barTintColor"]
+- !private ["So8NSObjectC", "configure"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "initialization"]
+- !private ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "market"]
+- ["So8NSObjectC", "masterVC"]
+- !private ["So8NSObjectC", "path"]
+- ["So8NSObjectC", "rootNavigationController"]
+- !private ["So8NSObjectC", "set"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "sharedInstance"]
+- !private ["So8NSObjectC", "standard"]
+- !private ["So8NSObjectC", "statusBarStyle"]
+- !private ["So8NSObjectC", "tintColor"]
+- !private ["So8NSObjectC", "titleTextAttributes"]
+- ["So8NSObjectC", "user"]
+- !private ["So8NSObjectC", "value"]
+- !private ["So8NSObjectC", "white"]
+- ["So8NSObjectC", "window"]
+- !private ["So16NSObjectProtocolP", "Bundle"]
+- !private ["So16NSObjectProtocolP", "FBSDKAppEvents"]
+- !private ["So16NSObjectProtocolP", "FBSDKApplicationDelegate"]
+- !private ["So16NSObjectProtocolP", "FirebaseApp"]
+- ["So16NSObjectProtocolP", "Market"]
+- !private ["So16NSObjectProtocolP", "NSArray"]
+- !private ["So16NSObjectProtocolP", "NSAttributedStringKey"]
+- !private ["So16NSObjectProtocolP", "UIApplication"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- !private ["So16NSObjectProtocolP", "UINavigationBar"]
+- !private ["So16NSObjectProtocolP", "UserDefaults"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "activateApp"]
+- !private ["So16NSObjectProtocolP", "appearance"]
+- ["So16NSObjectProtocolP", "application"]
+- ["So16NSObjectProtocolP", "applicationDidBecomeActive"]
+- ["So16NSObjectProtocolP", "applicationDidEnterBackground"]
+- ["So16NSObjectProtocolP", "applicationDidFinishLaunching"]
+- ["So16NSObjectProtocolP", "applicationDidReceiveMemoryWarning"]
+- ["So16NSObjectProtocolP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So16NSObjectProtocolP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So16NSObjectProtocolP", "applicationShouldRequestHealthAuthorization"]
+- ["So16NSObjectProtocolP", "applicationSignificantTimeChange"]
+- ["So16NSObjectProtocolP", "applicationWillEnterForeground"]
+- ["So16NSObjectProtocolP", "applicationWillResignActive"]
+- ["So16NSObjectProtocolP", "applicationWillTerminate"]
+- !private ["So16NSObjectProtocolP", "barTintColor"]
+- !private ["So16NSObjectProtocolP", "configure"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "initialization"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "path"]
+- !private ["So16NSObjectProtocolP", "set"]
+- !private ["So16NSObjectProtocolP", "shared"]
+- !private ["So16NSObjectProtocolP", "sharedInstance"]
+- !private ["So16NSObjectProtocolP", "standard"]
+- !private ["So16NSObjectProtocolP", "statusBarStyle"]
+- !private ["So16NSObjectProtocolP", "tintColor"]
+- !private ["So16NSObjectProtocolP", "titleTextAttributes"]
+- !private ["So16NSObjectProtocolP", "value"]
+- !private ["So16NSObjectProtocolP", "white"]
+- ["So16NSObjectProtocolP", "window"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "white"]
+- !private ["s5RangeV", "sourceApplication"]
+- !private ["s15RangeExpressionP", "sourceApplication"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "annotation"]
+- !private ["s16RawRepresentableP", "foregroundColor"]
+- !private ["s16RawRepresentableP", "lightContent"]
+- !private ["s16RawRepresentableP", "sourceApplication"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "appearance"]
+- !private ["So29UIAccessibilityIdentificationP", "barTintColor"]
+- !private ["So29UIAccessibilityIdentificationP", "tintColor"]
+- !private ["So29UIAccessibilityIdentificationP", "titleTextAttributes"]
+- !private ["So12UIAppearanceP", "appearance"]
+- !private ["So12UIAppearanceP", "barTintColor"]
+- !private ["So12UIAppearanceP", "tintColor"]
+- !private ["So12UIAppearanceP", "titleTextAttributes"]
+- !private ["So21UIAppearanceContainerP", "appearance"]
+- !private ["So21UIAppearanceContainerP", "barTintColor"]
+- !private ["So21UIAppearanceContainerP", "tintColor"]
+- !private ["So21UIAppearanceContainerP", "titleTextAttributes"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So13UIApplicationC", "statusBarStyle"]
+- !private ["So21UIApplicationDelegateP", "Bundle"]
+- !private ["So21UIApplicationDelegateP", "FBSDKAppEvents"]
+- !private ["So21UIApplicationDelegateP", "FBSDKApplicationDelegate"]
+- !private ["So21UIApplicationDelegateP", "FirebaseApp"]
+- ["So21UIApplicationDelegateP", "Market"]
+- !private ["So21UIApplicationDelegateP", "NSArray"]
+- !private ["So21UIApplicationDelegateP", "NSAttributedStringKey"]
+- !private ["So21UIApplicationDelegateP", "UIApplication"]
+- !private ["So21UIApplicationDelegateP", "UIColor"]
+- !private ["So21UIApplicationDelegateP", "UINavigationBar"]
+- !private ["So21UIApplicationDelegateP", "UserDefaults"]
+- ["So21UIApplicationDelegateP", ""]
+- ["So21UIApplicationDelegateP", "application"]
+- ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
+- ["So21UIApplicationDelegateP", "applicationDidEnterBackground"]
+- ["So21UIApplicationDelegateP", "applicationDidFinishLaunching"]
+- ["So21UIApplicationDelegateP", "applicationDidReceiveMemoryWarning"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So21UIApplicationDelegateP", "applicationShouldRequestHealthAuthorization"]
+- ["So21UIApplicationDelegateP", "applicationSignificantTimeChange"]
+- ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
+- ["So21UIApplicationDelegateP", "applicationWillResignActive"]
+- ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- !private ["So21UIApplicationDelegateP", "initialization"]
+- ["So21UIApplicationDelegateP", "window"]
+- !private ["SC30UIApplicationOpenURLOptionsKeyV", "annotation"]
+- !private ["SC30UIApplicationOpenURLOptionsKeyV", "sourceApplication"]
+- !private ["So16UIBarPositioningP", "appearance"]
+- !private ["So16UIBarPositioningP", "barTintColor"]
+- !private ["So16UIBarPositioningP", "tintColor"]
+- !private ["So16UIBarPositioningP", "titleTextAttributes"]
+- !private ["So7UIColorC", "init"]
+- !private ["So7UIColorC", "white"]
+- !private ["So17UICoordinateSpaceP", "appearance"]
+- !private ["So17UICoordinateSpaceP", "barTintColor"]
+- !private ["So17UICoordinateSpaceP", "tintColor"]
+- !private ["So17UICoordinateSpaceP", "titleTextAttributes"]
+- !private ["So13UIDynamicItemP", "appearance"]
+- !private ["So13UIDynamicItemP", "barTintColor"]
+- !private ["So13UIDynamicItemP", "tintColor"]
+- !private ["So13UIDynamicItemP", "titleTextAttributes"]
+- !private ["So18UIFocusEnvironmentP", "appearance"]
+- !private ["So18UIFocusEnvironmentP", "barTintColor"]
+- !private ["So18UIFocusEnvironmentP", "tintColor"]
+- !private ["So18UIFocusEnvironmentP", "titleTextAttributes"]
+- !private ["So11UIFocusItemP", "appearance"]
+- !private ["So11UIFocusItemP", "barTintColor"]
+- !private ["So11UIFocusItemP", "tintColor"]
+- !private ["So11UIFocusItemP", "titleTextAttributes"]
+- !private ["So15UINavigationBarC", "appearance"]
+- !private ["So15UINavigationBarC", "barTintColor"]
+- !private ["So15UINavigationBarC", "tintColor"]
+- !private ["So15UINavigationBarC", "titleTextAttributes"]
+- !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
+- !private ["So30UIPasteConfigurationSupportingP", "FBSDKAppEvents"]
+- !private ["So30UIPasteConfigurationSupportingP", "FBSDKApplicationDelegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
+- ["So30UIPasteConfigurationSupportingP", "Market"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSArray"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSAttributedStringKey"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UINavigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "appearance"]
+- ["So30UIPasteConfigurationSupportingP", "application"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidEnterBackground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidFinishLaunching"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIPasteConfigurationSupportingP", "applicationSignificantTimeChange"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillEnterForeground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
+- !private ["So30UIPasteConfigurationSupportingP", "barTintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "initialization"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "statusBarStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleTextAttributes"]
+- ["So30UIPasteConfigurationSupportingP", "window"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "Bundle"]
+- !private ["So11UIResponderC", "FBSDKAppEvents"]
+- !private ["So11UIResponderC", "FBSDKApplicationDelegate"]
+- !private ["So11UIResponderC", "FirebaseApp"]
+- ["So11UIResponderC", "Market"]
+- !private ["So11UIResponderC", "NSArray"]
+- !private ["So11UIResponderC", "NSAttributedStringKey"]
+- !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
+- ["So11UIResponderC", "UIApplicationOpenURLOptionsKey"]
+- !private ["So11UIResponderC", "UIColor"]
+- !private ["So11UIResponderC", "UINavigationBar"]
+- ["So11UIResponderC", "UINavigationController"]
+- ["So11UIResponderC", "UIViewController"]
+- ["So11UIResponderC", "UIWindow"]
+- ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", "User"]
+- !private ["So11UIResponderC", "UserDefaults"]
+- ["So11UIResponderC", ""]
+- !private ["So11UIResponderC", "appearance"]
+- ["So11UIResponderC", "application"]
+- ["So11UIResponderC", "applicationDidBecomeActive"]
+- ["So11UIResponderC", "applicationDidEnterBackground"]
+- ["So11UIResponderC", "applicationDidFinishLaunching"]
+- ["So11UIResponderC", "applicationDidReceiveMemoryWarning"]
+- ["So11UIResponderC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So11UIResponderC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So11UIResponderC", "applicationShouldRequestHealthAuthorization"]
+- ["So11UIResponderC", "applicationSignificantTimeChange"]
+- ["So11UIResponderC", "applicationWillEnterForeground"]
+- ["So11UIResponderC", "applicationWillResignActive"]
+- ["So11UIResponderC", "applicationWillTerminate"]
+- !private ["So11UIResponderC", "barTintColor"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "initialization"]
+- ["So11UIResponderC", "market"]
+- ["So11UIResponderC", "masterVC"]
+- ["So11UIResponderC", "rootNavigationController"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So11UIResponderC", "statusBarStyle"]
+- !private ["So11UIResponderC", "tintColor"]
+- !private ["So11UIResponderC", "titleTextAttributes"]
+- ["So11UIResponderC", "user"]
+- ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "Bundle"]
+- !private ["So30UIResponderStandardEditActionsP", "FBSDKAppEvents"]
+- !private ["So30UIResponderStandardEditActionsP", "FBSDKApplicationDelegate"]
+- !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
+- ["So30UIResponderStandardEditActionsP", "Market"]
+- !private ["So30UIResponderStandardEditActionsP", "NSArray"]
+- !private ["So30UIResponderStandardEditActionsP", "NSAttributedStringKey"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UINavigationBar"]
+- !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "appearance"]
+- ["So30UIResponderStandardEditActionsP", "application"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidEnterBackground"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidFinishLaunching"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIResponderStandardEditActionsP", "applicationSignificantTimeChange"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillEnterForeground"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
+- !private ["So30UIResponderStandardEditActionsP", "barTintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "initialization"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "statusBarStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "tintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "titleTextAttributes"]
+- ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["SC16UIStatusBarStyleO", "lightContent"]
+- !private ["So18UITraitEnvironmentP", "appearance"]
+- !private ["So18UITraitEnvironmentP", "barTintColor"]
+- !private ["So18UITraitEnvironmentP", "tintColor"]
+- !private ["So18UITraitEnvironmentP", "titleTextAttributes"]
+- !private ["So6UIViewC", "appearance"]
+- !private ["So6UIViewC", "barTintColor"]
+- !private ["So6UIViewC", "tintColor"]
+- !private ["So6UIViewC", "titleTextAttributes"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["So12UserDefaultsC", "set"]
+- !private ["So12UserDefaultsC", "standard"]
+- !private ["So12UserDefaultsC", "value"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "appearance"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "barTintColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tintColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleTextAttributes"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKAppEvents"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKApplicationDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Market"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSArray"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedStringKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "activateApp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "application"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidFinishLaunching"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidReceiveMemoryWarning"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationShouldRequestHealthAuthorization"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationSignificantTimeChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "barTintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "initialization"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleTextAttributes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "annotation"]
+- !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "sourceApplication"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s20_SwiftNewtypeWrapperP", "annotation"]
+- !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
+- !private ["s20_SwiftNewtypeWrapperP", "sourceApplication"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "12SocialTrader11AppDelegateC"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So6BundleC"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So14FBSDKAppEventsC"
+- !private "So24FBSDKApplicationDelegateC"
+- !private "So11FirebaseAppC"
+- "s8HashableP"
+- !private "s10DictionaryV5IndexV"
+- !private "10SwiftyJSON17JSONSubscriptTypeP"
+- !private "s25LosslessStringConvertibleP"
+- "12SocialTrader6MarketC"
+- !private "s10MirrorPathP"
+- !private "So7NSArrayC"
+- !private "SC21NSAttributedStringKeyV"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So17NSFastEnumerationP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "s5RangeV"
+- !private "s15RangeExpressionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
+- "So21UIApplicationDelegateP"
+- !private "SC30UIApplicationOpenURLOptionsKeyV"
+- !private "So16UIBarPositioningP"
+- !private "So7UIColorC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So15UINavigationBarC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "SC16UIStatusBarStyleO"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "9Alamofire14URLConvertibleP"
+- !private "So12UserDefaultsC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/SocialTrader-Bridging-Header.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/LineChart1ViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/ChartBaseViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/HalfPieChartViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "7edc986896ccbe5c855bbb1b96cd457d"

@@ -1,0 +1,801 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PageViewController"
+provides-nominal:
+- "12SocialTrader18PageViewControllerC"
+provides-member:
+- ["12SocialTrader18PageViewControllerC", ""]
+provides-dynamic-lookup:
+- "pageViewController"
+- "viewDidLoad"
+depends-top-level:
+- !private "+"
+- !private "-"
+- !private "<"
+- !private ">"
+- !private ">="
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "PageViewController"
+- "String"
+- !private "StringLiteralType"
+- "UIPageViewController"
+- "UIPageViewControllerDataSource"
+- "UIPageViewControllerDelegate"
+- !private "UIStoryboard"
+- "UIViewController"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "first"]
+- !private ["Sa", "index"]
+- !private ["Sa", "subscript"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "first"]
+- !private ["s23BidirectionalCollectionP", "index"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "UIStoryboard"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "dataSource"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "getViewController"]
+- !private ["s7CVarArgP", "index"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- ["s7CVarArgP", "pageViewController"]
+- ["s7CVarArgP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["s7CVarArgP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["s7CVarArgP", "pages"]
+- ["s7CVarArgP", "presentationCount"]
+- ["s7CVarArgP", "presentationCountForPageViewController"]
+- ["s7CVarArgP", "presentationIndex"]
+- ["s7CVarArgP", "presentationIndexForPageViewController"]
+- !private ["s7CVarArgP", "setViewControllers"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "first"]
+- !private ["s10CollectionP", "index"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "dataSource"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "getViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "index"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- ["s28CustomDebugStringConvertibleP", "pageViewController"]
+- ["s28CustomDebugStringConvertibleP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["s28CustomDebugStringConvertibleP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["s28CustomDebugStringConvertibleP", "pages"]
+- ["s28CustomDebugStringConvertibleP", "presentationCount"]
+- ["s28CustomDebugStringConvertibleP", "presentationCountForPageViewController"]
+- ["s28CustomDebugStringConvertibleP", "presentationIndex"]
+- ["s28CustomDebugStringConvertibleP", "presentationIndexForPageViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "setViewControllers"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "index"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "dataSource"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "getViewController"]
+- !private ["s23CustomStringConvertibleP", "index"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- ["s23CustomStringConvertibleP", "pageViewController"]
+- ["s23CustomStringConvertibleP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["s23CustomStringConvertibleP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["s23CustomStringConvertibleP", "pages"]
+- ["s23CustomStringConvertibleP", "presentationCount"]
+- ["s23CustomStringConvertibleP", "presentationCountForPageViewController"]
+- ["s23CustomStringConvertibleP", "presentationIndex"]
+- ["s23CustomStringConvertibleP", "presentationIndexForPageViewController"]
+- !private ["s23CustomStringConvertibleP", "setViewControllers"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "first"]
+- !private ["s9DecodableP", "index"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "first"]
+- !private ["s9EncodableP", "index"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "UIStoryboard"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "dataSource"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "first"]
+- !private ["s9EquatableP", "forward"]
+- !private ["s9EquatableP", "getViewController"]
+- !private ["s9EquatableP", "index"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "instantiateViewController"]
+- ["s9EquatableP", "pageViewController"]
+- ["s9EquatableP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["s9EquatableP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["s9EquatableP", "pages"]
+- ["s9EquatableP", "presentationCount"]
+- ["s9EquatableP", "presentationCountForPageViewController"]
+- ["s9EquatableP", "presentationIndex"]
+- ["s9EquatableP", "presentationIndexForPageViewController"]
+- !private ["s9EquatableP", "setViewControllers"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "index"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "UIStoryboard"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "dataSource"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "forward"]
+- !private ["s8HashableP", "getViewController"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "instantiateViewController"]
+- ["s8HashableP", "pageViewController"]
+- ["s8HashableP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["s8HashableP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["s8HashableP", "pages"]
+- ["s8HashableP", "presentationCount"]
+- ["s8HashableP", "presentationCountForPageViewController"]
+- ["s8HashableP", "presentationIndex"]
+- ["s8HashableP", "presentationIndexForPageViewController"]
+- !private ["s8HashableP", "setViewControllers"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "first"]
+- !private ["s17MutableCollectionP", "index"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So8NSCodingP", "UIStoryboard"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "dataSource"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "getViewController"]
+- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "pageViewController"]
+- ["So8NSCodingP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So8NSCodingP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So8NSCodingP", "pages"]
+- ["So8NSCodingP", "presentationCount"]
+- ["So8NSCodingP", "presentationCountForPageViewController"]
+- ["So8NSCodingP", "presentationIndex"]
+- ["So8NSCodingP", "presentationIndexForPageViewController"]
+- !private ["So8NSCodingP", "setViewControllers"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "dataSource"]
+- !private ["So26NSExtensionRequestHandlingP", "delegate"]
+- !private ["So26NSExtensionRequestHandlingP", "getViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- ["So26NSExtensionRequestHandlingP", "pageViewController"]
+- ["So26NSExtensionRequestHandlingP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So26NSExtensionRequestHandlingP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So26NSExtensionRequestHandlingP", "pages"]
+- ["So26NSExtensionRequestHandlingP", "presentationCount"]
+- ["So26NSExtensionRequestHandlingP", "presentationCountForPageViewController"]
+- ["So26NSExtensionRequestHandlingP", "presentationIndex"]
+- ["So26NSExtensionRequestHandlingP", "presentationIndexForPageViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "setViewControllers"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIPageViewController"]
+- !private ["So8NSObjectC", "UIStoryboard"]
+- ["So8NSObjectC", "UIViewController"]
+- !private ["So8NSObjectC", "dataSource"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "getViewController"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- ["So8NSObjectC", "pageViewController"]
+- ["So8NSObjectC", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So8NSObjectC", "pageViewControllerSupportedInterfaceOrientations"]
+- ["So8NSObjectC", "pages"]
+- ["So8NSObjectC", "pages.storage"]
+- ["So8NSObjectC", "presentationCount"]
+- ["So8NSObjectC", "presentationCountForPageViewController"]
+- ["So8NSObjectC", "presentationIndex"]
+- ["So8NSObjectC", "presentationIndexForPageViewController"]
+- !private ["So8NSObjectC", "setViewControllers"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "UIStoryboard"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "dataSource"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "getViewController"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- ["So16NSObjectProtocolP", "pageViewController"]
+- ["So16NSObjectProtocolP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16NSObjectProtocolP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So16NSObjectProtocolP", "pages"]
+- ["So16NSObjectProtocolP", "presentationCount"]
+- ["So16NSObjectProtocolP", "presentationCountForPageViewController"]
+- ["So16NSObjectProtocolP", "presentationIndex"]
+- ["So16NSObjectProtocolP", "presentationIndexForPageViewController"]
+- !private ["So16NSObjectProtocolP", "setViewControllers"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["12SocialTrader18PageViewControllerC", "String"]
+- ["12SocialTrader18PageViewControllerC", "UIPageViewController"]
+- !private ["12SocialTrader18PageViewControllerC", "UIStoryboard"]
+- ["12SocialTrader18PageViewControllerC", "UIViewController"]
+- !private ["12SocialTrader18PageViewControllerC", "dataSource"]
+- ["12SocialTrader18PageViewControllerC", "deinit"]
+- !private ["12SocialTrader18PageViewControllerC", "delegate"]
+- !private ["12SocialTrader18PageViewControllerC", "getViewController"]
+- ["12SocialTrader18PageViewControllerC", "init"]
+- ["12SocialTrader18PageViewControllerC", "pageViewController"]
+- ["12SocialTrader18PageViewControllerC", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["12SocialTrader18PageViewControllerC", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["12SocialTrader18PageViewControllerC", "pages"]
+- !private ["12SocialTrader18PageViewControllerC", "pages.storage"]
+- ["12SocialTrader18PageViewControllerC", "presentationCount"]
+- ["12SocialTrader18PageViewControllerC", "presentationCountForPageViewController"]
+- ["12SocialTrader18PageViewControllerC", "presentationIndex"]
+- ["12SocialTrader18PageViewControllerC", "presentationIndexForPageViewController"]
+- !private ["12SocialTrader18PageViewControllerC", "setViewControllers"]
+- ["12SocialTrader18PageViewControllerC", "viewDidLoad"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "first"]
+- !private ["s22RandomAccessCollectionP", "index"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "first"]
+- !private ["s26RangeReplaceableCollectionP", "index"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s16RawRepresentableP", "forward"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "first"]
+- !private ["s8SequenceP", "index"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIAppearanceContainerP", "UIStoryboard"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "dataSource"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "getViewController"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "pageViewController"]
+- ["So21UIAppearanceContainerP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So21UIAppearanceContainerP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So21UIAppearanceContainerP", "pages"]
+- ["So21UIAppearanceContainerP", "presentationCount"]
+- ["So21UIAppearanceContainerP", "presentationCountForPageViewController"]
+- ["So21UIAppearanceContainerP", "presentationIndex"]
+- ["So21UIAppearanceContainerP", "presentationIndexForPageViewController"]
+- !private ["So21UIAppearanceContainerP", "setViewControllers"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "UIStoryboard"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "dataSource"]
+- !private ["So18UIContentContainerP", "delegate"]
+- !private ["So18UIContentContainerP", "getViewController"]
+- !private ["So18UIContentContainerP", "init"]
+- ["So18UIContentContainerP", "pageViewController"]
+- ["So18UIContentContainerP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UIContentContainerP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So18UIContentContainerP", "pages"]
+- ["So18UIContentContainerP", "presentationCount"]
+- ["So18UIContentContainerP", "presentationCountForPageViewController"]
+- ["So18UIContentContainerP", "presentationIndex"]
+- ["So18UIContentContainerP", "presentationIndexForPageViewController"]
+- !private ["So18UIContentContainerP", "setViewControllers"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "dataSource"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "getViewController"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "pageViewController"]
+- ["So18UIFocusEnvironmentP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UIFocusEnvironmentP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So18UIFocusEnvironmentP", "pages"]
+- ["So18UIFocusEnvironmentP", "presentationCount"]
+- ["So18UIFocusEnvironmentP", "presentationCountForPageViewController"]
+- ["So18UIFocusEnvironmentP", "presentationIndex"]
+- ["So18UIFocusEnvironmentP", "presentationIndexForPageViewController"]
+- !private ["So18UIFocusEnvironmentP", "setViewControllers"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So20UIPageViewControllerC", "String"]
+- ["So20UIPageViewControllerC", "UIPageViewController"]
+- !private ["So20UIPageViewControllerC", "UIStoryboard"]
+- ["So20UIPageViewControllerC", "UIViewController"]
+- ["So20UIPageViewControllerC", ""]
+- !private ["So20UIPageViewControllerC", "dataSource"]
+- !private ["So20UIPageViewControllerC", "delegate"]
+- ["So20UIPageViewControllerC", "getViewController"]
+- ["So20UIPageViewControllerC", "init"]
+- ["So20UIPageViewControllerC", "pageViewController"]
+- ["So20UIPageViewControllerC", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So20UIPageViewControllerC", "pageViewControllerSupportedInterfaceOrientations"]
+- ["So20UIPageViewControllerC", "pages"]
+- ["So20UIPageViewControllerC", "pages.storage"]
+- ["So20UIPageViewControllerC", "presentationCount"]
+- ["So20UIPageViewControllerC", "presentationCountForPageViewController"]
+- ["So20UIPageViewControllerC", "presentationIndex"]
+- ["So20UIPageViewControllerC", "presentationIndexForPageViewController"]
+- !private ["So20UIPageViewControllerC", "setViewControllers"]
+- ["So20UIPageViewControllerC", "viewDidLoad"]
+- !private ["So30UIPageViewControllerDataSourceP", "UIStoryboard"]
+- ["So30UIPageViewControllerDataSourceP", ""]
+- !private ["So30UIPageViewControllerDataSourceP", "dataSource"]
+- !private ["So30UIPageViewControllerDataSourceP", "delegate"]
+- !private ["So30UIPageViewControllerDataSourceP", "getViewController"]
+- ["So30UIPageViewControllerDataSourceP", "pageViewController"]
+- ["So30UIPageViewControllerDataSourceP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UIPageViewControllerDataSourceP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So30UIPageViewControllerDataSourceP", "pages"]
+- ["So30UIPageViewControllerDataSourceP", "presentationCount"]
+- ["So30UIPageViewControllerDataSourceP", "presentationCountForPageViewController"]
+- ["So30UIPageViewControllerDataSourceP", "presentationIndex"]
+- ["So30UIPageViewControllerDataSourceP", "presentationIndexForPageViewController"]
+- !private ["So30UIPageViewControllerDataSourceP", "setViewControllers"]
+- !private ["So28UIPageViewControllerDelegateP", "UIStoryboard"]
+- ["So28UIPageViewControllerDelegateP", ""]
+- !private ["So28UIPageViewControllerDelegateP", "dataSource"]
+- !private ["So28UIPageViewControllerDelegateP", "delegate"]
+- !private ["So28UIPageViewControllerDelegateP", "getViewController"]
+- ["So28UIPageViewControllerDelegateP", "pageViewController"]
+- ["So28UIPageViewControllerDelegateP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So28UIPageViewControllerDelegateP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So28UIPageViewControllerDelegateP", "pages"]
+- ["So28UIPageViewControllerDelegateP", "presentationCount"]
+- ["So28UIPageViewControllerDelegateP", "presentationCountForPageViewController"]
+- ["So28UIPageViewControllerDelegateP", "presentationIndex"]
+- ["So28UIPageViewControllerDelegateP", "presentationIndexForPageViewController"]
+- !private ["So28UIPageViewControllerDelegateP", "setViewControllers"]
+- !private ["SC39UIPageViewControllerNavigationDirectionO", "forward"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "getViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "pageViewController"]
+- ["So30UIPasteConfigurationSupportingP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UIPasteConfigurationSupportingP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So30UIPasteConfigurationSupportingP", "pages"]
+- ["So30UIPasteConfigurationSupportingP", "presentationCount"]
+- ["So30UIPasteConfigurationSupportingP", "presentationCountForPageViewController"]
+- ["So30UIPasteConfigurationSupportingP", "presentationIndex"]
+- ["So30UIPasteConfigurationSupportingP", "presentationIndexForPageViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "setViewControllers"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIPageViewController"]
+- !private ["So11UIResponderC", "UIStoryboard"]
+- ["So11UIResponderC", "UIViewController"]
+- !private ["So11UIResponderC", "dataSource"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "getViewController"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "pageViewController"]
+- ["So11UIResponderC", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So11UIResponderC", "pageViewControllerSupportedInterfaceOrientations"]
+- ["So11UIResponderC", "pages"]
+- ["So11UIResponderC", "pages.storage"]
+- ["So11UIResponderC", "presentationCount"]
+- ["So11UIResponderC", "presentationCountForPageViewController"]
+- ["So11UIResponderC", "presentationIndex"]
+- ["So11UIResponderC", "presentationIndexForPageViewController"]
+- !private ["So11UIResponderC", "setViewControllers"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "dataSource"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "getViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "pageViewController"]
+- ["So30UIResponderStandardEditActionsP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UIResponderStandardEditActionsP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So30UIResponderStandardEditActionsP", "pages"]
+- ["So30UIResponderStandardEditActionsP", "presentationCount"]
+- ["So30UIResponderStandardEditActionsP", "presentationCountForPageViewController"]
+- ["So30UIResponderStandardEditActionsP", "presentationIndex"]
+- ["So30UIResponderStandardEditActionsP", "presentationIndexForPageViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "setViewControllers"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "UIStoryboard"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "dataSource"]
+- !private ["So16UIStateRestoringP", "delegate"]
+- !private ["So16UIStateRestoringP", "getViewController"]
+- !private ["So16UIStateRestoringP", "init"]
+- ["So16UIStateRestoringP", "pageViewController"]
+- ["So16UIStateRestoringP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16UIStateRestoringP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So16UIStateRestoringP", "pages"]
+- ["So16UIStateRestoringP", "presentationCount"]
+- ["So16UIStateRestoringP", "presentationCountForPageViewController"]
+- ["So16UIStateRestoringP", "presentationIndex"]
+- ["So16UIStateRestoringP", "presentationIndexForPageViewController"]
+- !private ["So16UIStateRestoringP", "setViewControllers"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So18UITraitEnvironmentP", "UIStoryboard"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "dataSource"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "getViewController"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "pageViewController"]
+- ["So18UITraitEnvironmentP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UITraitEnvironmentP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["So18UITraitEnvironmentP", "pages"]
+- ["So18UITraitEnvironmentP", "presentationCount"]
+- ["So18UITraitEnvironmentP", "presentationCountForPageViewController"]
+- ["So18UITraitEnvironmentP", "presentationIndex"]
+- ["So18UITraitEnvironmentP", "presentationIndexForPageViewController"]
+- !private ["So18UITraitEnvironmentP", "setViewControllers"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIPageViewController"]
+- !private ["So16UIViewControllerC", "UIStoryboard"]
+- ["So16UIViewControllerC", "UIViewController"]
+- !private ["So16UIViewControllerC", "dataSource"]
+- !private ["So16UIViewControllerC", "delegate"]
+- ["So16UIViewControllerC", "getViewController"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "pageViewController"]
+- ["So16UIViewControllerC", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16UIViewControllerC", "pageViewControllerSupportedInterfaceOrientations"]
+- ["So16UIViewControllerC", "pages"]
+- ["So16UIViewControllerC", "pages.storage"]
+- ["So16UIViewControllerC", "presentationCount"]
+- ["So16UIViewControllerC", "presentationCountForPageViewController"]
+- ["So16UIViewControllerC", "presentationIndex"]
+- ["So16UIViewControllerC", "presentationIndexForPageViewController"]
+- !private ["So16UIViewControllerC", "setViewControllers"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "index"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "index"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "pageViewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "pageViewControllerPreferredInterfaceOrientationForPresentation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "pageViewControllerSupportedInterfaceOrientations"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pages"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "presentationCount"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "presentationCountForPageViewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "presentationIndex"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "presentationIndexForPageViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setViewControllers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "index"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "10SwiftyJSON17JSONSubscriptTypeP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "12SocialTrader18PageViewControllerC"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So20UIPageViewControllerC"
+- "So30UIPageViewControllerDataSourceP"
+- "So28UIPageViewControllerDelegateP"
+- !private "SC39UIPageViewControllerNavigationDirectionO"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- "So18UITraitEnvironmentP"
+- "So16UIViewControllerC"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/SocialTrader-Bridging-Header.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/LineChart1ViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/ChartBaseViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader/ChartsExtension/HalfPieChartViewController.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "434732059303e06bfc580539c504296f"

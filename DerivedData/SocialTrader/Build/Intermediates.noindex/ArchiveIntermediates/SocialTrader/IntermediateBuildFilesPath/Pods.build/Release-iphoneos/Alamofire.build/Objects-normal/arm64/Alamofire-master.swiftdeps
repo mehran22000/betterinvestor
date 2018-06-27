@@ -1,0 +1,21 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "8cdb34f4ca88fd812b4adf86a661d218"
+build_time: [1530075287, 539447000]
+inputs:
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/AFError.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/Alamofire.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/MultipartFormData.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/Notifications.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/ParameterEncoding.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/Request.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/Response.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/ResponseSerialization.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/Result.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/ServerTrustPolicy.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/SessionDelegate.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/SessionManager.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/TaskDelegate.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/Timeline.swift": [9223372036, 854775807]
+  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/Alamofire/Source/Validation.swift": [9223372036, 854775807]

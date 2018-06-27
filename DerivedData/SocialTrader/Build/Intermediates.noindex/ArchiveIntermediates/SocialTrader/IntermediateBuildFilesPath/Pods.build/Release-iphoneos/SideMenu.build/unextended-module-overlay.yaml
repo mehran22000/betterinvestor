@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Intermediates.noindex/ArchiveIntermediates/SocialTrader/BuildProductsPath/Release-iphoneos/SideMenu/SideMenu.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/mehran/Developer/Swift Projcts/SocialTrader/DerivedData/SocialTrader/Build/Intermediates.noindex/ArchiveIntermediates/SocialTrader/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SideMenu.build/unextended-module.modulemap',
+    }]
+  }]
+}
