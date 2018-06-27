@@ -359,9 +359,8 @@
 		022819061FCD185A0098F619 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0228190A1FCD18C00098F619 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		022FDE7420E008B3000200EE /* betterInvestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterInvestor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		022FDE7520E008B3000200EE /* betterInvestor-dev copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "betterInvestor-dev copy-Info.plist"; path = "/Users/mehran/betterinvestor/betterInvestor-dev copy-Info.plist"; sourceTree = "<absolute>"; };
+		022FDE7520E008B3000200EE /* betterInvestor-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "betterInvestor-info.plist"; path = "/Users/mehran/betterinvestor/betterInvestor-info.plist"; sourceTree = "<absolute>"; };
 		022FDED020E047DC000200EE /* betterInvestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterInvestor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		022FDED120E047DC000200EE /* betterInvestor-adhoc copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "betterInvestor-adhoc copy-Info.plist"; path = "/Users/mehran/betterinvestor/betterInvestor-adhoc copy-Info.plist"; sourceTree = "<absolute>"; };
 		02327C5820201A7800F2B1B8 /* StockActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockActionCell.swift; sourceTree = "<group>"; };
 		02327C5A20201AE000F2B1B8 /* StockInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoCell.swift; sourceTree = "<group>"; };
 		02327C5C2022B40700F2B1B8 /* BuySellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellVC.swift; sourceTree = "<group>"; };
@@ -512,8 +511,7 @@
 				0203FC061F99741B007FE62A /* Products */,
 				AA582B415C5810D7C728D004 /* Frameworks */,
 				3566C679BF1E5C40EF164B28 /* Pods */,
-				022FDE7520E008B3000200EE /* betterInvestor-dev copy-Info.plist */,
-				022FDED120E047DC000200EE /* betterInvestor-adhoc copy-Info.plist */,
+				022FDE7520E008B3000200EE /* betterInvestor-info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1420,6 +1418,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = betterInvestor;
+				PRODUCT_NAME = betterInvestor;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1474,6 +1474,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = betterInvestor;
+				PRODUCT_NAME = betterInvestor;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -1665,6 +1667,7 @@
 			baseConfigurationReference = A39D97580007D1AC757F1B96 /* Pods-betterInvestor.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
@@ -1677,6 +1680,7 @@
 				);
 				INFOPLIST_FILE = "betterInvestor-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ron.betterInvestor;
 				PRODUCT_NAME = betterInvestor;
 				PROVISIONING_PROFILE = "de746ab3-fbe5-444c-935e-a7172dfd9fb5";
@@ -1694,6 +1698,7 @@
 			baseConfigurationReference = B130058C41BB43D043693AB4 /* Pods-betterInvestor.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Mehran Najafi (Q79878SPU6)";
@@ -1706,6 +1711,7 @@
 				);
 				INFOPLIST_FILE = "betterInvestor-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ron.betterInvestor;
 				PRODUCT_NAME = betterInvestor;
 				PROVISIONING_PROFILE = "de746ab3-fbe5-444c-935e-a7172dfd9fb5";
