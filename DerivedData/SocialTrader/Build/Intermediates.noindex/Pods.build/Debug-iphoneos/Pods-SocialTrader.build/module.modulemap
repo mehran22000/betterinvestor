@@ -1,6 +1,0 @@
-framework module Pods_SocialTrader {
-  umbrella header "Pods-SocialTrader-umbrella.h"
-
-  export *
-  module * { export * }
-}

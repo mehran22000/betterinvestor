@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "142cb469003351ff961627885c2eb538"
-build_time: [1530075285, 395096000]
-inputs:
-  "/Users/mehran/Developer/Swift Projcts/SocialTrader/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [9223372036, 854775807]
