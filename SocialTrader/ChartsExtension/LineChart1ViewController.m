@@ -11,7 +11,18 @@
 
 #import "LineChart1ViewController.h"
 #import "Charts/Charts-Swift.h"
+
+#ifdef IS_DEV
+#import "SocialTraderDev-Swift.h"
+#endif
+
+#ifdef IS_ADHOC
+#import "SocialTraderAdHoc-Swift.h"
+#endif
+
+#ifdef IS_PROD
 #import "SocialTrader-Swift.h"
+#endif
 
 @interface LineChart1ViewController () <ChartViewDelegate>
 
