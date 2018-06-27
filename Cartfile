@@ -1,7 +1,0 @@
-github "jonkykong/SideMenu" "master"
-github "facebook/facebook-sdk-swift"
-github "Alamofire/Alamofire" ~> 4.7
-github "SwiftyJSON/SwiftyJSON"
-
-
-

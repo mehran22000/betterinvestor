@@ -1,6 +1,0 @@
-github "Alamofire/Alamofire" "4.7.2"
-github "BoltsFramework/Bolts-ObjC" "1.9.0"
-github "SwiftyJSON/SwiftyJSON" "4.1.0"
-github "facebook/facebook-ios-sdk" "sdk-version-4.33.0"
-github "facebook/facebook-sdk-swift" "0.3.1"
-github "jonkykong/SideMenu" "83f8e461e103d2caacb328c3050fcbb4980cbc83"

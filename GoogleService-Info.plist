@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>550318387909-vnmqnuee8vk6d5m1ku155el9b9dutqm2.apps.googleusercontent.com</string>
+	<string>181283984431-p7urtop9pl5md1ddreblc1qof88e8e6q.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.550318387909-vnmqnuee8vk6d5m1ku155el9b9dutqm2</string>
+	<string>com.googleusercontent.apps.181283984431-p7urtop9pl5md1ddreblc1qof88e8e6q</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCy72JTun9OY52cRahy8EMj4C-v5ygIg8g</string>
+	<string>AIzaSyAftHI7Vcr-_jmErOWHzZX-ZACgaaxmbEQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>550318387909</string>
+	<string>181283984431</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.ron.betterInvestor</string>
+	<string>com.ron.socialtrader</string>
 	<key>PROJECT_ID</key>
-	<string>smarter-investor</string>
+	<string>social-trader-eee8e</string>
 	<key>STORAGE_BUCKET</key>
-	<string>smarter-investor.appspot.com</string>
+	<string>social-trader-eee8e.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:550318387909:ios:06807b01737f190e</string>
+	<string>1:181283984431:ios:34bf88c29361fa0f</string>
 	<key>DATABASE_URL</key>
-	<string>https://smarter-investor.firebaseio.com</string>
+	<string>https://social-trader-eee8e.firebaseio.com</string>
 </dict>
 </plist>
