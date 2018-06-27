@@ -79,8 +79,154 @@
 		02A11C1320E2CB49000CD92B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1220E2CB49000CD92B /* GoogleService-Info.plist */; };
 		02A11C1520E2CB55000CD92B /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1420E2CB55000CD92B /* symbols.plist */; };
 		02A11C1E20E2CC2B000CD92B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1C20E2CC2A000CD92B /* Localizable.strings */; };
+<<<<<<< HEAD
 		3EF7BA56E63D7D8F53F14088 /* Pods_SocialTraderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB620E2EE41004EA149 /* Pods_SocialTraderTests.framework */; };
 		D8295E3A54F5B6AE84DDF1BE /* Pods_SocialTraderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB820E2EE41004EA149 /* Pods_SocialTraderUITests.framework */; };
+=======
+		02FFD22420E3E91B00ADC03F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD120E2CAB6000CD92B /* LoginViewController.swift */; };
+		02FFD22520E3E91B00ADC03F /* HalfPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A11C0A20E2CADB000CD92B /* HalfPieChartViewController.m */; };
+		02FFD22620E3E91B00ADC03F /* StockHoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD220E2CAB6000CD92B /* StockHoldersVC.swift */; };
+		02FFD22720E3E91B00ADC03F /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BED20E2CAD5000CD92B /* RankingCell.swift */; };
+		02FFD22820E3E91B00ADC03F /* TrxInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEE20E2CAD5000CD92B /* TrxInputCell.swift */; };
+		02FFD22920E3E91B00ADC03F /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB520E2CAAC000CD92B /* Position.swift */; };
+		02FFD22A20E3E91B00ADC03F /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB220E2CAAC000CD92B /* Transaction.swift */; };
+		02FFD22B20E3E91B00ADC03F /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEB20E2CAD5000CD92B /* ProductCell.swift */; };
+		02FFD22C20E3E91B00ADC03F /* ReferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BE920E2CAD5000CD92B /* ReferCell.swift */; };
+		02FFD22D20E3E91B00ADC03F /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB420E2CAAC000CD92B /* Market.swift */; };
+		02FFD22E20E3E91B00ADC03F /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD320E2CAB6000CD92B /* SideBarVC.swift */; };
+		02FFD22F20E3E91B00ADC03F /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAC20E2CAAC000CD92B /* Portfolio.swift */; };
+		02FFD23020E3E91B00ADC03F /* SymbolSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCD20E2CAB6000CD92B /* SymbolSearchVC.swift */; };
+		02FFD23120E3E91B00ADC03F /* PortfolioSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEA20E2CAD5000CD92B /* PortfolioSummaryCell.swift */; };
+		02FFD23220E3E91B00ADC03F /* LineChart1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A11C0920E2CADB000CD92B /* LineChart1ViewController.m */; };
+		02FFD23320E3E91B00ADC03F /* BuySellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD020E2CAB6000CD92B /* BuySellVC.swift */; };
+		02FFD23420E3E91B00ADC03F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEC20E2CAD5000CD92B /* MenuTableViewCell.swift */; };
+		02FFD23520E3E91B00ADC03F /* AboutAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC820E2CAB6000CD92B /* AboutAppVC.swift */; };
+		02FFD23620E3E91B00ADC03F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAA20E2CAAC000CD92B /* Quote.swift */; };
+		02FFD23720E3E91B00ADC03F /* HoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCE20E2CAB6000CD92B /* HoldersVC.swift */; };
+		02FFD23820E3E91B00ADC03F /* StockInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BF320E2CAD5000CD92B /* StockInfoCell.swift */; };
+		02FFD23920E3E91B00ADC03F /* FriendPortfolioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCC20E2CAB6000CD92B /* FriendPortfolioVC.swift */; };
+		02FFD23A20E3E91B00ADC03F /* MenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BE620E2CAD5000CD92B /* MenuHeaderCell.swift */; };
+		02FFD23B20E3E91B00ADC03F /* ReferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCF20E2CAB6000CD92B /* ReferVC.swift */; };
+		02FFD23C20E3E91B00ADC03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11B5B20E2A242000CD92B /* AppDelegate.swift */; };
+		02FFD23D20E3E91B00ADC03F /* TrxActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BF220E2CAD5000CD92B /* TrxActionCell.swift */; };
+		02FFD23E20E3E91B00ADC03F /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC720E2CAB6000CD92B /* RootNavigationVC.swift */; };
+		02FFD23F20E3E91B00ADC03F /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC920E2CAB6000CD92B /* TutorialVC.swift */; };
+		02FFD24020E3E91B00ADC03F /* FbDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAF20E2CAAC000CD92B /* FbDataManager.swift */; };
+		02FFD24120E3E91B00ADC03F /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC620E2CAB6000CD92B /* TermsVC.swift */; };
+		02FFD24220E3E91B00ADC03F /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB120E2CAAC000CD92B /* Ranking.swift */; };
+		02FFD24320E3E91B00ADC03F /* Holders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BA920E2CAAC000CD92B /* Holders.swift */; };
+		02FFD24420E3E91B00ADC03F /* StockActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BF020E2CAD5000CD92B /* StockActionCell.swift */; };
+		02FFD24520E3E91B00ADC03F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAB20E2CAAC000CD92B /* User.swift */; };
+		02FFD24620E3E91B00ADC03F /* RankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC520E2CAB6000CD92B /* RankingTableVC.swift */; };
+		02FFD24720E3E91B00ADC03F /* TrxInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BE820E2CAD5000CD92B /* TrxInfoCell.swift */; };
+		02FFD24820E3E91B00ADC03F /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCA20E2CAB6000CD92B /* StockVC.swift */; };
+		02FFD24920E3E91B00ADC03F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BA620E2CA5E000CD92B /* Constants.swift */; };
+		02FFD24A20E3E91B00ADC03F /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BF120E2CAD5000CD92B /* PortfolioCell.swift */; };
+		02FFD24B20E3E91B00ADC03F /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD420E2CAB6000CD92B /* ProductVC.swift */; };
+		02FFD24C20E3E91B00ADC03F /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB620E2CAAC000CD92B /* Symbol.swift */; };
+		02FFD24D20E3E91B00ADC03F /* GainHistoryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB320E2CAAC000CD92B /* GainHistoryFilter.swift */; };
+		02FFD24E20E3E91B00ADC03F /* GainHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB020E2CAAC000CD92B /* GainHistoryItem.swift */; };
+		02FFD24F20E3E91B00ADC03F /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCB20E2CAB6000CD92B /* MasterVC.swift */; };
+		02FFD25020E3E91B00ADC03F /* ChartBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A11C0720E2CADB000CD92B /* ChartBaseViewController.m */; };
+		02FFD25120E3E91B00ADC03F /* HolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEF20E2CAD5000CD92B /* HolderCell.swift */; };
+		02FFD25220E3E91B00ADC03F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BE720E2CAD5000CD92B /* PhotoCell.swift */; };
+		02FFD25320E3E91B00ADC03F /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAD20E2CAAC000CD92B /* Holder.swift */; };
+		02FFD25520E3E91B00ADC03F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA820E2EE41004EA149 /* Alamofire.framework */; };
+		02FFD25620E3E91B00ADC03F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AAA20E2EE41004EA149 /* Bolts.framework */; };
+		02FFD25720E3E91B00ADC03F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AAC20E2EE41004EA149 /* FBSDKCoreKit.framework */; };
+		02FFD25820E3E91B00ADC03F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AAE20E2EE41004EA149 /* FBSDKLoginKit.framework */; };
+		02FFD25920E3E91B00ADC03F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB020E2EE41004EA149 /* FBSDKShareKit.framework */; };
+		02FFD25A20E3E91B00ADC03F /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB220E2EE41004EA149 /* GoogleToolboxForMac.framework */; };
+		02FFD25B20E3E91B00ADC03F /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB420E2EE41004EA149 /* nanopb.framework */; };
+		02FFD25C20E3E91B00ADC03F /* Pods_SocialTraderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB620E2EE41004EA149 /* Pods_SocialTraderTests.framework */; };
+		02FFD25D20E3E91B00ADC03F /* Pods_SocialTraderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB820E2EE41004EA149 /* Pods_SocialTraderUITests.framework */; };
+		02FFD25E20E3E91B00ADC03F /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABA20E2EE41004EA149 /* SideMenu.framework */; };
+		02FFD25F20E3E91B00ADC03F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABC20E2EE41004EA149 /* SwiftyJSON.framework */; };
+		02FFD26020E3E91B00ADC03F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA620E2ECEC004EA149 /* Charts.framework */; };
+		02FFD26120E3E91B00ADC03F /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */; };
+		02FFD26320E3E91B00ADC03F /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1420E2CB55000CD92B /* symbols.plist */; };
+		02FFD26420E3E91B00ADC03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A11BA220E2C9C8000CD92B /* Main.storyboard */; };
+		02FFD26520E3E91B00ADC03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A11B6220E2A245000CD92B /* Assets.xcassets */; };
+		02FFD26620E3E91B00ADC03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A11BA020E2C9C8000CD92B /* LaunchScreen.storyboard */; };
+		02FFD26720E3E91B00ADC03F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1C20E2CC2A000CD92B /* Localizable.strings */; };
+		02FFD26820E3E91B00ADC03F /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0820E2CADB000CD92B /* HalfPieChartViewController.xib */; };
+		02FFD26920E3E91B00ADC03F /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1020E2CB19000CD92B /* Icons.xcassets */; };
+		02FFD26A20E3E91B00ADC03F /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0420E2CADB000CD92B /* LineChart1ViewController.xib */; };
+		02FFD26B20E3E91B00ADC03F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1220E2CB49000CD92B /* GoogleService-Info.plist */; };
+		02FFD27520E3E98800ADC03F /* Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FFD27420E3E98800ADC03F /* Dev-Info.plist */; };
+		02FFD27920E3F2F000ADC03F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD120E2CAB6000CD92B /* LoginViewController.swift */; };
+		02FFD27A20E3F2F000ADC03F /* HalfPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A11C0A20E2CADB000CD92B /* HalfPieChartViewController.m */; };
+		02FFD27B20E3F2F000ADC03F /* StockHoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD220E2CAB6000CD92B /* StockHoldersVC.swift */; };
+		02FFD27C20E3F2F000ADC03F /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BED20E2CAD5000CD92B /* RankingCell.swift */; };
+		02FFD27D20E3F2F000ADC03F /* TrxInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEE20E2CAD5000CD92B /* TrxInputCell.swift */; };
+		02FFD27E20E3F2F000ADC03F /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB520E2CAAC000CD92B /* Position.swift */; };
+		02FFD27F20E3F2F000ADC03F /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB220E2CAAC000CD92B /* Transaction.swift */; };
+		02FFD28020E3F2F000ADC03F /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEB20E2CAD5000CD92B /* ProductCell.swift */; };
+		02FFD28120E3F2F000ADC03F /* ReferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BE920E2CAD5000CD92B /* ReferCell.swift */; };
+		02FFD28220E3F2F000ADC03F /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB420E2CAAC000CD92B /* Market.swift */; };
+		02FFD28320E3F2F000ADC03F /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD320E2CAB6000CD92B /* SideBarVC.swift */; };
+		02FFD28420E3F2F000ADC03F /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAC20E2CAAC000CD92B /* Portfolio.swift */; };
+		02FFD28520E3F2F000ADC03F /* SymbolSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCD20E2CAB6000CD92B /* SymbolSearchVC.swift */; };
+		02FFD28620E3F2F000ADC03F /* PortfolioSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEA20E2CAD5000CD92B /* PortfolioSummaryCell.swift */; };
+		02FFD28720E3F2F000ADC03F /* LineChart1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A11C0920E2CADB000CD92B /* LineChart1ViewController.m */; };
+		02FFD28820E3F2F000ADC03F /* BuySellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD020E2CAB6000CD92B /* BuySellVC.swift */; };
+		02FFD28920E3F2F000ADC03F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEC20E2CAD5000CD92B /* MenuTableViewCell.swift */; };
+		02FFD28A20E3F2F000ADC03F /* AboutAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC820E2CAB6000CD92B /* AboutAppVC.swift */; };
+		02FFD28B20E3F2F000ADC03F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAA20E2CAAC000CD92B /* Quote.swift */; };
+		02FFD28C20E3F2F000ADC03F /* HoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCE20E2CAB6000CD92B /* HoldersVC.swift */; };
+		02FFD28D20E3F2F000ADC03F /* StockInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BF320E2CAD5000CD92B /* StockInfoCell.swift */; };
+		02FFD28E20E3F2F000ADC03F /* FriendPortfolioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCC20E2CAB6000CD92B /* FriendPortfolioVC.swift */; };
+		02FFD28F20E3F2F000ADC03F /* MenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BE620E2CAD5000CD92B /* MenuHeaderCell.swift */; };
+		02FFD29020E3F2F000ADC03F /* ReferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCF20E2CAB6000CD92B /* ReferVC.swift */; };
+		02FFD29120E3F2F000ADC03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11B5B20E2A242000CD92B /* AppDelegate.swift */; };
+		02FFD29220E3F2F000ADC03F /* TrxActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BF220E2CAD5000CD92B /* TrxActionCell.swift */; };
+		02FFD29320E3F2F000ADC03F /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC720E2CAB6000CD92B /* RootNavigationVC.swift */; };
+		02FFD29420E3F2F000ADC03F /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC920E2CAB6000CD92B /* TutorialVC.swift */; };
+		02FFD29520E3F2F000ADC03F /* FbDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAF20E2CAAC000CD92B /* FbDataManager.swift */; };
+		02FFD29620E3F2F000ADC03F /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC620E2CAB6000CD92B /* TermsVC.swift */; };
+		02FFD29720E3F2F000ADC03F /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB120E2CAAC000CD92B /* Ranking.swift */; };
+		02FFD29820E3F2F000ADC03F /* Holders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BA920E2CAAC000CD92B /* Holders.swift */; };
+		02FFD29920E3F2F000ADC03F /* StockActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BF020E2CAD5000CD92B /* StockActionCell.swift */; };
+		02FFD29A20E3F2F000ADC03F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAB20E2CAAC000CD92B /* User.swift */; };
+		02FFD29B20E3F2F000ADC03F /* RankingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BC520E2CAB6000CD92B /* RankingTableVC.swift */; };
+		02FFD29C20E3F2F000ADC03F /* TrxInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BE820E2CAD5000CD92B /* TrxInfoCell.swift */; };
+		02FFD29D20E3F2F000ADC03F /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCA20E2CAB6000CD92B /* StockVC.swift */; };
+		02FFD29E20E3F2F000ADC03F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BA620E2CA5E000CD92B /* Constants.swift */; };
+		02FFD29F20E3F2F000ADC03F /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BF120E2CAD5000CD92B /* PortfolioCell.swift */; };
+		02FFD2A020E3F2F000ADC03F /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD420E2CAB6000CD92B /* ProductVC.swift */; };
+		02FFD2A120E3F2F000ADC03F /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB620E2CAAC000CD92B /* Symbol.swift */; };
+		02FFD2A220E3F2F000ADC03F /* GainHistoryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB320E2CAAC000CD92B /* GainHistoryFilter.swift */; };
+		02FFD2A320E3F2F000ADC03F /* GainHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BB020E2CAAC000CD92B /* GainHistoryItem.swift */; };
+		02FFD2A420E3F2F000ADC03F /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BCB20E2CAB6000CD92B /* MasterVC.swift */; };
+		02FFD2A520E3F2F000ADC03F /* ChartBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A11C0720E2CADB000CD92B /* ChartBaseViewController.m */; };
+		02FFD2A620E3F2F000ADC03F /* HolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BEF20E2CAD5000CD92B /* HolderCell.swift */; };
+		02FFD2A720E3F2F000ADC03F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BE720E2CAD5000CD92B /* PhotoCell.swift */; };
+		02FFD2A820E3F2F000ADC03F /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BAD20E2CAAC000CD92B /* Holder.swift */; };
+		02FFD2AA20E3F2F000ADC03F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA820E2EE41004EA149 /* Alamofire.framework */; };
+		02FFD2AB20E3F2F000ADC03F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AAA20E2EE41004EA149 /* Bolts.framework */; };
+		02FFD2AC20E3F2F000ADC03F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AAC20E2EE41004EA149 /* FBSDKCoreKit.framework */; };
+		02FFD2AD20E3F2F000ADC03F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AAE20E2EE41004EA149 /* FBSDKLoginKit.framework */; };
+		02FFD2AE20E3F2F000ADC03F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB020E2EE41004EA149 /* FBSDKShareKit.framework */; };
+		02FFD2AF20E3F2F000ADC03F /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB220E2EE41004EA149 /* GoogleToolboxForMac.framework */; };
+		02FFD2B020E3F2F000ADC03F /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB420E2EE41004EA149 /* nanopb.framework */; };
+		02FFD2B120E3F2F000ADC03F /* Pods_SocialTraderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB620E2EE41004EA149 /* Pods_SocialTraderTests.framework */; };
+		02FFD2B220E3F2F000ADC03F /* Pods_SocialTraderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB820E2EE41004EA149 /* Pods_SocialTraderUITests.framework */; };
+		02FFD2B320E3F2F000ADC03F /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABA20E2EE41004EA149 /* SideMenu.framework */; };
+		02FFD2B420E3F2F000ADC03F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABC20E2EE41004EA149 /* SwiftyJSON.framework */; };
+		02FFD2B520E3F2F000ADC03F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA620E2ECEC004EA149 /* Charts.framework */; };
+		02FFD2B620E3F2F000ADC03F /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */; };
+		02FFD2B820E3F2F000ADC03F /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1420E2CB55000CD92B /* symbols.plist */; };
+		02FFD2B920E3F2F000ADC03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A11BA220E2C9C8000CD92B /* Main.storyboard */; };
+		02FFD2BA20E3F2F000ADC03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A11B6220E2A245000CD92B /* Assets.xcassets */; };
+		02FFD2BB20E3F2F000ADC03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A11BA020E2C9C8000CD92B /* LaunchScreen.storyboard */; };
+		02FFD2BC20E3F2F000ADC03F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1C20E2CC2A000CD92B /* Localizable.strings */; };
+		02FFD2BD20E3F2F000ADC03F /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0820E2CADB000CD92B /* HalfPieChartViewController.xib */; };
+		02FFD2BE20E3F2F000ADC03F /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1020E2CB19000CD92B /* Icons.xcassets */; };
+		02FFD2BF20E3F2F000ADC03F /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0420E2CADB000CD92B /* LineChart1ViewController.xib */; };
+		02FFD2C020E3F2F000ADC03F /* Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FFD27420E3E98800ADC03F /* Dev-Info.plist */; };
+		02FFD2C120E3F2F000ADC03F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1220E2CB49000CD92B /* GoogleService-Info.plist */; };
+		02FFD2CB20E3F3ED00ADC03F /* AdHoc-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FFD2CA20E3F3EC00ADC03F /* AdHoc-Info.plist */; };
+>>>>>>> developer
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +248,26 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		02732AC120E2EECA004EA149 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FFD26D20E3E91B00ADC03F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FFD2C320E3F2F000ADC03F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -201,6 +367,10 @@
 		02A11C1F20E2CC38000CD92B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = SocialTrader/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		02F7805F20E343FF00C2990E /* SocialTrader copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SocialTrader copy-Info.plist"; path = "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader copy-Info.plist"; sourceTree = "<absolute>"; };
 		02F780B220E3453A00C2990E /* SocialTrader-Dev copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SocialTrader-Dev copy-Info.plist"; path = "/Users/mehran/Developer/Swift Projcts/SocialTrader/SocialTrader-Dev copy-Info.plist"; sourceTree = "<absolute>"; };
+		02FFD27220E3E91B00ADC03F /* SocialTraderDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTraderDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FFD27420E3E98800ADC03F /* Dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dev-Info.plist"; sourceTree = "<group>"; };
+		02FFD2C820E3F2F000ADC03F /* SocialTraderAdHoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTraderAdHoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FFD2CA20E3F3EC00ADC03F /* AdHoc-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AdHoc-Info.plist"; sourceTree = "<group>"; };
 		35263898D41FBEE74D587D0E /* Pods-SocialTraderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderTests/Pods-SocialTraderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F2C9D9D87B2C0CB25C89523 /* Pods-SocialTraderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderTests/Pods-SocialTraderTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BEFBF3C7694BD518FD11F20 /* Pods-SocialTraderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderUITests/Pods-SocialTraderUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +413,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8295E3A54F5B6AE84DDF1BE /* Pods_SocialTraderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FFD25420E3E91B00ADC03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FFD25520E3E91B00ADC03F /* Alamofire.framework in Frameworks */,
+				02FFD25620E3E91B00ADC03F /* Bolts.framework in Frameworks */,
+				02FFD25720E3E91B00ADC03F /* FBSDKCoreKit.framework in Frameworks */,
+				02FFD25820E3E91B00ADC03F /* FBSDKLoginKit.framework in Frameworks */,
+				02FFD25920E3E91B00ADC03F /* FBSDKShareKit.framework in Frameworks */,
+				02FFD25A20E3E91B00ADC03F /* GoogleToolboxForMac.framework in Frameworks */,
+				02FFD25B20E3E91B00ADC03F /* nanopb.framework in Frameworks */,
+				02FFD25C20E3E91B00ADC03F /* Pods_SocialTraderTests.framework in Frameworks */,
+				02FFD25D20E3E91B00ADC03F /* Pods_SocialTraderUITests.framework in Frameworks */,
+				02FFD25E20E3E91B00ADC03F /* SideMenu.framework in Frameworks */,
+				02FFD25F20E3E91B00ADC03F /* SwiftyJSON.framework in Frameworks */,
+				02FFD26020E3E91B00ADC03F /* Charts.framework in Frameworks */,
+				02FFD26120E3E91B00ADC03F /* Pods_SocialTrader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FFD2A920E3F2F000ADC03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FFD2AA20E3F2F000ADC03F /* Alamofire.framework in Frameworks */,
+				02FFD2AB20E3F2F000ADC03F /* Bolts.framework in Frameworks */,
+				02FFD2AC20E3F2F000ADC03F /* FBSDKCoreKit.framework in Frameworks */,
+				02FFD2AD20E3F2F000ADC03F /* FBSDKLoginKit.framework in Frameworks */,
+				02FFD2AE20E3F2F000ADC03F /* FBSDKShareKit.framework in Frameworks */,
+				02FFD2AF20E3F2F000ADC03F /* GoogleToolboxForMac.framework in Frameworks */,
+				02FFD2B020E3F2F000ADC03F /* nanopb.framework in Frameworks */,
+				02FFD2B120E3F2F000ADC03F /* Pods_SocialTraderTests.framework in Frameworks */,
+				02FFD2B220E3F2F000ADC03F /* Pods_SocialTraderUITests.framework in Frameworks */,
+				02FFD2B320E3F2F000ADC03F /* SideMenu.framework in Frameworks */,
+				02FFD2B420E3F2F000ADC03F /* SwiftyJSON.framework in Frameworks */,
+				02FFD2B520E3F2F000ADC03F /* Charts.framework in Frameworks */,
+				02FFD2B620E3F2F000ADC03F /* Pods_SocialTrader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +506,8 @@
 				02A11B5820E2A242000CD92B /* SocialTrader.app */,
 				02A11B6C20E2A245000CD92B /* SocialTraderTests.xctest */,
 				02A11B7720E2A245000CD92B /* SocialTraderUITests.xctest */,
+				02FFD27220E3E91B00ADC03F /* SocialTraderDev.app */,
+				02FFD2C820E3F2F000ADC03F /* SocialTraderAdHoc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,8 +515,10 @@
 		02A11B5A20E2A242000CD92B /* SocialTrader */ = {
 			isa = PBXGroup;
 			children = (
-				02A11B9F20E2C957000CD92B /* SocialTrader-Bridging-Header.h */,
 				02A11B6720E2A245000CD92B /* Info.plist */,
+				02FFD27420E3E98800ADC03F /* Dev-Info.plist */,
+				02FFD2CA20E3F3EC00ADC03F /* AdHoc-Info.plist */,
+				02A11B9F20E2C957000CD92B /* SocialTrader-Bridging-Header.h */,
 				02A11BA220E2C9C8000CD92B /* Main.storyboard */,
 				02A11BA020E2C9C8000CD92B /* LaunchScreen.storyboard */,
 				02A11BA620E2CA5E000CD92B /* Constants.swift */,
@@ -496,6 +710,48 @@
 			productReference = 02A11B7720E2A245000CD92B /* SocialTraderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		02FFD22120E3E91B00ADC03F /* SocialTraderDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02FFD26F20E3E91B00ADC03F /* Build configuration list for PBXNativeTarget "SocialTraderDev" */;
+			buildPhases = (
+				02FFD22220E3E91B00ADC03F /* [CP] Check Pods Manifest.lock */,
+				02FFD22320E3E91B00ADC03F /* Sources */,
+				02FFD25420E3E91B00ADC03F /* Frameworks */,
+				02FFD26220E3E91B00ADC03F /* Resources */,
+				02FFD26C20E3E91B00ADC03F /* [CP] Embed Pods Frameworks */,
+				02FFD26D20E3E91B00ADC03F /* Embed Frameworks */,
+				02FFD26E20E3E91B00ADC03F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialTraderDev;
+			productName = SocialTrader;
+			productReference = 02FFD27220E3E91B00ADC03F /* SocialTraderDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02FFD27620E3F2F000ADC03F /* SocialTraderAdHoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02FFD2C520E3F2F000ADC03F /* Build configuration list for PBXNativeTarget "SocialTraderAdHoc" */;
+			buildPhases = (
+				02FFD27720E3F2F000ADC03F /* [CP] Check Pods Manifest.lock */,
+				02FFD27820E3F2F000ADC03F /* Sources */,
+				02FFD2A920E3F2F000ADC03F /* Frameworks */,
+				02FFD2B720E3F2F000ADC03F /* Resources */,
+				02FFD2C220E3F2F000ADC03F /* [CP] Embed Pods Frameworks */,
+				02FFD2C320E3F2F000ADC03F /* Embed Frameworks */,
+				02FFD2C420E3F2F000ADC03F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialTraderAdHoc;
+			productName = SocialTrader;
+			productReference = 02FFD2C820E3F2F000ADC03F /* SocialTraderAdHoc.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -535,6 +791,8 @@
 				02A11B5720E2A242000CD92B /* SocialTrader */,
 				02A11B6B20E2A245000CD92B /* SocialTraderTests */,
 				02A11B7620E2A245000CD92B /* SocialTraderUITests */,
+				02FFD22120E3E91B00ADC03F /* SocialTraderDev */,
+				02FFD27620E3F2F000ADC03F /* SocialTraderAdHoc */,
 			);
 		};
 /* End PBXProject section */
@@ -567,6 +825,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FFD26220E3E91B00ADC03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FFD26320E3E91B00ADC03F /* symbols.plist in Resources */,
+				02FFD26420E3E91B00ADC03F /* Main.storyboard in Resources */,
+				02FFD26520E3E91B00ADC03F /* Assets.xcassets in Resources */,
+				02FFD26620E3E91B00ADC03F /* LaunchScreen.storyboard in Resources */,
+				02FFD26720E3E91B00ADC03F /* Localizable.strings in Resources */,
+				02FFD26820E3E91B00ADC03F /* HalfPieChartViewController.xib in Resources */,
+				02FFD26920E3E91B00ADC03F /* Icons.xcassets in Resources */,
+				02FFD26A20E3E91B00ADC03F /* LineChart1ViewController.xib in Resources */,
+				02FFD27520E3E98800ADC03F /* Dev-Info.plist in Resources */,
+				02FFD26B20E3E91B00ADC03F /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FFD2B720E3F2F000ADC03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FFD2B820E3F2F000ADC03F /* symbols.plist in Resources */,
+				02FFD2B920E3F2F000ADC03F /* Main.storyboard in Resources */,
+				02FFD2BA20E3F2F000ADC03F /* Assets.xcassets in Resources */,
+				02FFD2BB20E3F2F000ADC03F /* LaunchScreen.storyboard in Resources */,
+				02FFD2BC20E3F2F000ADC03F /* Localizable.strings in Resources */,
+				02FFD2BD20E3F2F000ADC03F /* HalfPieChartViewController.xib in Resources */,
+				02FFD2BE20E3F2F000ADC03F /* Icons.xcassets in Resources */,
+				02FFD2BF20E3F2F000ADC03F /* LineChart1ViewController.xib in Resources */,
+				02FFD2C020E3F2F000ADC03F /* Dev-Info.plist in Resources */,
+				02FFD2C120E3F2F000ADC03F /* GoogleService-Info.plist in Resources */,
+				02FFD2CB20E3F3ED00ADC03F /* AdHoc-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +900,120 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		02FFD22220E3E91B00ADC03F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialTrader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		02FFD26C20E3E91B00ADC03F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		02FFD26E20E3E91B00ADC03F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		02FFD27720E3F2F000ADC03F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialTrader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		02FFD2C220E3F2F000ADC03F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		02FFD2C420E3F2F000ADC03F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6E10A44DD82282F7D6A8E359 /* [CP] Check Pods Manifest.lock */ = {
@@ -734,6 +1141,116 @@
 			buildActionMask = 2147483647;
 			files = (
 				02A11B7C20E2A245000CD92B /* SocialTraderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FFD22320E3E91B00ADC03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FFD22420E3E91B00ADC03F /* LoginViewController.swift in Sources */,
+				02FFD22520E3E91B00ADC03F /* HalfPieChartViewController.m in Sources */,
+				02FFD22620E3E91B00ADC03F /* StockHoldersVC.swift in Sources */,
+				02FFD22720E3E91B00ADC03F /* RankingCell.swift in Sources */,
+				02FFD22820E3E91B00ADC03F /* TrxInputCell.swift in Sources */,
+				02FFD22920E3E91B00ADC03F /* Position.swift in Sources */,
+				02FFD22A20E3E91B00ADC03F /* Transaction.swift in Sources */,
+				02FFD22B20E3E91B00ADC03F /* ProductCell.swift in Sources */,
+				02FFD22C20E3E91B00ADC03F /* ReferCell.swift in Sources */,
+				02FFD22D20E3E91B00ADC03F /* Market.swift in Sources */,
+				02FFD22E20E3E91B00ADC03F /* SideBarVC.swift in Sources */,
+				02FFD22F20E3E91B00ADC03F /* Portfolio.swift in Sources */,
+				02FFD23020E3E91B00ADC03F /* SymbolSearchVC.swift in Sources */,
+				02FFD23120E3E91B00ADC03F /* PortfolioSummaryCell.swift in Sources */,
+				02FFD23220E3E91B00ADC03F /* LineChart1ViewController.m in Sources */,
+				02FFD23320E3E91B00ADC03F /* BuySellVC.swift in Sources */,
+				02FFD23420E3E91B00ADC03F /* MenuTableViewCell.swift in Sources */,
+				02FFD23520E3E91B00ADC03F /* AboutAppVC.swift in Sources */,
+				02FFD23620E3E91B00ADC03F /* Quote.swift in Sources */,
+				02FFD23720E3E91B00ADC03F /* HoldersVC.swift in Sources */,
+				02FFD23820E3E91B00ADC03F /* StockInfoCell.swift in Sources */,
+				02FFD23920E3E91B00ADC03F /* FriendPortfolioVC.swift in Sources */,
+				02FFD23A20E3E91B00ADC03F /* MenuHeaderCell.swift in Sources */,
+				02FFD23B20E3E91B00ADC03F /* ReferVC.swift in Sources */,
+				02FFD23C20E3E91B00ADC03F /* AppDelegate.swift in Sources */,
+				02FFD23D20E3E91B00ADC03F /* TrxActionCell.swift in Sources */,
+				02FFD23E20E3E91B00ADC03F /* RootNavigationVC.swift in Sources */,
+				02FFD23F20E3E91B00ADC03F /* TutorialVC.swift in Sources */,
+				02FFD24020E3E91B00ADC03F /* FbDataManager.swift in Sources */,
+				02FFD24120E3E91B00ADC03F /* TermsVC.swift in Sources */,
+				02FFD24220E3E91B00ADC03F /* Ranking.swift in Sources */,
+				02FFD24320E3E91B00ADC03F /* Holders.swift in Sources */,
+				02FFD24420E3E91B00ADC03F /* StockActionCell.swift in Sources */,
+				02FFD24520E3E91B00ADC03F /* User.swift in Sources */,
+				02FFD24620E3E91B00ADC03F /* RankingTableVC.swift in Sources */,
+				02FFD24720E3E91B00ADC03F /* TrxInfoCell.swift in Sources */,
+				02FFD24820E3E91B00ADC03F /* StockVC.swift in Sources */,
+				02FFD24920E3E91B00ADC03F /* Constants.swift in Sources */,
+				02FFD24A20E3E91B00ADC03F /* PortfolioCell.swift in Sources */,
+				02FFD24B20E3E91B00ADC03F /* ProductVC.swift in Sources */,
+				02FFD24C20E3E91B00ADC03F /* Symbol.swift in Sources */,
+				02FFD24D20E3E91B00ADC03F /* GainHistoryFilter.swift in Sources */,
+				02FFD24E20E3E91B00ADC03F /* GainHistoryItem.swift in Sources */,
+				02FFD24F20E3E91B00ADC03F /* MasterVC.swift in Sources */,
+				02FFD25020E3E91B00ADC03F /* ChartBaseViewController.m in Sources */,
+				02FFD25120E3E91B00ADC03F /* HolderCell.swift in Sources */,
+				02FFD25220E3E91B00ADC03F /* PhotoCell.swift in Sources */,
+				02FFD25320E3E91B00ADC03F /* Holder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FFD27820E3F2F000ADC03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FFD27920E3F2F000ADC03F /* LoginViewController.swift in Sources */,
+				02FFD27A20E3F2F000ADC03F /* HalfPieChartViewController.m in Sources */,
+				02FFD27B20E3F2F000ADC03F /* StockHoldersVC.swift in Sources */,
+				02FFD27C20E3F2F000ADC03F /* RankingCell.swift in Sources */,
+				02FFD27D20E3F2F000ADC03F /* TrxInputCell.swift in Sources */,
+				02FFD27E20E3F2F000ADC03F /* Position.swift in Sources */,
+				02FFD27F20E3F2F000ADC03F /* Transaction.swift in Sources */,
+				02FFD28020E3F2F000ADC03F /* ProductCell.swift in Sources */,
+				02FFD28120E3F2F000ADC03F /* ReferCell.swift in Sources */,
+				02FFD28220E3F2F000ADC03F /* Market.swift in Sources */,
+				02FFD28320E3F2F000ADC03F /* SideBarVC.swift in Sources */,
+				02FFD28420E3F2F000ADC03F /* Portfolio.swift in Sources */,
+				02FFD28520E3F2F000ADC03F /* SymbolSearchVC.swift in Sources */,
+				02FFD28620E3F2F000ADC03F /* PortfolioSummaryCell.swift in Sources */,
+				02FFD28720E3F2F000ADC03F /* LineChart1ViewController.m in Sources */,
+				02FFD28820E3F2F000ADC03F /* BuySellVC.swift in Sources */,
+				02FFD28920E3F2F000ADC03F /* MenuTableViewCell.swift in Sources */,
+				02FFD28A20E3F2F000ADC03F /* AboutAppVC.swift in Sources */,
+				02FFD28B20E3F2F000ADC03F /* Quote.swift in Sources */,
+				02FFD28C20E3F2F000ADC03F /* HoldersVC.swift in Sources */,
+				02FFD28D20E3F2F000ADC03F /* StockInfoCell.swift in Sources */,
+				02FFD28E20E3F2F000ADC03F /* FriendPortfolioVC.swift in Sources */,
+				02FFD28F20E3F2F000ADC03F /* MenuHeaderCell.swift in Sources */,
+				02FFD29020E3F2F000ADC03F /* ReferVC.swift in Sources */,
+				02FFD29120E3F2F000ADC03F /* AppDelegate.swift in Sources */,
+				02FFD29220E3F2F000ADC03F /* TrxActionCell.swift in Sources */,
+				02FFD29320E3F2F000ADC03F /* RootNavigationVC.swift in Sources */,
+				02FFD29420E3F2F000ADC03F /* TutorialVC.swift in Sources */,
+				02FFD29520E3F2F000ADC03F /* FbDataManager.swift in Sources */,
+				02FFD29620E3F2F000ADC03F /* TermsVC.swift in Sources */,
+				02FFD29720E3F2F000ADC03F /* Ranking.swift in Sources */,
+				02FFD29820E3F2F000ADC03F /* Holders.swift in Sources */,
+				02FFD29920E3F2F000ADC03F /* StockActionCell.swift in Sources */,
+				02FFD29A20E3F2F000ADC03F /* User.swift in Sources */,
+				02FFD29B20E3F2F000ADC03F /* RankingTableVC.swift in Sources */,
+				02FFD29C20E3F2F000ADC03F /* TrxInfoCell.swift in Sources */,
+				02FFD29D20E3F2F000ADC03F /* StockVC.swift in Sources */,
+				02FFD29E20E3F2F000ADC03F /* Constants.swift in Sources */,
+				02FFD29F20E3F2F000ADC03F /* PortfolioCell.swift in Sources */,
+				02FFD2A020E3F2F000ADC03F /* ProductVC.swift in Sources */,
+				02FFD2A120E3F2F000ADC03F /* Symbol.swift in Sources */,
+				02FFD2A220E3F2F000ADC03F /* GainHistoryFilter.swift in Sources */,
+				02FFD2A320E3F2F000ADC03F /* GainHistoryItem.swift in Sources */,
+				02FFD2A420E3F2F000ADC03F /* MasterVC.swift in Sources */,
+				02FFD2A520E3F2F000ADC03F /* ChartBaseViewController.m in Sources */,
+				02FFD2A620E3F2F000ADC03F /* HolderCell.swift in Sources */,
+				02FFD2A720E3F2F000ADC03F /* PhotoCell.swift in Sources */,
+				02FFD2A820E3F2F000ADC03F /* Holder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,6 +1426,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"IS_PROD=1",
+				);
 				INFOPLIST_FILE = SocialTrader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -934,6 +1459,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					IS_PROD,
 				);
 				INFOPLIST_FILE = SocialTrader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1035,6 +1568,140 @@
 			};
 			name = Release;
 		};
+		02FFD27020E3E91B00ADC03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AB86E585821A2B409A42E4 /* Pods-SocialTrader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q79878SPU6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"IS_DEV=1",
+				);
+				INFOPLIST_FILE = "SocialTrader/Dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.socialtrader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEV";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialTrader/SocialTrader-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		02FFD27120E3E91B00ADC03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D832B1C23C36D8BBA31187A6 /* Pods-SocialTrader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q79878SPU6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"IS_DEV=1",
+				);
+				INFOPLIST_FILE = "SocialTrader/Dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.socialtrader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialTrader/SocialTrader-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		02FFD2C620E3F2F000ADC03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AB86E585821A2B409A42E4 /* Pods-SocialTrader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q79878SPU6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"IS_ADHOC=1",
+				);
+				INFOPLIST_FILE = "SocialTrader/AdHoc-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.socialtrader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG ADHOC";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialTrader/SocialTrader-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		02FFD2C720E3F2F000ADC03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D832B1C23C36D8BBA31187A6 /* Pods-SocialTrader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q79878SPU6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"IS_ADHOC=1",
+				);
+				INFOPLIST_FILE = "SocialTrader/AdHoc-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.socialtrader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ADHOC;
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialTrader/SocialTrader-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1070,6 +1737,24 @@
 			buildConfigurations = (
 				02A11B8720E2A245000CD92B /* Debug */,
 				02A11B8820E2A245000CD92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02FFD26F20E3E91B00ADC03F /* Build configuration list for PBXNativeTarget "SocialTraderDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FFD27020E3E91B00ADC03F /* Debug */,
+				02FFD27120E3E91B00ADC03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02FFD2C520E3F2F000ADC03F /* Build configuration list for PBXNativeTarget "SocialTraderAdHoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FFD2C620E3F2F000ADC03F /* Debug */,
+				02FFD2C720E3F2F000ADC03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

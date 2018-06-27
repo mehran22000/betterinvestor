@@ -11,8 +11,18 @@
 
 #import "HalfPieChartViewController.h"
 #import "Charts/Charts-Swift.h"
-#import "SocialTrader-Swift.h"
 
+#ifdef IS_DEV
+#import "SocialTraderDev-Swift.h"
+#endif
+
+#ifdef IS_ADHOC
+#import "SocialTraderAdHoc-Swift.h"
+#endif
+
+#ifdef IS_PROD
+#import "SocialTrader-Swift.h"
+#endif
 
 @interface HalfPieChartViewController () <ChartViewDelegate>
     @property (nonatomic, strong) IBOutlet PieChartView *chartView;
