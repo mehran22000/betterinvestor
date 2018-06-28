@@ -231,6 +231,11 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     @objc func textFieldDidChange(_ textField: UITextField) {
         let str = textField.text!
+        
+        if (str ?? "").isEmpty {
+            return;
+        }
+        
         self.quantity = Int(str);
         
         if (isBuy == true) {
