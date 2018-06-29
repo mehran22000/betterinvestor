@@ -264,7 +264,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             formattedCash = numberFormatter.string(from: NSNumber(value:cash))!
         }
         
-        if let stockValue = portfolio?.cash {
+        if let stockValue = portfolio?.total_stock_value {
             formattedStockValue = numberFormatter.string(from: NSNumber(value:(stockValue)))!
         }
         

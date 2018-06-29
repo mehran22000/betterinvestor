@@ -14,7 +14,7 @@ class Constants {
      #if DEV
         static let bsae_url = "https://betterinvestor-dev.herokuapp.com/services/v1/"
      #elseif PROD
-        static let bsae_url = "https://betterinvestor.herokuapp.com/services/v1/"
+       static let bsae_url = "https://betterinvestor.herokuapp.com/services/v1/"
      #elseif ADHOC
         static let bsae_url = "https://betterinvestor-staging.herokuapp.com/services/v1/"
      #else

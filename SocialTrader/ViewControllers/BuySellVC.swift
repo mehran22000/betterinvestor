@@ -232,7 +232,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     @objc func textFieldDidChange(_ textField: UITextField) {
         let str = textField.text!
         
-        if (str ?? "").isEmpty {
+        if str.isEmpty {
             return;
         }
         
