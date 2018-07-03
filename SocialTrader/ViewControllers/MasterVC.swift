@@ -162,7 +162,6 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.pageViewIndex = 0;
         self.pageViewHolder.addSubview((self.rankingVC?.view)!);
         self.addSegmentControl();
-        self.addPageControl();
         // self.addAdMob()
         
         // Core Data Load
@@ -183,6 +182,12 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             })
         })
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.addPageControl();
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
