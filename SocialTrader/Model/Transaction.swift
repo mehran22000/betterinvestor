@@ -31,7 +31,7 @@ class Transaction {
             if let result = response.result.value {
                 let json = JSON(result)
                 if (json["status"] == "200") {
-                    let title = "Order Executed!";
+                    let title = "Order Executed Successfully!";
                     let qtyStr:String = String(format:"%d", self.order["qty"] as! NSInteger);
                     let quoteStr:String = String(format:"%.2f", self.order["price"] as! Double);
                     let msg = String(format: "Bought %@ %@ @ $%@", qtyStr, self.order["symbol"] as! String, quoteStr);
@@ -59,7 +59,7 @@ class Transaction {
             if let result = response.result.value {
                 let json = JSON(result)
                 if (json["status"] == "200") {
-                    let title = "Order Executed!";
+                    let title = "Order Executed Successfully!";
                     let qtyStr:String = String(format:"%d", self.order["qty"] as! NSInteger);
                     let quoteStr:String = String(format:"%.2f", self.order["price"] as! Double);
                     let msg = String(format: "Sold %@ %@ @ $%@", qtyStr, self.order["symbol"] as! String, quoteStr);

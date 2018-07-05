@@ -108,7 +108,7 @@ NSArray* greenPlate, *redPlate;
     lossArray = [[NSMutableArray alloc] init];
     for (int i=0; i< appDelegate.user.portfolio.positions.count; i++)
     {
-        if (appDelegate.user.portfolio.positions[i].gain_precentage >= 0){
+        if (appDelegate.user.portfolio.positions[i].gain >= 0){
             [gainArray addObject:appDelegate.user.portfolio.positions[i]];
         }
         else {
@@ -151,7 +151,7 @@ NSArray* greenPlate, *redPlate;
     for (int i = 0; i < posArray.count; i++)
     {
         pos = (Position*) posArray[i];
-        [values addObject:[[PieChartDataEntry alloc] initWithValue:fabs(pos.gain_precentage)   label:pos.symbol.uppercaseString]];
+        [values addObject:[[PieChartDataEntry alloc] initWithValue:fabs(pos.gain)   label:pos.symbol.uppercaseString]];
     }
     
     PieChartDataSet *dataSet = [[PieChartDataSet alloc] initWithValues:values label:@""];

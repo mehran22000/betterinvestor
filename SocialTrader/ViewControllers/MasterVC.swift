@@ -133,7 +133,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.yPortfolio = 0;
         self.ySegmentView = portfolioHeight;
         self.yPageView = self.ySegmentView! + Constants.segmentViewHeight;
-        self.yPageControlView = self.yPageView! + Constants.pageViewHeight - self.pageControlAdhustment();
+        self.yPageControlView = self.yPageView! + Constants.pageViewHeight - self.pageControlAdjustment();
         
         
         self.yAdView = yPageControlView! + Constants.pageControlHeight;
@@ -162,7 +162,6 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.pageViewIndex = 0;
         self.pageViewHolder.addSubview((self.rankingVC?.view)!);
         self.addSegmentControl();
-        self.addPageControl();
         // self.addAdMob()
         
         // Core Data Load
@@ -183,6 +182,12 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             })
         })
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.addPageControl();
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -264,7 +269,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             formattedCash = numberFormatter.string(from: NSNumber(value:cash))!
         }
         
-        if let stockValue = portfolio?.cash {
+        if let stockValue = portfolio?.total_stock_value {
             formattedStockValue = numberFormatter.string(from: NSNumber(value:(stockValue)))!
         }
         
@@ -512,7 +517,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // Page View Methods - End
     
     
-    func pageControlAdhustment() -> Int {
+    func pageControlAdjustment() -> Int {
         if UIDevice().userInterfaceIdiom == .phone {
             switch UIScreen.main.nativeBounds.height {
               case 1136: // iPhone 5 or 5S or 5C
@@ -520,7 +525,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
               case 1334: // iPhone 6/6S/7/8
                 return 10;
               case 1920, 2208: // iPhone 6+/6S+/7+/8+
-                return 20;
+                return 15;
             case 2436: // iPhone X
                 return 55;
             default: // Unknown

@@ -149,8 +149,14 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch (indexPath.row) {
             case 5:
-            
-                if (isBuy == true) {
+                
+                if self.quantity == nil {
+                    let alert = UIAlertController(title: "Incomplete Order", message: "Please enter order quantity", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion:  { () in self.tableView.reloadData() });
+                    
+                }
+                else if (isBuy == true) {
                     self.executeBuy();
                 }
                 else {
@@ -212,7 +218,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             self.appDelegate.user?.requestPortfolio(completion: {
                 self.appDelegate.user?.portfolio.calculateGain()
                 self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false);
-                let alert = UIAlertController(title: "Order Executed!", message: msg, preferredStyle: UIAlertControllerStyle.alert)
+                let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
                 self.present(alert, animated: true, completion: nil);
             })
@@ -231,6 +237,11 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     @objc func textFieldDidChange(_ textField: UITextField) {
         let str = textField.text!
+        
+        if str.isEmpty {
+            return;
+        }
+        
         self.quantity = Int(str);
         
         if (isBuy == true) {

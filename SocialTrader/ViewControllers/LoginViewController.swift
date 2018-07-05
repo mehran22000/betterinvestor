@@ -76,6 +76,11 @@ class LoginViewController: UIViewController {
                         })
                     }
                 }
+                else {
+                    self.fb_inprogress = false;
+                    self.activitySpinner?.isHidden = true;
+                    self.fbLoginBtn?.isHidden = false;
+                }
             }
             else {
                 self.fb_inprogress = false;

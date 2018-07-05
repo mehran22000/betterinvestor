@@ -91,14 +91,29 @@ import SwiftyJSON
         dic["last_name"] = self.last_name as AnyObject;
         dic["photo_url"] = self.pictureUrl as AnyObject;
         dic["email"] = self.email as AnyObject;
+        dic["friends_pic"] = [String: AnyObject]() as AnyObject;
         var friends_str = String("");
+        var friends_pic_str = String("");
         for friend in self.friends! {
             if (friends_str != "") {
                 friends_str = friends_str + ",";
+                friends_pic_str = friends_pic_str + ",";
             }
-            friends_str = friends_str + ((friend as! NSDictionary).value(forKey: "id") as! String);
+            let friend_id = (friend as! NSDictionary).value(forKey: "id") as! String;
+            friends_str = friends_str + friend_id;
+            
+            if let friendDic = friend as? NSDictionary {
+                if let picObj = friendDic.value(forKey: "picture") as? NSDictionary {
+                    if let dataObj = picObj["data"] as? [String: AnyObject] {
+                        if let picUrl = dataObj["url"] as? String {
+                            friends_pic_str = friends_pic_str + picUrl;
+                        }
+                    }
+                }
+            }
         }
         dic["friends"] = friends_str as AnyObject;
+        dic["friends_pic"] = friends_pic_str as AnyObject;
         
         let url = Constants.bsae_url + Constants.get_profile_url;
         Alamofire.request(url, method: HTTPMethod.post, parameters: dic, encoding:JSONEncoding.default).responseJSON { response in

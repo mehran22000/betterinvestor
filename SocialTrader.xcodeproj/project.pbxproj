@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02732AA520E2EC80004EA149 /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */; };
 		02732AA720E2ECEC004EA149 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA620E2ECEC004EA149 /* Charts.framework */; };
 		02732AA920E2EE41004EA149 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA820E2EE41004EA149 /* Alamofire.framework */; };
 		02732AAB20E2EE41004EA149 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AAA20E2EE41004EA149 /* Bolts.framework */; };
@@ -16,8 +15,6 @@
 		02732AB120E2EE41004EA149 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB020E2EE41004EA149 /* FBSDKShareKit.framework */; };
 		02732AB320E2EE41004EA149 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB220E2EE41004EA149 /* GoogleToolboxForMac.framework */; };
 		02732AB520E2EE41004EA149 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB420E2EE41004EA149 /* nanopb.framework */; };
-		02732AB720E2EE41004EA149 /* Pods_SocialTraderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB620E2EE41004EA149 /* Pods_SocialTraderTests.framework */; };
-		02732AB920E2EE41004EA149 /* Pods_SocialTraderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB820E2EE41004EA149 /* Pods_SocialTraderUITests.framework */; };
 		02732ABB20E2EE41004EA149 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABA20E2EE41004EA149 /* SideMenu.framework */; };
 		02732ABD20E2EE41004EA149 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABC20E2EE41004EA149 /* SwiftyJSON.framework */; };
 		02A11B5C20E2A242000CD92B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11B5B20E2A242000CD92B /* AppDelegate.swift */; };
@@ -219,9 +216,9 @@
 		02FFD2BD20E3F2F000ADC03F /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0820E2CADB000CD92B /* HalfPieChartViewController.xib */; };
 		02FFD2BE20E3F2F000ADC03F /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1020E2CB19000CD92B /* Icons.xcassets */; };
 		02FFD2BF20E3F2F000ADC03F /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0420E2CADB000CD92B /* LineChart1ViewController.xib */; };
-		02FFD2C020E3F2F000ADC03F /* Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FFD27420E3E98800ADC03F /* Dev-Info.plist */; };
 		02FFD2C120E3F2F000ADC03F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1220E2CB49000CD92B /* GoogleService-Info.plist */; };
 		02FFD2CB20E3F3ED00ADC03F /* AdHoc-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FFD2CA20E3F3EC00ADC03F /* AdHoc-Info.plist */; };
+		02FFD2CC20E4987100ADC03F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11B6720E2A245000CD92B /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -386,12 +383,9 @@
 				02732AB120E2EE41004EA149 /* FBSDKShareKit.framework in Frameworks */,
 				02732AB320E2EE41004EA149 /* GoogleToolboxForMac.framework in Frameworks */,
 				02732AB520E2EE41004EA149 /* nanopb.framework in Frameworks */,
-				02732AB720E2EE41004EA149 /* Pods_SocialTraderTests.framework in Frameworks */,
-				02732AB920E2EE41004EA149 /* Pods_SocialTraderUITests.framework in Frameworks */,
 				02732ABB20E2EE41004EA149 /* SideMenu.framework in Frameworks */,
 				02732ABD20E2EE41004EA149 /* SwiftyJSON.framework in Frameworks */,
 				02732AA720E2ECEC004EA149 /* Charts.framework in Frameworks */,
-				02732AA520E2EC80004EA149 /* Pods_SocialTrader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +798,7 @@
 				02A11C0D20E2CADB000CD92B /* HalfPieChartViewController.xib in Resources */,
 				02A11C1120E2CB19000CD92B /* Icons.xcassets in Resources */,
 				02A11C0B20E2CADB000CD92B /* LineChart1ViewController.xib in Resources */,
+				02FFD2CC20E4987100ADC03F /* Info.plist in Resources */,
 				02A11C1320E2CB49000CD92B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -851,7 +846,6 @@
 				02FFD2BD20E3F2F000ADC03F /* HalfPieChartViewController.xib in Resources */,
 				02FFD2BE20E3F2F000ADC03F /* Icons.xcassets in Resources */,
 				02FFD2BF20E3F2F000ADC03F /* LineChart1ViewController.xib in Resources */,
-				02FFD2C020E3F2F000ADC03F /* Dev-Info.plist in Resources */,
 				02FFD2C120E3F2F000ADC03F /* GoogleService-Info.plist in Resources */,
 				02FFD2CB20E3F3ED00ADC03F /* AdHoc-Info.plist in Resources */,
 			);
@@ -1346,7 +1340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1402,7 +1396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1419,10 +1413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q79878SPU6;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -1441,7 +1432,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG PROD";
 				SWIFT_OBJC_BRIDGING_HEADER = "SocialTrader/SocialTrader-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
@@ -1453,10 +1444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q79878SPU6;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -1475,7 +1463,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
 				SWIFT_OBJC_BRIDGING_HEADER = "SocialTrader/SocialTrader-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -102,6 +102,9 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.photo?.clipsToBounds = true
             downloadImage(url: url,imageView: cell.photo!, user_rank: rank)
         }
+        else {
+            cell.photo.image = nil;
+        }
         return cell;
     }
     // Tableview Delegates End

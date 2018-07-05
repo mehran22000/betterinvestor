@@ -15,7 +15,7 @@ import Foundation
     
     let qty: NSInteger!;
     let cost: Double!;
-    var gain: Double!;
+    @objc var gain: Double;
     var value: Double!;
     
     init (symbol:String,qty:NSInteger,cost:Double,name: String){

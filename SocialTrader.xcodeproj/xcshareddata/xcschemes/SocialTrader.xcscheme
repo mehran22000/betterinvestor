@@ -28,33 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02A11B6B20E2A245000CD92B"
-               BuildableName = "SocialTraderTests.xctest"
-               BlueprintName = "SocialTraderTests"
-               ReferencedContainer = "container:SocialTrader.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02A11B7620E2A245000CD92B"
-               BuildableName = "SocialTraderUITests.xctest"
-               BlueprintName = "SocialTraderUITests"
-               ReferencedContainer = "container:SocialTrader.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "02F7806020E3453A00C2990E"
+            BlueprintIdentifier = "02A11B5720E2A242000CD92B"
             BuildableName = "SocialTrader.app"
-            BlueprintName = "SocialTrader-QA"
+            BlueprintName = "SocialTrader"
             ReferencedContainer = "container:SocialTrader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,9 +42,9 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      buildConfiguration = "Release"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
