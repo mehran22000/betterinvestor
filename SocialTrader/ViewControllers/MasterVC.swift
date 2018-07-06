@@ -545,7 +545,9 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let adFrame = CGRect (x: 0, y: self.yAdView!, width: Int(screenWidth!), height: Constants.adViewHeight);
         let bannerView = GADBannerView.init(frame: adFrame);
         bannerView.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
-        bannerView.adUnitID = "ca-app-pub-5267718216518748/5568296429";
+        // bannerView.adUnitID = "ca-app-pub-5267718216518748/5568296429";
+        // Test unitID
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716";
         let gadRequest = GADRequest();
         gadRequest.testDevices = [kGADSimulatorID];
         bannerView.rootViewController = self;

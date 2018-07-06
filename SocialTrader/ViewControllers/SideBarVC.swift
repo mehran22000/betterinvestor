@@ -49,7 +49,7 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // TableView Delegates - Start
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3;
+        return 4;
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -87,23 +87,26 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 cell.titleLbl?.text = "Add Credit";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
-            
-            case 2:
+            */
+                
+            case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuReferCell", for: indexPath) as! MenuTableViewCell
-                cell.titleLbl?.text = "Invite your friend";
+                cell.titleLbl?.text = "Invite your friends";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
-            */
-            case 1:
+ 
+            case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuLogOutCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "Sign out";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
-            case 2:
+            
+            case 3:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuAboutAppCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "About App";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
+                
             default:
                 let cell = UITableViewCell();
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
@@ -117,13 +120,13 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             /*
              case 1:
              performSegue(withIdentifier: "productVCSegue", sender: nil)
-             
-             case 2:
-             performSegue(withIdentifier: "referVCSegue", sender: nil)
-             */
+            */
+            
         case 1:
-            showAlert();
+             performSegue(withIdentifier: "referVCSegue", sender: nil)
         case 2:
+            showAlert();
+        case 3:
             performSegue(withIdentifier: "aboutAppSegue", sender: nil)
             
         default:
