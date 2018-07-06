@@ -91,7 +91,7 @@ import SwiftyJSON
         dic["last_name"] = self.last_name as AnyObject;
         dic["photo_url"] = self.pictureUrl as AnyObject;
         dic["email"] = self.email as AnyObject;
-        dic["friends_pic"] = [String: AnyObject]() as AnyObject;
+        // dic["friends_pic"] = [String: AnyObject]() as AnyObject;
         var friends_str = String("");
         var friends_pic_str = String("");
         for friend in self.friends! {
