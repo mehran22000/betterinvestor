@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022B731A20F3151900AD57BB /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B731920F3151900AD57BB /* Credit.swift */; };
+		022B731B20F317FE00AD57BB /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B731920F3151900AD57BB /* Credit.swift */; };
+		022B731C20F317FF00AD57BB /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B731920F3151900AD57BB /* Credit.swift */; };
 		02732AA720E2ECEC004EA149 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA620E2ECEC004EA149 /* Charts.framework */; };
 		02732AA920E2EE41004EA149 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA820E2EE41004EA149 /* Alamofire.framework */; };
 		02732AAB20E2EE41004EA149 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AAA20E2EE41004EA149 /* Bolts.framework */; };
@@ -272,6 +275,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		022B731920F3151900AD57BB /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 		02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SocialTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02732AA620E2ECEC004EA149 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02732AA820E2EE41004EA149 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -544,7 +548,6 @@
 				02A11BAB20E2CAAC000CD92B /* User.swift */,
 				02A11BAC20E2CAAC000CD92B /* Portfolio.swift */,
 				02A11BAD20E2CAAC000CD92B /* Holder.swift */,
-				02A11BAE20E2CAAC000CD92B /* Facebook */,
 				02A11BB020E2CAAC000CD92B /* GainHistoryItem.swift */,
 				02A11BB120E2CAAC000CD92B /* Ranking.swift */,
 				02A11BB220E2CAAC000CD92B /* Transaction.swift */,
@@ -552,6 +555,7 @@
 				02A11BB420E2CAAC000CD92B /* Market.swift */,
 				02A11BB520E2CAAC000CD92B /* Position.swift */,
 				02A11BB620E2CAAC000CD92B /* Symbol.swift */,
+				022B731920F3151900AD57BB /* Credit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -583,6 +587,7 @@
 				02A11BD220E2CAB6000CD92B /* StockHoldersVC.swift */,
 				02A11BD320E2CAB6000CD92B /* SideBarVC.swift */,
 				02A11BD420E2CAB6000CD92B /* ProductVC.swift */,
+				02A11BAE20E2CAAC000CD92B /* Facebook */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1100,6 +1105,7 @@
 				02A11BD620E2CAB6000CD92B /* TermsVC.swift in Sources */,
 				02A11BBE20E2CAAD000CD92B /* Ranking.swift in Sources */,
 				02A11BB720E2CAAC000CD92B /* Holders.swift in Sources */,
+				022B731A20F3151900AD57BB /* Credit.swift in Sources */,
 				02A11BFE20E2CAD6000CD92B /* StockActionCell.swift in Sources */,
 				02A11BB920E2CAAC000CD92B /* User.swift in Sources */,
 				02A11BD520E2CAB6000CD92B /* RankingTableVC.swift in Sources */,
@@ -1171,6 +1177,7 @@
 				02FFD24120E3E91B00ADC03F /* TermsVC.swift in Sources */,
 				02FFD24220E3E91B00ADC03F /* Ranking.swift in Sources */,
 				02FFD24320E3E91B00ADC03F /* Holders.swift in Sources */,
+				022B731B20F317FE00AD57BB /* Credit.swift in Sources */,
 				02FFD24420E3E91B00ADC03F /* StockActionCell.swift in Sources */,
 				02FFD24520E3E91B00ADC03F /* User.swift in Sources */,
 				02FFD24620E3E91B00ADC03F /* RankingTableVC.swift in Sources */,
@@ -1226,6 +1233,7 @@
 				02FFD29620E3F2F000ADC03F /* TermsVC.swift in Sources */,
 				02FFD29720E3F2F000ADC03F /* Ranking.swift in Sources */,
 				02FFD29820E3F2F000ADC03F /* Holders.swift in Sources */,
+				022B731C20F317FF00AD57BB /* Credit.swift in Sources */,
 				02FFD29920E3F2F000ADC03F /* StockActionCell.swift in Sources */,
 				02FFD29A20E3F2F000ADC03F /* User.swift in Sources */,
 				02FFD29B20E3F2F000ADC03F /* RankingTableVC.swift in Sources */,

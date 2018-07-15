@@ -45,13 +45,19 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if (self.screenMode == ScreenMode.Friends){
-            selected_user_rank = self.appDelegate.user?.friend_ranking[indexPath.row] as? Ranking;
+            if (indexPath.row == self.appDelegate.user?.friend_ranking.count) {
+                performSegue(withIdentifier: "segueReferFriend", sender: nil);
+            }
+            else {
+                selected_user_rank = self.appDelegate.user?.friend_ranking[indexPath.row] as? Ranking;
+                performSegue(withIdentifier: "segueFriendPortfolio", sender: nil);
+            }
         }
         else {
             selected_user_rank = self.appDelegate.user?.global_ranking[indexPath.row] as? Ranking;
+            performSegue(withIdentifier: "segueFriendPortfolio", sender: nil);
         }
         
-        performSegue(withIdentifier: "segueFriendPortfolio", sender: nil);
         
         return;
     }
@@ -64,7 +70,7 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if ((self.screenMode == ScreenMode.Friends) && (self.appDelegate.user?.friend_ranking != nil)) {
-            return (self.appDelegate.user?.friend_ranking.count)!;
+            return (self.appDelegate.user?.friend_ranking.count)! + 1;
         }
         else if ((self.screenMode == ScreenMode.All) && (self.appDelegate.user?.global_ranking != nil)) {
             return (self.appDelegate.user?.global_ranking.count)!;
@@ -76,6 +82,13 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if ((self.screenMode == ScreenMode.Friends) && (indexPath.row == self.appDelegate.user?.friend_ranking.count)) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "InviteFriendCell", for: indexPath);
+            cell.selectionStyle = UITableViewCellSelectionStyle.none;
+            return cell;
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "RankingCell", for: indexPath) as! RankingCell;
         cell.selectionStyle = UITableViewCellSelectionStyle.none;
         let rank: Ranking!;
@@ -135,7 +148,10 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                                                _cash: 0,
                                                _pic: (self.selected_user_rank?.photo));
         }
-    
+        else if(segue.identifier == "segueReferFriend") {
+            let referVC = segue.destination as! ReferVC;
+            referVC.isModal = false;
+        }
     }
     // Navigations Delegates - End
     

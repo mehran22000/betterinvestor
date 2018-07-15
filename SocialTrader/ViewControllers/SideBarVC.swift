@@ -116,6 +116,9 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell:UITableViewCell = tableView.cellForRow(at: indexPath)!
+        selectedCell.contentView.backgroundColor = UIColor.init(red: 133/255.0, green: 103/255.0, blue: 139/255.0, alpha: 1);
+        
         switch (indexPath.row){
             /*
              case 1:
@@ -135,7 +138,12 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     // Tableview Delegates - End
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "referVCSegue") {
+            let referVC = segue.destination as! ReferVC;
+            referVC.isModal = true;
+        }
+    }
     
     // Axillary
     func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {

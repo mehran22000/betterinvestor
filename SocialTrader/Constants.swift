@@ -12,8 +12,8 @@ class Constants {
     
     // TODO: Enable multi-environments
      #if DEV
-           static let bsae_url = "https://betterinvestor-dev.herokuapp.com/services/v1/"
-        // static let bsae_url = "http://127.0.0.1:5000/services/v1/"
+             static let bsae_url = "https://betterinvestor-dev.herokuapp.com/services/v1/"
+         //    static let bsae_url = "http://127.0.0.1:5000/services/v1/"
      #elseif PROD
        static let bsae_url = "https://betterinvestor.herokuapp.com/services/v1/"
      #elseif ADHOC
@@ -28,7 +28,7 @@ class Constants {
 
     static let segmentControlHeight = 20;
     static let segmentViewHeight = 30;
-    static let pageViewHeight = 190;
+    static let pageViewHeight = 210;
     static let pageControlHeight = 30;
     static let adViewHeight = 50;
     static let portfolio_url = "user/portfolio/";
@@ -38,6 +38,7 @@ class Constants {
     static let get_quote_url =  "market/stock/quote/{symbol}";
     static let get_holders_url =  "users/holders/{symbol}/global/{isGlobal}/userid/{user_id}";
     static let get_profile_url = "user/profile";
+    static let post_credit_url = "user/profile/credit"
     static let notif_stocks_updated = "quotes_updated";
     static let status_success = "200";
 }

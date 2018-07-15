@@ -28,6 +28,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     var tap: UITapGestureRecognizer?
     var mainVC: UIViewController?
     var symbol: Symbol?
+    var processingAlert: UIAlertController?
     
     // MARK: View Delegates
     override func viewDidLoad() {
@@ -108,7 +109,6 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             inputCell = tableView.dequeueReusableCell(withIdentifier: "cellInput", for: indexPath) as! TrxInputCell;
             inputCell.titleLbl?.text = "Quantity"
             self.textField = inputCell.inputTxtField!;
-            
             self.textField?.addTarget(self, action: #selector(BuySellVC.textFieldDidChange(_:)),
                                 for: UIControlEvents.editingChanged)
         case 3:
@@ -157,9 +157,14 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                     
                 }
                 else if (isBuy == true) {
+                    self.processingAlert = UIAlertController(title: "Processing Buy Order", message: "Please wait ...", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    self.present(self.processingAlert!, animated: false, completion: { () in self.tableView.reloadData() });
                     self.executeBuy();
                 }
                 else {
+                    self.processingAlert = UIAlertController(title: "Processing Sell Order", message: "Please wait ...", preferredStyle: UIAlertControllerStyle.alert)
+                    self.present(self.processingAlert!, animated: false, completion: { () in self.tableView.reloadData() });
                     self.executeSell();
                 }
             
@@ -191,13 +196,16 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
         trx.requestBuy(successCompletion: { (title:String, msg: String) in
             self.appDelegate.user?.requestPortfolio(completion: {
-                self.appDelegate.user?.portfolio.calculateGain()
-                self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false)
-                let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true,completion: nil)
+                self.processingAlert?.dismiss(animated: false, completion: {
+                    self.appDelegate.user?.portfolio.calculateGain()
+                    self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false)
+                    let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true,completion: nil)
+                })
             })
         }) { (title:String, msg: String) in
+            self.processingAlert?.dismiss(animated: true, completion: nil);
             self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false)
             let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
@@ -216,6 +224,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
         trx.requestSell(successCompletion: { (title:String, msg: String) in
             self.appDelegate.user?.requestPortfolio(completion: {
+                self.processingAlert?.dismiss(animated: true, completion: nil);
                 self.appDelegate.user?.portfolio.calculateGain()
                 self.navigationController?.popToViewController(self.appDelegate.masterVC!, animated: false);
                 let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
@@ -223,6 +232,7 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                 self.present(alert, animated: true, completion: nil);
             })
         }) { (title:String, msg: String) in
+            self.processingAlert?.dismiss(animated: true, completion: nil);
             let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true,completion: nil)

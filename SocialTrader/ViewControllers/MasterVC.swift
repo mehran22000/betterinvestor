@@ -280,6 +280,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         if (indexPath.row == 0){
             let cell = tableView.dequeueReusableCell(withIdentifier: "SummaryCell", for: indexPath) as! PortfolioSummaryCell;
+            cell.selectionStyle = .none;
             cell.cashLbl?.text = formattedCash;
             cell.stockLbl?.text = formattedStockValue;
             cell.totalGainLbl?.text = formattedGain + "(" + String(format:"%.2f",portfolio!.total_gain_precentage) + "%)" ;

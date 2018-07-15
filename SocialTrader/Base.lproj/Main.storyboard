@@ -105,7 +105,7 @@
                                     <outlet property="photo" destination="L2Z-kt-jUL" id="PQC-2f-BZK"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCreditCell" id="xiK-x4-m9O" customClass="MenuTableViewCell" customModule="SocialTrader" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="menuCreditCell" id="xiK-x4-m9O" customClass="MenuTableViewCell" customModule="SocialTrader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xiK-x4-m9O" id="8Qx-XY-e8o">
@@ -222,7 +222,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NxQ-dF-9R2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="-1557"/>
+            <point key="canvasLocation" x="1374" y="-2125"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="hgr-Et-xX0">
@@ -245,7 +245,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eT4-mr-r9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="-1433"/>
+            <point key="canvasLocation" x="406" y="-2125"/>
         </scene>
         <!--Master View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -288,7 +288,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$5,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-zn-FhR">
-                                                    <rect key="frame" x="247" y="32" width="113" height="20"/>
+                                                    <rect key="frame" x="247" y="31" width="113" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -443,10 +443,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUa-jW-gqk">
-                                <rect key="frame" x="0.0" y="393" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="393" width="375" height="210"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I46-rM-gUL">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="183" width="375" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <subviews>
                                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="R96-2y-fdS">
@@ -459,9 +459,9 @@
                                         <color key="backgroundColor" red="0.52156862749999999" green="0.4039215686" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.32101611019999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Och-ck-N8H"/>
+                                    <constraint firstAttribute="height" constant="210" id="Och-ck-N8H"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -477,7 +477,7 @@
                             <constraint firstItem="DUX-yz-GTO" firstAttribute="leading" secondItem="rF0-JH-qOp" secondAttribute="leading" id="OCH-EY-VGY"/>
                             <constraint firstItem="AHU-vK-Fgb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ong-jO-1Rt"/>
                             <constraint firstItem="EUa-jW-gqk" firstAttribute="leading" secondItem="rF0-JH-qOp" secondAttribute="leading" id="RF0-2S-UYg"/>
-                            <constraint firstItem="EUa-jW-gqk" firstAttribute="bottom" secondItem="rF0-JH-qOp" secondAttribute="bottom" constant="-10" id="VRc-Bq-hTk"/>
+                            <constraint firstItem="EUa-jW-gqk" firstAttribute="bottom" secondItem="rF0-JH-qOp" secondAttribute="bottom" id="VRc-Bq-hTk"/>
                             <constraint firstItem="DUX-yz-GTO" firstAttribute="leading" secondItem="AHU-vK-Fgb" secondAttribute="leading" id="sty-Ws-yN8"/>
                             <constraint firstItem="DUX-yz-GTO" firstAttribute="trailing" secondItem="rF0-JH-qOp" secondAttribute="trailing" id="wCu-Im-A6a"/>
                         </constraints>
@@ -499,7 +499,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-620.28985507246387" y="0.81521739130434789"/>
+            <point key="canvasLocation" x="-621.60000000000002" y="0.44977511244377816"/>
         </scene>
         <!--FriendPortfolioVC-->
         <scene sceneID="oSf-59-ub9">
@@ -661,7 +661,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNr-oI-yji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="-660.71964017991013"/>
+            <point key="canvasLocation" x="353" y="-984"/>
         </scene>
         <!--Symbol SearchVC-->
         <scene sceneID="h2X-Jc-PgC">
@@ -694,7 +694,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzk-OM-JIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="79.802955665024641"/>
+            <point key="canvasLocation" x="406" y="2"/>
         </scene>
         <!--StockVC-->
         <scene sceneID="VNy-WF-74a">
@@ -802,7 +802,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIX-ht-39k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216.80000000000001" y="853.22338830584715"/>
+            <point key="canvasLocation" x="353" y="1015"/>
         </scene>
         <!--Buy SellVC-->
         <scene sceneID="eqw-uz-ylj">
@@ -998,7 +998,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TP4-hA-cc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2314" y="-851"/>
+            <point key="canvasLocation" x="2311" y="-1474"/>
         </scene>
         <!--HoldersVC-->
         <scene sceneID="LgO-c7-PHL">
@@ -1144,7 +1144,7 @@
         <!--TutorialPageVC-->
         <scene sceneID="xCi-r6-pjF">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="pageSheet" id="cdi-mD-QHA" userLabel="TutorialPageVC" customClass="PageViewController" customModule="SocialTrader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="cdi-mD-QHA" userLabel="TutorialPageVC" customClass="PageViewController" customModule="SocialTrader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qgz-6D-y0N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1165,8 +1165,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y52-n2-Ua9">
-                                <rect key="frame" x="0.0" y="468" width="375" height="200"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="468" width="375" height="179"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.32101611019999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RankingCell" rowHeight="50" id="afE-WU-UdJ" customClass="RankingCell" customModule="SocialTrader" customModuleProvider="target">
@@ -1208,6 +1208,28 @@
                                             <outlet property="username" destination="THC-4D-VAT" id="pkl-36-Fc0"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InviteFriendCell" id="HKN-My-f21">
+                                        <rect key="frame" x="0.0" y="78" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HKN-My-f21" id="iCj-DH-CHm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add_friends" translatesAutoresizingMaskIntoConstraints="NO" id="xmL-AJ-hQc">
+                                                    <rect key="frame" x="10" y="6" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invite your friends and Earn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg9-mv-6r6">
+                                                    <rect key="frame" x="51" y="11" width="218" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.32101611019999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="8k6-4o-Wf2" id="IGO-Fe-Tfe"/>
@@ -1220,11 +1242,12 @@
                     <connections>
                         <outlet property="table" destination="Y52-n2-Ua9" id="4BB-Ez-wvH"/>
                         <segue destination="VdX-HB-1W4" kind="show" identifier="segueFriendPortfolio" id="hqw-pW-mB0"/>
+                        <segue destination="3yc-11-LTb" kind="show" identifier="segueReferFriend" id="lb2-bE-rQ9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2h-IJ-QDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-620" y="821.73913043478262"/>
+            <point key="canvasLocation" x="-622" y="822"/>
         </scene>
         <!--Tutorial - Follow Traders-->
         <scene sceneID="1XX-dC-M17">
@@ -1280,21 +1303,25 @@
                             <color key="backgroundColor" red="0.4431372549" green="0.31764705879999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <items>
                                 <navigationItem title="Refer your Friend  " id="Gmw-fp-549">
-                                    <barButtonItem key="backBarButtonItem" title="Back" id="flv-Gk-I7p"/>
+                                    <barButtonItem key="backBarButtonItem" title="Back" id="flv-Gk-I7p">
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
                                     <barButtonItem key="leftBarButtonItem" style="done" id="7IE-x0-R7r">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O9N-rq-BIP">
                                             <rect key="frame" x="16" y="7" width="34" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Back">
-                                                <color key="titleColor" red="0.1764705882" green="0.0" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </state>
+                                            <state key="normal" title="Back"/>
+                                            <connections>
+                                                <action selector="backButtonClicked" destination="3yc-11-LTb" eventType="touchUpInside" id="sgW-2H-49A"/>
+                                            </connections>
                                         </button>
+                                        <color key="tintColor" red="0.43529411759999997" green="0.32101611019999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </barButtonItem>
                                 </navigationItem>
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReferCell" id="dIi-no-c5R" customClass="ReferCell" customModule="SocialTrader" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReferCell" id="dIi-no-c5R" customClass="ReferCell" customModule="SocialTrader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dIi-no-c5R" id="9fz-yA-nrm">
@@ -1349,7 +1376,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1v-5O-guy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2313" y="-1556"/>
+            <point key="canvasLocation" x="1959" y="-437"/>
         </scene>
         <!--Root NavigationVC-->
         <scene sceneID="7Md-1W-LW8">
@@ -1635,6 +1662,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add_friends" width="32" height="32"/>
         <image name="buy" width="32" height="32"/>
         <image name="buy_stock" width="64" height="64"/>
         <image name="cash" width="32" height="32"/>
@@ -1649,7 +1677,8 @@
         <image name="tut_social" width="592" height="570"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DMH-l0-tai"/>
+        <segue reference="epd-t5-OiI"/>
+        <segue reference="sXN-dp-JJy"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.43529411759999997" green="0.32156862749999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" red="0.43529411759999997" green="0.32101611019999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
