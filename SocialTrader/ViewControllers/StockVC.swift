@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import GoogleMobileAds
+
 
 class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -36,6 +38,7 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.position = portfolio.getPosition(_symbol:self.symbol!.key);
             self.title = self.symbol!.key.uppercased();
             self.tableView.reloadData()
+            self.addAdMob()
         }
     }
     
@@ -150,6 +153,22 @@ class StockVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let holdersVC = (segue.destination as! HoldersVC);
             holdersVC.symbol = self.title!;
         }
-        
+    }
+    
+    func addAdMob(){
+        // Place AdMob at the bottom of the screen
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        let yAdView = Int(screenHeight) - Constants.adViewHeight;
+        let adFrame = CGRect (x: 0, y: yAdView, width: Int(screenWidth), height: Constants.adViewHeight);
+        let bannerView = GADBannerView.init(frame: adFrame);
+        bannerView.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
+        bannerView.adUnitID = Constants.admob_id;
+        let gadRequest = GADRequest();
+        gadRequest.testDevices = [kGADSimulatorID];
+        bannerView.rootViewController = self;
+        bannerView.load(gadRequest);
+        self.view.addSubview(bannerView);
     }
 }

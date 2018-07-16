@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMobileAds
+
 
 class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate  {
 
@@ -38,6 +40,8 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true);
+        self.addAdMob()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -143,6 +147,22 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.myActivityIndicator.stopAnimating();
     }
     
+    func addAdMob(){
+        // Place AdMob at the bottom of the screen
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        let yAdView = Int(screenHeight) - Constants.adViewHeight;
+        let adFrame = CGRect (x: 0, y: yAdView, width: Int(screenWidth), height: Constants.adViewHeight);
+        let bannerView = GADBannerView.init(frame: adFrame);
+        bannerView.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
+        bannerView.adUnitID = Constants.admob_id;
+        let gadRequest = GADRequest();
+        gadRequest.testDevices = [kGADSimulatorID];
+        bannerView.rootViewController = self;
+        bannerView.load(gadRequest);
+        self.view.addSubview(bannerView);
+    }
     
     
 }

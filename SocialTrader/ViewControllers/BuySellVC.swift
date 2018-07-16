@@ -9,6 +9,8 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import GoogleMobileAds
+
 
 class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate{
 
@@ -43,7 +45,6 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     @objc func keyboardWillAppear() {
         self.isKeyboardShown = true;
         view.addGestureRecognizer(self.tap!)
-        
     }
     
     @objc func keyboardWillDisappear() {
@@ -76,6 +77,8 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: Notification.Name.UIKeyboardWillHide, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: Notification.Name.UIKeyboardWillShow, object: nil)
+        
+        self.addAdMob()
     }
     
     // MARK: Tableview Delegates
@@ -267,6 +270,23 @@ class BuySellVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
         return;
+    }
+    
+    func addAdMob(){
+        // Place AdMob at the bottom of the screen
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        let yAdView = Int(screenHeight) - Constants.adViewHeight;
+        let adFrame = CGRect (x: 0, y: yAdView, width: Int(screenWidth), height: Constants.adViewHeight);
+        let bannerView = GADBannerView.init(frame: adFrame);
+        bannerView.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
+        bannerView.adUnitID = Constants.admob_id;
+        let gadRequest = GADRequest();
+        gadRequest.testDevices = [kGADSimulatorID];
+        bannerView.rootViewController = self;
+        bannerView.load(gadRequest);
+        self.view.addSubview(bannerView);
     }
     
 }

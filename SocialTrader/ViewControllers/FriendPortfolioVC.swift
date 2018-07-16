@@ -19,13 +19,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet var portfolioTableView: UITableView!
     
-    // Admob
-    // @IBOutlet var viewBanner:GADBannerView?
-    
-    var screenSize: CGRect?;
-    var screenWidth, screenHeight:CGFloat?;
     var portfolioHeight: Int?
-    var yAdView: Int?
     var yPortfolio: Int?
     var marketUpdated = false;
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -42,9 +36,6 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         super.viewDidLoad()
         
         self.title = self.user?.first_name
-        self.screenSize = UIScreen.main.bounds
-        self.screenWidth = screenSize!.width
-        self.screenHeight = screenSize!.height
         
         portfolioTableView?.tableFooterView = UIView()
         
@@ -67,7 +58,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         UIApplication.shared.statusBarStyle = .lightContent
-       // self.addAdMob()
+        self.addAdMob()
     }
     
     
@@ -142,6 +133,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         if (indexPath.row == 0){
             let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell;
+            cell.selectionStyle = .none;
             cell.photo.image = self.user?.pic;
             cell.photo.contentMode = .scaleAspectFit
             cell.photo.layer.cornerRadius = 10.0
@@ -151,6 +143,7 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         else if (indexPath.row == 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "SummaryCell", for: indexPath) as! PortfolioSummaryCell;
+            cell.selectionStyle = .none;
             cell.cashLbl?.text = formattedCash!;
             cell.stockLbl?.text = formattedStockValue;
             cell.totalGainLbl?.text = formattedGain! + "(" + String(format:"%.2f",portfolio!.total_gain_precentage) + "%)" ;
@@ -196,18 +189,22 @@ class FriendPortfolioVC: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
     
-    /*
+    
      func addAdMob(){
      // Place AdMob at the bottom of the screen
-     let adFrame = CGRect (x: 0, y: self.yAdView!, width: Int(screenWidth!), height: Constants.adViewHeight);
-     let bannerView = GADBannerView.init(frame: adFrame);
-     bannerView.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
-     bannerView.adUnitID = "ca-app-pub-5267718216518748/5568296429";
-     let gadRequest = GADRequest();
-     gadRequest.testDevices = [kGADSimulatorID];
-     bannerView.rootViewController = self;
-     bannerView.load(gadRequest);
-     self.view.addSubview(bannerView);
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        let yAdView = Int(screenHeight) - Constants.adViewHeight;
+        let adFrame = CGRect (x: 0, y: yAdView, width: Int(screenWidth), height: Constants.adViewHeight);
+        let bannerView = GADBannerView.init(frame: adFrame);
+        bannerView.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
+        bannerView.adUnitID = Constants.admob_id;
+        let gadRequest = GADRequest();
+        gadRequest.testDevices = [kGADSimulatorID];
+        bannerView.rootViewController = self;
+        bannerView.load(gadRequest);
+        self.view.addSubview(bannerView);
      }
-     */
+    
 }

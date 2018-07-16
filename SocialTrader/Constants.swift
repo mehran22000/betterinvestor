@@ -41,4 +41,5 @@ class Constants {
     static let post_credit_url = "user/profile/credit"
     static let notif_stocks_updated = "quotes_updated";
     static let status_success = "200";
+    static let admob_id = "ca-app-pub-5267718216518748/5568296429";
 }
