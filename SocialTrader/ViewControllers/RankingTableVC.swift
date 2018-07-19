@@ -146,6 +146,7 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                                                _pictureUrl: (self.selected_user_rank?.photo_url)!,
                                                _friends: nil,
                                                _cash: 0,
+                                               _realized: 0,
                                                _pic: (self.selected_user_rank?.photo));
         }
         else if(segue.identifier == "segueReferFriend") {

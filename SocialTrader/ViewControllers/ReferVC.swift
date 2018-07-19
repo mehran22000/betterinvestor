@@ -193,17 +193,24 @@ class ReferVC: UITableViewController, MFMessageComposeViewControllerDelegate, MF
     
     func rewardCredit () {
         let credit = Credit();
-        credit.requestOrder(user: self.appDelegate.user!, source: "referral", amount: 1000)
+        credit.requestOrder(user: self.appDelegate.user!, source: "referral")
         
-        credit.requestCredit(successCompletion: { (title:String, msg: String) in
+        credit.requestCredit(successCompletion: {
+            let title = "";
+            let amount = 1000;
+            let source = "referral";
+            let msg = String(format: "You awarded %d points for your %@", amount, source);
             let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true,completion: nil)
-        }) { (title:String, msg: String) in
+        }) {
+            let title = "Transaction Error";
+            let msg = "Please try again later"
             let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true,completion: nil)
         }
+        
     }
  
 }

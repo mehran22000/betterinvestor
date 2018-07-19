@@ -12,6 +12,7 @@ import Foundation
     
     @objc var positions = [Position]();
     var cash: Double = 0;
+    var realized: Double = 0;
     var credit: Double = 0;
     var total_cost: Double = 0;
     var total_stock_value: Double = 0;
@@ -56,9 +57,15 @@ import Foundation
                 total_value = total_value + self.positions[i].value;
                 total = total + self.positions[i].gain;
             }
-            self.total_gain = total;
-            self.total_gain_precentage = (total_gain/credit) * 100;
             self.total_stock_value = total_value;
+            self.total_gain = total;
+        }
+        self.total_gain = self.total_gain + realized;
+        if (self.total_cost > 0) {
+            self.total_gain_precentage = (self.total_gain/self.total_cost) * 100;
+        }
+        else {
+            self.total_gain_precentage = 0;
         }
     }
     

@@ -31,7 +31,7 @@ import SwiftyJSON
     var global_rank: Int?;
     var friends_rank: Int?;
 
-    init(_id:String, _first_name: String, _last_name: String, _middle_name: String?, _name: String, _email: String, _pictureUrl: String?, _friends: NSArray?, _cash: Double, _pic: UIImage?) {
+    init(_id:String, _first_name: String, _last_name: String, _middle_name: String?, _name: String, _email: String, _pictureUrl: String?, _friends: NSArray?, _cash: Double, _realized: Double, _pic: UIImage?) {
         self.id = _id;
         self.first_name = _first_name;
         self.last_name = _last_name;
@@ -41,6 +41,7 @@ import SwiftyJSON
         self.pictureUrl = _pictureUrl;
         self.friends = _friends;
         self.portfolio.cash = _cash;
+        self.portfolio.realized = _realized;
         self.pic = _pic;
     }
 
@@ -156,7 +157,6 @@ import SwiftyJSON
         }
         self.portfolio.cash = data["cash"] as! Double;
         self.global_rank = data["rank_global"] as? NSInteger;
-        self.portfolio.credit = data["credit"] as! Double;
     }
     
     

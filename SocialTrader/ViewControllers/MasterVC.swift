@@ -167,7 +167,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Core Data Load
         let user = self.appDelegate.user;
         let market = self.appDelegate.market
-       market.requestSymbols (completion: {
+        market.requestSymbols (completion: {
             user?.requestPortfolio(completion: {
                 market.setPortfolio(portfolio: (user?.portfolio)!)
                 market.fetchStockPrice (completion: {

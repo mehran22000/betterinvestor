@@ -42,4 +42,6 @@ class Constants {
     static let notif_stocks_updated = "quotes_updated";
     static let status_success = "200";
     static let admob_id = "ca-app-pub-5267718216518748/5568296429";
+    static let product_id_20k = "20k_inapp_cash_credit";
+    static let product_id_50k = "50k_inapp_cash_credit";
 }

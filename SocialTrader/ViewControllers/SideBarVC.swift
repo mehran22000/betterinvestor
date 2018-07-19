@@ -49,7 +49,7 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // TableView Delegates - Start
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4;
+        return 5;
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -81,27 +81,26 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         else {
             switch (indexPath.row){
             
-            /*
+            
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuCreditCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "Add Credit";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
-            */
                 
-            case 1:
+            case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuReferCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "Invite your friends";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
  
-            case 2:
+            case 3:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuLogOutCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "Sign out";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
                 return cell;
             
-            case 3:
+            case 4:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuAboutAppCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "About App";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
@@ -120,16 +119,19 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         selectedCell.contentView.backgroundColor = UIColor.init(red: 133/255.0, green: 103/255.0, blue: 139/255.0, alpha: 1);
         
         switch (indexPath.row){
-            /*
-             case 1:
-             performSegue(withIdentifier: "productVCSegue", sender: nil)
-            */
-            
+    
         case 1:
-             performSegue(withIdentifier: "referVCSegue", sender: nil)
+            IAPHandler.shared.fetchAvailableProducts(completion: {
+                self.performSegue(withIdentifier: "productVCSegue", sender: nil)
+            });
+            
         case 2:
-            showAlert();
+             performSegue(withIdentifier: "referVCSegue", sender: nil)
+            
         case 3:
+            showAlert();
+        
+        case 4:
             performSegue(withIdentifier: "aboutAppSegue", sender: nil)
             
         default:
