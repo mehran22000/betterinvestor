@@ -1,0 +1,101 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Charts (3.2.2):
+    - Charts/Core (= 3.2.2)
+  - Charts/Core (3.2.2)
+  - FBSDKCoreKit (5.2.3):
+    - FBSDKCoreKit/Basics (= 5.2.3)
+    - FBSDKCoreKit/Core (= 5.2.3)
+  - FBSDKCoreKit/Basics (5.2.3)
+  - FBSDKCoreKit/Core (5.2.3):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.2.3):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.2.3):
+    - FBSDKCoreKit (~> 5.0)
+  - Firebase (4.5.0):
+    - Firebase/Core (= 4.5.0)
+  - Firebase/AdMob (4.5.0):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (= 7.25.0)
+  - Firebase/Core (4.5.0):
+    - FirebaseAnalytics (= 4.0.4)
+    - FirebaseCore (= 4.0.10)
+  - FirebaseAnalytics (4.0.4):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.10):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseInstanceID (2.0.10):
+    - FirebaseCore (~> 4.0)
+  - Google-Mobile-Ads-SDK (7.25.0)
+  - GoogleToolboxForMac/Defines (2.2.1)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.1)":
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - SideMenu (6.0.4)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Bolts
+  - Charts (~> 3.2.0)
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Firebase (~> 4.5.0)
+  - Firebase/AdMob
+  - SideMenu
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Bolts
+    - Charts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - Google-Mobile-Ads-SDK
+    - GoogleToolboxForMac
+    - nanopb
+    - SideMenu
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
+  FBSDKCoreKit: 5154c35d9058fd7dfa0445ba19e194c4b172fc32
+  FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
+  FBSDKShareKit: 6f9c622f9a5d051f43f2dab6f753d5198422b89c
+  Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
+  FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
+  FirebaseCore: da5e8e372cb6046212739a4d81e42d32c22907cc
+  FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  Google-Mobile-Ads-SDK: 113804f266381a30f982ad3c18063d4e0155414f
+  GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SideMenu: da3b760edbfa84eb9dbb92b0cd87b1e061b528a6
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 6d210e19002d2440b80a3981849d95213bdb1642
+
+COCOAPODS: 1.6.2
