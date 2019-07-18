@@ -62,10 +62,10 @@ class LoginViewController: UIViewController {
         self.activitySpinner?.isHidden = false;
         self.fbLoginBtn?.isHidden = true;
         self.fb_inprogress = true;
-        let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
-        fbLoginManager.logIn(withReadPermissions: facebookReadPermissions, from: self) { (result, error) in
+        let fbLoginManager : LoginManager = LoginManager()
+        fbLoginManager.logIn(permissions: facebookReadPermissions, from: self) { (result, error) in
             if (error == nil){
-                let fbloginresult : FBSDKLoginManagerLoginResult = result!
+                let fbloginresult : LoginManagerLoginResult = result!
                 if fbloginresult.grantedPermissions != nil {
                     if(fbloginresult.grantedPermissions.contains("email"))
                     {

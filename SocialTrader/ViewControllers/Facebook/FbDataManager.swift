@@ -20,8 +20,8 @@ class FbDataManager: NSObject
     let defaults = UserDefaults.standard
     
     func getFBUserData( completion:@escaping () -> Void){
-        if((FBSDKAccessToken.current()) != nil){
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
+        if((AccessToken.current) != nil){
+            GraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
                 if (error == nil){
                     self.dict = result as! [String : AnyObject]
                     self.appDelegate.user = User(dic: self.dict);
@@ -35,7 +35,7 @@ class FbDataManager: NSObject
     
     func getFBFriendsList(completion:@escaping () -> Void){
         let params = ["fields": "id, first_name, last_name, middle_name, name, email, picture"]
-        FBSDKGraphRequest(graphPath: "me/friends", parameters: params).start { (connection, result , error) -> Void in
+        GraphRequest(graphPath: "me/friends", parameters: params).start { (connection, result , error) -> Void in
             
             if error != nil {
                 print(error!)

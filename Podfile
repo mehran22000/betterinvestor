@@ -8,13 +8,14 @@ target 'SocialTrader' do
   # Pods for SocialTrader
     pod 'Firebase’, ‘~>4.5.0’
     pod 'Firebase/AdMob'
-    pod 'Charts'
+    pod 'Charts', '~>3.2.0'
     pod 'SideMenu'
     pod 'FBSDKCoreKit'
     pod 'FBSDKLoginKit'
     pod 'FBSDKShareKit'
     pod 'SwiftyJSON', '~> 4.0'
     pod 'Alamofire', '~> 4.7'
+    pod 'Bolts'
  
 
   target 'SocialTraderTests' do
