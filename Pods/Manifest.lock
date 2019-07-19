@@ -9,6 +9,23 @@ PODS:
   - Charts (3.2.2):
     - Charts/Core (= 3.2.2)
   - Charts/Core (3.2.2)
+  - FacebookCore (0.7.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FacebookLogin (0.7.0):
+    - FacebookCore (~> 0.7)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKLoginKit (~> 5.0)
+  - FacebookSDK (4.44.1):
+    - Bolts (~> 1.9)
+    - FacebookSDK/CoreKit (= 4.44.1)
+    - FacebookSDK/MarketingKit (= 4.44.1)
+  - FacebookSDK/CoreKit (4.44.1):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit
+  - FacebookSDK/MarketingKit (4.44.1):
+    - Bolts (~> 1.9)
+    - FacebookSDK/CoreKit
+    - FBSDKMarketingKit
   - FBSDKCoreKit (5.2.3):
     - FBSDKCoreKit/Basics (= 5.2.3)
     - FBSDKCoreKit/Core (= 5.2.3)
@@ -17,6 +34,8 @@ PODS:
     - FBSDKCoreKit/Basics
   - FBSDKLoginKit (5.2.3):
     - FBSDKCoreKit (~> 5.0)
+  - FBSDKMarketingKit (4.38.0):
+    - FBSDKCoreKit
   - FBSDKShareKit (5.2.3):
     - FBSDKCoreKit (~> 5.0)
   - Firebase (4.5.0):
@@ -46,13 +65,16 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - SideMenu (6.0.4)
+  - SideMenu (6.0.6)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - Bolts
   - Charts (~> 3.2.0)
+  - FacebookCore
+  - FacebookLogin
+  - FacebookSDK
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -66,8 +88,12 @@ SPEC REPOS:
     - Alamofire
     - Bolts
     - Charts
+    - FacebookCore
+    - FacebookLogin
+    - FacebookSDK
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - FBSDKMarketingKit
     - FBSDKShareKit
     - Firebase
     - FirebaseAnalytics
@@ -83,8 +109,12 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
+  FacebookCore: 4eee98476cb37a485af5d337eb21f8cd5b3c7e6c
+  FacebookLogin: 94cdad6850e86a2b04704dedfe7674a7af8148eb
+  FacebookSDK: 98dd798abb2fe8148d010d30f5d9b4b47bc30922
   FBSDKCoreKit: 5154c35d9058fd7dfa0445ba19e194c4b172fc32
   FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
+  FBSDKMarketingKit: e609f39d74ab273cf52e2f8b7e8829ed412b2827
   FBSDKShareKit: 6f9c622f9a5d051f43f2dab6f753d5198422b89c
   Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
@@ -93,9 +123,9 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 113804f266381a30f982ad3c18063d4e0155414f
   GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  SideMenu: da3b760edbfa84eb9dbb92b0cd87b1e061b528a6
+  SideMenu: e50bc3cdcef72a17475f33a3403d8a3b3187b0e5
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 6d210e19002d2440b80a3981849d95213bdb1642
+PODFILE CHECKSUM: a62fe6c1c18413c240630cc1bae9ac042551897a
 
 COCOAPODS: 1.6.2

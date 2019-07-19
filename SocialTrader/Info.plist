@@ -23,16 +23,16 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb417429138672935</string>
+				<string>fb2168202546621838</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>3</string>
 	<key>FacebookAppID</key>
-	<string>417429138672935</string>
+	<string>2168202546621838</string>
 	<key>FacebookDisplayName</key>
-	<string>smarter investor</string>
+	<string>SocialTraderDev</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>mailto</string>

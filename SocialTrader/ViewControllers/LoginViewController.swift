@@ -10,6 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import Alamofire
 import SwiftyJSON
+import FacebookLogin
 
 class LoginViewController: UIViewController {
 
@@ -24,13 +25,17 @@ class LoginViewController: UIViewController {
     // View Delegates - Start
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.activitySpinner?.isHidden = true;
         if let userObject = UserDefaults.standard.value(forKey: "user") as? NSData {
             self.fbLoginBtn?.isHidden = true;
             self.activitySpinner?.isHidden = false;
             self.activitySpinner?.startAnimating();
+            
             appDelegate.user = NSKeyedUnarchiver.unarchiveObject(with: userObject as Data) as? User
             let fbDataManager = FbDataManager();
+            // loginButton.delegate = fbDataManager;
+            
             fbDataManager.getFBUserData(completion: {
                 self.performSegue(withIdentifier: "segueHomeScreen", sender: nil)
             })

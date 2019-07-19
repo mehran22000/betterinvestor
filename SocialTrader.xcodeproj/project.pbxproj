@@ -217,7 +217,6 @@
 		02FFD2BF20E3F2F000ADC03F /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0420E2CADB000CD92B /* LineChart1ViewController.xib */; };
 		02FFD2C120E3F2F000ADC03F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1220E2CB49000CD92B /* GoogleService-Info.plist */; };
 		02FFD2CB20E3F3ED00ADC03F /* AdHoc-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FFD2CA20E3F3EC00ADC03F /* AdHoc-Info.plist */; };
-		1B512D7122E0F8A9009A897B /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B512D7022E0F8A9009A897B /* Pods_SocialTrader.framework */; };
 		1B512DC722E0FB79009A897B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD120E2CAB6000CD92B /* LoginViewController.swift */; };
 		1B512DC822E0FB79009A897B /* HalfPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A11C0A20E2CADB000CD92B /* HalfPieChartViewController.m */; };
 		1B512DC922E0FB79009A897B /* StockHoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD220E2CAB6000CD92B /* StockHoldersVC.swift */; };
@@ -278,7 +277,6 @@
 		1B512E0122E0FB79009A897B /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABA20E2EE41004EA149 /* SideMenu.framework */; };
 		1B512E0222E0FB79009A897B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABC20E2EE41004EA149 /* SwiftyJSON.framework */; };
 		1B512E0322E0FB79009A897B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA620E2ECEC004EA149 /* Charts.framework */; };
-		1B512E0422E0FB79009A897B /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */; };
 		1B512E0622E0FB79009A897B /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1420E2CB55000CD92B /* symbols.plist */; };
 		1B512E0722E0FB79009A897B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A11BA220E2C9C8000CD92B /* Main.storyboard */; };
 		1B512E0822E0FB79009A897B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A11B6220E2A245000CD92B /* Assets.xcassets */; };
@@ -348,7 +346,6 @@
 		1B512E5322E0FCC0009A897B /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABA20E2EE41004EA149 /* SideMenu.framework */; };
 		1B512E5422E0FCC0009A897B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732ABC20E2EE41004EA149 /* SwiftyJSON.framework */; };
 		1B512E5522E0FCC0009A897B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA620E2ECEC004EA149 /* Charts.framework */; };
-		1B512E5622E0FCC0009A897B /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */; };
 		1B512E5822E0FCC0009A897B /* symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1420E2CB55000CD92B /* symbols.plist */; };
 		1B512E5922E0FCC0009A897B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A11BA220E2C9C8000CD92B /* Main.storyboard */; };
 		1B512E5A22E0FCC0009A897B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A11B6220E2A245000CD92B /* Assets.xcassets */; };
@@ -358,6 +355,11 @@
 		1B512E5E22E0FCC0009A897B /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1020E2CB19000CD92B /* Icons.xcassets */; };
 		1B512E5F22E0FCC0009A897B /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0420E2CADB000CD92B /* LineChart1ViewController.xib */; };
 		1B512E6022E0FCC0009A897B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1220E2CB49000CD92B /* GoogleService-Info.plist */; };
+		1B512E6D22E20DA0009A897B /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B512E6C22E20DA0009A897B /* FacebookCore.framework */; };
+		1B512E6F22E20DA0009A897B /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B512E6E22E20DA0009A897B /* FacebookLogin.framework */; };
+		1B512E7122E20DCC009A897B /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B512E7022E20DCC009A897B /* FacebookCore.framework */; };
+		1B512E7322E20DCC009A897B /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B512E7222E20DCC009A897B /* FacebookLogin.framework */; };
+		2EC9EC06428C2FC8E122279B /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238CE6A870D09E5EA665A08 /* Pods_SocialTrader.framework */; };
 		37B3A0ED66C0D0534DAD7D5C /* Pods_SocialTraderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB620E2EE41004EA149 /* Pods_SocialTraderTests.framework */; };
 		7985C7CCAE55D3B337D0F637 /* Pods_SocialTraderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB820E2EE41004EA149 /* Pods_SocialTraderUITests.framework */; };
 		BB403EC8BDE64ABCD38CE82A /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */; };
@@ -527,17 +529,21 @@
 		02FFD27420E3E98800ADC03F /* Dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dev-Info.plist"; sourceTree = "<group>"; };
 		02FFD2C820E3F2F000ADC03F /* SocialTraderAdHoc1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTraderAdHoc1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FFD2CA20E3F3EC00ADC03F /* AdHoc-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AdHoc-Info.plist"; sourceTree = "<group>"; };
-		13E03F42469ADF2680FA31AF /* Pods-SocialTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTrader.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader.release.xcconfig"; sourceTree = "<group>"; };
-		1B512D7022E0F8A9009A897B /* Pods_SocialTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SocialTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B512DC322E0F9E6009A897B /* SocialTrader copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SocialTrader copy-Info.plist"; path = "/Users/mehranna@ca.ibm.com/betterinvestor/SocialTrader copy-Info.plist"; sourceTree = "<absolute>"; };
 		1B512E1422E0FB79009A897B /* SocialTraderDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTraderDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B512E1522E0FB79009A897B /* SocialTrader copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SocialTrader copy2-Info.plist"; path = "/Users/mehranna@ca.ibm.com/betterinvestor/SocialTrader copy2-Info.plist"; sourceTree = "<absolute>"; };
 		1B512E6622E0FCC0009A897B /* SocialTraderAdHoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTraderAdHoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B512E6722E0FCC0009A897B /* SocialTrader copy3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SocialTrader copy3-Info.plist"; path = "/Users/mehranna@ca.ibm.com/betterinvestor/SocialTrader copy3-Info.plist"; sourceTree = "<absolute>"; };
+		1B512E6C22E20DA0009A897B /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B512E6E22E20DA0009A897B /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B512E7022E20DCC009A897B /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B512E7222E20DCC009A897B /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35263898D41FBEE74D587D0E /* Pods-SocialTraderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderTests/Pods-SocialTraderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CDC128E3A75C73525C62FA3 /* Pods-SocialTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTrader.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader.release.xcconfig"; sourceTree = "<group>"; };
 		4F2C9D9D87B2C0CB25C89523 /* Pods-SocialTraderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderTests/Pods-SocialTraderTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BEFBF3C7694BD518FD11F20 /* Pods-SocialTraderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderUITests/Pods-SocialTraderUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		79761380F8C4CEB3CE260A4C /* Pods-SocialTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTrader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader.debug.xcconfig"; sourceTree = "<group>"; };
+		6238CE6A870D09E5EA665A08 /* Pods_SocialTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5E36DC2877FC8FA8A9DA20 /* Pods-SocialTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTrader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader.debug.xcconfig"; sourceTree = "<group>"; };
 		EC14281068162323FA02D181 /* Pods-SocialTraderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderUITests/Pods-SocialTraderUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -546,6 +552,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B512E7122E20DCC009A897B /* FacebookCore.framework in Frameworks */,
+				1B512E7322E20DCC009A897B /* FacebookLogin.framework in Frameworks */,
 				02732AA920E2EE41004EA149 /* Alamofire.framework in Frameworks */,
 				02732AAB20E2EE41004EA149 /* Bolts.framework in Frameworks */,
 				02732AAD20E2EE41004EA149 /* FBSDKCoreKit.framework in Frameworks */,
@@ -557,6 +565,7 @@
 				02732ABD20E2EE41004EA149 /* SwiftyJSON.framework in Frameworks */,
 				02732AA720E2ECEC004EA149 /* Charts.framework in Frameworks */,
 				BB403EC8BDE64ABCD38CE82A /* Pods_SocialTrader.framework in Frameworks */,
+				2EC9EC06428C2FC8E122279B /* Pods_SocialTrader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +589,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B512D7122E0F8A9009A897B /* Pods_SocialTrader.framework in Frameworks */,
 				02FFD25520E3E91B00ADC03F /* Alamofire.framework in Frameworks */,
 				02FFD25620E3E91B00ADC03F /* Bolts.framework in Frameworks */,
 				02FFD25720E3E91B00ADC03F /* FBSDKCoreKit.framework in Frameworks */,
@@ -625,7 +633,6 @@
 				1B512E0122E0FB79009A897B /* SideMenu.framework in Frameworks */,
 				1B512E0222E0FB79009A897B /* SwiftyJSON.framework in Frameworks */,
 				1B512E0322E0FB79009A897B /* Charts.framework in Frameworks */,
-				1B512E0422E0FB79009A897B /* Pods_SocialTrader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +640,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B512E6D22E20DA0009A897B /* FacebookCore.framework in Frameworks */,
+				1B512E6F22E20DA0009A897B /* FacebookLogin.framework in Frameworks */,
 				1B512E4C22E0FCC0009A897B /* Alamofire.framework in Frameworks */,
 				1B512E4D22E0FCC0009A897B /* Bolts.framework in Frameworks */,
 				1B512E4E22E0FCC0009A897B /* FBSDKCoreKit.framework in Frameworks */,
@@ -643,7 +652,6 @@
 				1B512E5322E0FCC0009A897B /* SideMenu.framework in Frameworks */,
 				1B512E5422E0FCC0009A897B /* SwiftyJSON.framework in Frameworks */,
 				1B512E5522E0FCC0009A897B /* Charts.framework in Frameworks */,
-				1B512E5622E0FCC0009A897B /* Pods_SocialTrader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,7 +661,10 @@
 		02732AA320E2EC80004EA149 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B512D7022E0F8A9009A897B /* Pods_SocialTrader.framework */,
+				1B512E7022E20DCC009A897B /* FacebookCore.framework */,
+				1B512E7222E20DCC009A897B /* FacebookLogin.framework */,
+				1B512E6C22E20DA0009A897B /* FacebookCore.framework */,
+				1B512E6E22E20DA0009A897B /* FacebookLogin.framework */,
 				02732AA820E2EE41004EA149 /* Alamofire.framework */,
 				02732AAA20E2EE41004EA149 /* Bolts.framework */,
 				02732AAC20E2EE41004EA149 /* FBSDKCoreKit.framework */,
@@ -666,7 +677,7 @@
 				02732ABA20E2EE41004EA149 /* SideMenu.framework */,
 				02732ABC20E2EE41004EA149 /* SwiftyJSON.framework */,
 				02732AA620E2ECEC004EA149 /* Charts.framework */,
-				02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */,
+				6238CE6A870D09E5EA665A08 /* Pods_SocialTrader.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -692,6 +703,7 @@
 				1B512DC322E0F9E6009A897B /* SocialTrader copy-Info.plist */,
 				1B512E1522E0FB79009A897B /* SocialTrader copy2-Info.plist */,
 				1B512E6722E0FCC0009A897B /* SocialTrader copy3-Info.plist */,
+				1B512E6B22E20CDB009A897B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -835,6 +847,14 @@
 			path = ChartsExtension;
 			sourceTree = "<group>";
 		};
+		1B512E6B22E20CDB009A897B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				02732AA420E2EC80004EA149 /* Pods_SocialTrader.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		2F6A78CAAC3F3466727CAC5F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -842,8 +862,8 @@
 				4F2C9D9D87B2C0CB25C89523 /* Pods-SocialTraderTests.release.xcconfig */,
 				5BEFBF3C7694BD518FD11F20 /* Pods-SocialTraderUITests.debug.xcconfig */,
 				EC14281068162323FA02D181 /* Pods-SocialTraderUITests.release.xcconfig */,
-				79761380F8C4CEB3CE260A4C /* Pods-SocialTrader.debug.xcconfig */,
-				13E03F42469ADF2680FA31AF /* Pods-SocialTrader.release.xcconfig */,
+				BB5E36DC2877FC8FA8A9DA20 /* Pods-SocialTrader.debug.xcconfig */,
+				4CDC128E3A75C73525C62FA3 /* Pods-SocialTrader.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -949,11 +969,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B512E1122E0FB79009A897B /* Build configuration list for PBXNativeTarget "SocialTraderDev" */;
 			buildPhases = (
-				1B512DC522E0FB79009A897B /* [CP] Check Pods Manifest.lock */,
 				1B512DC622E0FB79009A897B /* Sources */,
 				1B512DF922E0FB79009A897B /* Frameworks */,
 				1B512E0522E0FB79009A897B /* Resources */,
-				1B512E0F22E0FB79009A897B /* [CP] Embed Pods Frameworks */,
 				1B512E1022E0FB79009A897B /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -969,11 +987,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B512E6322E0FCC0009A897B /* Build configuration list for PBXNativeTarget "SocialTraderAdHoc" */;
 			buildPhases = (
-				1B512E1722E0FCC0009A897B /* [CP] Check Pods Manifest.lock */,
 				1B512E1822E0FCC0009A897B /* Sources */,
 				1B512E4B22E0FCC0009A897B /* Frameworks */,
 				1B512E5722E0FCC0009A897B /* Resources */,
-				1B512E6122E0FCC0009A897B /* [CP] Embed Pods Frameworks */,
 				1B512E6222E0FCC0009A897B /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -1144,6 +1160,8 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -1157,114 +1175,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B512DC522E0FB79009A897B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SocialTrader-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B512E0F22E0FB79009A897B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B512E1722E0FCC0009A897B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SocialTrader-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B512E6122E0FCC0009A897B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -1796,7 +1708,7 @@
 		};
 		02A11B8120E2A245000CD92B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79761380F8C4CEB3CE260A4C /* Pods-SocialTrader.debug.xcconfig */;
+			baseConfigurationReference = BB5E36DC2877FC8FA8A9DA20 /* Pods-SocialTrader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1827,7 +1739,7 @@
 		};
 		02A11B8220E2A245000CD92B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13E03F42469ADF2680FA31AF /* Pods-SocialTrader.release.xcconfig */;
+			baseConfigurationReference = 4CDC128E3A75C73525C62FA3 /* Pods-SocialTrader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -2071,7 +1983,6 @@
 		};
 		1B512E1222E0FB79009A897B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79761380F8C4CEB3CE260A4C /* Pods-SocialTrader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -2103,7 +2014,6 @@
 		};
 		1B512E1322E0FB79009A897B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13E03F42469ADF2680FA31AF /* Pods-SocialTrader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -2134,7 +2044,6 @@
 		};
 		1B512E6422E0FCC0009A897B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79761380F8C4CEB3CE260A4C /* Pods-SocialTrader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -2166,7 +2075,6 @@
 		};
 		1B512E6522E0FCC0009A897B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13E03F42469ADF2680FA31AF /* Pods-SocialTrader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
