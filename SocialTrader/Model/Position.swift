@@ -31,9 +31,16 @@ import Foundation
     func calculate_gain(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let quote = appDelegate.market.quotes[self.symbol];
-        self.value = Double(qty) * (quote?.price)!;
-        self.gain = self.value - cost;
-        self.gain_precentage = (self.gain / self.cost) * 100;
+        if (quote != nil) {
+            self.value = Double(qty) * (quote?.price)!;
+            self.gain = self.value - cost;
+            self.gain_precentage = (self.gain / self.cost) * 100;
+        }
+        else {
+            self.value = 0;
+            self.gain = 0;
+            self.gain_precentage = 0;
+        }
     }
     
 }

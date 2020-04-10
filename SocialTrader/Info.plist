@@ -17,20 +17,20 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb2168202546621838</string>
+				<string>fb417429138672935</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>2</string>
 	<key>FacebookAppID</key>
-	<string>2168202546621838</string>
+	<string>417429138672935</string>
 	<key>FacebookDisplayName</key>
 	<string>SocialTraderDev</string>
 	<key>LSApplicationQueriesSchemes</key>
