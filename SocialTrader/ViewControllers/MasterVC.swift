@@ -133,7 +133,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.yPortfolio = 0;
         self.ySegmentView = portfolioHeight;
         self.yPageView = self.ySegmentView! + Constants.segmentViewHeight;
-        self.yPageControlView = self.yPageView! + Constants.pageViewHeight - self.pageControlAdjustment();
+        self.yPageControlView = self.yPageView! + Constants.pageViewHeight - self.pageControlAdjustment() - Constants.adViewHeight;
         
         
         self.yAdView = yPageControlView! + Constants.pageControlHeight;
@@ -162,7 +162,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.pageViewIndex = 0;
         self.pageViewHolder.addSubview((self.rankingVC?.view)!);
         self.addSegmentControl();
-        // self.addAdMob()
+        self.addAdMob()
         
         // Core Data Load
         let user = self.appDelegate.user;
@@ -508,6 +508,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.segmentView.frame = CGRect(x: 0, y: self.ySegmentView!, width: width, height: Constants.segmentViewHeight);
         self.segmentControlView.frame = CGRect(x: Int(width/2 - width/4), y: 5, width: width/2, height: Constants.segmentControlHeight);
         
+       // self.view.addSubview(self.segmentControlView);
+        
     }
     
     func addPageControl() {
@@ -540,7 +542,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 
     // AdMobile
-    /*
+    
     func addAdMob(){
         // Place AdMob at the bottom of the screen
         let adFrame = CGRect (x: 0, y: self.yAdView!, width: Int(screenWidth!), height: Constants.adViewHeight);
@@ -555,7 +557,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         bannerView.load(gadRequest);
         self.view.addSubview(bannerView);
     }
-    */
+    
 }
 
 // Axillary

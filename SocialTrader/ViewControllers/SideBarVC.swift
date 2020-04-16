@@ -49,7 +49,7 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // TableView Delegates - Start
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5;
+        return 6;
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -101,6 +101,12 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 return cell;
             
             case 4:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "menuPrivacyCell", for: indexPath) as! MenuTableViewCell
+                cell.titleLbl?.text = "Privacy";
+                cell.selectionStyle = UITableViewCellSelectionStyle.none
+                return cell;
+            
+            case 5:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "menuAboutAppCell", for: indexPath) as! MenuTableViewCell
                 cell.titleLbl?.text = "About App";
                 cell.selectionStyle = UITableViewCellSelectionStyle.none
@@ -130,8 +136,11 @@ class SideBarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
         case 3:
             showAlert();
-        
+            
         case 4:
+            performSegue(withIdentifier: "privacySegue", sender: nil)
+        
+        case 5:
             performSegue(withIdentifier: "aboutAppSegue", sender: nil)
             
         default:

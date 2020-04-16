@@ -15,9 +15,9 @@ class Constants {
              static let bsae_url = "https://betterinvestor-dev.herokuapp.com/services/v1/"
          //    static let bsae_url = "http://127.0.0.1:5000/services/v1/"
      #elseif PROD
-          static let bsae_url = "https://betterinvestor.herokuapp.com/services/v1/"
+      //   static let bsae_url = "https://betterinvestor.herokuapp.com/services/v1/"
       //  static let bsae_url = "http://127.0.0.1:5000/services/v1/"
-     //   static let bsae_url = "http://socialtrader-4-ELB-X4W1YPPEHUFV-1767386157.us-east-1.elb.amazonaws.com:5000/services/v1/"
+          static let bsae_url = "http://ec2-3-95-185-164.compute-1.amazonaws.com:5000/services/v1/"
     
      #elseif ADHOC
         static let bsae_url = "https://betterinvestor-staging.herokuapp.com/services/v1/"
@@ -31,7 +31,8 @@ class Constants {
 
     static let segmentControlHeight = 20;
     static let segmentViewHeight = 30;
-    static let pageViewHeight = 210;
+    // static let pageViewHeight = 210 ;
+    static let pageViewHeight = 160 ;
     static let pageControlHeight = 30;
     static let adViewHeight = 50;
     static let portfolio_url = "user/portfolio/";

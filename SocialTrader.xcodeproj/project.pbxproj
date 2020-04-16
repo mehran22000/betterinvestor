@@ -359,6 +359,9 @@
 		1B512E6F22E20DA0009A897B /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B512E6E22E20DA0009A897B /* FacebookLogin.framework */; };
 		1B512E7122E20DCC009A897B /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B512E7022E20DCC009A897B /* FacebookCore.framework */; };
 		1B512E7322E20DCC009A897B /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B512E7222E20DCC009A897B /* FacebookLogin.framework */; };
+		1BB477F02441025200059289 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB477EF2441025200059289 /* PrivacyVC.swift */; };
+		1BB477F12441025200059289 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB477EF2441025200059289 /* PrivacyVC.swift */; };
+		1BB477F22441025200059289 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB477EF2441025200059289 /* PrivacyVC.swift */; };
 		2EC9EC06428C2FC8E122279B /* Pods_SocialTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238CE6A870D09E5EA665A08 /* Pods_SocialTrader.framework */; };
 		37B3A0ED66C0D0534DAD7D5C /* Pods_SocialTraderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB620E2EE41004EA149 /* Pods_SocialTraderTests.framework */; };
 		7985C7CCAE55D3B337D0F637 /* Pods_SocialTraderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02732AB820E2EE41004EA149 /* Pods_SocialTraderUITests.framework */; };
@@ -538,6 +541,7 @@
 		1B512E6E22E20DA0009A897B /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B512E7022E20DCC009A897B /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B512E7222E20DCC009A897B /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB477EF2441025200059289 /* PrivacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
 		35263898D41FBEE74D587D0E /* Pods-SocialTraderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderTests/Pods-SocialTraderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CDC128E3A75C73525C62FA3 /* Pods-SocialTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTrader.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader.release.xcconfig"; sourceTree = "<group>"; };
 		4F2C9D9D87B2C0CB25C89523 /* Pods-SocialTraderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderTests/Pods-SocialTraderTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -806,6 +810,7 @@
 				02A11BD220E2CAB6000CD92B /* StockHoldersVC.swift */,
 				02A11BD320E2CAB6000CD92B /* SideBarVC.swift */,
 				02A11BD420E2CAB6000CD92B /* ProductVC.swift */,
+				1BB477EF2441025200059289 /* PrivacyVC.swift */,
 				02A11BAE20E2CAAC000CD92B /* Facebook */,
 			);
 			path = ViewControllers;
@@ -1282,6 +1287,7 @@
 				02A11BBE20E2CAAD000CD92B /* Ranking.swift in Sources */,
 				02A11BB720E2CAAC000CD92B /* Holders.swift in Sources */,
 				022B731A20F3151900AD57BB /* Credit.swift in Sources */,
+				1BB477F02441025200059289 /* PrivacyVC.swift in Sources */,
 				02A11BFE20E2CAD6000CD92B /* StockActionCell.swift in Sources */,
 				02A11BB920E2CAAC000CD92B /* User.swift in Sources */,
 				02A11BD520E2CAB6000CD92B /* RankingTableVC.swift in Sources */,
@@ -1355,6 +1361,7 @@
 				02FFD24220E3E91B00ADC03F /* Ranking.swift in Sources */,
 				02FFD24320E3E91B00ADC03F /* Holders.swift in Sources */,
 				022B731B20F317FE00AD57BB /* Credit.swift in Sources */,
+				1BB477F12441025200059289 /* PrivacyVC.swift in Sources */,
 				02FFD24420E3E91B00ADC03F /* StockActionCell.swift in Sources */,
 				02FFD24520E3E91B00ADC03F /* User.swift in Sources */,
 				02FFD24620E3E91B00ADC03F /* RankingTableVC.swift in Sources */,
@@ -1412,6 +1419,7 @@
 				02FFD29720E3F2F000ADC03F /* Ranking.swift in Sources */,
 				02FFD29820E3F2F000ADC03F /* Holders.swift in Sources */,
 				022B731C20F317FF00AD57BB /* Credit.swift in Sources */,
+				1BB477F22441025200059289 /* PrivacyVC.swift in Sources */,
 				02FFD29920E3F2F000ADC03F /* StockActionCell.swift in Sources */,
 				02FFD29A20E3F2F000ADC03F /* User.swift in Sources */,
 				02FFD29B20E3F2F000ADC03F /* RankingTableVC.swift in Sources */,
@@ -1712,6 +1720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q79878SPU6;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1727,6 +1736,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ron.socialtrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG PROD";
@@ -1743,6 +1753,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q79878SPU6;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1758,6 +1769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ron.socialtrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
