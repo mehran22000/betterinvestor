@@ -24,7 +24,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var segmentView: UIView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var pageControlView: UIView!
-   //  @IBOutlet weak var activitySpinner: UIActivityIndicatorView?
+    //  @IBOutlet weak var activitySpinner: UIActivityIndicatorView?
     
     var rankingVC : RankingTableVC?
     var pichartView: UIView?
@@ -33,7 +33,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var is_fetching_data: Bool = true;
     
     // Admob
-    @IBOutlet var viewBanner:GADBannerView?
+    @IBOutlet var bannerView:GADBannerView?;
     
     // Sub Views Coordination
     var screenSize: CGRect?;
@@ -185,7 +185,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     override func viewDidAppear(_ animated: Bool) {
-        self.addPageControl();
+       // self.addPageControl();
     }
     
     override func didReceiveMemoryWarning() {
@@ -413,7 +413,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 
     @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
-    
+        /*
         // find pageViewIndex
         if gesture.direction == UISwipeGestureRecognizerDirection.left {
             self.pageViewIndex = self.pageViewIndex + 1;
@@ -443,7 +443,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         else {
             self.pageViewHolder.pageAnimation(leftToRight:false);
         }
-        
+        */
     }
     
     
@@ -544,19 +544,28 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // AdMobile
     
     func addAdMob(){
+        self.bannerView!.adUnitID = "ca-app-pub-5267718216518748/5568296429";
+        self.bannerView!.rootViewController = self;
+        self.bannerView!.load(GADRequest());
+    }
+    
+    /*
+    func addAdMob(){
         // Place AdMob at the bottom of the screen
         let adFrame = CGRect (x: 0, y: self.yAdView!, width: Int(screenWidth!), height: Constants.adViewHeight);
-        let bannerView = GADBannerView.init(frame: adFrame);
-        bannerView.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
+        //let bannerView = GADBannerView.init(frame: adFrame);
+        self.bannerView = GADBannerView.init(frame: adFrame);
+        self.bannerView!.backgroundColor = UIColor.init(red: 43/255.0, green: 8/255.0, blue: 60/255.0, alpha: 1);
         // bannerView.adUnitID = "ca-app-pub-5267718216518748/5568296429";
         // Test unitID
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716";
+        self.bannerView!.adUnitID = "ca-app-pub-3940256099942544/2934735716";
         let gadRequest = GADRequest();
         gadRequest.testDevices = [kGADSimulatorID];
-        bannerView.rootViewController = self;
-        bannerView.load(gadRequest);
-        self.view.addSubview(bannerView);
+        self.bannerView!.rootViewController = self;
+        self.bannerView!.load(gadRequest);
+        self.view.addSubview(self.bannerView!);
     }
+    */
     
 }
 
