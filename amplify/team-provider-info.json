@@ -1,0 +1,20 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-socialtraderamplify-prod-132303-authRole",
+            "UnauthRoleArn": "arn:aws:iam::541761601894:role/amplify-socialtraderamplify-prod-132303-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::541761601894:role/amplify-socialtraderamplify-prod-132303-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-socialtraderamplify-prod-132303-deployment",
+            "UnauthRoleName": "amplify-socialtraderamplify-prod-132303-unauthRole",
+            "StackName": "amplify-socialtraderamplify-prod-132303",
+            "StackId": "arn:aws:cloudformation:us-east-1:541761601894:stack/amplify-socialtraderamplify-prod-132303/168853e0-8a3e-11ea-85d8-0a254e00bc9f",
+            "AmplifyAppId": "d3epm11qluzp4i"
+        },
+        "categories": {
+            "auth": {
+                "socialtraderamplify58646e39": {}
+            }
+        }
+    }
+}

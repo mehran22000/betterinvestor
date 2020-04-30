@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"socialtraderamplify58646e39": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"s3socialtrader": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
