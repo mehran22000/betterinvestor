@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -217,6 +217,16 @@
 		02FFD2BF20E3F2F000ADC03F /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C0420E2CADB000CD92B /* LineChart1ViewController.xib */; };
 		02FFD2C120E3F2F000ADC03F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A11C1220E2CB49000CD92B /* GoogleService-Info.plist */; };
 		02FFD2CB20E3F3ED00ADC03F /* AdHoc-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FFD2CA20E3F3EC00ADC03F /* AdHoc-Info.plist */; };
+		1B430BBD245A052B00F7E5ED /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBB245A052A00F7E5ED /* amplifyconfiguration.json */; };
+		1B430BBE245A052B00F7E5ED /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBB245A052A00F7E5ED /* amplifyconfiguration.json */; };
+		1B430BBF245A052B00F7E5ED /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBB245A052A00F7E5ED /* amplifyconfiguration.json */; };
+		1B430BC0245A052B00F7E5ED /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBB245A052A00F7E5ED /* amplifyconfiguration.json */; };
+		1B430BC1245A052B00F7E5ED /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBB245A052A00F7E5ED /* amplifyconfiguration.json */; };
+		1B430BC2245A052B00F7E5ED /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBC245A052B00F7E5ED /* awsconfiguration.json */; };
+		1B430BC3245A052B00F7E5ED /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBC245A052B00F7E5ED /* awsconfiguration.json */; };
+		1B430BC4245A052B00F7E5ED /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBC245A052B00F7E5ED /* awsconfiguration.json */; };
+		1B430BC5245A052B00F7E5ED /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBC245A052B00F7E5ED /* awsconfiguration.json */; };
+		1B430BC6245A052B00F7E5ED /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B430BBC245A052B00F7E5ED /* awsconfiguration.json */; };
 		1B512DC722E0FB79009A897B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD120E2CAB6000CD92B /* LoginViewController.swift */; };
 		1B512DC822E0FB79009A897B /* HalfPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A11C0A20E2CADB000CD92B /* HalfPieChartViewController.m */; };
 		1B512DC922E0FB79009A897B /* StockHoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A11BD220E2CAB6000CD92B /* StockHoldersVC.swift */; };
@@ -532,6 +542,8 @@
 		02FFD27420E3E98800ADC03F /* Dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dev-Info.plist"; sourceTree = "<group>"; };
 		02FFD2C820E3F2F000ADC03F /* SocialTraderAdHoc1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTraderAdHoc1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FFD2CA20E3F3EC00ADC03F /* AdHoc-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AdHoc-Info.plist"; sourceTree = "<group>"; };
+		1B430BBB245A052A00F7E5ED /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		1B430BBC245A052B00F7E5ED /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		1B512DC322E0F9E6009A897B /* SocialTrader copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SocialTrader copy-Info.plist"; path = "/Users/mehranna@ca.ibm.com/betterinvestor/SocialTrader copy-Info.plist"; sourceTree = "<absolute>"; };
 		1B512E1422E0FB79009A897B /* SocialTraderDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTraderDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B512E1522E0FB79009A897B /* SocialTrader copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SocialTrader copy2-Info.plist"; path = "/Users/mehranna@ca.ibm.com/betterinvestor/SocialTrader copy2-Info.plist"; sourceTree = "<absolute>"; };
@@ -689,6 +701,8 @@
 		02A11B4F20E2A242000CD92B = {
 			isa = PBXGroup;
 			children = (
+				1B430BBB245A052A00F7E5ED /* amplifyconfiguration.json */,
+				1B430BBC245A052B00F7E5ED /* awsconfiguration.json */,
 				02A11C1C20E2CC2A000CD92B /* Localizable.strings */,
 				02A11C1020E2CB19000CD92B /* Icons.xcassets */,
 				02A11B6220E2A245000CD92B /* Assets.xcassets */,
@@ -1063,8 +1077,10 @@
 				02A11B6320E2A245000CD92B /* Assets.xcassets in Resources */,
 				02A11BA420E2C9C8000CD92B /* LaunchScreen.storyboard in Resources */,
 				02A11C1E20E2CC2B000CD92B /* Localizable.strings in Resources */,
+				1B430BC2245A052B00F7E5ED /* awsconfiguration.json in Resources */,
 				02A11C0D20E2CADB000CD92B /* HalfPieChartViewController.xib in Resources */,
 				02A11C1120E2CB19000CD92B /* Icons.xcassets in Resources */,
+				1B430BBD245A052B00F7E5ED /* amplifyconfiguration.json in Resources */,
 				02A11C0B20E2CADB000CD92B /* LineChart1ViewController.xib in Resources */,
 				02A11C1320E2CB49000CD92B /* GoogleService-Info.plist in Resources */,
 			);
@@ -1093,8 +1109,10 @@
 				02FFD26520E3E91B00ADC03F /* Assets.xcassets in Resources */,
 				02FFD26620E3E91B00ADC03F /* LaunchScreen.storyboard in Resources */,
 				02FFD26720E3E91B00ADC03F /* Localizable.strings in Resources */,
+				1B430BC3245A052B00F7E5ED /* awsconfiguration.json in Resources */,
 				02FFD26820E3E91B00ADC03F /* HalfPieChartViewController.xib in Resources */,
 				02FFD26920E3E91B00ADC03F /* Icons.xcassets in Resources */,
+				1B430BBE245A052B00F7E5ED /* amplifyconfiguration.json in Resources */,
 				02FFD26A20E3E91B00ADC03F /* LineChart1ViewController.xib in Resources */,
 				02FFD26B20E3E91B00ADC03F /* GoogleService-Info.plist in Resources */,
 			);
@@ -1112,8 +1130,10 @@
 				02FFD2BD20E3F2F000ADC03F /* HalfPieChartViewController.xib in Resources */,
 				02FFD2BE20E3F2F000ADC03F /* Icons.xcassets in Resources */,
 				02FFD2BF20E3F2F000ADC03F /* LineChart1ViewController.xib in Resources */,
+				1B430BC4245A052B00F7E5ED /* awsconfiguration.json in Resources */,
 				02FFD2C120E3F2F000ADC03F /* GoogleService-Info.plist in Resources */,
 				02FFD2CB20E3F3ED00ADC03F /* AdHoc-Info.plist in Resources */,
+				1B430BBF245A052B00F7E5ED /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1126,8 +1146,10 @@
 				1B512E0822E0FB79009A897B /* Assets.xcassets in Resources */,
 				1B512E0922E0FB79009A897B /* LaunchScreen.storyboard in Resources */,
 				1B512E0A22E0FB79009A897B /* Localizable.strings in Resources */,
+				1B430BC5245A052B00F7E5ED /* awsconfiguration.json in Resources */,
 				1B512E0B22E0FB79009A897B /* HalfPieChartViewController.xib in Resources */,
 				1B512E0C22E0FB79009A897B /* Icons.xcassets in Resources */,
+				1B430BC0245A052B00F7E5ED /* amplifyconfiguration.json in Resources */,
 				1B512E0D22E0FB79009A897B /* LineChart1ViewController.xib in Resources */,
 				1B512E0E22E0FB79009A897B /* GoogleService-Info.plist in Resources */,
 			);
@@ -1142,8 +1164,10 @@
 				1B512E5A22E0FCC0009A897B /* Assets.xcassets in Resources */,
 				1B512E5B22E0FCC0009A897B /* LaunchScreen.storyboard in Resources */,
 				1B512E5C22E0FCC0009A897B /* Localizable.strings in Resources */,
+				1B430BC6245A052B00F7E5ED /* awsconfiguration.json in Resources */,
 				1B512E5D22E0FCC0009A897B /* HalfPieChartViewController.xib in Resources */,
 				1B512E5E22E0FCC0009A897B /* Icons.xcassets in Resources */,
+				1B430BC1245A052B00F7E5ED /* amplifyconfiguration.json in Resources */,
 				1B512E5F22E0FCC0009A897B /* LineChart1ViewController.xib in Resources */,
 				1B512E6022E0FCC0009A897B /* GoogleService-Info.plist in Resources */,
 			);
@@ -1157,35 +1181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialTrader/Pods-SocialTrader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1648,7 +1649,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1704,7 +1705,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1720,7 +1721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = Q79878SPU6;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1753,7 +1754,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = Q79878SPU6;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (

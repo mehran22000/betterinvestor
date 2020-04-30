@@ -20,6 +20,7 @@ import SwiftyJSON
     let name: String?;
     let email: String?;
     var pictureUrl: String?;
+    var picture_key: String?;
     var pic: UIImage?;
     var friends: NSArray?;
     

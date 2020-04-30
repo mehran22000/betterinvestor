@@ -8,6 +8,10 @@
 
 import Foundation
 import UIKit
+import Amplify
+import AWSMobileClient
+import AmplifyPlugins
+
 
 class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
@@ -113,7 +117,7 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.photo?.contentMode = .scaleAspectFit
             cell.photo?.layer.cornerRadius = 10.0
             cell.photo?.clipsToBounds = true
-            downloadImage(url: url,imageView: cell.photo!, user_rank: rank)
+            downloadImage(user_id: rank.user_id,imageView: cell.photo!, user_rank: rank)
         }
         else {
             cell.photo.image = nil;
@@ -190,7 +194,8 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             }.resume()
     }
     
-    func downloadImage(url: URL, imageView:UIImageView, user_rank: Ranking) {
+    func downloadImage(user_id: String, imageView:UIImageView, user_rank: Ranking) {
+        /*
         print("Download Started")
         getDataFromUrl(url: url) { data, response, error in
             guard let data = data, error == nil else { return }
@@ -200,6 +205,34 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                 user_rank.photo = UIImage(data: data);
                 imageView.image = user_rank.photo
             }
-        }
+        })
+         */
+        let key = user_id + ".jpg";
+        Amplify.Storage.downloadData(key: key) { event in
+               switch event {
+               case let .completed(data):
+                   print("Completed: \(data)")
+                   DispatchQueue.main.async() {
+                        user_rank.photo = UIImage(data: data);
+                        imageView.image = user_rank.photo
+                    }
+               case let .failed(storageError):
+                print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                    DispatchQueue.main.async() {
+                        user_rank.photo = UIImage(named: "no_photo");
+                        imageView.image = UIImage(named: "no_photo");
+                        
+                    }
+               case let .inProcess(progress):
+                   print("Progress: \(progress)")
+               default:
+                   break
+               }
+           }
+        
     }
+    
+    
+    
+    
 }

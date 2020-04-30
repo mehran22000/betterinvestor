@@ -16,8 +16,8 @@ class Constants {
          //    static let bsae_url = "http://127.0.0.1:5000/services/v1/"
      #elseif PROD
       //   static let bsae_url = "https://betterinvestor.herokuapp.com/services/v1/"
-      //  static let bsae_url = "http://127.0.0.1:5000/services/v1/"
-          static let bsae_url = "http://ec2-3-95-185-164.compute-1.amazonaws.com:5000/services/v1/"
+     //      static let bsae_url = "http://127.0.0.1:5000/services/v1/"
+           static let bsae_url = "http://ec2-3-95-185-164.compute-1.amazonaws.com:5000/services/v1/"
     
      #elseif ADHOC
         static let bsae_url = "https://betterinvestor-staging.herokuapp.com/services/v1/"

@@ -20,7 +20,7 @@ import Foundation
     var photo: UIImage?
     
     
-    init(_user_id:String, _first_name: String, _last_name: String, _gain: String, _gain_pct: String, _photo_url: String, _rank: Int) {
+    init(_user_id:String, _first_name: String, _last_name: String, _gain: String, _gain_pct: String, _photo_url: String,_rank: Int) {
         
         self.user_id = _user_id;
         self.first_name = _first_name;

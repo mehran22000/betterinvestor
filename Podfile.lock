@@ -1,5 +1,24 @@
 PODS:
   - Alamofire (4.8.2)
+  - Amplify (0.11.0)
+  - AmplifyPlugins/AWSS3StoragePlugin (0.11.0):
+    - AWSPluginsCore (= 0.11.0)
+    - AWSS3 (~> 2.13.0)
+  - AWSAuthCore (2.13.2):
+    - AWSCore (= 2.13.2)
+  - AWSCognitoIdentityProvider (2.13.2):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.13.2)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.13.2)
+  - AWSMobileClient (2.13.2):
+    - AWSAuthCore (= 2.13.2)
+    - AWSCognitoIdentityProvider (= 2.13.2)
+  - AWSPluginsCore (0.11.0):
+    - Amplify (= 0.11.0)
+    - AWSMobileClient (~> 2.13.0)
+  - AWSS3 (2.13.2):
+    - AWSCore (= 2.13.2)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -70,6 +89,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - AmplifyPlugins/AWSS3StoragePlugin
+  - AWSMobileClient
   - Bolts
   - Charts (~> 3.2.0)
   - FacebookCore
@@ -84,7 +105,7 @@ DEPENDENCIES:
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Bolts
     - Charts
@@ -104,9 +125,28 @@ SPEC REPOS:
     - nanopb
     - SideMenu
     - SwiftyJSON
+  trunk:
+    - Amplify
+    - AmplifyPlugins
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSPluginsCore
+    - AWSS3
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Amplify: 8df7d5a71945c57480c1bc3b353a936e908e4dc7
+  AmplifyPlugins: 00520be72202f55dbb2931bcfe0b05e104dd8334
+  AWSAuthCore: 890aaf36fa3a913a5948851a576c02456bed4c5b
+  AWSCognitoIdentityProvider: 68455a8d170bb6cd0ec17d261da0ab3d623232b0
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 8e878a5b1b99cdf3d7df0c1c86be0bfcd6294c11
+  AWSMobileClient: bdec2a26617590bd3eece9bf208005bc4682d424
+  AWSPluginsCore: 139f4e028dbe9b0cadb5540440eb675d49863e53
+  AWSS3: 8eb4011854de8bee0fbbe25803a29f69cca31256
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
   FacebookCore: 4eee98476cb37a485af5d337eb21f8cd5b3c7e6c
@@ -126,6 +166,6 @@ SPEC CHECKSUMS:
   SideMenu: e50bc3cdcef72a17475f33a3403d8a3b3187b0e5
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: a62fe6c1c18413c240630cc1bae9ac042551897a
+PODFILE CHECKSUM: b14393d806612dd4fc16d4875a39304b52e4f4c1
 
-COCOAPODS: 1.6.2
+COCOAPODS: 1.9.1
