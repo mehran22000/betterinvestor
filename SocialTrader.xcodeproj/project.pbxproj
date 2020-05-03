@@ -715,6 +715,7 @@
 				2F6A78CAAC3F3466727CAC5F /* Pods */,
 				02732AA320E2EC80004EA149 /* Frameworks */,
 				02732B1620E330CD004EA149 /* SocialTrader copy-Info.plist */,
+				5BEFBF3C7694BD518FD11F20 /* Pods-SocialTraderUITests.debug.xcconfig */,
 				02732B6920E330DB004EA149 /* SocialTrader-Dev copy-Info.plist */,
 				02F7805F20E343FF00C2990E /* SocialTrader copy-Info.plist */,
 				02F780B220E3453A00C2990E /* SocialTrader-Dev copy-Info.plist */,
@@ -879,7 +880,6 @@
 			children = (
 				35263898D41FBEE74D587D0E /* Pods-SocialTraderTests.debug.xcconfig */,
 				4F2C9D9D87B2C0CB25C89523 /* Pods-SocialTraderTests.release.xcconfig */,
-				5BEFBF3C7694BD518FD11F20 /* Pods-SocialTraderUITests.debug.xcconfig */,
 				EC14281068162323FA02D181 /* Pods-SocialTraderUITests.release.xcconfig */,
 				BB5E36DC2877FC8FA8A9DA20 /* Pods-SocialTrader.debug.xcconfig */,
 				4CDC128E3A75C73525C62FA3 /* Pods-SocialTrader.release.xcconfig */,

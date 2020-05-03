@@ -12,6 +12,10 @@ import Charts
 import SideMenu
 import Alamofire
 import SwiftyJSON
+import Amplify
+import AWSMobileClient
+import AmplifyPlugins
+
 
 class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -174,7 +178,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     user?.portfolio.calculateGain()
                     self.portfolioTableView.reloadData();
                     user?.requestGainHistory (completion:{
-                        user?.requestRanking(global: false, count: 10, completion: {self.rankingVC?.table?.reloadData()})
+                        user?.requestRanking(global: false, count: 10, completion:{
+                            self.getS3PhotoList()});
                         self.is_fetching_data = false;
                         self.setNavItems();
                     })
@@ -539,6 +544,31 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return 0;
     }
     
+    // Amplify
+    
+    func getS3PhotoList() {
+        var aws_valid_keys =  Dictionary<String,Bool>();
+        Amplify.Storage.list { event in
+            switch event {
+            case let .completed(listResult):
+                print("Completed")
+                listResult.items.forEach { item in
+                    print("Key: \(item.key)")
+                    aws_valid_keys[item.key] = true;
+                }
+                self.rankingVC?.aws_valid_keys = aws_valid_keys;
+                DispatchQueue.main.async { // Correct
+                    self.rankingVC?.table?.reloadData()
+                }
+            case let .failed(storageError):
+                print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+            case let .inProcess(progress):
+                print("Progress: \(progress)")
+            default:
+                break
+            }
+        }
+    }
     
 
     // AdMobile

@@ -16,6 +16,7 @@ import AmplifyPlugins
 class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
     var selected_user_rank: Ranking?;
+    var aws_valid_keys =  Dictionary<String,Bool>();
     
     enum ScreenMode {
         case Friends
@@ -194,6 +195,7 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             }.resume()
     }
     
+    
     func downloadImage(user_id: String, imageView:UIImageView, user_rank: Ranking) {
         /*
         print("Download Started")
@@ -208,27 +210,36 @@ class RankingTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         })
          */
         let key = user_id + ".jpg";
-        Amplify.Storage.downloadData(key: key) { event in
-               switch event {
-               case let .completed(data):
-                   print("Completed: \(data)")
-                   DispatchQueue.main.async() {
-                        user_rank.photo = UIImage(data: data);
-                        imageView.image = user_rank.photo
-                    }
-               case let .failed(storageError):
-                print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
-                    DispatchQueue.main.async() {
-                        user_rank.photo = UIImage(named: "no_photo");
-                        imageView.image = UIImage(named: "no_photo");
-                        
-                    }
-               case let .inProcess(progress):
-                   print("Progress: \(progress)")
-               default:
-                   break
+        if (self.aws_valid_keys[key] != nil) {
+            Amplify.Storage.downloadData(key: key) { event in
+                   switch event {
+                   case let .completed(data):
+                       print("Completed: \(data)")
+                       DispatchQueue.main.async() {
+                            user_rank.photo = UIImage(data: data);
+                            imageView.image = user_rank.photo
+                        }
+                   case let .failed(storageError):
+                    print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                        DispatchQueue.main.async() {
+                            user_rank.photo = UIImage(named: "no_photo");
+                            imageView.image = UIImage(named: "no_photo");
+                            
+                        }
+                   case let .inProcess(progress):
+                       print("Progress: \(progress)")
+                   default:
+                       break
+                   }
                }
-           }
+        }
+        else {
+            DispatchQueue.main.async() {
+                user_rank.photo = UIImage(named: "no_photo");
+                imageView.image = UIImage(named: "no_photo");
+                
+            }
+        }
         
     }
     
