@@ -19,6 +19,7 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     let myActivityIndicator = UIActivityIndicatorView();
     var selectedSymbol: Symbol?;
     let searchController = UISearchController(searchResultsController: nil)
+    var first_time_user: Bool?;
     
     // MARK: View Delegates
     override func viewDidLoad() {
@@ -37,11 +38,16 @@ class SymbolSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         UIBarButtonItem.appearance(whenContainedInInstancesOf:[UISearchBar.self]).tintColor = UIColor.white
         tableView.tableHeaderView = searchController.searchBar
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true);
         self.addAdMob()
+        
+        if (self.first_time_user == true) {
+                   searchController.searchBar.text = "Apple";
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

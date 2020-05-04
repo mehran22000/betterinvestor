@@ -35,6 +35,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var linechartView: UIView?
     var pageViewIndex: Int = 0;
     var is_fetching_data: Bool = true;
+    var hasAlreadyLaunched :Bool!;
+    var first_time_user: Bool!;
     
     // Admob
     @IBOutlet var bannerView:GADBannerView?;
@@ -100,6 +102,21 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         notification in
                         self.signOut()
         }
+        
+       // Show Demo Purchase Alert for first-time users
+       //retrieve value from local store, if value doesn't exist then false is returned
+       hasAlreadyLaunched = UserDefaults.standard.bool(forKey: "hasAlreadyLaunched")
+       //check first launched
+       if (hasAlreadyLaunched)
+       {
+           hasAlreadyLaunched = true
+           self.first_time_user = false;
+       }
+       else{
+           self.first_time_user = true;
+           UserDefaults.standard.set(true, forKey: "hasAlreadyLaunched")
+       }
+        
         
     }
     
@@ -182,6 +199,9 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
                             self.getS3PhotoList()});
                         self.is_fetching_data = false;
                         self.setNavItems();
+                        if self.first_time_user == true {
+                            self.firstTimeUserHelper();
+                        }
                     })
                 })
             })
@@ -224,6 +244,14 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             if let portfolio = appDelegate.user?.portfolio {
                 let position = portfolio.positions[portfolioTableView.indexPathForSelectedRow!.row-1]
                 stockVC.symbol = Symbol(key: position.symbol, name: position.name);
+            }
+        }
+        
+        if (segue.identifier == "segueSymbolSearch") {
+            let symbolSearchVC = (segue.destination as! SymbolSearchVC);
+            if (self.first_time_user == true) {
+                self.first_time_user = false;
+                symbolSearchVC.first_time_user = true;
             }
         }
     }
@@ -577,6 +605,26 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.bannerView!.adUnitID = "ca-app-pub-5267718216518748/5568296429";
         self.bannerView!.rootViewController = self;
         self.bannerView!.load(GADRequest());
+    }
+    
+    // First Time Helper
+    func firstTimeUserHelper() {
+        let alertController = UIAlertController(title: "Welcome", message: "Do you want to start by purchasing a few shares of Apple?", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Okey", style: .default, handler: jumpToBuyStock)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler:resetFirstTimeUser);
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    func resetFirstTimeUser(alert: UIAlertAction!){
+        self.first_time_user=false
+    }
+    
+    func jumpToBuyStock(alert: UIAlertAction!) {
+        self.navigationController?.isNavigationBarHidden = true;
+        performSegue(withIdentifier: "segueSymbolSearch", sender: nil);
     }
     
     /*

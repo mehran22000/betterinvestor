@@ -29,8 +29,12 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
+	<true/>
 	<key>FacebookAppID</key>
 	<string>417429138672935</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<true/>
 	<key>FacebookDisplayName</key>
 	<string>SocialTraderDev</string>
 	<key>LSApplicationQueriesSchemes</key>

@@ -491,10 +491,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nq5-XD-jby" customClass="GADBannerView">
-                                <rect key="frame" x="47" y="724" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="724" width="414" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="3Xt-LF-xFB"/>
                                     <constraint firstAttribute="height" constant="50" id="qWh-Yr-58R"/>
                                 </constraints>
                             </view>
@@ -515,6 +514,7 @@
                             <constraint firstItem="EUa-jW-gqk" firstAttribute="leading" secondItem="rF0-JH-qOp" secondAttribute="leading" id="RF0-2S-UYg"/>
                             <constraint firstItem="EUa-jW-gqk" firstAttribute="bottom" secondItem="rF0-JH-qOp" secondAttribute="bottom" constant="-50" id="VRc-Bq-hTk"/>
                             <constraint firstItem="Nq5-XD-jby" firstAttribute="top" secondItem="EUa-jW-gqk" secondAttribute="bottom" id="WBY-nF-oeN"/>
+                            <constraint firstItem="Nq5-XD-jby" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="eab-TS-9Kt"/>
                             <constraint firstItem="DUX-yz-GTO" firstAttribute="leading" secondItem="AHU-vK-Fgb" secondAttribute="leading" id="sty-Ws-yN8"/>
                             <constraint firstItem="DUX-yz-GTO" firstAttribute="trailing" secondItem="rF0-JH-qOp" secondAttribute="trailing" id="wCu-Im-A6a"/>
                         </constraints>
@@ -710,7 +710,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lUn-XT-nhM">
-                                <rect key="frame" x="0.0" y="20" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.43529411764705883" green="0.32156862745098036" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.52156862749999999" green="0.4039215686" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
@@ -1785,7 +1785,7 @@ If you choose to use my Service, then you agree to the collection and use of inf
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lb2-bE-rQ9"/>
-        <segue reference="sXN-dp-JJy"/>
+        <segue reference="DMH-l0-tai"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.43529411759999997" green="0.32101611019999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>

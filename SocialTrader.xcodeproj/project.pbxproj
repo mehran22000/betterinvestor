@@ -560,6 +560,7 @@
 		5BEFBF3C7694BD518FD11F20 /* Pods-SocialTraderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderUITests/Pods-SocialTraderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6238CE6A870D09E5EA665A08 /* Pods_SocialTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5E36DC2877FC8FA8A9DA20 /* Pods-SocialTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTrader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTrader/Pods-SocialTrader.debug.xcconfig"; sourceTree = "<group>"; };
+		E2CF17F25850CB9E9EE8CD20 /* Pods-SocialTraderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderUITests/Pods-SocialTraderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC14281068162323FA02D181 /* Pods-SocialTraderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTraderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialTraderUITests/Pods-SocialTraderUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -883,6 +884,7 @@
 				EC14281068162323FA02D181 /* Pods-SocialTraderUITests.release.xcconfig */,
 				BB5E36DC2877FC8FA8A9DA20 /* Pods-SocialTrader.debug.xcconfig */,
 				4CDC128E3A75C73525C62FA3 /* Pods-SocialTrader.release.xcconfig */,
+				E2CF17F25850CB9E9EE8CD20 /* Pods-SocialTraderUITests.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1721,7 +1723,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = Q79878SPU6;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1754,7 +1756,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = Q79878SPU6;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
